@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T21:01:04Z",
+ "generated": "2026-11-15T21:05:12Z",
  "plugins": [
   {
    "repo": "pawelcel/EasyPDM",
@@ -130,7 +130,7 @@
     "date": "2026-11-15T15:14:17Z",
     "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.0.0/gridfinity-1.0.0.zip"
    },
-   "downloads": 187,
+   "downloads": 188,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "slug": "gridfinity"
