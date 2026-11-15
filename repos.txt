@@ -1,16 +1,18 @@
 # Plugins listed even without the solidcraft-plugin topic: one GitHub repository per line.
 # Repositories with the topic are found by themselves.
-JakeMathews/mesh-solidify
-NoOneExceptEnderk/SolidInserts
-Stigern/SolidThreadsPlugin
-TomasDJo/solidcraft-woodwork
-WilliamHJKL/solidcraft-wood-joinery
-Xusr404/solidcraft-honeycomb-plugin
 bherbruck/solidcraft-gears
 haashimrehan/solidcraft-gridfinity
+JakeMathews/mesh-solidify
 jcar01/solidcraft-plugin-iso-sheet
+NoOneExceptEnderk/SolidInserts
+pawelcel/EasyPDM
 pro-d-e-v/solidcraft-plugin-gear
+Stigern/SolidThreadsPlugin
 takuto-NA/solidcraft-aprilcube
 tharje/filament-swatch-solidcraft
 tharje/gridfinity-solidcraft
 tharje/opengrid-solidcraft
+TomasDJo/solidcraft-woodwork
+WilliamHJKL/solidcraft-wood-joinery
+Xusr404/solidcraft-gridfinity-generator
+Xusr404/solidcraft-honeycomb-plugin

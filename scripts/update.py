@@ -113,6 +113,9 @@ def entries(m):
     for e in rt.get("entries", []):
         slots = [s.get("name") for s in e.get("slots", []) if s.get("name")]
         out.append(slots[0] if slots else e.get("name"))
+    # Several entries in one menu (EasyPDM's four under "File"): the menu says nothing, the entry names do.
+    if len(set(out)) < len(out):
+        out = [e.get("name") for e in rt.get("entries", [])]
     return out
 
 
