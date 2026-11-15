@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SolidCraft Plugins</title>
+<meta name="description" content="Plugins for SolidCraft CAD in one place: Gridfinity, gears, threads, woodwork and more. Download, install and share your own.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2v4H7a1 1 0 0 0-1 1v4a6 6 0 0 0 5 5.9V22h2v-5.1A6 6 0 0 0 18 11V7a1 1 0 0 0-1-1h-2V2h-2v4h-2V2z"/></svg>
+      <span>SolidCraft Plugins</span>
+    </div>
+    <nav>
+      <a href="#install">Install</a>
+      <a href="#add">Add your plugin</a>
+      <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Plugins for SolidCraft, in one place</h1>
+    <p>Community plugins for the <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a> CAD app.
+      Each one makes ordinary, editable SolidCraft features. Download the zip and install it from
+      <b>Plugins › Install plugin…</b></p>
+  </section>
+
+  <section class="tools">
+    <input id="q" type="search" placeholder="Search plugins: gridfinity, gear, thread…" aria-label="Search plugins">
+    <select id="sort" aria-label="Sort">
+      <option value="stars">Most stars</option>
+      <option value="downloads">Most downloads</option>
+      <option value="updated">Recently updated</option>
+      <option value="created">Newest</option>
+      <option value="name">Name</option>
+    </select>
+  </section>
+  <div id="tags" class="tags" aria-label="Filter by tag"></div>
+  <p id="count" class="count"></p>
+
+  <section id="list" class="grid" aria-live="polite"></section>
+
+  <section id="install" class="info">
+    <h2>Install a plugin</h2>
+    <ol>
+      <li>Click <b>Download .zip</b> on a plugin (or take the zip from its latest release on GitHub).</li>
+      <li>In SolidCraft: <b>Plugins › Install plugin…</b> and pick the zip.</li>
+      <li>Run it from the <b>Plugins</b> menu, or its button in the ribbon (SolidCraft 0.42 and later).</li>
+    </ol>
+    <p class="note">On macOS, SolidCraft 0.41 and 0.42 crash when any plugin runs
+      (<a href="https://github.com/tangency-labs/solidcraft/issues/16698">SolidCraft issue #16698</a>).
+      That is a SolidCraft bug, not the plugins'.</p>
+  </section>
+
+  <section id="add" class="info">
+    <h2>Add your plugin</h2>
+    <p>The list updates itself every day from GitHub. To get your plugin on it:</p>
+    <ol>
+      <li>Put it in a public GitHub repository with its <code>plugin.json</code> manifest.</li>
+      <li>Add the topic <code>solidcraft-plugin</code> to the repository (the ⚙ next to <i>About</i>).</li>
+      <li>Publish a release with the plugin zip attached, so people get a <b>Download .zip</b> button.</li>
+    </ol>
+    <p>The first picture in your README becomes the card's picture. Name, description and menu
+      entries come from your manifest.</p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <span id="updated"></span>
+  <span>A community list, not made by Tangency Labs. Each plugin belongs to its author.</span>
+</footer>
+
+<template id="card">
+  <article class="card">
+    <a class="pic" target="_blank" rel="noopener"><img alt="" loading="lazy"><span class="ph"></span></a>
+    <div class="body">
+      <h3><a class="name" target="_blank" rel="noopener"></a> <span class="ver"></span></h3>
+      <a class="by" target="_blank" rel="noopener"><img alt="" loading="lazy"><span></span></a>
+      <p class="desc"></p>
+      <p class="entries"></p>
+      <div class="chips"></div>
+      <div class="meta">
+        <span class="stars" title="GitHub stars"></span>
+        <span class="dl" title="Downloads of all releases"></span>
+        <span class="upd"></span>
+      </div>
+      <div class="actions">
+        <a class="btn primary zip">Download .zip</a>
+        <a class="btn gh" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </article>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>

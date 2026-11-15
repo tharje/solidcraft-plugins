@@ -1,0 +1,444 @@
+{
+ "generated": "2026-11-15T10:39:40Z",
+ "plugins": [
+  {
+   "repo": "bherbruck/solidcraft-gears",
+   "url": "https://github.com/bherbruck/solidcraft-gears",
+   "owner": "bherbruck",
+   "avatar": "https://avatars.githubusercontent.com/u/5258126?v=4",
+   "id": "solidcraft-gears",
+   "name": "Gears",
+   "description": "Involute spur gear generator: module, teeth, pressure angle, face width, bore and profile shift. Builds an editable sketch and features.",
+   "version": "0.1.1",
+   "entries": [
+    "Plugins"
+   ],
+   "commands": 8,
+   "permissions": [],
+   "topics": [
+    "cad",
+    "gears"
+   ],
+   "stars": 15,
+   "license": "MIT",
+   "updated": "2026-11-12T22:08:00Z",
+   "created": "2026-11-12T21:16:44Z",
+   "release": {
+    "tag": "v0.1.1",
+    "url": "https://github.com/bherbruck/solidcraft-gears/releases/tag/v0.1.1",
+    "date": "2026-11-12T22:08:37Z",
+    "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
+   },
+   "downloads": 1187,
+   "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
+   "has_topic": false
+  },
+  {
+   "repo": "tharje/gridfinity-solidcraft",
+   "url": "https://github.com/tharje/gridfinity-solidcraft",
+   "owner": "tharje",
+   "avatar": "https://avatars.githubusercontent.com/u/32621504?v=4",
+   "id": "gridfinity",
+   "name": "Gridfinity",
+   "description": "Gridfinity bins (hollow or solid for custom cutouts), baseplates and drawer baseplates split to fit your printer, on a full, half or custom grid.",
+   "version": "0.8.1",
+   "entries": [
+    "Gridfinity bin",
+    "Gridfinity baseplate",
+    "Gridfinity drawer baseplate"
+   ],
+   "commands": 13,
+   "permissions": [],
+   "topics": [
+    "3d-printing",
+    "baseplate",
+    "bins",
+    "cad",
+    "gridfinity",
+    "half-grid",
+    "maker",
+    "organizer",
+    "parametric",
+    "stl",
+    "storage",
+    "tool-holder",
+    "workshop"
+   ],
+   "stars": 14,
+   "license": "MIT",
+   "updated": "2026-11-15T10:12:41Z",
+   "created": "2026-11-13T11:28:54Z",
+   "release": {
+    "tag": "v0.8.1",
+    "url": "https://github.com/tharje/gridfinity-solidcraft/releases/tag/v0.8.1",
+    "date": "2026-11-15T10:12:42Z",
+    "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v0.8.1/gridfinity-0.8.1.zip"
+   },
+   "downloads": 142,
+   "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
+   "has_topic": true
+  },
+  {
+   "repo": "TomasDJo/solidcraft-woodwork",
+   "url": "https://github.com/TomasDJo/solidcraft-woodwork",
+   "owner": "TomasDJo",
+   "avatar": "https://avatars.githubusercontent.com/u/62136003?v=4",
+   "id": "woodwork",
+   "name": "Woodwork",
+   "description": "Cabinets and furniture in sheet goods: carcass generator and cut list.",
+   "version": "0.1.4",
+   "entries": [
+    "Cabinet",
+    "Corner cabinet",
+    "Joinery",
+    "Material",
+    "Cut list"
+   ],
+   "commands": 18,
+   "permissions": [],
+   "topics": [
+    "cad",
+    "woodworking"
+   ],
+   "stars": 10,
+   "license": "MIT",
+   "updated": "2026-11-14T22:48:53Z",
+   "created": "2026-11-14T13:53:29Z",
+   "release": {
+    "tag": "v0.1.4",
+    "url": "https://github.com/TomasDJo/solidcraft-woodwork/releases/tag/v0.1.4",
+    "date": "2026-11-14T22:44:30Z",
+    "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.4/woodwork-0.1.4.zip"
+   },
+   "downloads": 22,
+   "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/kitchen.png",
+   "has_topic": false
+  },
+  {
+   "repo": "NoOneExceptEnderk/SolidInserts",
+   "url": "https://github.com/NoOneExceptEnderk/SolidInserts",
+   "owner": "NoOneExceptEnderk",
+   "avatar": "https://avatars.githubusercontent.com/u/83318089?v=4",
+   "id": "solidinserts",
+   "name": "SolidInserts",
+   "description": "Create seats for heat-set threaded inserts at the circular rims of existing holes.",
+   "version": "1.1.0",
+   "entries": [
+    "Insert Seats"
+   ],
+   "commands": 12,
+   "permissions": [],
+   "topics": [
+    "3d-printing",
+    "cad",
+    "heat-set-inserts",
+    "mechanical-design",
+    "parametric",
+    "threaded-inserts"
+   ],
+   "stars": 4,
+   "license": "MIT",
+   "updated": "2026-11-15T02:37:09Z",
+   "created": "2026-11-13T19:53:48Z",
+   "release": {
+    "tag": "v1.1.0",
+    "url": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/tag/v1.1.0",
+    "date": "2026-11-15T02:37:10Z",
+    "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.1.0/solidinserts-1.1.0-preview-kit.zip"
+   },
+   "downloads": 31,
+   "image": "https://raw.githubusercontent.com/NoOneExceptEnderk/SolidInserts/main/assets/screenshots/insert-seat-preview.png",
+   "has_topic": false
+  },
+  {
+   "repo": "takuto-NA/solidcraft-aprilcube",
+   "url": "https://github.com/takuto-NA/solidcraft-aprilcube",
+   "owner": "takuto-NA",
+   "avatar": "https://avatars.githubusercontent.com/u/183465875?v=4",
+   "id": "solidcraft-aprilcube",
+   "name": "AprilCube",
+   "description": "Generate printable cuboids and voxel targets with AprilTag or ArUco markers, edge chamfers, inlay recess and detector JSON.",
+   "version": "0.4.0",
+   "entries": [
+    "Generate targets",
+    "Preview settings",
+    "Show tracking JSON"
+   ],
+   "commands": 18,
+   "permissions": [],
+   "topics": [
+    "3d-printing",
+    "apriltag",
+    "aruco",
+    "cad"
+   ],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-14T05:03:32Z",
+   "created": "2026-11-14T05:03:12Z",
+   "release": {
+    "tag": "v0.4.0",
+    "url": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/tag/v0.4.0",
+    "date": "2026-11-14T05:05:08Z",
+    "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip"
+   },
+   "downloads": 4,
+   "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
+   "has_topic": true
+  },
+  {
+   "repo": "tharje/filament-swatch-solidcraft",
+   "url": "https://github.com/tharje/filament-swatch-solidcraft",
+   "owner": "tharje",
+   "avatar": "https://avatars.githubusercontent.com/u/32621504?v=4",
+   "id": "filament-swatch",
+   "name": "Filament Swatch",
+   "description": "Filament sample tiles: brand, material, colour and temperatures in text, and thin steps that show how see-through the filament is.",
+   "version": "0.1.0",
+   "entries": [
+    "Filament swatch"
+   ],
+   "commands": 7,
+   "permissions": [],
+   "topics": [
+    "3d-printing",
+    "cad",
+    "filament",
+    "filament-swatch",
+    "maker",
+    "parametric",
+    "petg",
+    "pla",
+    "swatch"
+   ],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-14T21:46:13Z",
+   "created": "2026-11-14T21:45:57Z",
+   "release": {
+    "tag": "v0.1.0",
+    "url": "https://github.com/tharje/filament-swatch-solidcraft/releases/tag/v0.1.0",
+    "date": "2026-11-14T21:46:13Z",
+    "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.1.0/filament-swatch-0.1.0.zip"
+   },
+   "downloads": 2,
+   "image": "https://raw.githubusercontent.com/tharje/filament-swatch-solidcraft/main/docs/images/swatch.png",
+   "has_topic": true
+  },
+  {
+   "repo": "haashimrehan/solidcraft-gridfinity",
+   "url": "https://github.com/haashimrehan/solidcraft-gridfinity",
+   "owner": "haashimrehan",
+   "avatar": "https://avatars.githubusercontent.com/u/22567531?v=4",
+   "id": "solidcraft-gridfinity",
+   "name": "Gridfinity",
+   "description": "Gridfinity bins and baseplates from a grid size: feet, stacking lip, magnet holes, dividers, scoop and label tab, as editable sketches and extrudes.",
+   "version": "0.1.0",
+   "entries": [
+    "Bin",
+    "Baseplate"
+   ],
+   "commands": 11,
+   "permissions": [],
+   "topics": [
+    "3d-printing",
+    "cad",
+    "gridfinity"
+   ],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-13T06:32:36Z",
+   "created": "2026-11-13T06:32:22Z",
+   "release": {
+    "tag": "v0.1.0",
+    "url": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/tag/v0.1.0",
+    "date": "2026-11-13T06:32:36Z",
+    "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
+   },
+   "downloads": 17,
+   "image": null,
+   "has_topic": false
+  },
+  {
+   "repo": "Xusr404/solidcraft-honeycomb-plugin",
+   "url": "https://github.com/Xusr404/solidcraft-honeycomb-plugin",
+   "owner": "Xusr404",
+   "avatar": "https://avatars.githubusercontent.com/u/81714014?v=4",
+   "id": "solidcraft-honeycomb",
+   "name": "Honeycomb & Hexagon Generator",
+   "description": "Fill up to 250 cells across selected sketch regions. End the active tool with Esc and Shift-click regions before opening Honeycomb.",
+   "version": "0.1.0",
+   "entries": [
+    "Honeycomb"
+   ],
+   "commands": 5,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-15T09:01:36Z",
+   "created": "2026-11-15T08:50:49Z",
+   "release": {
+    "tag": "v0.1.0",
+    "url": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/tag/v0.1.0",
+    "date": "2026-11-15T09:02:24Z",
+    "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip"
+   },
+   "downloads": 3,
+   "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
+   "has_topic": false
+  },
+  {
+   "repo": "jcar01/solidcraft-plugin-iso-sheet",
+   "url": "https://github.com/jcar01/solidcraft-plugin-iso-sheet",
+   "owner": "jcar01",
+   "avatar": "https://avatars.githubusercontent.com/u/10353238?v=4",
+   "id": "iso-sheet",
+   "name": "Isometric Manufacture Sheet",
+   "description": "Projects every body of the open design to a true isometric, removes hidden lines with a depth buffer, and writes a dimensioned ANSI B manufacture sheet as SVG: title block, bill of materials, parameter table, notes and overall dimensions.",
+   "version": "1.1.0",
+   "entries": [
+    "Isometric Sheet"
+   ],
+   "commands": 3,
+   "permissions": [
+    "clock",
+    "command_groups",
+    "files",
+    "net"
+   ],
+   "topics": [],
+   "stars": 0,
+   "license": "Apache-2.0",
+   "updated": "2026-11-15T01:06:37Z",
+   "created": "2026-11-14T16:57:51Z",
+   "release": {
+    "tag": "v1.1.0",
+    "url": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/tag/v1.1.0",
+    "date": "2026-11-15T01:06:37Z",
+    "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
+   },
+   "downloads": 8,
+   "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
+   "has_topic": false
+  },
+  {
+   "repo": "JakeMathews/mesh-solidify",
+   "url": "https://github.com/JakeMathews/mesh-solidify",
+   "owner": "JakeMathews",
+   "avatar": "https://avatars.githubusercontent.com/u/15365059?v=4",
+   "id": "mesh-solidify",
+   "name": "Mesh Solidify",
+   "description": "Rebuild a broken mesh body (holes, open shells, overlaps) as one watertight, printable solid. Adds the result as a new body.",
+   "version": "0.2.0",
+   "entries": [
+    "Solidify Mesh…",
+    "Inspect Mesh…"
+   ],
+   "commands": 3,
+   "permissions": [],
+   "topics": [
+    "3d-printing",
+    "mesh-repair",
+    "stl",
+    "watertight",
+    "winding-number"
+   ],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-14T23:10:18Z",
+   "created": "2026-11-12T01:17:09Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/JakeMathews/mesh-solidify/releases/tag/v0.2.0",
+    "date": "2026-11-14T01:10:07Z",
+    "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
+   },
+   "downloads": 9,
+   "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
+   "has_topic": false
+  },
+  {
+   "repo": "Stigern/SolidThreadsPlugin",
+   "url": "https://github.com/Stigern/SolidThreadsPlugin",
+   "owner": "Stigern",
+   "avatar": "https://avatars.githubusercontent.com/u/1363927?v=4",
+   "id": "thread-generator",
+   "name": "Thread Generator",
+   "description": "Cut a 3D-printable thread into a shaft or hole. Select its round face in the design, then Run. Hover a field for what it does. The thread is an editable feature in the timeline; one Ctrl+Z takes the whole run back.",
+   "version": "2.0.6",
+   "entries": [
+    "Add thread"
+   ],
+   "commands": 8,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-13T13:26:27Z",
+   "created": "2026-10-25T08:36:13Z",
+   "release": {
+    "tag": "v1.8.0",
+    "url": "https://github.com/Stigern/SolidThreadsPlugin/releases/tag/v1.8.0",
+    "date": "2026-10-25T11:10:49Z",
+    "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
+   },
+   "downloads": 6,
+   "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
+   "has_topic": false
+  },
+  {
+   "repo": "WilliamHJKL/solidcraft-wood-joinery",
+   "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery",
+   "owner": "WilliamHJKL",
+   "avatar": "https://avatars.githubusercontent.com/u/19475051?v=4",
+   "id": "wood-joinery",
+   "name": "Wood joinery",
+   "description": "Mortise and tenon joints between two boards: adds the tenon to the rail and cuts the mortise in the stile.",
+   "version": "0.1.0",
+   "entries": [
+    "mortise-tenon"
+   ],
+   "commands": 2,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "Apache-2.0",
+   "updated": "2026-11-15T08:49:52Z",
+   "created": "2026-11-14T21:51:21Z",
+   "release": null,
+   "downloads": 0,
+   "image": null,
+   "has_topic": false
+  },
+  {
+   "repo": "pro-d-e-v/solidcraft-plugin-gear",
+   "url": "https://github.com/pro-d-e-v/solidcraft-plugin-gear",
+   "owner": "pro-d-e-v",
+   "avatar": "https://avatars.githubusercontent.com/u/98588132?v=4",
+   "id": "gear-generator",
+   "name": "Генератор шестерён",
+   "description": "Создаёт эвольвентную цилиндрическую шестерню в начале координат: обычный эскиз и выдавливание, дизайн открывается без плагина.",
+   "version": "0.4.0",
+   "entries": [
+    "Создать шестерню…"
+   ],
+   "commands": 5,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-14T09:18:33Z",
+   "created": "2026-11-12T07:41:49Z",
+   "release": {
+    "tag": "v0.4.0",
+    "url": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/tag/v0.4.0",
+    "date": "2026-11-14T09:09:32Z",
+    "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
+   },
+   "downloads": 20,
+   "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
+   "has_topic": false
+  }
+ ]
+}
