@@ -13,3 +13,4 @@ pro-d-e-v/solidcraft-plugin-gear
 takuto-NA/solidcraft-aprilcube
 tharje/filament-swatch-solidcraft
 tharje/gridfinity-solidcraft
+tharje/opengrid-solidcraft
