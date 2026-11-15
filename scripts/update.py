@@ -8,6 +8,8 @@ Set GITHUB_TOKEN for a higher API rate limit.
 import base64, json, os, re, sys, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
+import build_site
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API = "https://api.github.com"
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
@@ -71,7 +73,8 @@ def manifest(repo, branch):
 
 
 IMG = re.compile(r'!\[[^\]]*\]\(\s*<?([^)\s>]+)>?[^)]*\)|<img[^>]+src="([^"]+)"', re.I)
-SKIP_IMG = re.compile(r"shields\.io|badge|img\.shields|badgen|/actions/workflows/|codecov|\.svg(\?|$)", re.I)
+SKIP_IMG = re.compile(r"shields\.io|badge|img\.shields|badgen|/actions/workflows/|codecov|\.svg(\?|$)"
+                      r"|buymeacoffee|ko-fi|paypal|liberapay|patreon|sponsor", re.I)
 
 
 def readme_image(repo, branch):
@@ -173,6 +176,7 @@ def main():
         if p:
             out.append(p)
     out.sort(key=lambda p: (-p["stars"], p["name"].lower()))
+    build_site.build(out)  # gives each plugin its slug, and writes the pages and sitemap
     data = {"generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "plugins": out}
     with open(os.path.join(ROOT, "data", "plugins.json"), "w") as f:
         json.dump(data, f, indent=1, ensure_ascii=False)

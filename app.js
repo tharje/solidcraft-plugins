@@ -27,19 +27,21 @@ function message(s) {
 
 function card(p) {
   const t = $("#card").content.cloneNode(true);
+  const page = `plugins/${p.slug}/`;
   const pic = t.querySelector(".pic");
-  pic.href = p.url;
+  pic.href = page;
   pic.querySelector(".ph").textContent = (p.name || "?").trim()[0].toUpperCase();
   const img = pic.querySelector("img");
   if (p.image) {
     img.src = p.image;
+    img.alt = `${p.name}: SolidCraft plugin`;
     img.onerror = () => pic.classList.add("empty");
   } else {
     pic.classList.add("empty");
   }
   const name = t.querySelector(".name");
   name.textContent = p.name;
-  name.href = p.url;
+  name.href = page;
   t.querySelector(".ver").textContent = p.version ? `v${p.version}` : "";
   const by = t.querySelector(".by");
   by.href = `https://github.com/${p.owner}`;
