@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T10:39:40Z",
+ "generated": "2026-11-15T10:43:57Z",
  "plugins": [
   {
    "repo": "bherbruck/solidcraft-gears",
@@ -436,7 +436,7 @@
     "date": "2026-11-14T09:09:32Z",
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
    },
-   "downloads": 20,
+   "downloads": 22,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false
   }
