@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T06:21:11Z",
+ "generated": "2026-11-16T06:31:41Z",
  "plugins": [
   {
    "repo": "pawelcel/EasyPDM",
@@ -74,7 +74,7 @@
     "cad",
     "gears"
    ],
-   "stars": 17,
+   "stars": 18,
    "license": "MIT",
    "updated": "2026-11-12T22:08:00Z",
    "created": "2026-11-12T21:16:44Z",
@@ -84,7 +84,7 @@
     "date": "2026-11-12T22:08:37Z",
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
    },
-   "downloads": 1332,
+   "downloads": 1334,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "slug": "solidcraft-gears"
@@ -130,7 +130,7 @@
     "date": "2026-11-15T15:14:17Z",
     "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.0.0/gridfinity-1.0.0.zip"
    },
-   "downloads": 202,
+   "downloads": 205,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "slug": "gridfinity"
@@ -167,7 +167,7 @@
     "date": "2026-11-15T22:05:08Z",
     "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.5/woodwork-0.1.5.zip"
    },
-   "downloads": 60,
+   "downloads": 63,
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/kitchen.png",
    "has_topic": false,
    "slug": "woodwork"
@@ -204,7 +204,7 @@
     "date": "2026-11-15T02:37:10Z",
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.1.0/solidinserts-1.1.0.zip"
    },
-   "downloads": 61,
+   "downloads": 62,
    "image": "https://raw.githubusercontent.com/NoOneExceptEnderk/SolidInserts/main/assets/screenshots/insert-seat-preview.png",
    "has_topic": false,
    "slug": "solidinserts"
@@ -239,7 +239,7 @@
     "date": "2026-11-15T01:06:37Z",
     "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
    },
-   "downloads": 23,
+   "downloads": 24,
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
    "slug": "iso-sheet"
@@ -379,7 +379,7 @@
     "date": "2026-11-14T21:46:13Z",
     "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.1.0/filament-swatch-0.1.0.zip"
    },
-   "downloads": 7,
+   "downloads": 8,
    "image": "https://raw.githubusercontent.com/tharje/filament-swatch-solidcraft/main/docs/images/swatch.png",
    "has_topic": true,
    "slug": "filament-swatch"
@@ -534,7 +534,7 @@
     "date": "2026-11-14T01:10:07Z",
     "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
    },
-   "downloads": 16,
+   "downloads": 17,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "slug": "mesh-solidify"
@@ -637,7 +637,7 @@
     "date": "2026-10-25T11:10:49Z",
     "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
    },
-   "downloads": 22,
+   "downloads": 24,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "slug": "thread-generator"
@@ -678,7 +678,7 @@
     "date": "2026-11-15T23:13:09Z",
     "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.6.0/wood-joinery-fr.zip"
    },
-   "downloads": 23,
+   "downloads": 24,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
    "has_topic": false,
    "slug": "wood-joinery"
@@ -708,10 +708,78 @@
     "date": "2026-11-14T09:09:32Z",
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
    },
-   "downloads": 28,
+   "downloads": 29,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "slug": "gear-generator"
+  },
+  {
+   "repo": "645DF/MakeOrbit-SolidCraft",
+   "url": "https://github.com/645DF/MakeOrbit-SolidCraft/tree/main/manifeste/makeorbit-cnc-studio",
+   "owner": "645DF",
+   "avatar": "https://avatars.githubusercontent.com/u/103284387?v=4",
+   "id": "makeorbit-cnc-studio",
+   "name": "An MakeOrbit CNC Studio senden",
+   "description": "Konstruktion als STEP an MakeOrbit CNC Studio übergeben (Übernahme dort mit Nachfrage) · Send the design as STEP to MakeOrbit CNC Studio",
+   "version": "0.2.0",
+   "entries": [
+    "an-cnc-studio"
+   ],
+   "commands": 1,
+   "permissions": [
+    "clock",
+    "command_groups",
+    "files"
+   ],
+   "topics": [],
+   "stars": 0,
+   "license": "NOASSERTION",
+   "updated": "2026-11-16T04:55:50Z",
+   "created": "2026-11-16T04:55:33Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/tag/v0.2.0",
+    "date": "2026-11-16T04:55:50Z",
+    "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip"
+   },
+   "downloads": 2,
+   "image": null,
+   "has_topic": false,
+   "slug": "makeorbit-cnc-studio"
+  },
+  {
+   "repo": "645DF/MakeOrbit-SolidCraft",
+   "url": "https://github.com/645DF/MakeOrbit-SolidCraft/tree/main/manifeste/makeorbit",
+   "owner": "645DF",
+   "avatar": "https://avatars.githubusercontent.com/u/103284387?v=4",
+   "id": "makeorbit",
+   "name": "An MakeOrbit senden",
+   "description": "Konstruktion als STEP/STL/3MF mit Quellstand an MakeOrbit übergeben (Archivierung dort mit Nachfrage) · Send STEP/STL/3MF with the design to MakeOrbit",
+   "version": "0.2.0",
+   "entries": [
+    "an-makeorbit"
+   ],
+   "commands": 1,
+   "permissions": [
+    "clock",
+    "command_groups",
+    "files"
+   ],
+   "topics": [],
+   "stars": 0,
+   "license": "NOASSERTION",
+   "updated": "2026-11-16T04:55:50Z",
+   "created": "2026-11-16T04:55:33Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/tag/v0.2.0",
+    "date": "2026-11-16T04:55:50Z",
+    "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-0.2.0.zip"
+   },
+   "downloads": 4,
+   "image": null,
+   "has_topic": false,
+   "slug": "makeorbit"
   },
   {
    "repo": "haashimrehan/solidcraft-gridfinity",
@@ -747,6 +815,32 @@
    "image": null,
    "has_topic": false,
    "slug": "solidcraft-gridfinity"
+  },
+  {
+   "repo": "GaryMoFS/solidcraft-helical-sketch",
+   "url": "https://github.com/GaryMoFS/solidcraft-helical-sketch",
+   "owner": "GaryMoFS",
+   "avatar": "https://avatars.githubusercontent.com/u/219060719?v=4",
+   "id": "helical-sketch",
+   "name": "Helical Sketch Generator",
+   "description": "Generate cylindrical, conical, tapered, and variable-pitch 3D helical sketches with axis/point/cylinder placement and optional profile sweep.",
+   "version": "0.2.0",
+   "entries": [
+    "Create Helix...",
+    "Create Variable Helix..."
+   ],
+   "commands": 13,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": null,
+   "updated": "2026-11-15T09:52:39Z",
+   "created": "2026-11-15T09:52:33Z",
+   "release": null,
+   "downloads": 0,
+   "image": null,
+   "has_topic": false,
+   "slug": "helical-sketch"
   }
  ]
 }

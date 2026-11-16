@@ -1,4 +1,6 @@
 # Plugins listed even without the solidcraft-plugin topic: one GitHub repository per line.
+# (Repositories that mention "solidcraft" and hold a plugin manifest are found too.)
+# "-owner/repo" leaves a repository out.
 # Repositories with the topic are found by themselves.
 bherbruck/solidcraft-gears
 haashimrehan/solidcraft-gridfinity

@@ -31,25 +31,44 @@ def get(path, raw=False):
     return body.decode("utf-8", "replace") if raw else json.loads(body)
 
 
+def search(q):
+    """Every repository a GitHub search finds (forks left out), up to the 1000 it gives."""
+    items = []
+    for page in range(1, 11):
+        res = get(f"/search/repositories?q={urllib.parse.quote(q)}&per_page=100&page={page}")
+        got = res.get("items", []) if res else []
+        items += got
+        if len(got) < 100:
+            break
+    return items
+
+
+def has_manifest_file(item):
+    """A cheap first look, before a repository found by name gets the full check: any plugin.json?"""
+    tree = get(f"/repos/{item['full_name']}/git/trees/{urllib.parse.quote(item['default_branch'])}?recursive=1")
+    return any(t["path"].endswith("plugin.json") for t in (tree or {}).get("tree", []))
+
+
 def listed():
-    names = []
+    """repos.txt, the repositories with the topic, and those with "solidcraft" in their name,
+    description or README that hold a plugin.json. Lines starting with "-" in repos.txt leave a
+    repository out."""
+    names, skip = [], set()
     with open(os.path.join(ROOT, "repos.txt")) as f:
         for line in f:
             line = line.split("#")[0].strip()
-            if line:
+            if line.startswith("-"):
+                skip.add(line[1:].strip().lower())
+            elif line:
                 names.append(line)
-    page = 1
-    while True:
-        q = urllib.parse.quote("topic:solidcraft-plugin")
-        res = get(f"/search/repositories?q={q}&per_page=100&page={page}")
-        items = res.get("items", []) if res else []
-        names += [i["full_name"] for i in items]
-        if len(items) < 100:
-            break
-        page += 1
+    names += [i["full_name"] for i in search("topic:solidcraft-plugin")]
+    known = {n.lower() for n in names}
+    for i in search("solidcraft"):
+        if i["full_name"].lower() not in known | skip and not i.get("archived") and has_manifest_file(i):
+            names.append(i["full_name"])
     seen, out = set(), []
     for n in names:
-        if n.lower() not in seen:
+        if n.lower() not in seen | skip:
             seen.add(n.lower())
             out.append(n)
     return out
