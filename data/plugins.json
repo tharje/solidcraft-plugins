@@ -1,15 +1,15 @@
 {
- "generated": "2026-11-16T07:02:20Z",
+ "generated": "2026-11-16T07:26:16Z",
  "plugins": [
   {
    "repo": "pawelcel/EasyPDM",
-   "url": "https://github.com/pawelcel/EasyPDM",
+   "url": "https://github.com/pawelcel/EasyPDM/tree/main/EasyPDM.SolidCraft",
    "owner": "pawelcel",
    "avatar": "https://avatars.githubusercontent.com/u/312899394?v=4",
    "id": "easypdm",
    "name": "EasyPDM",
    "description": "Upload designs to an EasyPDM server and download them, through the EasyPDM companion program.",
-   "note": null,
+   "note": "Needs an EasyPDM server and the EasyPDM companion program, which also makes the plugin zip for each computer.",
    "version": "0.9.0",
    "entries": [
     "upload",
@@ -23,25 +23,7 @@
     "command_groups",
     "files"
    ],
-   "topics": [
-    "autodesk-inventor",
-    "bom",
-    "cad",
-    "docker",
-    "engineering",
-    "freecad",
-    "freecad-macro",
-    "inventor-macro",
-    "mechanical-engineering",
-    "open-source",
-    "pdm",
-    "plm",
-    "postgresql",
-    "product-data-management",
-    "self-hosted",
-    "solidworks",
-    "solidworks-macro"
-   ],
+   "topics": [],
    "stars": 23,
    "license": "MIT",
    "updated": "2026-11-15T23:30:49Z",
@@ -52,7 +34,7 @@
     "date": "2026-11-15T12:51:43Z",
     "zip": null
    },
-   "downloads": 368,
+   "downloads": 0,
    "image": null,
    "has_topic": false,
    "slug": "easypdm"
@@ -86,7 +68,7 @@
     "date": "2026-11-12T22:08:37Z",
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
    },
-   "downloads": 1338,
+   "downloads": 1344,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "slug": "solidcraft-gears"
@@ -133,7 +115,7 @@
     "date": "2026-11-15T15:14:17Z",
     "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.0.0/gridfinity-1.0.0.zip"
    },
-   "downloads": 207,
+   "downloads": 209,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "slug": "gridfinity"
@@ -209,7 +191,7 @@
     "date": "2026-11-15T02:37:10Z",
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.1.0/solidinserts-1.1.0.zip"
    },
-   "downloads": 65,
+   "downloads": 66,
    "image": "https://raw.githubusercontent.com/NoOneExceptEnderk/SolidInserts/main/assets/screenshots/insert-seat-preview.png",
    "has_topic": false,
    "slug": "solidinserts"
@@ -348,7 +330,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
    },
-   "downloads": 27,
+   "downloads": 29,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-extrusions/rails.png",
    "has_topic": false,
    "slug": "techsquid-extrusions"
@@ -420,7 +402,7 @@
     "date": "2026-11-14T09:09:32Z",
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
    },
-   "downloads": 32,
+   "downloads": 34,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "slug": "gear-generator"
@@ -698,9 +680,9 @@
    "avatar": "https://avatars.githubusercontent.com/u/19475051?v=4",
    "id": "wood-joinery",
    "name": "Wood joinery",
-   "description": "Woodworking joints between boards: mortise and tenon, grooves, half laps, dowels, box joints, loose tenons, housings, miters, tongue and groove, scarfs, dovetails and screws.",
+   "description": "Woodworking joints between boards: mortise and tenon, grooves, half laps, dowels, box joints, loose tenons, housings, miters, tongue and groove, scarfs, dovetails, screws and biscuits.",
    "note": null,
-   "version": "0.6.0",
+   "version": "0.8.0",
    "entries": [
     "Mortise and tenon",
     "Groove",
@@ -713,22 +695,23 @@
     "Tongue and groove",
     "Scarf joint",
     "Dovetails",
-    "Screws"
+    "Screws",
+    "Biscuits"
    ],
    "commands": 7,
    "permissions": [],
    "topics": [],
    "stars": 1,
    "license": "Apache-2.0",
-   "updated": "2026-11-15T23:13:09Z",
+   "updated": "2026-11-16T07:18:33Z",
    "created": "2026-11-14T21:51:21Z",
    "release": {
-    "tag": "v0.6.0",
-    "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.6.0",
-    "date": "2026-11-15T23:13:09Z",
-    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.6.0/wood-joinery-fr.zip"
+    "tag": "v0.8.0",
+    "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.8.0",
+    "date": "2026-11-16T07:18:33Z",
+    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.8.0/wood-joinery-fr.zip"
    },
-   "downloads": 26,
+   "downloads": 28,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
    "has_topic": false,
    "slug": "wood-joinery"

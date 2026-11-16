@@ -146,6 +146,12 @@ def entries(m):
     return out
 
 
+# What a plugin needs that its card can't tell, by plugin id.
+NOTES = {
+    "easypdm": "Needs an EasyPDM server and the EasyPDM companion program, which also makes the plugin zip for each computer.",
+}
+
+
 def latin(text):
     """Mostly Latin letters (English and most European languages)?"""
     letters = [c for c in text or "" if c.isalpha()]
@@ -202,22 +208,30 @@ def plugins(repo):
     out = []
     for path, m in found:
         folder = os.path.dirname(path)
+        if os.path.basename(folder) in ("plugin", "package"):  # EasyPDM.SolidCraft/plugin: its README is one up
+            folder = os.path.dirname(folder)
         mine = lambda a: a["name"].lower().startswith(m["id"].lower())
         zip_ = next((a for a in zips if mine(a)), None) if several else (zips[0] if zips else None)
+        # A plugin in a folder of a bigger project (EasyPDM): the repository's topics and downloads
+        # are the project's, not the plugin's.
+        part = (not several and folder and not zip_ and not any("solidcraft" in t for t in r.get("topics", [])))
+        name, desc, note = english(m, r)
+        if part:
+            note = NOTES.get(m["id"]) or f"Part of the bigger {r['name']} project: see its README for what else it needs."
         out.append({
             "repo": r["full_name"],
-            "url": f"{r['html_url']}/tree/{branch}/{urllib.parse.quote(folder)}" if several and folder else r["html_url"],
+            "url": f"{r['html_url']}/tree/{branch}/{urllib.parse.quote(folder)}" if (several or part) and folder else r["html_url"],
             "owner": r["owner"]["login"],
             "avatar": r["owner"]["avatar_url"],
             "id": m.get("id"),
-            "name": english(m, r)[0],
-            "description": english(m, r)[1],
-            "note": english(m, r)[2],
+            "name": name,
+            "description": desc,
+            "note": note,
             "version": m.get("version"),
             "entries": entries(m),
             "commands": len(m.get("runtime", {}).get("commands", [])),
             "permissions": sorted(m.get("runtime", {}).get("permissions", {}).keys()) if isinstance(m.get("runtime", {}).get("permissions"), dict) else [],
-            "topics": tags(r.get("topics", [])),
+            "topics": [] if part else tags(r.get("topics", [])),
             "stars": r.get("stargazers_count", 0),
             "license": (r.get("license") or {}).get("spdx_id"),
             "updated": r.get("pushed_at"),
@@ -228,8 +242,8 @@ def plugins(repo):
                 "date": rel.get("published_at"),
                 "zip": zip_["browser_download_url"] if zip_ else None,
             },
-            "downloads": sum(a.get("download_count", 0) for a in assets if not several or mine(a)),
-            "image": readme_image(r["full_name"], branch, folder if several else ""),
+            "downloads": 0 if part else sum(a.get("download_count", 0) for a in assets if not several or mine(a)),
+            "image": readme_image(r["full_name"], branch, folder if several or part else ""),
             "has_topic": "solidcraft-plugin" in r.get("topics", []),
         })
     return out
