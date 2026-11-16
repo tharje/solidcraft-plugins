@@ -1,15 +1,15 @@
 {
- "generated": "2026-11-16T16:00:55Z",
+ "generated": "2026-11-16T17:23:27Z",
  "plugins": [
   {
    "repo": "pawelcel/EasyPDM",
-   "url": "https://github.com/pawelcel/EasyPDM/tree/main/EasyPDM.SolidCraft",
+   "url": "https://github.com/pawelcel/EasyPDM",
    "owner": "pawelcel",
    "avatar": "https://avatars.githubusercontent.com/u/312899394?v=4",
    "id": "easypdm",
    "name": "EasyPDM",
    "description": "Upload designs to an EasyPDM server and download them, through the EasyPDM companion program.",
-   "note": "Needs an EasyPDM server and the EasyPDM companion program, which also makes the plugin zip for each computer.",
+   "note": null,
    "version": "0.9.0",
    "entries": [
     "Upload",
@@ -23,18 +23,36 @@
     "command_groups",
     "files"
    ],
-   "topics": [],
+   "topics": [
+    "autodesk-inventor",
+    "bom",
+    "cad",
+    "docker",
+    "engineering",
+    "freecad",
+    "freecad-macro",
+    "inventor-macro",
+    "mechanical-engineering",
+    "open-source",
+    "pdm",
+    "plm",
+    "postgresql",
+    "product-data-management",
+    "self-hosted",
+    "solidworks",
+    "solidworks-macro"
+   ],
    "stars": 27,
    "license": "MIT",
-   "updated": "2026-11-16T15:56:29Z",
+   "updated": "2026-11-16T16:17:20Z",
    "created": "2026-08-04T08:53:34Z",
    "release": {
-    "tag": "v0.8.2",
-    "url": "https://github.com/pawelcel/EasyPDM/releases/tag/v0.8.2",
-    "date": "2026-11-15T12:51:43Z",
-    "zip": null
+    "tag": "v0.9.0",
+    "url": "https://github.com/pawelcel/EasyPDM/releases/tag/v0.9.0",
+    "date": "2026-11-16T16:21:17Z",
+    "zip": "https://github.com/pawelcel/EasyPDM/releases/download/v0.9.0/EasyPDM_SolidCraft_Companion_linux-x64_v0.9.0.zip"
    },
-   "downloads": 0,
+   "downloads": 401,
    "image": null,
    "has_topic": false,
    "slug": "easypdm"
@@ -68,7 +86,7 @@
     "date": "2026-11-12T22:08:37Z",
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
    },
-   "downloads": 1428,
+   "downloads": 1441,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "slug": "solidcraft-gears"
@@ -82,23 +100,26 @@
    "name": "Woodwork",
    "description": "Cabinets and furniture in sheet goods: carcass generator and cut list.",
    "note": null,
-   "version": "0.1.6",
+   "version": "0.1.7-rc.1",
    "entries": [
     "Cabinet",
     "Corner cabinet",
+    "Edit cabinet",
     "Joinery",
     "Material",
     "Cut list"
    ],
-   "commands": 19,
-   "permissions": [],
+   "commands": 28,
+   "permissions": [
+    "files"
+   ],
    "topics": [
     "cad",
     "woodworking"
    ],
    "stars": 18,
    "license": "MIT",
-   "updated": "2026-11-16T11:06:21Z",
+   "updated": "2026-11-16T16:55:20Z",
    "created": "2026-11-14T13:53:29Z",
    "release": {
     "tag": "v0.1.6",
@@ -106,7 +127,7 @@
     "date": "2026-11-16T09:35:51Z",
     "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.6/woodwork-0.1.6.zip"
    },
-   "downloads": 99,
+   "downloads": 110,
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/banner.png",
    "has_topic": false,
    "slug": "woodwork"
@@ -153,7 +174,7 @@
     "date": "2026-11-16T15:57:13Z",
     "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.1.0/gridfinity-1.1.0.zip"
    },
-   "downloads": 248,
+   "downloads": 257,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "slug": "gridfinity"
@@ -191,7 +212,7 @@
     "date": "2026-11-15T02:37:10Z",
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.1.0/solidinserts-1.1.0.zip"
    },
-   "downloads": 89,
+   "downloads": 93,
    "image": "https://raw.githubusercontent.com/NoOneExceptEnderk/SolidInserts/main/assets/screenshots/insert-seat-preview.png",
    "has_topic": false,
    "slug": "solidinserts"
@@ -215,7 +236,7 @@
    "topics": [],
    "stars": 2,
    "license": "MIT",
-   "updated": "2026-11-16T04:23:44Z",
+   "updated": "2026-11-16T16:29:53Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -223,7 +244,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
    },
-   "downloads": 51,
+   "downloads": 55,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-extrusions/rails.png",
    "has_topic": false,
    "slug": "techsquid-extrusions"
@@ -246,7 +267,7 @@
    "topics": [],
    "stars": 2,
    "license": "MIT",
-   "updated": "2026-11-16T04:23:44Z",
+   "updated": "2026-11-16T16:29:53Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -277,7 +298,7 @@
    "topics": [],
    "stars": 2,
    "license": "MIT",
-   "updated": "2026-11-16T04:23:44Z",
+   "updated": "2026-11-16T16:29:53Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -285,7 +306,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip"
    },
-   "downloads": 48,
+   "downloads": 52,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-nuts/nut.png",
    "has_topic": false,
    "slug": "techsquid-nuts"
@@ -321,7 +342,7 @@
     "date": "2026-11-15T01:06:37Z",
     "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
    },
-   "downloads": 46,
+   "downloads": 49,
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
    "slug": "iso-sheet"
@@ -344,7 +365,7 @@
    "topics": [],
    "stars": 2,
    "license": "MIT",
-   "updated": "2026-11-16T04:23:44Z",
+   "updated": "2026-11-16T16:29:53Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -352,7 +373,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip"
    },
-   "downloads": 53,
+   "downloads": 59,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-screws/screws.png",
    "has_topic": false,
    "slug": "techsquid-screws"
@@ -395,7 +416,7 @@
     "date": "2026-11-16T07:18:33Z",
     "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.8.0/wood-joinery-fr.zip"
    },
-   "downloads": 53,
+   "downloads": 59,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
    "has_topic": false,
    "slug": "wood-joinery"
@@ -428,7 +449,7 @@
     "date": "2026-11-15T20:38:17Z",
     "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.1.0/solidcraft-3d-printing-holes.zip"
    },
-   "downloads": 21,
+   "downloads": 23,
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
    "slug": "solidcraft-3d-printing-holes"
@@ -538,7 +559,7 @@
     "date": "2026-11-14T09:09:32Z",
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
    },
-   "downloads": 44,
+   "downloads": 48,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "slug": "gear-generator"
@@ -598,7 +619,7 @@
     "date": "2026-11-15T09:02:24Z",
     "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip"
    },
-   "downloads": 33,
+   "downloads": 35,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
    "slug": "solidcraft-honeycomb"
@@ -636,7 +657,7 @@
     "date": "2026-11-14T01:10:07Z",
     "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
    },
-   "downloads": 37,
+   "downloads": 39,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "slug": "mesh-solidify"
@@ -680,7 +701,7 @@
     "date": "2026-11-16T08:44:51Z",
     "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.2.0/opengrid-0.2.0.zip"
    },
-   "downloads": 18,
+   "downloads": 19,
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
    "slug": "opengrid"
@@ -711,7 +732,7 @@
     "date": "2026-10-25T11:10:49Z",
     "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
    },
-   "downloads": 43,
+   "downloads": 46,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "slug": "thread-generator"
@@ -844,7 +865,7 @@
     "date": "2026-11-13T06:32:36Z",
     "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
    },
-   "downloads": 31,
+   "downloads": 32,
    "image": null,
    "has_topic": false,
    "slug": "solidcraft-gridfinity"
@@ -875,6 +896,41 @@
    "image": null,
    "has_topic": false,
    "slug": "helical-sketch"
+  },
+  {
+   "repo": "Frosty-Eldin/Solidcraft-lattice",
+   "url": "https://github.com/Frosty-Eldin/Solidcraft-lattice",
+   "owner": "Frosty-Eldin",
+   "avatar": "https://avatars.githubusercontent.com/u/356501104?v=4",
+   "id": "lattice",
+   "name": "Lattice Generator",
+   "description": "Gyroid/TPMS, strut and honeycomb lattices that fill the selected body as watertight meshes, with variable density by control points. SolidCraft 0.42+.",
+   "note": null,
+   "version": "0.5.2",
+   "entries": [
+    "Gyroid",
+    "Gyroid VD",
+    "Struts",
+    "Struts VD",
+    "Honeycomb"
+   ],
+   "commands": 13,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-16T16:22:10Z",
+   "created": "2026-11-16T16:15:20Z",
+   "release": {
+    "tag": "v0.5.2",
+    "url": "https://github.com/Frosty-Eldin/Solidcraft-lattice/releases/tag/v0.5.2",
+    "date": "2026-11-16T16:22:11Z",
+    "zip": null
+   },
+   "downloads": 0,
+   "image": "https://raw.githubusercontent.com/Frosty-Eldin/Solidcraft-lattice/main/docs/showcase.jpg",
+   "has_topic": false,
+   "slug": "lattice"
   }
  ]
 }
