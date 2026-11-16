@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T08:48:58Z",
+ "generated": "2026-11-16T16:00:55Z",
  "plugins": [
   {
    "repo": "pawelcel/EasyPDM",
@@ -12,10 +12,10 @@
    "note": "Needs an EasyPDM server and the EasyPDM companion program, which also makes the plugin zip for each computer.",
    "version": "0.9.0",
    "entries": [
-    "upload",
-    "download",
-    "login",
-    "logout"
+    "Upload",
+    "Download",
+    "Log in",
+    "Log out"
    ],
    "commands": 4,
    "permissions": [
@@ -24,9 +24,9 @@
     "files"
    ],
    "topics": [],
-   "stars": 23,
+   "stars": 27,
    "license": "MIT",
-   "updated": "2026-11-15T23:30:49Z",
+   "updated": "2026-11-16T15:56:29Z",
    "created": "2026-08-04T08:53:34Z",
    "release": {
     "tag": "v0.8.2",
@@ -58,7 +58,7 @@
     "cad",
     "gears"
    ],
-   "stars": 18,
+   "stars": 20,
    "license": "MIT",
    "updated": "2026-11-12T22:08:00Z",
    "created": "2026-11-12T21:16:44Z",
@@ -68,10 +68,48 @@
     "date": "2026-11-12T22:08:37Z",
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
    },
-   "downloads": 1354,
+   "downloads": 1428,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "slug": "solidcraft-gears"
+  },
+  {
+   "repo": "TomasDJo/solidcraft-woodwork",
+   "url": "https://github.com/TomasDJo/solidcraft-woodwork",
+   "owner": "TomasDJo",
+   "avatar": "https://avatars.githubusercontent.com/u/62136003?v=4",
+   "id": "woodwork",
+   "name": "Woodwork",
+   "description": "Cabinets and furniture in sheet goods: carcass generator and cut list.",
+   "note": null,
+   "version": "0.1.6",
+   "entries": [
+    "Cabinet",
+    "Corner cabinet",
+    "Joinery",
+    "Material",
+    "Cut list"
+   ],
+   "commands": 19,
+   "permissions": [],
+   "topics": [
+    "cad",
+    "woodworking"
+   ],
+   "stars": 18,
+   "license": "MIT",
+   "updated": "2026-11-16T11:06:21Z",
+   "created": "2026-11-14T13:53:29Z",
+   "release": {
+    "tag": "v0.1.6",
+    "url": "https://github.com/TomasDJo/solidcraft-woodwork/releases/tag/v0.1.6",
+    "date": "2026-11-16T09:35:51Z",
+    "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.6/woodwork-0.1.6.zip"
+   },
+   "downloads": 99,
+   "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/banner.png",
+   "has_topic": false,
+   "slug": "woodwork"
   },
   {
    "repo": "tharje/gridfinity-solidcraft",
@@ -80,9 +118,9 @@
    "avatar": "https://avatars.githubusercontent.com/u/32621504?v=4",
    "id": "gridfinity",
    "name": "Gridfinity",
-   "description": "Gridfinity bins (hollow or solid for custom cutouts), baseplates and drawer baseplates split to fit your printer, on a full, half or custom grid.",
+   "description": "Gridfinity bins (hollow, eco or solid for custom cutouts), baseplates and drawer baseplates split to fit your printer, on a full, half or custom grid.",
    "note": null,
-   "version": "1.0.1",
+   "version": "1.1.0",
    "entries": [
     "Gridfinity bin",
     "Gridfinity baseplate",
@@ -105,58 +143,20 @@
     "tool-holder",
     "workshop"
    ],
-   "stars": 16,
+   "stars": 17,
    "license": "MIT",
-   "updated": "2026-11-16T08:44:46Z",
+   "updated": "2026-11-16T15:57:12Z",
    "created": "2026-11-13T11:28:54Z",
    "release": {
-    "tag": "v1.0.1",
-    "url": "https://github.com/tharje/gridfinity-solidcraft/releases/tag/v1.0.1",
-    "date": "2026-11-16T08:44:46Z",
-    "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.0.1/gridfinity-1.0.1.zip"
+    "tag": "v1.1.0",
+    "url": "https://github.com/tharje/gridfinity-solidcraft/releases/tag/v1.1.0",
+    "date": "2026-11-16T15:57:13Z",
+    "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.1.0/gridfinity-1.1.0.zip"
    },
-   "downloads": 214,
+   "downloads": 248,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "slug": "gridfinity"
-  },
-  {
-   "repo": "TomasDJo/solidcraft-woodwork",
-   "url": "https://github.com/TomasDJo/solidcraft-woodwork",
-   "owner": "TomasDJo",
-   "avatar": "https://avatars.githubusercontent.com/u/62136003?v=4",
-   "id": "woodwork",
-   "name": "Woodwork",
-   "description": "Cabinets and furniture in sheet goods: carcass generator and cut list.",
-   "note": null,
-   "version": "0.1.5",
-   "entries": [
-    "Cabinet",
-    "Corner cabinet",
-    "Joinery",
-    "Material",
-    "Cut list"
-   ],
-   "commands": 19,
-   "permissions": [],
-   "topics": [
-    "cad",
-    "woodworking"
-   ],
-   "stars": 15,
-   "license": "MIT",
-   "updated": "2026-11-15T22:02:56Z",
-   "created": "2026-11-14T13:53:29Z",
-   "release": {
-    "tag": "v0.1.5",
-    "url": "https://github.com/TomasDJo/solidcraft-woodwork/releases/tag/v0.1.5",
-    "date": "2026-11-15T22:05:08Z",
-    "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.5/woodwork-0.1.5.zip"
-   },
-   "downloads": 72,
-   "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/kitchen.png",
-   "has_topic": false,
-   "slug": "woodwork"
   },
   {
    "repo": "NoOneExceptEnderk/SolidInserts",
@@ -191,10 +191,104 @@
     "date": "2026-11-15T02:37:10Z",
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.1.0/solidinserts-1.1.0.zip"
    },
-   "downloads": 70,
+   "downloads": 89,
    "image": "https://raw.githubusercontent.com/NoOneExceptEnderk/SolidInserts/main/assets/screenshots/insert-seat-preview.png",
    "has_topic": false,
    "slug": "solidinserts"
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-extrusions",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-extrusions",
+   "name": "Extrusions",
+   "description": "MISUMI 5 series T-slot and OpenBuilds V-slot rails, with slot nuts. Place fixed-length components on points, or build independent rails along straight sketch lines.",
+   "note": null,
+   "version": "0.2.0",
+   "entries": [
+    "Extrusion",
+    "Slot nut"
+   ],
+   "commands": 32,
+   "permissions": [],
+   "topics": [],
+   "stars": 2,
+   "license": "MIT",
+   "updated": "2026-11-16T04:23:44Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
+   },
+   "downloads": 51,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-extrusions/rails.png",
+   "has_topic": false,
+   "slug": "techsquid-extrusions"
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-inserts",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-inserts",
+   "name": "Heat-set inserts",
+   "description": "Based on CNC Kitchen's heat-set inserts. Select sketch points or circles: each gets the hole for an insert, and the insert.",
+   "note": null,
+   "version": "0.2.0",
+   "entries": [
+    "Heat-set insert"
+   ],
+   "commands": 20,
+   "permissions": [],
+   "topics": [],
+   "stars": 2,
+   "license": "MIT",
+   "updated": "2026-11-16T04:23:44Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-inserts-0.2.0.zip"
+   },
+   "downloads": 45,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-inserts/insert.png",
+   "has_topic": false,
+   "slug": "techsquid-inserts"
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-nuts",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-nuts",
+   "name": "Hex nuts",
+   "description": "Based on ISO 4032. Select sketch points or circles: each gets a nut, and its pocket if you want one. With nothing selected, one nut sits on the origin.",
+   "note": null,
+   "version": "0.2.0",
+   "entries": [
+    "Hex nut"
+   ],
+   "commands": 32,
+   "permissions": [],
+   "topics": [],
+   "stars": 2,
+   "license": "MIT",
+   "updated": "2026-11-16T04:23:44Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip"
+   },
+   "downloads": 48,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-nuts/nut.png",
+   "has_topic": false,
+   "slug": "techsquid-nuts"
   },
   {
    "repo": "jcar01/solidcraft-plugin-iso-sheet",
@@ -227,10 +321,84 @@
     "date": "2026-11-15T01:06:37Z",
     "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
    },
-   "downloads": 32,
+   "downloads": 46,
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
    "slug": "iso-sheet"
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-screws",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-screws",
+   "name": "Screws",
+   "description": "Based on the ISO metric screw standards. Select sketch points or circles: each gets a screw, and its hole if you want one. With nothing selected, one screw sits on the origin.",
+   "note": null,
+   "version": "0.2.0",
+   "entries": [
+    "Screw"
+   ],
+   "commands": 35,
+   "permissions": [],
+   "topics": [],
+   "stars": 2,
+   "license": "MIT",
+   "updated": "2026-11-16T04:23:44Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip"
+   },
+   "downloads": 53,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-screws/screws.png",
+   "has_topic": false,
+   "slug": "techsquid-screws"
+  },
+  {
+   "repo": "WilliamHJKL/solidcraft-wood-joinery",
+   "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery",
+   "owner": "WilliamHJKL",
+   "avatar": "https://avatars.githubusercontent.com/u/19475051?v=4",
+   "id": "wood-joinery",
+   "name": "Wood joinery",
+   "description": "Woodworking joints between boards: mortise and tenon, grooves, half laps, dowels, box joints, loose tenons, housings, miters, tongue and groove, scarfs, dovetails, screws and biscuits.",
+   "note": null,
+   "version": "0.8.0",
+   "entries": [
+    "Mortise and tenon",
+    "Groove",
+    "Half lap",
+    "Dowels",
+    "Box joint",
+    "Loose tenon",
+    "Housing",
+    "Miter",
+    "Tongue and groove",
+    "Scarf joint",
+    "Dovetails",
+    "Screws",
+    "Biscuits"
+   ],
+   "commands": 7,
+   "permissions": [],
+   "topics": [],
+   "stars": 2,
+   "license": "Apache-2.0",
+   "updated": "2026-11-16T07:18:33Z",
+   "created": "2026-11-14T21:51:21Z",
+   "release": {
+    "tag": "v0.8.0",
+    "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.8.0",
+    "date": "2026-11-16T07:18:33Z",
+    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.8.0/wood-joinery-fr.zip"
+   },
+   "downloads": 53,
+   "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
+   "has_topic": false,
+   "slug": "wood-joinery"
   },
   {
    "repo": "SB97/solidcraft-3d-printing-holes",
@@ -260,7 +428,7 @@
     "date": "2026-11-15T20:38:17Z",
     "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.1.0/solidcraft-3d-printing-holes.zip"
    },
-   "downloads": 14,
+   "downloads": 21,
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
    "slug": "solidcraft-3d-printing-holes"
@@ -298,42 +466,10 @@
     "date": "2026-11-14T05:05:08Z",
     "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip"
    },
-   "downloads": 11,
+   "downloads": 14,
    "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
    "has_topic": true,
    "slug": "solidcraft-aprilcube"
-  },
-  {
-   "repo": "TechSquidTV/SolidCraft-Plugins",
-   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-extrusions",
-   "owner": "TechSquidTV",
-   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
-   "id": "techsquid-extrusions",
-   "name": "Extrusions",
-   "description": "MISUMI 5 series T-slot and OpenBuilds V-slot rails, with slot nuts. Place fixed-length components on points, or build independent rails along straight sketch lines.",
-   "note": null,
-   "version": "0.2.0",
-   "entries": [
-    "Extrusion",
-    "Slot nut"
-   ],
-   "commands": 32,
-   "permissions": [],
-   "topics": [],
-   "stars": 1,
-   "license": "MIT",
-   "updated": "2026-11-16T04:23:44Z",
-   "created": "2026-11-14T16:04:12Z",
-   "release": {
-    "tag": "v0.2.0",
-    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
-    "date": "2026-11-15T23:31:04Z",
-    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
-   },
-   "downloads": 32,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-extrusions/rails.png",
-   "has_topic": false,
-   "slug": "techsquid-extrusions"
   },
   {
    "repo": "tharje/filament-swatch-solidcraft",
@@ -371,7 +507,7 @@
     "date": "2026-11-16T08:44:57Z",
     "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.2.0/filament-swatch-0.2.0.zip"
    },
-   "downloads": 11,
+   "downloads": 19,
    "image": "https://raw.githubusercontent.com/tharje/filament-swatch-solidcraft/main/docs/images/swatch.png",
    "has_topic": true,
    "slug": "filament-swatch"
@@ -402,7 +538,7 @@
     "date": "2026-11-14T09:09:32Z",
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
    },
-   "downloads": 37,
+   "downloads": 44,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "slug": "gear-generator"
@@ -437,68 +573,6 @@
    "slug": "solidcraft-gridfinity-generator"
   },
   {
-   "repo": "TechSquidTV/SolidCraft-Plugins",
-   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-inserts",
-   "owner": "TechSquidTV",
-   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
-   "id": "techsquid-inserts",
-   "name": "Heat-set inserts",
-   "description": "Based on CNC Kitchen's heat-set inserts. Select sketch points or circles: each gets the hole for an insert, and the insert.",
-   "note": null,
-   "version": "0.2.0",
-   "entries": [
-    "Heat-set insert"
-   ],
-   "commands": 20,
-   "permissions": [],
-   "topics": [],
-   "stars": 1,
-   "license": "MIT",
-   "updated": "2026-11-16T04:23:44Z",
-   "created": "2026-11-14T16:04:12Z",
-   "release": {
-    "tag": "v0.2.0",
-    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
-    "date": "2026-11-15T23:31:04Z",
-    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-inserts-0.2.0.zip"
-   },
-   "downloads": 27,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-inserts/insert.png",
-   "has_topic": false,
-   "slug": "techsquid-inserts"
-  },
-  {
-   "repo": "TechSquidTV/SolidCraft-Plugins",
-   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-nuts",
-   "owner": "TechSquidTV",
-   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
-   "id": "techsquid-nuts",
-   "name": "Hex nuts",
-   "description": "Based on ISO 4032. Select sketch points or circles: each gets a nut, and its pocket if you want one. With nothing selected, one nut sits on the origin.",
-   "note": null,
-   "version": "0.2.0",
-   "entries": [
-    "Hex nut"
-   ],
-   "commands": 32,
-   "permissions": [],
-   "topics": [],
-   "stars": 1,
-   "license": "MIT",
-   "updated": "2026-11-16T04:23:44Z",
-   "created": "2026-11-14T16:04:12Z",
-   "release": {
-    "tag": "v0.2.0",
-    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
-    "date": "2026-11-15T23:31:04Z",
-    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip"
-   },
-   "downloads": 28,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-nuts/nut.png",
-   "has_topic": false,
-   "slug": "techsquid-nuts"
-  },
-  {
    "repo": "Xusr404/solidcraft-honeycomb-plugin",
    "url": "https://github.com/Xusr404/solidcraft-honeycomb-plugin",
    "owner": "Xusr404",
@@ -524,7 +598,7 @@
     "date": "2026-11-15T09:02:24Z",
     "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip"
    },
-   "downloads": 20,
+   "downloads": 33,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
    "slug": "solidcraft-honeycomb"
@@ -562,7 +636,7 @@
     "date": "2026-11-14T01:10:07Z",
     "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
    },
-   "downloads": 22,
+   "downloads": 37,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "slug": "mesh-solidify"
@@ -606,41 +680,10 @@
     "date": "2026-11-16T08:44:51Z",
     "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.2.0/opengrid-0.2.0.zip"
    },
-   "downloads": 12,
+   "downloads": 18,
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
    "slug": "opengrid"
-  },
-  {
-   "repo": "TechSquidTV/SolidCraft-Plugins",
-   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-screws",
-   "owner": "TechSquidTV",
-   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
-   "id": "techsquid-screws",
-   "name": "Screws",
-   "description": "Based on the ISO metric screw standards. Select sketch points or circles: each gets a screw, and its hole if you want one. With nothing selected, one screw sits on the origin.",
-   "note": null,
-   "version": "0.2.0",
-   "entries": [
-    "Screw"
-   ],
-   "commands": 35,
-   "permissions": [],
-   "topics": [],
-   "stars": 1,
-   "license": "MIT",
-   "updated": "2026-11-16T04:23:44Z",
-   "created": "2026-11-14T16:04:12Z",
-   "release": {
-    "tag": "v0.2.0",
-    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
-    "date": "2026-11-15T23:31:04Z",
-    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip"
-   },
-   "downloads": 27,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-screws/screws.png",
-   "has_topic": false,
-   "slug": "techsquid-screws"
   },
   {
    "repo": "Stigern/SolidThreadsPlugin",
@@ -668,53 +711,10 @@
     "date": "2026-10-25T11:10:49Z",
     "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
    },
-   "downloads": 28,
+   "downloads": 43,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "slug": "thread-generator"
-  },
-  {
-   "repo": "WilliamHJKL/solidcraft-wood-joinery",
-   "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery",
-   "owner": "WilliamHJKL",
-   "avatar": "https://avatars.githubusercontent.com/u/19475051?v=4",
-   "id": "wood-joinery",
-   "name": "Wood joinery",
-   "description": "Woodworking joints between boards: mortise and tenon, grooves, half laps, dowels, box joints, loose tenons, housings, miters, tongue and groove, scarfs, dovetails, screws and biscuits.",
-   "note": null,
-   "version": "0.8.0",
-   "entries": [
-    "Mortise and tenon",
-    "Groove",
-    "Half lap",
-    "Dowels",
-    "Box joint",
-    "Loose tenon",
-    "Housing",
-    "Miter",
-    "Tongue and groove",
-    "Scarf joint",
-    "Dovetails",
-    "Screws",
-    "Biscuits"
-   ],
-   "commands": 7,
-   "permissions": [],
-   "topics": [],
-   "stars": 1,
-   "license": "Apache-2.0",
-   "updated": "2026-11-16T07:18:33Z",
-   "created": "2026-11-14T21:51:21Z",
-   "release": {
-    "tag": "v0.8.0",
-    "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.8.0",
-    "date": "2026-11-16T07:18:33Z",
-    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.8.0/wood-joinery-fr.zip"
-   },
-   "downloads": 37,
-   "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
-   "has_topic": false,
-   "slug": "wood-joinery"
   },
   {
    "repo": "645DF/MakeOrbit-SolidCraft",
@@ -746,7 +746,7 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip"
    },
-   "downloads": 3,
+   "downloads": 5,
    "image": null,
    "has_topic": false,
    "slug": "makeorbit-cnc-studio"
@@ -781,7 +781,7 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-0.2.0.zip"
    },
-   "downloads": 6,
+   "downloads": 10,
    "image": null,
    "has_topic": false,
    "slug": "makeorbit"
@@ -844,7 +844,7 @@
     "date": "2026-11-13T06:32:36Z",
     "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
    },
-   "downloads": 28,
+   "downloads": 31,
    "image": null,
    "has_topic": false,
    "slug": "solidcraft-gridfinity"
