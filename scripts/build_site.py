@@ -16,11 +16,11 @@ e = html.escape
 
 def slugs(plugins):
     """A short, stable address per plugin: its manifest id, with the owner added when two collide."""
-    seen = {}
+    seen = set()
     for p in plugins:
         base = re.sub(r"[^a-z0-9]+", "-", (p.get("id") or p["repo"].split("/")[1]).lower()).strip("-")
-        slug = base if base not in seen.values() else f"{base}-{p['owner'].lower()}"
-        seen[p["repo"]] = slug
+        slug = base if base not in seen else f"{base}-{p['owner'].lower()}"
+        seen.add(slug)
         p["slug"] = slug
 
 

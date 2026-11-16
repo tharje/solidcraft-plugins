@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T06:02:57Z",
+ "generated": "2026-11-16T06:21:11Z",
  "plugins": [
   {
    "repo": "pawelcel/EasyPDM",
@@ -314,6 +314,37 @@
    "slug": "solidcraft-aprilcube"
   },
   {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-extrusions",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-extrusions",
+   "name": "Extrusions",
+   "description": "MISUMI 5 series T-slot and OpenBuilds V-slot rails, with slot nuts. Place fixed-length components on points, or build independent rails along straight sketch lines.",
+   "version": "0.2.0",
+   "entries": [
+    "Extrusion",
+    "Slot nut"
+   ],
+   "commands": 32,
+   "permissions": [],
+   "topics": [],
+   "stars": 1,
+   "license": "MIT",
+   "updated": "2026-11-16T04:23:44Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
+   },
+   "downloads": 24,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-extrusions/rails.png",
+   "has_topic": false,
+   "slug": "techsquid-extrusions"
+  },
+  {
    "repo": "tharje/filament-swatch-solidcraft",
    "url": "https://github.com/tharje/filament-swatch-solidcraft",
    "owner": "tharje",
@@ -380,6 +411,66 @@
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-gridfinity-generator/main/docs/gridfinity-hollow-bin.png",
    "has_topic": false,
    "slug": "solidcraft-gridfinity-generator"
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-inserts",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-inserts",
+   "name": "Heat-set inserts",
+   "description": "Based on CNC Kitchen's heat-set inserts. Select sketch points or circles: each gets the hole for an insert, and the insert.",
+   "version": "0.2.0",
+   "entries": [
+    "Heat-set insert"
+   ],
+   "commands": 20,
+   "permissions": [],
+   "topics": [],
+   "stars": 1,
+   "license": "MIT",
+   "updated": "2026-11-16T04:23:44Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-inserts-0.2.0.zip"
+   },
+   "downloads": 19,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-inserts/insert.png",
+   "has_topic": false,
+   "slug": "techsquid-inserts"
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-nuts",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-nuts",
+   "name": "Hex nuts",
+   "description": "Based on ISO 4032. Select sketch points or circles: each gets a nut, and its pocket if you want one. With nothing selected, one nut sits on the origin.",
+   "version": "0.2.0",
+   "entries": [
+    "Hex nut"
+   ],
+   "commands": 32,
+   "permissions": [],
+   "topics": [],
+   "stars": 1,
+   "license": "MIT",
+   "updated": "2026-11-16T04:23:44Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip"
+   },
+   "downloads": 20,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-nuts/nut.png",
+   "has_topic": false,
+   "slug": "techsquid-nuts"
   },
   {
    "repo": "Xusr404/solidcraft-honeycomb-plugin",
@@ -490,6 +581,36 @@
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
    "slug": "opengrid"
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-screws",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-screws",
+   "name": "Screws",
+   "description": "Based on the ISO metric screw standards. Select sketch points or circles: each gets a screw, and its hole if you want one. With nothing selected, one screw sits on the origin.",
+   "version": "0.2.0",
+   "entries": [
+    "Screw"
+   ],
+   "commands": 35,
+   "permissions": [],
+   "topics": [],
+   "stars": 1,
+   "license": "MIT",
+   "updated": "2026-11-16T04:23:44Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip"
+   },
+   "downloads": 20,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-screws/screws.png",
+   "has_topic": false,
+   "slug": "techsquid-screws"
   },
   {
    "repo": "Stigern/SolidThreadsPlugin",

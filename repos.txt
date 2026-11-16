@@ -9,6 +9,7 @@ pawelcel/EasyPDM
 pro-d-e-v/solidcraft-plugin-gear
 Stigern/SolidThreadsPlugin
 takuto-NA/solidcraft-aprilcube
+TechSquidTV/SolidCraft-Plugins
 tharje/filament-swatch-solidcraft
 tharje/gridfinity-solidcraft
 tharje/opengrid-solidcraft
