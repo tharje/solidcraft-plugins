@@ -41,7 +41,8 @@ def card(p, prefix=""):
       <h3><a class="name" href="{page}">{e(p["name"])}</a> <span class="ver">{"v" + e(p["version"]) if p.get("version") else ""}</span></h3>
       <a class="by" href="https://github.com/{e(p["owner"])}" target="_blank" rel="noopener"><img src="{e(p["avatar"])}&amp;s=40" alt="" loading="lazy"><span>{e(p["owner"])}</span></a>
       <p class="desc">{e(p["description"])}</p>
-      <p class="entries">{entries}</p>
+      <p class="entries">{entries}</p>{f"""
+      <p class="note">{e(p["note"])}</p>""" if p.get("note") else ""}
       <div class="chips">{chips}</div>
       <div class="meta">
         <span class="stars" title="GitHub stars">★ {p["stars"]}</span>
@@ -157,7 +158,8 @@ def plugin_page(p, others):
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › {e(p["name"])}</p>
   <h1>{e(p["name"])} <span class="ver">{"v" + e(p["version"]) if p.get("version") else ""}</span></h1>
-  <p class="lead">{e(p["description"])}</p>
+  <p class="lead">{e(p["description"])}</p>{f"""
+  <p class="note">{e(p["note"])}</p>""" if p.get("note") else ""}
   <div class="actions">
     {download}
     <a class="btn gh" href="{e(p["url"])}">Source on GitHub</a>

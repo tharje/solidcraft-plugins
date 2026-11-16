@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T06:36:02Z",
+ "generated": "2026-11-16T07:02:20Z",
  "plugins": [
   {
    "repo": "pawelcel/EasyPDM",
@@ -9,6 +9,7 @@
    "id": "easypdm",
    "name": "EasyPDM",
    "description": "Upload designs to an EasyPDM server and download them, through the EasyPDM companion program.",
+   "note": null,
    "version": "0.9.0",
    "entries": [
     "upload",
@@ -64,6 +65,7 @@
    "id": "solidcraft-gears",
    "name": "Gears",
    "description": "Involute spur gear generator: module, teeth, pressure angle, face width, bore and profile shift. Builds an editable sketch and features.",
+   "note": null,
    "version": "0.1.1",
    "entries": [
     "Plugins"
@@ -84,7 +86,7 @@
     "date": "2026-11-12T22:08:37Z",
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
    },
-   "downloads": 1335,
+   "downloads": 1338,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "slug": "solidcraft-gears"
@@ -97,6 +99,7 @@
    "id": "gridfinity",
    "name": "Gridfinity",
    "description": "Gridfinity bins (hollow or solid for custom cutouts), baseplates and drawer baseplates split to fit your printer, on a full, half or custom grid.",
+   "note": null,
    "version": "1.0.0",
    "entries": [
     "Gridfinity bin",
@@ -130,7 +133,7 @@
     "date": "2026-11-15T15:14:17Z",
     "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.0.0/gridfinity-1.0.0.zip"
    },
-   "downloads": 205,
+   "downloads": 207,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "slug": "gridfinity"
@@ -143,6 +146,7 @@
    "id": "woodwork",
    "name": "Woodwork",
    "description": "Cabinets and furniture in sheet goods: carcass generator and cut list.",
+   "note": null,
    "version": "0.1.5",
    "entries": [
     "Cabinet",
@@ -167,7 +171,7 @@
     "date": "2026-11-15T22:05:08Z",
     "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.5/woodwork-0.1.5.zip"
    },
-   "downloads": 63,
+   "downloads": 64,
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/kitchen.png",
    "has_topic": false,
    "slug": "woodwork"
@@ -180,6 +184,7 @@
    "id": "solidinserts",
    "name": "SolidInserts",
    "description": "Create seats for heat-set threaded inserts at the circular rims of existing holes.",
+   "note": null,
    "version": "1.1.0",
    "entries": [
     "Insert Seats"
@@ -204,7 +209,7 @@
     "date": "2026-11-15T02:37:10Z",
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.1.0/solidinserts-1.1.0.zip"
    },
-   "downloads": 63,
+   "downloads": 65,
    "image": "https://raw.githubusercontent.com/NoOneExceptEnderk/SolidInserts/main/assets/screenshots/insert-seat-preview.png",
    "has_topic": false,
    "slug": "solidinserts"
@@ -217,6 +222,7 @@
    "id": "iso-sheet",
    "name": "Isometric Manufacture Sheet",
    "description": "Projects every body of the open design to a true isometric, removes hidden lines with a depth buffer, and writes a dimensioned ANSI B manufacture sheet as SVG: title block, bill of materials, parameter table, notes and overall dimensions.",
+   "note": null,
    "version": "1.1.0",
    "entries": [
     "Isometric Sheet"
@@ -239,7 +245,7 @@
     "date": "2026-11-15T01:06:37Z",
     "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
    },
-   "downloads": 27,
+   "downloads": 28,
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
    "slug": "iso-sheet"
@@ -252,6 +258,7 @@
    "id": "solidcraft-3d-printing-holes",
    "name": "3D Printing Holes",
    "description": "Holes made for 3D printing. Teardrop: select sketch circles, then run it; each gets a small tip a few percent of the radius above it (it follows the radius), so the top of a horizontal hole does not sag.",
+   "note": null,
    "version": "0.1.0",
    "entries": [
     "Teardrop"
@@ -271,7 +278,7 @@
     "date": "2026-11-15T20:38:17Z",
     "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.1.0/solidcraft-3d-printing-holes.zip"
    },
-   "downloads": 11,
+   "downloads": 12,
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
    "slug": "solidcraft-3d-printing-holes"
@@ -284,6 +291,7 @@
    "id": "solidcraft-aprilcube",
    "name": "AprilCube",
    "description": "Generate printable cuboids and voxel targets with AprilTag or ArUco markers, edge chamfers, inlay recess and detector JSON.",
+   "note": null,
    "version": "0.4.0",
    "entries": [
     "Generate targets",
@@ -308,7 +316,7 @@
     "date": "2026-11-14T05:05:08Z",
     "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip"
    },
-   "downloads": 9,
+   "downloads": 10,
    "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
    "has_topic": true,
    "slug": "solidcraft-aprilcube"
@@ -321,6 +329,7 @@
    "id": "techsquid-extrusions",
    "name": "Extrusions",
    "description": "MISUMI 5 series T-slot and OpenBuilds V-slot rails, with slot nuts. Place fixed-length components on points, or build independent rails along straight sketch lines.",
+   "note": null,
    "version": "0.2.0",
    "entries": [
     "Extrusion",
@@ -339,7 +348,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
    },
-   "downloads": 25,
+   "downloads": 27,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-extrusions/rails.png",
    "has_topic": false,
    "slug": "techsquid-extrusions"
@@ -352,6 +361,7 @@
    "id": "filament-swatch",
    "name": "Filament Swatch",
    "description": "Filament sample tiles: brand, material, colour and temperatures in text, and thin steps that show how see-through the filament is.",
+   "note": null,
    "version": "0.1.0",
    "entries": [
     "Filament swatch"
@@ -379,10 +389,41 @@
     "date": "2026-11-14T21:46:13Z",
     "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.1.0/filament-swatch-0.1.0.zip"
    },
-   "downloads": 9,
+   "downloads": 10,
    "image": "https://raw.githubusercontent.com/tharje/filament-swatch-solidcraft/main/docs/images/swatch.png",
    "has_topic": true,
    "slug": "filament-swatch"
+  },
+  {
+   "repo": "pro-d-e-v/solidcraft-plugin-gear",
+   "url": "https://github.com/pro-d-e-v/solidcraft-plugin-gear",
+   "owner": "pro-d-e-v",
+   "avatar": "https://avatars.githubusercontent.com/u/98588132?v=4",
+   "id": "gear-generator",
+   "name": "Gear generator",
+   "description": "A SolidCraft plugin: parametric involute spur gear generator (wasm component per RFC 0002)",
+   "note": "The plugin's menu and form are in Russian (Генератор шестерён).",
+   "version": "0.4.0",
+   "entries": [
+    "Создать шестерню…"
+   ],
+   "commands": 5,
+   "permissions": [],
+   "topics": [],
+   "stars": 1,
+   "license": "MIT",
+   "updated": "2026-11-14T09:18:33Z",
+   "created": "2026-11-12T07:41:49Z",
+   "release": {
+    "tag": "v0.4.0",
+    "url": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/tag/v0.4.0",
+    "date": "2026-11-14T09:09:32Z",
+    "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
+   },
+   "downloads": 32,
+   "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
+   "has_topic": false,
+   "slug": "gear-generator"
   },
   {
    "repo": "Xusr404/solidcraft-gridfinity-generator",
@@ -392,6 +433,7 @@
    "id": "solidcraft-gridfinity-generator",
    "name": "Gridfinity Builder",
    "description": "Generate editable Gridfinity bins, compartments, stacking lips and drawer baseplates.",
+   "note": null,
    "version": "0.1.0",
    "entries": [
     "Gridfinity Hollow Bin",
@@ -420,6 +462,7 @@
    "id": "techsquid-inserts",
    "name": "Heat-set inserts",
    "description": "Based on CNC Kitchen's heat-set inserts. Select sketch points or circles: each gets the hole for an insert, and the insert.",
+   "note": null,
    "version": "0.2.0",
    "entries": [
     "Heat-set insert"
@@ -437,7 +480,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-inserts-0.2.0.zip"
    },
-   "downloads": 20,
+   "downloads": 23,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-inserts/insert.png",
    "has_topic": false,
    "slug": "techsquid-inserts"
@@ -450,6 +493,7 @@
    "id": "techsquid-nuts",
    "name": "Hex nuts",
    "description": "Based on ISO 4032. Select sketch points or circles: each gets a nut, and its pocket if you want one. With nothing selected, one nut sits on the origin.",
+   "note": null,
    "version": "0.2.0",
    "entries": [
     "Hex nut"
@@ -467,7 +511,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip"
    },
-   "downloads": 21,
+   "downloads": 24,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-nuts/nut.png",
    "has_topic": false,
    "slug": "techsquid-nuts"
@@ -480,6 +524,7 @@
    "id": "solidcraft-honeycomb",
    "name": "Honeycomb & Hexagon Generator",
    "description": "Fill up to 250 cells across selected sketch regions. End the active tool with Esc and Shift-click regions before opening Honeycomb.",
+   "note": null,
    "version": "0.1.0",
    "entries": [
     "Honeycomb"
@@ -497,7 +542,7 @@
     "date": "2026-11-15T09:02:24Z",
     "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip"
    },
-   "downloads": 16,
+   "downloads": 17,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
    "slug": "solidcraft-honeycomb"
@@ -510,6 +555,7 @@
    "id": "mesh-solidify",
    "name": "Mesh Solidify",
    "description": "Rebuild a broken mesh body (holes, open shells, overlaps) as one watertight, printable solid. Adds the result as a new body.",
+   "note": null,
    "version": "0.2.0",
    "entries": [
     "Solidify Mesh…",
@@ -534,7 +580,7 @@
     "date": "2026-11-14T01:10:07Z",
     "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
    },
-   "downloads": 18,
+   "downloads": 19,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "slug": "mesh-solidify"
@@ -547,6 +593,7 @@
    "id": "opengrid",
    "name": "openGrid",
    "description": "openGrid wall and desk boards on the 28 mm grid, Full or Lite, with screw holes and cut corners, as editable sketches and features.",
+   "note": null,
    "version": "0.1.0",
    "entries": [
     "openGrid board"
@@ -577,7 +624,7 @@
     "date": "2026-11-15T17:37:04Z",
     "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.1.0/opengrid-0.1.0.zip"
    },
-   "downloads": 10,
+   "downloads": 11,
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
    "slug": "opengrid"
@@ -590,6 +637,7 @@
    "id": "techsquid-screws",
    "name": "Screws",
    "description": "Based on the ISO metric screw standards. Select sketch points or circles: each gets a screw, and its hole if you want one. With nothing selected, one screw sits on the origin.",
+   "note": null,
    "version": "0.2.0",
    "entries": [
     "Screw"
@@ -607,7 +655,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip"
    },
-   "downloads": 21,
+   "downloads": 24,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-screws/screws.png",
    "has_topic": false,
    "slug": "techsquid-screws"
@@ -620,6 +668,7 @@
    "id": "thread-generator",
    "name": "Thread Generator",
    "description": "Cut a 3D-printable thread into a shaft or hole. Select its round face in the design, then Run. Hover a field for what it does. The thread is an editable feature in the timeline; one Ctrl+Z takes the whole run back.",
+   "note": null,
    "version": "2.0.6",
    "entries": [
     "Add thread"
@@ -637,7 +686,7 @@
     "date": "2026-10-25T11:10:49Z",
     "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
    },
-   "downloads": 24,
+   "downloads": 25,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "slug": "thread-generator"
@@ -650,6 +699,7 @@
    "id": "wood-joinery",
    "name": "Wood joinery",
    "description": "Woodworking joints between boards: mortise and tenon, grooves, half laps, dowels, box joints, loose tenons, housings, miters, tongue and groove, scarfs, dovetails and screws.",
+   "note": null,
    "version": "0.6.0",
    "entries": [
     "Mortise and tenon",
@@ -678,40 +728,10 @@
     "date": "2026-11-15T23:13:09Z",
     "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.6.0/wood-joinery-fr.zip"
    },
-   "downloads": 25,
+   "downloads": 26,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
    "has_topic": false,
    "slug": "wood-joinery"
-  },
-  {
-   "repo": "pro-d-e-v/solidcraft-plugin-gear",
-   "url": "https://github.com/pro-d-e-v/solidcraft-plugin-gear",
-   "owner": "pro-d-e-v",
-   "avatar": "https://avatars.githubusercontent.com/u/98588132?v=4",
-   "id": "gear-generator",
-   "name": "Генератор шестерён",
-   "description": "Создаёт эвольвентную цилиндрическую шестерню в начале координат: обычный эскиз и выдавливание, дизайн открывается без плагина.",
-   "version": "0.4.0",
-   "entries": [
-    "Создать шестерню…"
-   ],
-   "commands": 5,
-   "permissions": [],
-   "topics": [],
-   "stars": 1,
-   "license": "MIT",
-   "updated": "2026-11-14T09:18:33Z",
-   "created": "2026-11-12T07:41:49Z",
-   "release": {
-    "tag": "v0.4.0",
-    "url": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/tag/v0.4.0",
-    "date": "2026-11-14T09:09:32Z",
-    "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
-   },
-   "downloads": 31,
-   "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
-   "has_topic": false,
-   "slug": "gear-generator"
   },
   {
    "repo": "645DF/MakeOrbit-SolidCraft",
@@ -721,6 +741,7 @@
    "id": "makeorbit-cnc-studio",
    "name": "An MakeOrbit CNC Studio senden",
    "description": "Konstruktion als STEP an MakeOrbit CNC Studio übergeben (Übernahme dort mit Nachfrage) · Send the design as STEP to MakeOrbit CNC Studio",
+   "note": null,
    "version": "0.2.0",
    "entries": [
     "an-cnc-studio"
@@ -742,7 +763,7 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip"
    },
-   "downloads": 2,
+   "downloads": 3,
    "image": null,
    "has_topic": false,
    "slug": "makeorbit-cnc-studio"
@@ -755,6 +776,7 @@
    "id": "makeorbit",
    "name": "An MakeOrbit senden",
    "description": "Konstruktion als STEP/STL/3MF mit Quellstand an MakeOrbit übergeben (Archivierung dort mit Nachfrage) · Send STEP/STL/3MF with the design to MakeOrbit",
+   "note": null,
    "version": "0.2.0",
    "entries": [
     "an-makeorbit"
@@ -776,7 +798,7 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-0.2.0.zip"
    },
-   "downloads": 4,
+   "downloads": 6,
    "image": null,
    "has_topic": false,
    "slug": "makeorbit"
@@ -789,6 +811,7 @@
    "id": "solidcraft-gridfinity",
    "name": "Gridfinity",
    "description": "Gridfinity bins and baseplates from a grid size: feet, stacking lip, magnet holes, dividers, scoop and label tab, as editable sketches and extrudes.",
+   "note": null,
    "version": "0.1.0",
    "entries": [
     "Bin",
@@ -811,7 +834,7 @@
     "date": "2026-11-13T06:32:36Z",
     "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
    },
-   "downloads": 25,
+   "downloads": 26,
    "image": null,
    "has_topic": false,
    "slug": "solidcraft-gridfinity"
@@ -824,6 +847,7 @@
    "id": "helical-sketch",
    "name": "Helical Sketch Generator",
    "description": "Generate cylindrical, conical, tapered, and variable-pitch 3D helical sketches with axis/point/cylinder placement and optional profile sweep.",
+   "note": null,
    "version": "0.2.0",
    "entries": [
     "Create Helix...",

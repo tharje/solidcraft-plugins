@@ -49,6 +49,12 @@ function card(p) {
   by.querySelector("span").textContent = p.owner;
   t.querySelector(".desc").textContent = p.description;
   t.querySelector(".entries").textContent = p.entries && p.entries.length ? "Menu: " + p.entries.join(" · ") : "";
+  if (p.note) {
+    const n = document.createElement("p");
+    n.className = "note";
+    n.textContent = p.note;
+    t.querySelector(".entries").after(n);
+  }
   const chips = t.querySelector(".chips");
   for (const x of (p.topics || []).slice(0, 5)) {
     const s = document.createElement("span");

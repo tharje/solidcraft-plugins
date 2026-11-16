@@ -146,6 +146,39 @@ def entries(m):
     return out
 
 
+def latin(text):
+    """Mostly Latin letters (English and most European languages)?"""
+    letters = [c for c in text or "" if c.isalpha()]
+    return not letters or sum(c < "\u0250" for c in letters) / len(letters) > 0.5
+
+
+def language(text):
+    """The language a non-Latin manifest is written in, as well as one can tell."""
+    if re.search(r"[\u0400-\u04ff]", text):
+        return "Russian" if re.search(r"[ыэёЫЭЁ]", text) else "Cyrillic"
+    if re.search(r"[\u3040-\u30ff]", text):
+        return "Japanese"
+    if re.search(r"[\u4e00-\u9fff]", text):
+        return "Chinese"
+    if re.search(r"[\uac00-\ud7af]", text):
+        return "Korean"
+    return None
+
+
+def english(m, r):
+    """Name, description and a note for the card. A manifest in another script keeps its own words in
+    the plugin, but the card is in English when the repository's description is."""
+    name = m.get("name") or r["name"]
+    desc = m.get("description") or r.get("description") or ""
+    if latin(name + desc) or not r.get("description") or not latin(r["description"]):
+        return name, desc, None
+    words = [w for w in re.split(r"[-_ ]+", m.get("id") or r["name"]) if w.lower() not in ("solidcraft", "plugin", "plugins")]
+    english_name = " ".join(words).capitalize() if words and latin(" ".join(words)) else r["name"]
+    lang = language(name + desc)
+    note = f"The plugin's menu and form are in {lang} ({name})." if lang else f"The plugin's menu and form are not in English ({name})."
+    return english_name, r["description"], note
+
+
 def plugins(repo):
     """The repository's plugins, as cards. A collection of several gets a card per plugin, each with
     its own folder, zip (the release asset named after its id) and picture."""
@@ -177,8 +210,9 @@ def plugins(repo):
             "owner": r["owner"]["login"],
             "avatar": r["owner"]["avatar_url"],
             "id": m.get("id"),
-            "name": m.get("name") or r["name"],
-            "description": m.get("description") or r.get("description") or "",
+            "name": english(m, r)[0],
+            "description": english(m, r)[1],
+            "note": english(m, r)[2],
             "version": m.get("version"),
             "entries": entries(m),
             "commands": len(m.get("runtime", {}).get("commands", [])),
