@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T21:05:12Z",
+ "generated": "2026-11-16T06:02:57Z",
  "plugins": [
   {
    "repo": "pawelcel/EasyPDM",
@@ -41,9 +41,9 @@
     "solidworks",
     "solidworks-macro"
    ],
-   "stars": 20,
+   "stars": 23,
    "license": "MIT",
-   "updated": "2026-11-15T17:21:11Z",
+   "updated": "2026-11-15T23:30:49Z",
    "created": "2026-08-04T08:53:34Z",
    "release": {
     "tag": "v0.8.2",
@@ -51,7 +51,7 @@
     "date": "2026-11-15T12:51:43Z",
     "zip": null
    },
-   "downloads": 348,
+   "downloads": 368,
    "image": null,
    "has_topic": false,
    "slug": "easypdm"
@@ -84,7 +84,7 @@
     "date": "2026-11-12T22:08:37Z",
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
    },
-   "downloads": 1289,
+   "downloads": 1332,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "slug": "solidcraft-gears"
@@ -120,7 +120,7 @@
     "tool-holder",
     "workshop"
    ],
-   "stars": 15,
+   "stars": 16,
    "license": "MIT",
    "updated": "2026-11-15T15:14:16Z",
    "created": "2026-11-13T11:28:54Z",
@@ -130,7 +130,7 @@
     "date": "2026-11-15T15:14:17Z",
     "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.0.0/gridfinity-1.0.0.zip"
    },
-   "downloads": 188,
+   "downloads": 202,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "slug": "gridfinity"
@@ -143,7 +143,7 @@
    "id": "woodwork",
    "name": "Woodwork",
    "description": "Cabinets and furniture in sheet goods: carcass generator and cut list.",
-   "version": "0.1.4",
+   "version": "0.1.5",
    "entries": [
     "Cabinet",
     "Corner cabinet",
@@ -151,23 +151,23 @@
     "Material",
     "Cut list"
    ],
-   "commands": 18,
+   "commands": 19,
    "permissions": [],
    "topics": [
     "cad",
     "woodworking"
    ],
-   "stars": 14,
+   "stars": 15,
    "license": "MIT",
-   "updated": "2026-11-14T22:48:53Z",
+   "updated": "2026-11-15T22:02:56Z",
    "created": "2026-11-14T13:53:29Z",
    "release": {
-    "tag": "v0.1.4",
-    "url": "https://github.com/TomasDJo/solidcraft-woodwork/releases/tag/v0.1.4",
-    "date": "2026-11-14T22:44:30Z",
-    "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.4/woodwork-0.1.4.zip"
+    "tag": "v0.1.5",
+    "url": "https://github.com/TomasDJo/solidcraft-woodwork/releases/tag/v0.1.5",
+    "date": "2026-11-15T22:05:08Z",
+    "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.5/woodwork-0.1.5.zip"
    },
-   "downloads": 45,
+   "downloads": 60,
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/kitchen.png",
    "has_topic": false,
    "slug": "woodwork"
@@ -194,7 +194,7 @@
     "parametric",
     "threaded-inserts"
    ],
-   "stars": 6,
+   "stars": 7,
    "license": "MIT",
    "updated": "2026-11-15T02:37:09Z",
    "created": "2026-11-13T19:53:48Z",
@@ -204,10 +204,45 @@
     "date": "2026-11-15T02:37:10Z",
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.1.0/solidinserts-1.1.0.zip"
    },
-   "downloads": 48,
+   "downloads": 61,
    "image": "https://raw.githubusercontent.com/NoOneExceptEnderk/SolidInserts/main/assets/screenshots/insert-seat-preview.png",
    "has_topic": false,
    "slug": "solidinserts"
+  },
+  {
+   "repo": "jcar01/solidcraft-plugin-iso-sheet",
+   "url": "https://github.com/jcar01/solidcraft-plugin-iso-sheet",
+   "owner": "jcar01",
+   "avatar": "https://avatars.githubusercontent.com/u/10353238?v=4",
+   "id": "iso-sheet",
+   "name": "Isometric Manufacture Sheet",
+   "description": "Projects every body of the open design to a true isometric, removes hidden lines with a depth buffer, and writes a dimensioned ANSI B manufacture sheet as SVG: title block, bill of materials, parameter table, notes and overall dimensions.",
+   "version": "1.1.0",
+   "entries": [
+    "Isometric Sheet"
+   ],
+   "commands": 3,
+   "permissions": [
+    "clock",
+    "command_groups",
+    "files",
+    "net"
+   ],
+   "topics": [],
+   "stars": 2,
+   "license": "Apache-2.0",
+   "updated": "2026-11-15T01:06:37Z",
+   "created": "2026-11-14T16:57:51Z",
+   "release": {
+    "tag": "v1.1.0",
+    "url": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/tag/v1.1.0",
+    "date": "2026-11-15T01:06:37Z",
+    "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
+   },
+   "downloads": 23,
+   "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
+   "has_topic": false,
+   "slug": "iso-sheet"
   },
   {
    "repo": "SB97/solidcraft-3d-printing-holes",
@@ -226,7 +261,7 @@
    "topics": [
     "3d-printing"
    ],
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "updated": "2026-11-15T20:37:12Z",
    "created": "2026-11-15T20:19:06Z",
@@ -236,7 +271,7 @@
     "date": "2026-11-15T20:38:17Z",
     "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.1.0/solidcraft-3d-printing-holes.zip"
    },
-   "downloads": 2,
+   "downloads": 9,
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
    "slug": "solidcraft-3d-printing-holes"
@@ -263,7 +298,7 @@
     "aruco",
     "cad"
    ],
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "updated": "2026-11-14T05:03:32Z",
    "created": "2026-11-14T05:03:12Z",
@@ -273,7 +308,7 @@
     "date": "2026-11-14T05:05:08Z",
     "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip"
    },
-   "downloads": 7,
+   "downloads": 9,
    "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
    "has_topic": true,
    "slug": "solidcraft-aprilcube"
@@ -303,7 +338,7 @@
     "pla",
     "swatch"
    ],
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "updated": "2026-11-14T21:46:13Z",
    "created": "2026-11-14T21:45:57Z",
@@ -313,45 +348,10 @@
     "date": "2026-11-14T21:46:13Z",
     "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.1.0/filament-swatch-0.1.0.zip"
    },
-   "downloads": 5,
+   "downloads": 7,
    "image": "https://raw.githubusercontent.com/tharje/filament-swatch-solidcraft/main/docs/images/swatch.png",
    "has_topic": true,
    "slug": "filament-swatch"
-  },
-  {
-   "repo": "haashimrehan/solidcraft-gridfinity",
-   "url": "https://github.com/haashimrehan/solidcraft-gridfinity",
-   "owner": "haashimrehan",
-   "avatar": "https://avatars.githubusercontent.com/u/22567531?v=4",
-   "id": "solidcraft-gridfinity",
-   "name": "Gridfinity",
-   "description": "Gridfinity bins and baseplates from a grid size: feet, stacking lip, magnet holes, dividers, scoop and label tab, as editable sketches and extrudes.",
-   "version": "0.1.0",
-   "entries": [
-    "Bin",
-    "Baseplate"
-   ],
-   "commands": 11,
-   "permissions": [],
-   "topics": [
-    "3d-printing",
-    "cad",
-    "gridfinity"
-   ],
-   "stars": 0,
-   "license": "MIT",
-   "updated": "2026-11-13T06:32:36Z",
-   "created": "2026-11-13T06:32:22Z",
-   "release": {
-    "tag": "v0.1.0",
-    "url": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/tag/v0.1.0",
-    "date": "2026-11-13T06:32:36Z",
-    "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
-   },
-   "downloads": 21,
-   "image": null,
-   "has_topic": false,
-   "slug": "solidcraft-gridfinity"
   },
   {
    "repo": "Xusr404/solidcraft-gridfinity-generator",
@@ -371,7 +371,7 @@
    "commands": 5,
    "permissions": [],
    "topics": [],
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "updated": "2026-11-15T14:05:00Z",
    "created": "2026-11-15T14:04:01Z",
@@ -396,7 +396,7 @@
    "commands": 5,
    "permissions": [],
    "topics": [],
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "updated": "2026-11-15T09:01:36Z",
    "created": "2026-11-15T08:50:49Z",
@@ -406,45 +406,10 @@
     "date": "2026-11-15T09:02:24Z",
     "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip"
    },
-   "downloads": 7,
+   "downloads": 14,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
    "slug": "solidcraft-honeycomb"
-  },
-  {
-   "repo": "jcar01/solidcraft-plugin-iso-sheet",
-   "url": "https://github.com/jcar01/solidcraft-plugin-iso-sheet",
-   "owner": "jcar01",
-   "avatar": "https://avatars.githubusercontent.com/u/10353238?v=4",
-   "id": "iso-sheet",
-   "name": "Isometric Manufacture Sheet",
-   "description": "Projects every body of the open design to a true isometric, removes hidden lines with a depth buffer, and writes a dimensioned ANSI B manufacture sheet as SVG: title block, bill of materials, parameter table, notes and overall dimensions.",
-   "version": "1.1.0",
-   "entries": [
-    "Isometric Sheet"
-   ],
-   "commands": 3,
-   "permissions": [
-    "clock",
-    "command_groups",
-    "files",
-    "net"
-   ],
-   "topics": [],
-   "stars": 0,
-   "license": "Apache-2.0",
-   "updated": "2026-11-15T01:06:37Z",
-   "created": "2026-11-14T16:57:51Z",
-   "release": {
-    "tag": "v1.1.0",
-    "url": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/tag/v1.1.0",
-    "date": "2026-11-15T01:06:37Z",
-    "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
-   },
-   "downloads": 13,
-   "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
-   "has_topic": false,
-   "slug": "iso-sheet"
   },
   {
    "repo": "JakeMathews/mesh-solidify",
@@ -468,7 +433,7 @@
     "watertight",
     "winding-number"
    ],
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "updated": "2026-11-14T23:10:18Z",
    "created": "2026-11-12T01:17:09Z",
@@ -478,7 +443,7 @@
     "date": "2026-11-14T01:10:07Z",
     "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
    },
-   "downloads": 12,
+   "downloads": 16,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "slug": "mesh-solidify"
@@ -511,7 +476,7 @@
     "wall-mount",
     "wall-organizer"
    ],
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "updated": "2026-11-15T17:37:04Z",
    "created": "2026-11-15T17:36:53Z",
@@ -521,7 +486,7 @@
     "date": "2026-11-15T17:37:04Z",
     "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.1.0/opengrid-0.1.0.zip"
    },
-   "downloads": 5,
+   "downloads": 9,
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
    "slug": "opengrid"
@@ -541,7 +506,7 @@
    "commands": 8,
    "permissions": [],
    "topics": [],
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "updated": "2026-11-13T13:26:27Z",
    "created": "2026-10-25T08:36:13Z",
@@ -551,7 +516,7 @@
     "date": "2026-10-25T11:10:49Z",
     "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
    },
-   "downloads": 10,
+   "downloads": 22,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "slug": "thread-generator"
@@ -563,8 +528,8 @@
    "avatar": "https://avatars.githubusercontent.com/u/19475051?v=4",
    "id": "wood-joinery",
    "name": "Wood joinery",
-   "description": "Woodworking joints between boards: mortise and tenon, grooves, half laps, dowels, box joints, loose tenons, housings and miters.",
-   "version": "0.5.0",
+   "description": "Woodworking joints between boards: mortise and tenon, grooves, half laps, dowels, box joints, loose tenons, housings, miters, tongue and groove, scarfs, dovetails and screws.",
+   "version": "0.6.0",
    "entries": [
     "Mortise and tenon",
     "Groove",
@@ -573,22 +538,26 @@
     "Box joint",
     "Loose tenon",
     "Housing",
-    "Miter"
+    "Miter",
+    "Tongue and groove",
+    "Scarf joint",
+    "Dovetails",
+    "Screws"
    ],
-   "commands": 6,
+   "commands": 7,
    "permissions": [],
    "topics": [],
-   "stars": 0,
+   "stars": 1,
    "license": "Apache-2.0",
-   "updated": "2026-11-15T18:44:11Z",
+   "updated": "2026-11-15T23:13:09Z",
    "created": "2026-11-14T21:51:21Z",
    "release": {
-    "tag": "v0.5.0",
-    "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.5.0",
-    "date": "2026-11-15T18:44:12Z",
-    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.5.0/wood-joinery-fr.zip"
+    "tag": "v0.6.0",
+    "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.6.0",
+    "date": "2026-11-15T23:13:09Z",
+    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.6.0/wood-joinery-fr.zip"
    },
-   "downloads": 16,
+   "downloads": 23,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
    "has_topic": false,
    "slug": "wood-joinery"
@@ -608,7 +577,7 @@
    "commands": 5,
    "permissions": [],
    "topics": [],
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "updated": "2026-11-14T09:18:33Z",
    "created": "2026-11-12T07:41:49Z",
@@ -618,10 +587,45 @@
     "date": "2026-11-14T09:09:32Z",
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
    },
-   "downloads": 24,
+   "downloads": 28,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "slug": "gear-generator"
+  },
+  {
+   "repo": "haashimrehan/solidcraft-gridfinity",
+   "url": "https://github.com/haashimrehan/solidcraft-gridfinity",
+   "owner": "haashimrehan",
+   "avatar": "https://avatars.githubusercontent.com/u/22567531?v=4",
+   "id": "solidcraft-gridfinity",
+   "name": "Gridfinity",
+   "description": "Gridfinity bins and baseplates from a grid size: feet, stacking lip, magnet holes, dividers, scoop and label tab, as editable sketches and extrudes.",
+   "version": "0.1.0",
+   "entries": [
+    "Bin",
+    "Baseplate"
+   ],
+   "commands": 11,
+   "permissions": [],
+   "topics": [
+    "3d-printing",
+    "cad",
+    "gridfinity"
+   ],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-13T06:32:36Z",
+   "created": "2026-11-13T06:32:22Z",
+   "release": {
+    "tag": "v0.1.0",
+    "url": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/tag/v0.1.0",
+    "date": "2026-11-13T06:32:36Z",
+    "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
+   },
+   "downloads": 23,
+   "image": null,
+   "has_topic": false,
+   "slug": "solidcraft-gridfinity"
   }
  ]
 }
