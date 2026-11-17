@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T17:23:27Z",
+ "generated": "2026-11-17T00:32:54Z",
  "plugins": [
   {
    "repo": "pawelcel/EasyPDM",
@@ -42,7 +42,7 @@
     "solidworks",
     "solidworks-macro"
    ],
-   "stars": 27,
+   "stars": 29,
    "license": "MIT",
    "updated": "2026-11-16T16:17:20Z",
    "created": "2026-08-04T08:53:34Z",
@@ -52,7 +52,7 @@
     "date": "2026-11-16T16:21:17Z",
     "zip": "https://github.com/pawelcel/EasyPDM/releases/download/v0.9.0/EasyPDM_SolidCraft_Companion_linux-x64_v0.9.0.zip"
    },
-   "downloads": 401,
+   "downloads": 407,
    "image": null,
    "has_topic": false,
    "slug": "easypdm"
@@ -76,7 +76,7 @@
     "cad",
     "gears"
    ],
-   "stars": 20,
+   "stars": 22,
    "license": "MIT",
    "updated": "2026-11-12T22:08:00Z",
    "created": "2026-11-12T21:16:44Z",
@@ -86,7 +86,7 @@
     "date": "2026-11-12T22:08:37Z",
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
    },
-   "downloads": 1441,
+   "downloads": 1506,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "slug": "solidcraft-gears"
@@ -100,7 +100,7 @@
    "name": "Woodwork",
    "description": "Cabinets and furniture in sheet goods: carcass generator and cut list.",
    "note": null,
-   "version": "0.1.7-rc.1",
+   "version": "0.1.7",
    "entries": [
     "Cabinet",
     "Corner cabinet",
@@ -109,7 +109,7 @@
     "Material",
     "Cut list"
    ],
-   "commands": 28,
+   "commands": 30,
    "permissions": [
     "files"
    ],
@@ -117,17 +117,17 @@
     "cad",
     "woodworking"
    ],
-   "stars": 18,
+   "stars": 19,
    "license": "MIT",
-   "updated": "2026-11-16T16:55:20Z",
+   "updated": "2026-11-16T19:09:43Z",
    "created": "2026-11-14T13:53:29Z",
    "release": {
-    "tag": "v0.1.6",
-    "url": "https://github.com/TomasDJo/solidcraft-woodwork/releases/tag/v0.1.6",
-    "date": "2026-11-16T09:35:51Z",
-    "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.6/woodwork-0.1.6.zip"
+    "tag": "v0.1.7",
+    "url": "https://github.com/TomasDJo/solidcraft-woodwork/releases/tag/v0.1.7",
+    "date": "2026-11-16T19:13:43Z",
+    "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.7/woodwork-0.1.7.zip"
    },
-   "downloads": 110,
+   "downloads": 136,
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/banner.png",
    "has_topic": false,
    "slug": "woodwork"
@@ -174,7 +174,7 @@
     "date": "2026-11-16T15:57:13Z",
     "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.1.0/gridfinity-1.1.0.zip"
    },
-   "downloads": 257,
+   "downloads": 285,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "slug": "gridfinity"
@@ -202,7 +202,7 @@
     "parametric",
     "threaded-inserts"
    ],
-   "stars": 7,
+   "stars": 8,
    "license": "MIT",
    "updated": "2026-11-15T02:37:09Z",
    "created": "2026-11-13T19:53:48Z",
@@ -212,7 +212,7 @@
     "date": "2026-11-15T02:37:10Z",
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.1.0/solidinserts-1.1.0.zip"
    },
-   "downloads": 93,
+   "downloads": 103,
    "image": "https://raw.githubusercontent.com/NoOneExceptEnderk/SolidInserts/main/assets/screenshots/insert-seat-preview.png",
    "has_topic": false,
    "slug": "solidinserts"
@@ -236,7 +236,7 @@
    "topics": [],
    "stars": 2,
    "license": "MIT",
-   "updated": "2026-11-16T16:29:53Z",
+   "updated": "2026-11-17T00:26:46Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -244,7 +244,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
    },
-   "downloads": 55,
+   "downloads": 67,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-extrusions/rails.png",
    "has_topic": false,
    "slug": "techsquid-extrusions"
@@ -267,7 +267,7 @@
    "topics": [],
    "stars": 2,
    "license": "MIT",
-   "updated": "2026-11-16T16:29:53Z",
+   "updated": "2026-11-17T00:26:46Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -275,7 +275,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-inserts-0.2.0.zip"
    },
-   "downloads": 45,
+   "downloads": 49,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-inserts/insert.png",
    "has_topic": false,
    "slug": "techsquid-inserts"
@@ -298,7 +298,7 @@
    "topics": [],
    "stars": 2,
    "license": "MIT",
-   "updated": "2026-11-16T16:29:53Z",
+   "updated": "2026-11-17T00:26:46Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -306,7 +306,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip"
    },
-   "downloads": 52,
+   "downloads": 64,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-nuts/nut.png",
    "has_topic": false,
    "slug": "techsquid-nuts"
@@ -342,7 +342,7 @@
     "date": "2026-11-15T01:06:37Z",
     "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
    },
-   "downloads": 49,
+   "downloads": 54,
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
    "slug": "iso-sheet"
@@ -365,7 +365,7 @@
    "topics": [],
    "stars": 2,
    "license": "MIT",
-   "updated": "2026-11-16T16:29:53Z",
+   "updated": "2026-11-17T00:26:46Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -373,7 +373,7 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip"
    },
-   "downloads": 59,
+   "downloads": 76,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-screws/screws.png",
    "has_topic": false,
    "slug": "techsquid-screws"
@@ -387,36 +387,36 @@
    "name": "Wood joinery",
    "description": "Woodworking joints between boards: mortise and tenon, grooves, half laps, dowels, box joints, loose tenons, housings, miters, tongue and groove, scarfs, dovetails, screws and biscuits.",
    "note": null,
-   "version": "0.8.0",
+   "version": "0.8.2",
    "entries": [
     "Mortise and tenon",
-    "Groove",
-    "Half lap",
-    "Dowels",
-    "Box joint",
     "Loose tenon",
-    "Housing",
-    "Miter",
+    "Groove",
     "Tongue and groove",
+    "Housing joint",
+    "Half lap",
+    "Miter joint",
     "Scarf joint",
+    "Box joints",
     "Dovetails",
-    "Screws",
-    "Biscuits"
+    "Dowels",
+    "Biscuits",
+    "Screws"
    ],
    "commands": 7,
    "permissions": [],
    "topics": [],
    "stars": 2,
    "license": "Apache-2.0",
-   "updated": "2026-11-16T07:18:33Z",
+   "updated": "2026-11-16T21:49:18Z",
    "created": "2026-11-14T21:51:21Z",
    "release": {
-    "tag": "v0.8.0",
-    "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.8.0",
-    "date": "2026-11-16T07:18:33Z",
-    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.8.0/wood-joinery-fr.zip"
+    "tag": "v0.8.2",
+    "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.8.2",
+    "date": "2026-11-16T21:49:19Z",
+    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.8.2/wood-joinery-fr.zip"
    },
-   "downloads": 59,
+   "downloads": 74,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
    "has_topic": false,
    "slug": "wood-joinery"
@@ -428,28 +428,28 @@
    "avatar": "https://avatars.githubusercontent.com/u/20126520?v=4",
    "id": "solidcraft-3d-printing-holes",
    "name": "3D Printing Holes",
-   "description": "Holes made for 3D printing. Teardrop: select sketch circles, then run it; each gets a small tip a few percent of the radius above it (it follows the radius), so the top of a horizontal hole does not sag.",
+   "description": "Holes made for 3D printing. Teardrop: select sketch circles, then run it; each gets a small tip a few percent of the diameter above it (it follows the diameter), so the top of a horizontal hole does not sag.",
    "note": null,
-   "version": "0.1.0",
+   "version": "0.2.0",
    "entries": [
     "Teardrop"
    ],
-   "commands": 15,
+   "commands": 13,
    "permissions": [],
    "topics": [
     "3d-printing"
    ],
    "stars": 1,
    "license": "MIT",
-   "updated": "2026-11-15T20:37:12Z",
+   "updated": "2026-11-16T21:15:42Z",
    "created": "2026-11-15T20:19:06Z",
    "release": {
-    "tag": "v0.1.0",
-    "url": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/tag/v0.1.0",
-    "date": "2026-11-15T20:38:17Z",
-    "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.1.0/solidcraft-3d-printing-holes.zip"
+    "tag": "v0.2.0",
+    "url": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/tag/v0.2.0",
+    "date": "2026-11-16T21:17:21Z",
+    "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.2.0/solidcraft-3d-printing-holes.zip"
    },
-   "downloads": 23,
+   "downloads": 37,
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
    "slug": "solidcraft-3d-printing-holes"
@@ -487,7 +487,7 @@
     "date": "2026-11-14T05:05:08Z",
     "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip"
    },
-   "downloads": 14,
+   "downloads": 15,
    "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
    "has_topic": true,
    "slug": "solidcraft-aprilcube"
@@ -559,10 +559,47 @@
     "date": "2026-11-14T09:09:32Z",
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
    },
-   "downloads": 48,
+   "downloads": 59,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "slug": "gear-generator"
+  },
+  {
+   "repo": "bbonsen/solidcraftGearsPlugin",
+   "url": "https://github.com/bbonsen/solidcraftGearsPlugin",
+   "owner": "bbonsen",
+   "avatar": "https://avatars.githubusercontent.com/u/126472107?v=4",
+   "id": "gears",
+   "name": "Gears",
+   "description": "Involute, bevel, hypoid, worm, rack, internal, planetary and cycloidal gears with profile shift, root fillets, tip relief and crowning.",
+   "note": null,
+   "version": "0.10.0",
+   "entries": [
+    "Spur gear",
+    "Helical gear",
+    "Herringbone gear",
+    "Bevel gear",
+    "Worm",
+    "Worm wheel",
+    "Rack and pinion",
+    "Hypoid gear",
+    "Internal gear",
+    "Planetary gear set",
+    "Cycloidal gear",
+    "Cycloidal drive"
+   ],
+   "commands": 7,
+   "permissions": [],
+   "topics": [],
+   "stars": 1,
+   "license": "MIT",
+   "updated": "2026-11-16T23:02:31Z",
+   "created": "2026-11-16T21:44:42Z",
+   "release": null,
+   "downloads": 0,
+   "image": "https://raw.githubusercontent.com/bbonsen/solidcraftGearsPlugin/main/preview.png",
+   "has_topic": false,
+   "slug": "gears"
   },
   {
    "repo": "Xusr404/solidcraft-gridfinity-generator",
@@ -619,7 +656,7 @@
     "date": "2026-11-15T09:02:24Z",
     "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip"
    },
-   "downloads": 35,
+   "downloads": 43,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
    "slug": "solidcraft-honeycomb"
@@ -657,7 +694,7 @@
     "date": "2026-11-14T01:10:07Z",
     "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
    },
-   "downloads": 39,
+   "downloads": 43,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "slug": "mesh-solidify"
@@ -701,7 +738,7 @@
     "date": "2026-11-16T08:44:51Z",
     "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.2.0/opengrid-0.2.0.zip"
    },
-   "downloads": 19,
+   "downloads": 23,
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
    "slug": "opengrid"
@@ -732,10 +769,38 @@
     "date": "2026-10-25T11:10:49Z",
     "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
    },
-   "downloads": 46,
+   "downloads": 57,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "slug": "thread-generator"
+  },
+  {
+   "repo": "bbonsen/solidcraftAirfoilPlugin",
+   "url": "https://github.com/bbonsen/solidcraftAirfoilPlugin",
+   "owner": "bbonsen",
+   "avatar": "https://avatars.githubusercontent.com/u/126472107?v=4",
+   "id": "solidcraft-airfoil",
+   "name": "Airfoils & Wings",
+   "description": "Design airfoils (NACA 4/5-digit or .dat coordinates) and loft wings: span, taper, sweep, dihedral, twist, elliptical planforms, rounded tips and winglets, as editable features.",
+   "note": null,
+   "version": "0.1.0",
+   "entries": [
+    "make-wing",
+    "make-airfoil",
+    "airfoil-info"
+   ],
+   "commands": 8,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-17T00:00:30Z",
+   "created": "2026-11-16T23:15:29Z",
+   "release": null,
+   "downloads": 0,
+   "image": null,
+   "has_topic": false,
+   "slug": "solidcraft-airfoil"
   },
   {
    "repo": "645DF/MakeOrbit-SolidCraft",
@@ -767,7 +832,7 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip"
    },
-   "downloads": 5,
+   "downloads": 6,
    "image": null,
    "has_topic": false,
    "slug": "makeorbit-cnc-studio"
@@ -802,7 +867,7 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-0.2.0.zip"
    },
-   "downloads": 10,
+   "downloads": 12,
    "image": null,
    "has_topic": false,
    "slug": "makeorbit"
@@ -865,7 +930,7 @@
     "date": "2026-11-13T06:32:36Z",
     "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
    },
-   "downloads": 32,
+   "downloads": 35,
    "image": null,
    "has_topic": false,
    "slug": "solidcraft-gridfinity"
@@ -931,6 +996,37 @@
    "image": "https://raw.githubusercontent.com/Frosty-Eldin/Solidcraft-lattice/main/docs/showcase.jpg",
    "has_topic": false,
    "slug": "lattice"
+  },
+  {
+   "repo": "bbonsen/solidcraftPropellerPlugin",
+   "url": "https://github.com/bbonsen/solidcraftPropellerPlugin",
+   "owner": "bbonsen",
+   "avatar": "https://avatars.githubusercontent.com/u/126472107?v=4",
+   "id": "propellers",
+   "name": "Propellers",
+   "description": "Air propellers, marine propellers, toroidal (looped) propellers for air and water, wind turbine rotors and ducted fans: airfoil blades lofted onto a hub.",
+   "note": null,
+   "version": "0.2.0",
+   "entries": [
+    "Propeller",
+    "Marine propeller",
+    "Wind turbine rotor",
+    "Ducted fan",
+    "Toroidal propeller",
+    "Toroidal marine propeller"
+   ],
+   "commands": 8,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-17T00:18:30Z",
+   "created": "2026-11-16T23:08:54Z",
+   "release": null,
+   "downloads": 0,
+   "image": "https://raw.githubusercontent.com/bbonsen/solidcraftPropellerPlugin/main/preview.png",
+   "has_topic": false,
+   "slug": "propellers"
   }
  ]
 }
