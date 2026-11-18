@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tharje.github.io/solidcraft-plugins/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/box-importer/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/plate-maker/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-gears/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/woodwork/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/woodwork/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/gridfinity/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidinserts/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/gears/</loc><lastmod>2026-11-16</lastmod></url>
@@ -29,6 +31,7 @@
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/makeorbit-cnc-studio/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/makeorbit/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/easypdm/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/custom-gears/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-gridfinity/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/helical-sketch/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/propellers/</loc><lastmod>2026-11-17</lastmod></url>
