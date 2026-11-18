@@ -69,6 +69,13 @@ function card(p) {
     s.textContent = x;
     chips.append(s);
   }
+  if (p.tested) {
+    const el = t.querySelector(".tested");
+    el.hidden = false;
+    el.textContent = p.tested.label;
+    el.title = p.tested.title;
+  }
+  t.querySelector(".report").href = p.report;
   t.querySelector(".stars").textContent = `★ ${p.stars}`;
   t.querySelector(".dl").textContent = `⬇ ${p.downloads}`;
   t.querySelector(".upd").textContent = ago(p.updated);

@@ -34,7 +34,13 @@
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "category": "Gears & motion",
-   "slug": "solidcraft-gears"
+   "slug": "solidcraft-gears",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbherbruck%2Fsolidcraft-gears%29"
   },
   {
    "repo": "TomasDJo/solidcraft-woodwork",
@@ -76,7 +82,13 @@
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/banner.png",
    "has_topic": false,
    "category": "Woodworking",
-   "slug": "woodwork"
+   "slug": "woodwork",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Woodwork&plugin=Woodwork+%28https%3A%2F%2Fgithub.com%2FTomasDJo%2Fsolidcraft-woodwork%29"
   },
   {
    "repo": "tharje/gridfinity-solidcraft",
@@ -125,7 +137,13 @@
    "has_topic": true,
    "category": "Storage & organizing",
    "slug": "gridfinity",
-   "icon": "icons/gridfinity.svg"
+   "icon": "icons/gridfinity.svg",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fgridfinity-solidcraft%29"
   },
   {
    "repo": "NoOneExceptEnderk/SolidInserts",
@@ -164,7 +182,13 @@
    "image": null,
    "has_topic": false,
    "category": "Hardware & fasteners",
-   "slug": "solidinserts"
+   "slug": "solidinserts",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidInserts&plugin=SolidInserts+%28https%3A%2F%2Fgithub.com%2FNoOneExceptEnderk%2FSolidInserts%29"
   },
   {
    "repo": "bbonsen/solidcraftGearsPlugin",
@@ -202,7 +226,9 @@
    "image": "https://raw.githubusercontent.com/bbonsen/solidcraftGearsPlugin/main/preview.png",
    "has_topic": false,
    "category": "Gears & motion",
-   "slug": "gears"
+   "slug": "gears",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftGearsPlugin%29"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -236,7 +262,9 @@
    "has_topic": false,
    "category": "Hardware & fasteners",
    "slug": "techsquid-bearings",
-   "icon": "icons/techsquid-bearings.svg"
+   "icon": "icons/techsquid-bearings.svg",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Bearings&plugin=Bearings+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-bearings%29"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -270,7 +298,13 @@
    "has_topic": false,
    "category": "Hardware & fasteners",
    "slug": "techsquid-extrusions",
-   "icon": "icons/techsquid-extrusions.svg"
+   "icon": "icons/techsquid-extrusions.svg",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Extrusions&plugin=Extrusions+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-extrusions%29"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -303,7 +337,13 @@
    "has_topic": false,
    "category": "Hardware & fasteners",
    "slug": "techsquid-inserts",
-   "icon": "icons/techsquid-inserts.svg"
+   "icon": "icons/techsquid-inserts.svg",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat-set+inserts&plugin=Heat-set+inserts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-inserts%29"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -336,7 +376,13 @@
    "has_topic": false,
    "category": "Hardware & fasteners",
    "slug": "techsquid-nuts",
-   "icon": "icons/techsquid-nuts.svg"
+   "icon": "icons/techsquid-nuts.svg",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Hex+nuts&plugin=Hex+nuts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-nuts%29"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -369,7 +415,13 @@
    "has_topic": false,
    "category": "Hardware & fasteners",
    "slug": "techsquid-screws",
-   "icon": "icons/techsquid-screws.svg"
+   "icon": "icons/techsquid-screws.svg",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Screws&plugin=Screws+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-screws%29"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -402,7 +454,9 @@
    "has_topic": false,
    "category": "Hardware & fasteners",
    "slug": "techsquid-v-wheels",
-   "icon": "icons/techsquid-v-wheels.svg"
+   "icon": "icons/techsquid-v-wheels.svg",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+V-wheels&plugin=V-wheels+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-v-wheels%29"
   },
   {
    "repo": "WilliamHJKL/solidcraft-wood-joinery",
@@ -447,7 +501,13 @@
    "has_topic": false,
    "category": "Woodworking",
    "slug": "wood-joinery",
-   "icon": "icons/wood-joinery.svg"
+   "icon": "icons/wood-joinery.svg",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Wood+joinery&plugin=Wood+joinery+%28https%3A%2F%2Fgithub.com%2FWilliamHJKL%2Fsolidcraft-wood-joinery%29"
   },
   {
    "repo": "jcar01/solidcraft-plugin-iso-sheet",
@@ -484,7 +544,13 @@
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
    "category": "Export & workflow",
-   "slug": "iso-sheet"
+   "slug": "iso-sheet",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Isometric+Manufacture+Sheet&plugin=Isometric+Manufacture+Sheet+%28https%3A%2F%2Fgithub.com%2Fjcar01%2Fsolidcraft-plugin-iso-sheet%29"
   },
   {
    "repo": "SB97/solidcraft-3d-printing-holes",
@@ -518,7 +584,13 @@
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
    "category": "Hardware & fasteners",
-   "slug": "solidcraft-3d-printing-holes"
+   "slug": "solidcraft-3d-printing-holes",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+3D+Printing+Holes&plugin=3D+Printing+Holes+%28https%3A%2F%2Fgithub.com%2FSB97%2Fsolidcraft-3d-printing-holes%29"
   },
   {
    "repo": "takuto-NA/solidcraft-aprilcube",
@@ -557,7 +629,13 @@
    "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
    "has_topic": true,
    "category": "3D printing",
-   "slug": "solidcraft-aprilcube"
+   "slug": "solidcraft-aprilcube",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+AprilCube&plugin=AprilCube+%28https%3A%2F%2Fgithub.com%2Ftakuto-NA%2Fsolidcraft-aprilcube%29"
   },
   {
    "repo": "jamescarruthers/attractor_pattern_solidcraft",
@@ -585,7 +663,9 @@
    "image": null,
    "has_topic": false,
    "category": "Shapes & patterns",
-   "slug": "attractor-pattern"
+   "slug": "attractor-pattern",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Attractor+pattern&plugin=Attractor+pattern+%28https%3A%2F%2Fgithub.com%2Fjamescarruthers%2Fattractor_pattern_solidcraft%29"
   },
   {
    "repo": "tharje/filament-swatch-solidcraft",
@@ -628,7 +708,13 @@
    "has_topic": true,
    "category": "3D printing",
    "slug": "filament-swatch",
-   "icon": "icons/filament-swatch.svg"
+   "icon": "icons/filament-swatch.svg",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Filament+Swatch&plugin=Filament+Swatch+%28https%3A%2F%2Fgithub.com%2Ftharje%2Ffilament-swatch-solidcraft%29"
   },
   {
    "repo": "pro-d-e-v/solidcraft-plugin-gear",
@@ -660,7 +746,13 @@
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "category": "Gears & motion",
-   "slug": "gear-generator"
+   "slug": "gear-generator",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear+generator&plugin=Gear+generator+%28https%3A%2F%2Fgithub.com%2Fpro-d-e-v%2Fsolidcraft-plugin-gear%29"
   },
   {
    "repo": "Xusr404/solidcraft-gridfinity-generator",
@@ -690,7 +782,9 @@
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-gridfinity-generator/main/docs/gridfinity-hollow-bin.png",
    "has_topic": false,
    "category": "Storage & organizing",
-   "slug": "solidcraft-gridfinity-generator"
+   "slug": "solidcraft-gridfinity-generator",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity+Builder&plugin=Gridfinity+Builder+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-gridfinity-generator%29"
   },
   {
    "repo": "Xusr404/solidcraft-honeycomb-plugin",
@@ -722,7 +816,13 @@
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
    "category": "Shapes & patterns",
-   "slug": "solidcraft-honeycomb"
+   "slug": "solidcraft-honeycomb",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Honeycomb+%26+Hexagon+Generator&plugin=Honeycomb+%26+Hexagon+Generator+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-honeycomb-plugin%29"
   },
   {
    "repo": "Frosty-Eldin/Solidcraft-lattice",
@@ -758,7 +858,9 @@
    "image": "https://raw.githubusercontent.com/Frosty-Eldin/Solidcraft-lattice/main/docs/showcase.jpg",
    "has_topic": false,
    "category": "Shapes & patterns",
-   "slug": "lattice"
+   "slug": "lattice",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Lattice+Generator&plugin=Lattice+Generator+%28https%3A%2F%2Fgithub.com%2FFrosty-Eldin%2FSolidcraft-lattice%29"
   },
   {
    "repo": "JakeMathews/mesh-solidify",
@@ -797,7 +899,13 @@
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "category": "3D printing",
-   "slug": "mesh-solidify"
+   "slug": "mesh-solidify",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Mesh+Solidify&plugin=Mesh+Solidify+%28https%3A%2F%2Fgithub.com%2FJakeMathews%2Fmesh-solidify%29"
   },
   {
    "repo": "tharje/opengrid-solidcraft",
@@ -843,7 +951,13 @@
    "has_topic": true,
    "category": "Storage & organizing",
    "slug": "opengrid",
-   "icon": "icons/opengrid.svg"
+   "icon": "icons/opengrid.svg",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+openGrid&plugin=openGrid+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fopengrid-solidcraft%29"
   },
   {
    "repo": "Stigern/SolidThreadsPlugin",
@@ -875,7 +989,13 @@
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
-   "slug": "thread-generator"
+   "slug": "thread-generator",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Thread+Generator&plugin=Thread+Generator+%28https%3A%2F%2Fgithub.com%2FStigern%2FSolidThreadsPlugin%29"
   },
   {
    "repo": "bbonsen/solidcraftAirfoilPlugin",
@@ -904,7 +1024,9 @@
    "image": null,
    "has_topic": false,
    "category": "Aero & marine",
-   "slug": "solidcraft-airfoil"
+   "slug": "solidcraft-airfoil",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Airfoils+%26+Wings&plugin=Airfoils+%26+Wings+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftAirfoilPlugin%29"
   },
   {
    "repo": "645DF/MakeOrbit-SolidCraft",
@@ -940,7 +1062,13 @@
    "image": null,
    "has_topic": false,
    "category": "Export & workflow",
-   "slug": "makeorbit-cnc-studio"
+   "slug": "makeorbit-cnc-studio",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+An+MakeOrbit+CNC+Studio+senden&plugin=An+MakeOrbit+CNC+Studio+senden+%28https%3A%2F%2Fgithub.com%2F645DF%2FMakeOrbit-SolidCraft%2Ftree%2Fmain%2Fmanifeste%2Fmakeorbit-cnc-studio%29"
   },
   {
    "repo": "645DF/MakeOrbit-SolidCraft",
@@ -976,7 +1104,13 @@
    "image": null,
    "has_topic": false,
    "category": "Export & workflow",
-   "slug": "makeorbit"
+   "slug": "makeorbit",
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+An+MakeOrbit+senden&plugin=An+MakeOrbit+senden+%28https%3A%2F%2Fgithub.com%2F645DF%2FMakeOrbit-SolidCraft%2Ftree%2Fmain%2Fmanifeste%2Fmakeorbit%29"
   },
   {
    "repo": "pawelcel/EasyPDM-SolidCraft",
@@ -1019,7 +1153,9 @@
    "image": "https://raw.githubusercontent.com/wiki/pawelcel/EasyPDM/images/solidcraft-plugins-menu.png",
    "has_topic": true,
    "category": "Export & workflow",
-   "slug": "easypdm"
+   "slug": "easypdm",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+EasyPDM&plugin=EasyPDM+%28https%3A%2F%2Fgithub.com%2Fpawelcel%2FEasyPDM-SolidCraft%29"
   },
   {
    "repo": "haashimrehan/solidcraft-gridfinity",
@@ -1056,7 +1192,13 @@
    "image": null,
    "has_topic": false,
    "category": "Storage & organizing",
-   "slug": "solidcraft-gridfinity"
+   "slug": "solidcraft-gridfinity",
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Fhaashimrehan%2Fsolidcraft-gridfinity%29"
   },
   {
    "repo": "GaryMoFS/solidcraft-helical-sketch",
@@ -1084,7 +1226,9 @@
    "image": null,
    "has_topic": false,
    "category": "Shapes & patterns",
-   "slug": "helical-sketch"
+   "slug": "helical-sketch",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Helical+Sketch+Generator&plugin=Helical+Sketch+Generator+%28https%3A%2F%2Fgithub.com%2FGaryMoFS%2Fsolidcraft-helical-sketch%29"
   },
   {
    "repo": "bbonsen/solidcraftPropellerPlugin",
@@ -1116,7 +1260,9 @@
    "image": "https://raw.githubusercontent.com/bbonsen/solidcraftPropellerPlugin/main/preview.png",
    "has_topic": false,
    "category": "Aero & marine",
-   "slug": "propellers"
+   "slug": "propellers",
+   "tested": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Propellers&plugin=Propellers+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftPropellerPlugin%29"
   }
  ]
 }

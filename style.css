@@ -92,6 +92,9 @@ nav a { color: var(--muted); }
 .chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
 .chips span { font-size: 12px; background: var(--chip); color: var(--muted); border-radius: 999px; padding: 1px 9px; }
 .meta { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-top: auto; padding-bottom: 12px; }
+.meta .report { margin-left: auto; color: var(--muted); }
+.tested { margin: 0 0 10px; font-size: 13px; font-weight: 600; color: #1a7f37; }
+@media (prefers-color-scheme: dark) { .tested { color: #4ac26b; } }
 .actions { display: flex; gap: 8px; }
 .btn {
   flex: 1; text-align: center; padding: 8px 10px; border-radius: 9px; font-weight: 600; font-size: 14px;

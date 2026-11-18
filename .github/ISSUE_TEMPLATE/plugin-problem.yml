@@ -1,0 +1,47 @@
+name: Problem with a plugin
+description: A plugin on the list crashes SolidCraft, breaks a design, doesn't install, or looks unsafe.
+title: "[Plugin problem] "
+labels: ["plugin problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for telling us. For an ordinary bug, the plugin's own author is the best place to
+        report it (the *Issues* tab of the plugin's repository). Use this form for things other users
+        should know about: a plugin that crashes SolidCraft, damages designs, won't install, or looks unsafe.
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin
+      description: Its name or the link to its repository.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - SolidCraft crashes or freezes
+        - Breaks or changes my design
+        - Won't install or won't run
+        - Looks unsafe
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: solidcraft
+    attributes:
+      label: SolidCraft version
+      placeholder: "0.44.1"
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux]

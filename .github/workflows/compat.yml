@@ -1,0 +1,57 @@
+name: Test plugins in SolidCraft
+
+on:
+  # after each plugin list update, and on demand
+  workflow_run:
+    workflows: ["Update plugin list"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  test:
+    # The plugins run here, in SolidCraft's sandbox, with a read-only token: this job can't push.
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: solidcraft-${{ github.run_id }}
+          restore-keys: solidcraft-
+      - name: Load and run each plugin's latest release in the newest SolidCraft
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/compat.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: compat
+          path: data/compat.json
+
+  publish:
+    # Only the results come over from the test job; the pages are built again here.
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: compat
+          path: data
+      - name: Build the pages
+        run: python3 scripts/build_site.py
+      - name: Commit if changed
+        run: |
+          git add -A data plugins icons index.html sitemap.xml
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update plugin tests"
+          git pull --rebase
+          git push

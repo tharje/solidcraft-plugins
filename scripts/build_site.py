@@ -11,7 +11,31 @@ import html, json, os, re, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://tharje.github.io/solidcraft-plugins/"
+REPORT = "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml"
 e = html.escape
+
+
+def report_url(p):
+    q = urllib.parse.urlencode({"title": f"[Plugin problem] {p['name']}", "plugin": f"{p['name']} ({p['url']})"})
+    return f"{REPORT}&{q}"
+
+
+def tested(p, compat):
+    """What the newest SolidCraft made of the plugin's latest release (scripts/compat.py), as the
+    card's line and its tooltip, or None. Only good news is shown: a command that needs something
+    picked first can't run on its own, which says nothing about whether it works."""
+    c = compat.get(p["slug"])
+    rel = p.get("release") or {}
+    if not c or not c.get("loads") or c.get("release") != rel.get("tag"):
+        return None
+    v, when = c["solidcraft"], c["tested"]
+    if c.get("entries", 0) > 0 and len(c.get("ran", [])) == c["entries"]:
+        return {"label": f"✓ Runs in SolidCraft {v}", "date": when,
+                "title": f"Tested {when} on Linux: SolidCraft {v} loaded this release and ran every command with its default values."}
+    why = ("It asks for file access or sensitive commands, so it wasn't run." if c.get("skipped")
+           else "Its commands need something picked or set up first, so they weren't all run.")
+    return {"label": f"✓ Loads in SolidCraft {v}", "date": when,
+            "title": f"Tested {when} on Linux: SolidCraft {v} loaded this release. {why}"}
 
 
 def slugs(plugins):
@@ -46,9 +70,11 @@ def card(p, prefix=""):
       <p class="entries">{entries}</p>{f"""
       <p class="note">{e(p["note"])}</p>""" if p.get("note") else ""}
       <div class="chips">{chips}</div>
+      <p class="tested"{f' title="{e(p["tested"]["title"])}"' if p.get("tested") else " hidden"}>{e(p["tested"]["label"]) if p.get("tested") else ""}</p>
       <div class="meta">
         <span class="stars" title="GitHub stars">★ {p["stars"]}</span>
         <span class="dl" title="Downloads of all releases">⬇ {p["downloads"]}</span>
+        <a class="report" href="{e(report_url(p))}" target="_blank" rel="noopener">Report a problem</a>
       </div>
       <div class="actions">
         {download}
@@ -111,6 +137,9 @@ def plugin_page(p, others):
     if p.get("license") and p["license"] != "NOASSERTION":
         facts.append(f"<dt>Licence</dt><dd>{e(p['license'])}</dd>")
     facts.append(f"<dt>GitHub</dt><dd>★ {p['stars']} stars · ⬇ {p['downloads']} downloads</dd>")
+    if p.get("tested"):
+        t = p["tested"]
+        facts.append(f"<dt>Tested</dt><dd title=\"{e(t['title'])}\">{e(t['label'])} ({e(t['date'])})</dd>")
     entries = "".join(f"<li>{e(x)}</li>" for x in p.get("entries", []))
     tags = "".join(f"<span>{e(t)}</span>" for t in p.get("topics", []))
     zip_ = rel.get("zip")
@@ -180,7 +209,8 @@ def plugin_page(p, others):
         <li>Run it from the <b>Plugins</b> menu, or its button in the ribbon (SolidCraft 0.42 and later).</li>
       </ol>
       <p>Questions and bug reports go to the plugin's author, in the
-        <a href="{e(p["url"])}/issues">issues on GitHub</a>.</p>
+        <a href="{e(p["url"])}/issues">issues on GitHub</a>. If it crashes SolidCraft, harms a design
+        or looks unsafe, please also <a href="{e(report_url(p))}">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
       <dl class="facts">{"".join(facts)}</dl>
@@ -234,6 +264,14 @@ def icons(plugins):
 def build(plugins):
     slugs(plugins)
     icons(plugins)
+    try:
+        with open(os.path.join(ROOT, "data", "compat.json")) as f:
+            compat = json.load(f).get("plugins", {})
+    except (OSError, ValueError):
+        compat = {}
+    for p in plugins:
+        p["tested"] = tested(p, compat)
+        p["report"] = report_url(p)
     path = os.path.join(ROOT, "index.html")
     with open(path) as f:
         page = f.read()
