@@ -203,7 +203,7 @@
    "entries": 6,
    "loads": true,
    "ran": [],
-   "release": "v0.1.7",
+   "release": "v0.1.8",
    "skipped": "asks for permissions",
    "solidcraft": "0.44.1",
    "tested": "2026-11-18"

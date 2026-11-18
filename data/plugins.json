@@ -168,7 +168,11 @@
    "category": "Woodworking",
    "slug": "woodwork",
    "icon": "icons/woodwork.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-18",
+    "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Woodwork&plugin=Woodwork+%28https%3A%2F%2Fgithub.com%2FTomasDJo%2Fsolidcraft-woodwork%29"
   },
   {
