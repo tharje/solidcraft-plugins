@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T23:42:58Z",
+ "generated": "2026-11-18T05:21:22Z",
  "plugins": [
   {
    "repo": "bherbruck/solidcraft-gears",
@@ -30,7 +30,7 @@
     "date": "2026-11-12T22:08:37Z",
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
    },
-   "downloads": 1714,
+   "downloads": 1727,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "slug": "solidcraft-gears"
@@ -71,7 +71,7 @@
     "date": "2026-11-16T19:13:43Z",
     "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.7/woodwork-0.1.7.zip"
    },
-   "downloads": 232,
+   "downloads": 236,
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/banner.png",
    "has_topic": false,
    "slug": "woodwork"
@@ -118,7 +118,7 @@
     "date": "2026-11-17T08:56:50Z",
     "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.2.1/gridfinity-1.2.1.zip"
    },
-   "downloads": 392,
+   "downloads": 400,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "slug": "gridfinity"
@@ -156,7 +156,7 @@
     "date": "2026-11-17T21:33:38Z",
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.2.0/solidinserts-1.2.0.zip"
    },
-   "downloads": 156,
+   "downloads": 163,
    "image": null,
    "has_topic": false,
    "slug": "solidinserts"
@@ -217,7 +217,7 @@
    "topics": [],
    "stars": 3,
    "license": "MIT",
-   "updated": "2026-11-17T21:47:01Z",
+   "updated": "2026-11-18T05:16:52Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -226,7 +226,7 @@
     "zip": null
    },
    "downloads": 0,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-bearings/bearings.png",
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/bearings-and-clutches/bearings-and-clutches.png",
    "has_topic": false,
    "slug": "techsquid-bearings"
   },
@@ -249,7 +249,7 @@
    "topics": [],
    "stars": 3,
    "license": "MIT",
-   "updated": "2026-11-17T21:47:01Z",
+   "updated": "2026-11-18T05:16:52Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -257,8 +257,8 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
    },
-   "downloads": 126,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-extrusions/rails.png",
+   "downloads": 131,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/v-slot-gantry/v-slot-gantry.png",
    "has_topic": false,
    "slug": "techsquid-extrusions"
   },
@@ -280,7 +280,7 @@
    "topics": [],
    "stars": 3,
    "license": "MIT",
-   "updated": "2026-11-17T21:47:01Z",
+   "updated": "2026-11-18T05:16:52Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -288,8 +288,8 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-inserts-0.2.0.zip"
    },
-   "downloads": 97,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-inserts/insert.png",
+   "downloads": 102,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/pcb-enclosure/insert-detail.png",
    "has_topic": false,
    "slug": "techsquid-inserts"
   },
@@ -311,7 +311,7 @@
    "topics": [],
    "stars": 3,
    "license": "MIT",
-   "updated": "2026-11-17T21:47:01Z",
+   "updated": "2026-11-18T05:16:52Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -319,8 +319,8 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip"
    },
-   "downloads": 127,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-nuts/nut.png",
+   "downloads": 131,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/editable-mounting-plate/pockets-after.png",
    "has_topic": false,
    "slug": "techsquid-nuts"
   },
@@ -342,7 +342,7 @@
    "topics": [],
    "stars": 3,
    "license": "MIT",
-   "updated": "2026-11-17T21:47:01Z",
+   "updated": "2026-11-18T05:16:52Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -350,8 +350,8 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip"
    },
-   "downloads": 166,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-screws/screws.png",
+   "downloads": 172,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/editable-mounting-plate/editable-mounting-plate.png",
    "has_topic": false,
    "slug": "techsquid-screws"
   },
@@ -373,7 +373,7 @@
    "topics": [],
    "stars": 3,
    "license": "MIT",
-   "updated": "2026-11-17T21:47:01Z",
+   "updated": "2026-11-18T05:16:52Z",
    "created": "2026-11-14T16:04:12Z",
    "release": {
     "tag": "v0.2.0",
@@ -382,7 +382,7 @@
     "zip": null
    },
    "downloads": 0,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/plugins/techsquid-v-wheels/v-wheels.png",
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/v-slot-gantry/axle-section.png",
    "has_topic": false,
    "slug": "techsquid-v-wheels"
   },
@@ -424,7 +424,7 @@
     "date": "2026-11-17T21:34:10Z",
     "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.9.0/wood-joinery-fr.zip"
    },
-   "downloads": 116,
+   "downloads": 118,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
    "has_topic": false,
    "slug": "wood-joinery"
@@ -460,7 +460,7 @@
     "date": "2026-11-15T01:06:37Z",
     "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
    },
-   "downloads": 90,
+   "downloads": 94,
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
    "slug": "iso-sheet"
@@ -493,7 +493,7 @@
     "date": "2026-11-16T21:17:21Z",
     "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.2.0/solidcraft-3d-printing-holes.zip"
    },
-   "downloads": 71,
+   "downloads": 75,
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
    "slug": "solidcraft-3d-printing-holes"
@@ -531,7 +531,7 @@
     "date": "2026-11-14T05:05:08Z",
     "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip"
    },
-   "downloads": 21,
+   "downloads": 22,
    "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
    "has_topic": true,
    "slug": "solidcraft-aprilcube"
@@ -599,7 +599,7 @@
     "date": "2026-11-16T08:44:57Z",
     "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.2.0/filament-swatch-0.2.0.zip"
    },
-   "downloads": 35,
+   "downloads": 36,
    "image": "https://raw.githubusercontent.com/tharje/filament-swatch-solidcraft/main/docs/images/swatch.png",
    "has_topic": true,
    "slug": "filament-swatch"
@@ -630,7 +630,7 @@
     "date": "2026-11-14T09:09:32Z",
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
    },
-   "downloads": 85,
+   "downloads": 86,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "slug": "gear-generator"
@@ -690,7 +690,7 @@
     "date": "2026-11-15T09:02:24Z",
     "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip"
    },
-   "downloads": 81,
+   "downloads": 86,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
    "slug": "solidcraft-honeycomb"
@@ -763,7 +763,7 @@
     "date": "2026-11-14T01:10:07Z",
     "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
    },
-   "downloads": 69,
+   "downloads": 71,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "slug": "mesh-solidify"
@@ -807,7 +807,7 @@
     "date": "2026-11-16T08:44:51Z",
     "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.2.0/opengrid-0.2.0.zip"
    },
-   "downloads": 40,
+   "downloads": 42,
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
    "slug": "opengrid"
@@ -838,7 +838,7 @@
     "date": "2026-10-25T11:10:49Z",
     "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
    },
-   "downloads": 99,
+   "downloads": 104,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "slug": "thread-generator"
@@ -901,7 +901,7 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip"
    },
-   "downloads": 11,
+   "downloads": 12,
    "image": null,
    "has_topic": false,
    "slug": "makeorbit-cnc-studio"
@@ -936,7 +936,7 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-0.2.0.zip"
    },
-   "downloads": 21,
+   "downloads": 23,
    "image": null,
    "has_topic": false,
    "slug": "makeorbit"
@@ -978,7 +978,7 @@
     "date": "2026-11-17T10:47:50Z",
     "zip": "https://github.com/pawelcel/EasyPDM-SolidCraft/releases/download/v0.9.0/EasyPDM_SolidCraft_Companion_linux-x64_v0.9.0.zip"
    },
-   "downloads": 3,
+   "downloads": 5,
    "image": "https://raw.githubusercontent.com/wiki/pawelcel/EasyPDM/images/solidcraft-plugins-menu.png",
    "has_topic": true,
    "slug": "easypdm"
@@ -1014,7 +1014,7 @@
     "date": "2026-11-13T06:32:36Z",
     "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
    },
-   "downloads": 46,
+   "downloads": 50,
    "image": null,
    "has_topic": false,
    "slug": "solidcraft-gridfinity"
