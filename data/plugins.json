@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T05:21:22Z",
+ "generated": "2026-11-18T08:51:05Z",
  "plugins": [
   {
    "repo": "bherbruck/solidcraft-gears",
@@ -30,9 +30,10 @@
     "date": "2026-11-12T22:08:37Z",
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
    },
-   "downloads": 1727,
+   "downloads": 1745,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
+   "category": "Gears & motion",
    "slug": "solidcraft-gears"
   },
   {
@@ -71,9 +72,10 @@
     "date": "2026-11-16T19:13:43Z",
     "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.7/woodwork-0.1.7.zip"
    },
-   "downloads": 236,
+   "downloads": 248,
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/banner.png",
    "has_topic": false,
+   "category": "Woodworking",
    "slug": "woodwork"
   },
   {
@@ -85,13 +87,13 @@
    "name": "Gridfinity",
    "description": "Gridfinity bins (hollow, eco or solid for custom cutouts), baseplates and drawer baseplates split to fit your printer, on a full, half or custom grid.",
    "note": null,
-   "version": "1.2.1",
+   "version": "1.3.0",
    "entries": [
     "Gridfinity bin",
     "Gridfinity baseplate",
     "Gridfinity drawer baseplate"
    ],
-   "commands": 17,
+   "commands": 19,
    "permissions": [],
    "topics": [
     "3d-printing",
@@ -110,18 +112,20 @@
    ],
    "stars": 18,
    "license": "MIT",
-   "updated": "2026-11-17T08:56:50Z",
+   "updated": "2026-11-18T05:24:44Z",
    "created": "2026-11-13T11:28:54Z",
    "release": {
-    "tag": "v1.2.1",
-    "url": "https://github.com/tharje/gridfinity-solidcraft/releases/tag/v1.2.1",
-    "date": "2026-11-17T08:56:50Z",
-    "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.2.1/gridfinity-1.2.1.zip"
+    "tag": "v1.3.0",
+    "url": "https://github.com/tharje/gridfinity-solidcraft/releases/tag/v1.3.0",
+    "date": "2026-11-18T05:24:44Z",
+    "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.3.0/gridfinity-1.3.0.zip"
    },
-   "downloads": 400,
+   "downloads": 418,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
-   "slug": "gridfinity"
+   "category": "Storage & organizing",
+   "slug": "gridfinity",
+   "icon": "icons/gridfinity.svg"
   },
   {
    "repo": "NoOneExceptEnderk/SolidInserts",
@@ -156,9 +160,10 @@
     "date": "2026-11-17T21:33:38Z",
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.2.0/solidinserts-1.2.0.zip"
    },
-   "downloads": 163,
+   "downloads": 170,
    "image": null,
    "has_topic": false,
+   "category": "Hardware & fasteners",
    "slug": "solidinserts"
   },
   {
@@ -196,6 +201,7 @@
    "downloads": 0,
    "image": "https://raw.githubusercontent.com/bbonsen/solidcraftGearsPlugin/main/preview.png",
    "has_topic": false,
+   "category": "Gears & motion",
    "slug": "gears"
   },
   {
@@ -228,7 +234,9 @@
    "downloads": 0,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/bearings-and-clutches/bearings-and-clutches.png",
    "has_topic": false,
-   "slug": "techsquid-bearings"
+   "category": "Hardware & fasteners",
+   "slug": "techsquid-bearings",
+   "icon": "icons/techsquid-bearings.svg"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -257,10 +265,12 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
    },
-   "downloads": 131,
+   "downloads": 137,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/v-slot-gantry/v-slot-gantry.png",
    "has_topic": false,
-   "slug": "techsquid-extrusions"
+   "category": "Hardware & fasteners",
+   "slug": "techsquid-extrusions",
+   "icon": "icons/techsquid-extrusions.svg"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -288,10 +298,12 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-inserts-0.2.0.zip"
    },
-   "downloads": 102,
+   "downloads": 108,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/pcb-enclosure/insert-detail.png",
    "has_topic": false,
-   "slug": "techsquid-inserts"
+   "category": "Hardware & fasteners",
+   "slug": "techsquid-inserts",
+   "icon": "icons/techsquid-inserts.svg"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -319,10 +331,12 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip"
    },
-   "downloads": 131,
+   "downloads": 138,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/editable-mounting-plate/pockets-after.png",
    "has_topic": false,
-   "slug": "techsquid-nuts"
+   "category": "Hardware & fasteners",
+   "slug": "techsquid-nuts",
+   "icon": "icons/techsquid-nuts.svg"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -350,10 +364,12 @@
     "date": "2026-11-15T23:31:04Z",
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip"
    },
-   "downloads": 172,
+   "downloads": 178,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/editable-mounting-plate/editable-mounting-plate.png",
    "has_topic": false,
-   "slug": "techsquid-screws"
+   "category": "Hardware & fasteners",
+   "slug": "techsquid-screws",
+   "icon": "icons/techsquid-screws.svg"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -384,7 +400,9 @@
    "downloads": 0,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/v-slot-gantry/axle-section.png",
    "has_topic": false,
-   "slug": "techsquid-v-wheels"
+   "category": "Hardware & fasteners",
+   "slug": "techsquid-v-wheels",
+   "icon": "icons/techsquid-v-wheels.svg"
   },
   {
    "repo": "WilliamHJKL/solidcraft-wood-joinery",
@@ -424,10 +442,12 @@
     "date": "2026-11-17T21:34:10Z",
     "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.9.0/wood-joinery-fr.zip"
    },
-   "downloads": 118,
+   "downloads": 126,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
    "has_topic": false,
-   "slug": "wood-joinery"
+   "category": "Woodworking",
+   "slug": "wood-joinery",
+   "icon": "icons/wood-joinery.svg"
   },
   {
    "repo": "jcar01/solidcraft-plugin-iso-sheet",
@@ -460,9 +480,10 @@
     "date": "2026-11-15T01:06:37Z",
     "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
    },
-   "downloads": 94,
+   "downloads": 100,
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
+   "category": "Export & workflow",
    "slug": "iso-sheet"
   },
   {
@@ -493,9 +514,10 @@
     "date": "2026-11-16T21:17:21Z",
     "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.2.0/solidcraft-3d-printing-holes.zip"
    },
-   "downloads": 75,
+   "downloads": 78,
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
+   "category": "Hardware & fasteners",
    "slug": "solidcraft-3d-printing-holes"
   },
   {
@@ -531,9 +553,10 @@
     "date": "2026-11-14T05:05:08Z",
     "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip"
    },
-   "downloads": 22,
+   "downloads": 25,
    "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
    "has_topic": true,
+   "category": "3D printing",
    "slug": "solidcraft-aprilcube"
   },
   {
@@ -561,6 +584,7 @@
    "downloads": 0,
    "image": null,
    "has_topic": false,
+   "category": "Shapes & patterns",
    "slug": "attractor-pattern"
   },
   {
@@ -572,7 +596,7 @@
    "name": "Filament Swatch",
    "description": "Filament sample tiles: brand, material, colour and temperatures in text, and thin steps that show how see-through the filament is.",
    "note": null,
-   "version": "0.2.0",
+   "version": "0.3.0",
    "entries": [
     "Filament swatch"
    ],
@@ -591,18 +615,20 @@
    ],
    "stars": 1,
    "license": "MIT",
-   "updated": "2026-11-16T08:44:56Z",
+   "updated": "2026-11-18T05:24:52Z",
    "created": "2026-11-14T21:45:57Z",
    "release": {
-    "tag": "v0.2.0",
-    "url": "https://github.com/tharje/filament-swatch-solidcraft/releases/tag/v0.2.0",
-    "date": "2026-11-16T08:44:57Z",
-    "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.2.0/filament-swatch-0.2.0.zip"
+    "tag": "v0.3.0",
+    "url": "https://github.com/tharje/filament-swatch-solidcraft/releases/tag/v0.3.0",
+    "date": "2026-11-18T05:24:53Z",
+    "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.3.0/filament-swatch-0.3.0.zip"
    },
-   "downloads": 36,
+   "downloads": 38,
    "image": "https://raw.githubusercontent.com/tharje/filament-swatch-solidcraft/main/docs/images/swatch.png",
    "has_topic": true,
-   "slug": "filament-swatch"
+   "category": "3D printing",
+   "slug": "filament-swatch",
+   "icon": "icons/filament-swatch.svg"
   },
   {
    "repo": "pro-d-e-v/solidcraft-plugin-gear",
@@ -630,9 +656,10 @@
     "date": "2026-11-14T09:09:32Z",
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
    },
-   "downloads": 86,
+   "downloads": 93,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
+   "category": "Gears & motion",
    "slug": "gear-generator"
   },
   {
@@ -662,6 +689,7 @@
    "downloads": 0,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-gridfinity-generator/main/docs/gridfinity-hollow-bin.png",
    "has_topic": false,
+   "category": "Storage & organizing",
    "slug": "solidcraft-gridfinity-generator"
   },
   {
@@ -690,9 +718,10 @@
     "date": "2026-11-15T09:02:24Z",
     "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip"
    },
-   "downloads": 86,
+   "downloads": 92,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
+   "category": "Shapes & patterns",
    "slug": "solidcraft-honeycomb"
   },
   {
@@ -728,6 +757,7 @@
    "downloads": 0,
    "image": "https://raw.githubusercontent.com/Frosty-Eldin/Solidcraft-lattice/main/docs/showcase.jpg",
    "has_topic": false,
+   "category": "Shapes & patterns",
    "slug": "lattice"
   },
   {
@@ -763,9 +793,10 @@
     "date": "2026-11-14T01:10:07Z",
     "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
    },
-   "downloads": 71,
+   "downloads": 75,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
+   "category": "3D printing",
    "slug": "mesh-solidify"
   },
   {
@@ -777,7 +808,7 @@
    "name": "openGrid",
    "description": "openGrid wall and desk boards on the 28 mm grid, Full or Lite, with screw holes and cut corners, as editable sketches and features.",
    "note": null,
-   "version": "0.2.0",
+   "version": "0.3.0",
    "entries": [
     "openGrid board"
    ],
@@ -799,18 +830,20 @@
    ],
    "stars": 1,
    "license": "MIT",
-   "updated": "2026-11-16T08:44:51Z",
+   "updated": "2026-11-18T05:24:48Z",
    "created": "2026-11-15T17:36:53Z",
    "release": {
-    "tag": "v0.2.0",
-    "url": "https://github.com/tharje/opengrid-solidcraft/releases/tag/v0.2.0",
-    "date": "2026-11-16T08:44:51Z",
-    "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.2.0/opengrid-0.2.0.zip"
+    "tag": "v0.3.0",
+    "url": "https://github.com/tharje/opengrid-solidcraft/releases/tag/v0.3.0",
+    "date": "2026-11-18T05:24:49Z",
+    "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.3.0/opengrid-0.3.0.zip"
    },
-   "downloads": 42,
+   "downloads": 47,
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
-   "slug": "opengrid"
+   "category": "Storage & organizing",
+   "slug": "opengrid",
+   "icon": "icons/opengrid.svg"
   },
   {
    "repo": "Stigern/SolidThreadsPlugin",
@@ -838,9 +871,10 @@
     "date": "2026-10-25T11:10:49Z",
     "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
    },
-   "downloads": 104,
+   "downloads": 109,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
+   "category": "Hardware & fasteners",
    "slug": "thread-generator"
   },
   {
@@ -869,6 +903,7 @@
    "downloads": 0,
    "image": null,
    "has_topic": false,
+   "category": "Aero & marine",
    "slug": "solidcraft-airfoil"
   },
   {
@@ -901,9 +936,10 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip"
    },
-   "downloads": 12,
+   "downloads": 16,
    "image": null,
    "has_topic": false,
+   "category": "Export & workflow",
    "slug": "makeorbit-cnc-studio"
   },
   {
@@ -936,9 +972,10 @@
     "date": "2026-11-16T04:55:50Z",
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-0.2.0.zip"
    },
-   "downloads": 23,
+   "downloads": 31,
    "image": null,
    "has_topic": false,
+   "category": "Export & workflow",
    "slug": "makeorbit"
   },
   {
@@ -978,9 +1015,10 @@
     "date": "2026-11-17T10:47:50Z",
     "zip": "https://github.com/pawelcel/EasyPDM-SolidCraft/releases/download/v0.9.0/EasyPDM_SolidCraft_Companion_linux-x64_v0.9.0.zip"
    },
-   "downloads": 5,
+   "downloads": 7,
    "image": "https://raw.githubusercontent.com/wiki/pawelcel/EasyPDM/images/solidcraft-plugins-menu.png",
    "has_topic": true,
+   "category": "Export & workflow",
    "slug": "easypdm"
   },
   {
@@ -1014,9 +1052,10 @@
     "date": "2026-11-13T06:32:36Z",
     "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
    },
-   "downloads": 50,
+   "downloads": 54,
    "image": null,
    "has_topic": false,
+   "category": "Storage & organizing",
    "slug": "solidcraft-gridfinity"
   },
   {
@@ -1044,6 +1083,7 @@
    "downloads": 0,
    "image": null,
    "has_topic": false,
+   "category": "Shapes & patterns",
    "slug": "helical-sketch"
   },
   {
@@ -1075,6 +1115,7 @@
    "downloads": 0,
    "image": "https://raw.githubusercontent.com/bbonsen/solidcraftPropellerPlugin/main/preview.png",
    "has_topic": false,
+   "category": "Aero & marine",
    "slug": "propellers"
   }
  ]

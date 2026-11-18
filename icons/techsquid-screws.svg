@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Screw</title>
+  <path d="M 25 27.5 L 25 54 A 7 4.04 0 0 0 39 54 L 39 27.5 Z" fill="#b8c3cf"/>
+  <path d="M 34.45 27.5 L 34.45 57.79 A 7 4.04 0 0 0 39 54 L 39 27.5 Z" fill="#8e9faf"/>
+  <path d="M 25 27.5 L 25 54 A 7 4.04 0 0 0 39 54 L 39 27.5 Z" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 25 42.5 Q 32 47.5 39 37.5" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 25 50 Q 32 55 39 45" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 17 15 L 17 27.5 A 15 8.66 0 0 0 47 27.5 L 47 15 Z" fill="#b8c3cf"/>
+  <path d="M 37.25 15 L 37.25 35.61 A 15 8.66 0 0 0 47 27.5 L 47 15 Z" fill="#8e9faf"/>
+  <path d="M 17 15 L 17 27.5 A 15 8.66 0 0 0 47 27.5 L 47 15 Z" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 17 15 A 15 8.66 0 1 0 47 15 A 15 8.66 0 1 0 17 15 Z" fill="#e2e8ef" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 40 15 L 36 19 L 28 19 L 24 15 L 28 11 L 36 11 Z" fill="#236ead" stroke="#34465b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

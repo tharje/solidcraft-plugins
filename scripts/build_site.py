@@ -7,7 +7,7 @@
 - sitemap.xml.
 Nothing here depends on today's date, so the files only change when a plugin does.
 """
-import html, json, os, re
+import html, json, os, re, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://tharje.github.io/solidcraft-plugins/"
@@ -35,10 +35,12 @@ def card(p, prefix=""):
     chips = "".join(f"<span>{e(t)}</span>" for t in p.get("topics", [])[:5])
     entries = ("Menu: " + " · ".join(e(x) for x in p["entries"])) if p.get("entries") else ""
     page = f'{prefix}plugins/{p["slug"]}/'
+    icon = f'<img class="icon" src="{prefix}{e(p["icon"])}" alt="" loading="lazy">' if p.get("icon") else ""
     return f'''<article class="card">
     <a class="pic{"" if p.get("image") else " empty"}" href="{page}">{pic}<span class="ph">{first}</span></a>
     <div class="body">
-      <h3><a class="name" href="{page}">{e(p["name"])}</a> <span class="ver">{"v" + e(p["version"]) if p.get("version") else ""}</span></h3>
+      <p class="cat">{e(p.get("category") or "")}</p>
+      <h3>{icon}<a class="name" href="{page}">{e(p["name"])}</a> <span class="ver">{"v" + e(p["version"]) if p.get("version") else ""}</span></h3>
       <a class="by" href="https://github.com/{e(p["owner"])}" target="_blank" rel="noopener"><img src="{e(p["avatar"])}&amp;s=40" alt="" loading="lazy"><span>{e(p["owner"])}</span></a>
       <p class="desc">{e(p["description"])}</p>
       <p class="entries">{entries}</p>{f"""
@@ -99,6 +101,8 @@ def plugin_page(p, others):
     desc = short(f"{p['description'].rstrip('.')}. A free plugin for SolidCraft CAD: download the zip and install it from Plugins › Install plugin.")
     rel = p.get("release") or {}
     facts = [f"<dt>Author</dt><dd><a href=\"https://github.com/{e(p['owner'])}\">{e(p['owner'])}</a></dd>"]
+    if p.get("category"):
+        facts.append(f"<dt>Category</dt><dd><a href=\"../../?category={e(urllib.parse.quote(p['category']))}\">{e(p['category'])}</a></dd>")
     if p.get("version"):
         facts.append(f"<dt>Version</dt><dd>{e(p['version'])}</dd>")
     if rel.get("tag"):
@@ -157,7 +161,7 @@ def plugin_page(p, others):
 
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › {e(p["name"])}</p>
-  <h1>{e(p["name"])} <span class="ver">{"v" + e(p["version"]) if p.get("version") else ""}</span></h1>
+  <h1>{f'<img class="icon" src="../../{e(p["icon"])}" alt="">' if p.get("icon") else ""}{e(p["name"])} <span class="ver">{"v" + e(p["version"]) if p.get("version") else ""}</span></h1>
   <p class="lead">{e(p["description"])}</p>{f"""
   <p class="note">{e(p["note"])}</p>""" if p.get("note") else ""}
   <div class="actions">
@@ -204,8 +208,32 @@ def replace(text, name, new):
     return text[:i] + "\n" + new + "\n" + text[j:]
 
 
+def icons(plugins):
+    """icons/<slug>.svg from the icon text update.py fetched; the text itself isn't kept in the data.
+    Rebuilt from data/plugins.json alone (no icon text in it), the icons already written are kept."""
+    out = os.path.join(ROOT, "icons")
+    os.makedirs(out, exist_ok=True)
+    keep = set()
+    for p in plugins:
+        fetched = "icon_svg" in p
+        svg = p.pop("icon_svg", None)
+        name = f"{p['slug']}.svg"
+        if svg:
+            with open(os.path.join(out, name), "w") as f:
+                f.write(svg)
+        if svg or (not fetched and p.get("icon") and os.path.exists(os.path.join(out, name))):
+            p["icon"] = f"icons/{name}"
+            keep.add(name)
+        else:
+            p.pop("icon", None)
+    for old in os.listdir(out):
+        if old not in keep:
+            os.remove(os.path.join(out, old))
+
+
 def build(plugins):
     slugs(plugins)
+    icons(plugins)
     path = os.path.join(ROOT, "index.html")
     with open(path) as f:
         page = f.read()

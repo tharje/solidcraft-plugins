@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Bearing</title>
+  <path d="M 5 24 L 5 38 A 27 15.59 0 0 0 59 38 L 59 24 Z" fill="#b8c3cf"/>
+  <path d="M 41.45 24 L 41.45 52.6 A 27 15.59 0 0 0 59 38 L 59 24 Z" fill="#8e9faf"/>
+  <path d="M 5 24 L 5 38 A 27 15.59 0 0 0 59 38 L 59 24 Z" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 9.5 24 A 22.5 12.99 0 1 0 54.5 24 A 22.5 12.99 0 1 0 9.5 24 Z" fill="#34465b"/>
+  <path d="M 32.15 16.78 A 4.31 4.31 0 1 0 40.78 16.78 A 4.31 4.31 0 1 0 32.15 16.78 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 33.86 15.28 A 1.3 1.3 0 1 0 36.46 15.28 A 1.3 1.3 0 1 0 33.86 15.28 Z" fill="#b9ddf8"/>
+  <path d="M 23.22 16.78 A 4.31 4.31 0 1 0 31.85 16.78 A 4.31 4.31 0 1 0 23.22 16.78 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 24.94 15.28 A 1.3 1.3 0 1 0 27.54 15.28 A 1.3 1.3 0 1 0 24.94 15.28 Z" fill="#b9ddf8"/>
+  <path d="M 39.88 19.36 A 4.31 4.31 0 1 0 48.51 19.36 A 4.31 4.31 0 1 0 39.88 19.36 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 41.6 17.86 A 1.3 1.3 0 1 0 44.2 17.86 A 1.3 1.3 0 1 0 41.6 17.86 Z" fill="#b9ddf8"/>
+  <path d="M 15.49 19.36 A 4.31 4.31 0 1 0 24.12 19.36 A 4.31 4.31 0 1 0 15.49 19.36 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 17.2 17.86 A 1.3 1.3 0 1 0 19.8 17.86 A 1.3 1.3 0 1 0 17.2 17.86 Z" fill="#b9ddf8"/>
+  <path d="M 11.02 23.82 A 4.31 4.31 0 1 0 19.65 23.82 A 4.31 4.31 0 1 0 11.02 23.82 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 12.74 22.32 A 1.3 1.3 0 1 0 15.34 22.32 A 1.3 1.3 0 1 0 12.74 22.32 Z" fill="#b9ddf8"/>
+  <path d="M 44.35 23.82 A 4.31 4.31 0 1 0 52.98 23.82 A 4.31 4.31 0 1 0 44.35 23.82 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 46.06 22.32 A 1.3 1.3 0 1 0 48.66 22.32 A 1.3 1.3 0 1 0 46.06 22.32 Z" fill="#b9ddf8"/>
+  <path d="M 44.35 28.98 A 4.31 4.31 0 1 0 52.98 28.98 A 4.31 4.31 0 1 0 44.35 28.98 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 46.06 27.48 A 1.3 1.3 0 1 0 48.66 27.48 A 1.3 1.3 0 1 0 46.06 27.48 Z" fill="#b9ddf8"/>
+  <path d="M 11.02 28.98 A 4.31 4.31 0 1 0 19.65 28.98 A 4.31 4.31 0 1 0 11.02 28.98 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 12.74 27.48 A 1.3 1.3 0 1 0 15.34 27.48 A 1.3 1.3 0 1 0 12.74 27.48 Z" fill="#b9ddf8"/>
+  <path d="M 39.88 33.44 A 4.31 4.31 0 1 0 48.51 33.44 A 4.31 4.31 0 1 0 39.88 33.44 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 41.6 31.94 A 1.3 1.3 0 1 0 44.2 31.94 A 1.3 1.3 0 1 0 41.6 31.94 Z" fill="#b9ddf8"/>
+  <path d="M 15.49 33.44 A 4.31 4.31 0 1 0 24.12 33.44 A 4.31 4.31 0 1 0 15.49 33.44 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 17.2 31.94 A 1.3 1.3 0 1 0 19.8 31.94 A 1.3 1.3 0 1 0 17.2 31.94 Z" fill="#b9ddf8"/>
+  <path d="M 32.15 36.02 A 4.31 4.31 0 1 0 40.78 36.02 A 4.31 4.31 0 1 0 32.15 36.02 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 33.86 34.52 A 1.3 1.3 0 1 0 36.46 34.52 A 1.3 1.3 0 1 0 33.86 34.52 Z" fill="#b9ddf8"/>
+  <path d="M 23.22 36.02 A 4.31 4.31 0 1 0 31.85 36.02 A 4.31 4.31 0 1 0 23.22 36.02 Z" fill="#328bd3" stroke="#34465b" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 24.94 34.52 A 1.3 1.3 0 1 0 27.54 34.52 A 1.3 1.3 0 1 0 24.94 34.52 Z" fill="#b9ddf8"/>
+  <path d="M 5 24 A 27 15.59 0 1 0 59 24 A 27 15.59 0 1 0 5 24 Z M 9.5 24 A 22.5 12.99 0 1 0 54.5 24 A 22.5 12.99 0 1 0 9.5 24 Z" fill="#e2e8ef" fill-rule="evenodd"/>
+  <path d="M 5 24 A 27 15.59 0 1 0 59 24 A 27 15.59 0 1 0 5 24 Z" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 9.5 24 A 22.5 12.99 0 1 0 54.5 24 A 22.5 12.99 0 1 0 9.5 24 Z" fill="none" stroke="#34465b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 20 24 A 12 6.93 0 1 0 44 24 A 12 6.93 0 1 0 20 24 Z" fill="#e2e8ef" stroke="#34465b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 25 24 A 7 4.04 0 1 0 39 24 A 7 4.04 0 1 0 25 24 Z" fill="#8e9faf" stroke="#34465b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

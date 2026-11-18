@@ -77,6 +77,10 @@ nav a { color: var(--muted); }
 .body { padding: 14px 16px 16px; display: flex; flex-direction: column; flex: 1; }
 .body h3 { margin: 0; font-size: 19px; line-height: 1.3; }
 .body h3 .name { color: var(--text); }
+.cat { margin: 0 0 2px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+/* command icons are drawn for SolidCraft's light ribbon: a light tile keeps them readable in dark mode */
+.icon { width: 1.35em; height: 1.35em; vertical-align: -0.28em; margin-right: 8px; padding: 2px;
+  background: #fff; border-radius: 6px; border: 1px solid var(--line); }
 .ver { font-size: 13px; font-weight: 500; color: var(--muted); margin-left: 4px; }
 .by { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: 14px; margin: 4px 0 8px; }
 .by img { width: 20px; height: 20px; border-radius: 50%; }

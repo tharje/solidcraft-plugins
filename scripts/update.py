@@ -146,6 +146,65 @@ def entries(m):
     return out
 
 
+# Categories for the filter, in the order they're shown. A plugin goes in the first whose words
+# turn up in its id, name, description or topics; CATEGORY_OF settles the ones words get wrong.
+CATEGORIES = [
+    ("Storage & organizing", r"gridfinity|opengrid|organi[sz]|storage|drawer|bins?\b"),
+    ("Hardware & fasteners", r"screw|nut\b|nuts\b|insert|thread|bolt|bearing|extrusion|v-wheel|fastener|hole"),
+    ("Gears & motion", r"gear|cycloid|rack\b|pulley|cam\b"),
+    ("Woodworking", r"wood|joiner|cabinet|carcass|sheet goods"),
+    ("Aero & marine", r"airfoil|wing|propeller|turbine|rotor"),
+    ("Shapes & patterns", r"pattern|lattice|honeycomb|gyroid|helix|helical|voronoi|text\b"),
+    ("3D printing", r"3d-print|printable|filament|mesh|stl\b|watertight"),
+    ("Export & workflow", r"export|step\b|pdm|drawing|sheet|upload|send"),
+]
+CATEGORY_OF = {
+    "solidcraft-aprilcube": "3D printing",
+    "filament-swatch": "3D printing",
+    "mesh-solidify": "3D printing",
+    "helical-sketch": "Shapes & patterns",
+    "iso-sheet": "Export & workflow",
+    "makeorbit": "Export & workflow",
+    "wood-joinery": "Woodworking",
+}
+
+
+def category(p):
+    if p["id"] in CATEGORY_OF:
+        return CATEGORY_OF[p["id"]]
+    words = " ".join([p["id"], p["name"], p["description"], *p["topics"]]).lower()
+    return next((name for name, rx in CATEGORIES if re.search(rx, words)), "Other")
+
+
+ICON_MAX = 40_000
+# Anything that could run or fetch something when the SVG is opened on its own: such an icon is left out.
+ICON_BAD = re.compile(r"<script|<foreignobject|<iframe|<embed|<object|\bon[a-z]+\s*=|javascript:|"
+                      r"(?:href|src)\s*=\s*[\"']\s*(?:https?:|//|data:)|@import|url\(\s*[\"']?\s*(?:https?:|//)", re.I)
+
+
+def icon_paths(m):
+    """The icons the manifest gives its commands (x-solidcraft-icon, SolidCraft 0.44), first one first."""
+    out = []
+    for e in m.get("runtime", {}).get("entries", []):
+        schema = e.get("input_schema") if isinstance(e.get("input_schema"), dict) else {}
+        icon = schema.get("x-solidcraft-icon") or e.get("x-solidcraft-icon")
+        if isinstance(icon, str) and icon.lower().endswith(".svg") and icon not in out:
+            out.append(icon)
+    return out
+
+
+def icon(repo, branch, folder, m):
+    """The plugin's first command icon as SVG text, or None when it has none or it doesn't look safe."""
+    for rel in icon_paths(m):
+        path = os.path.normpath(os.path.join(folder, rel)).lstrip("/")
+        if path.startswith(".."):
+            continue
+        text = get(f"/repos/{repo}/contents/{urllib.parse.quote(path)}?ref={urllib.parse.quote(branch)}", raw=True)
+        if text and len(text) <= ICON_MAX and "<svg" in text and not ICON_BAD.search(text):
+            return text
+    return None
+
+
 # What a plugin needs that its card can't tell, by plugin id.
 NOTES = {
     "easypdm": "Needs an EasyPDM server and the EasyPDM companion program, which also makes the plugin zip for each computer.",
@@ -245,7 +304,9 @@ def plugins(repo):
             "downloads": 0 if part else sum(a.get("download_count", 0) for a in assets if not several or mine(a)),
             "image": readme_image(r["full_name"], branch, folder if several or part else ""),
             "has_topic": "solidcraft-plugin" in r.get("topics", []),
+            "icon_svg": icon(r["full_name"], branch, os.path.dirname(path), m),
         })
+        out[-1]["category"] = category(out[-1])
     return out
 
 

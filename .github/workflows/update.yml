@@ -21,7 +21,7 @@ jobs:
       - name: Commit if changed
         run: |
           # the date alone changes every day: commit only when a plugin changed
-          git add -A data plugins index.html sitemap.xml
+          git add -A data plugins icons index.html sitemap.xml
           if git diff --cached --quiet -I '"generated": "20'; then
             echo "No plugin changed"
             exit 0

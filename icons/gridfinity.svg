@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Gridfinity bin</title>
+  <path d="M3.00 43.51L32.00 60.25L32.00 37.23L3.00 20.49Z" fill="#328bd3"/>
+  <path d="M61.00 43.51L32.00 60.25L32.00 37.23L61.00 20.49Z" fill="#236ead"/>
+  <path d="M32.00 3.75L61.00 20.49L32.00 37.23L3.00 20.49Z" fill="#b9ddf8"/>
+  <path d="M32.00 3.75L61.00 20.49L61.00 43.51L32.00 60.25L3.00 43.51L3.00 20.49Z" fill="none" stroke="#34465b" stroke-width="2.67" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M3.00 20.49L32.00 37.23" fill="none" stroke="#34465b" stroke-width="2.67" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M32.00 37.23L61.00 20.49" fill="none" stroke="#34465b" stroke-width="2.67" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M32.00 37.23L32.00 60.25" fill="none" stroke="#34465b" stroke-width="2.67" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M32.00 6.89L55.56 20.49L55.56 35.14L32.00 21.54Z" fill="#236ead"/>
+  <path d="M32.00 6.89L8.44 20.49L8.44 35.14L32.00 21.54Z" fill="#328bd3"/>
+  <path d="M32.00 21.54L55.56 35.14L32.00 48.74L8.44 35.14Z" fill="#e2e8ef"/>
+  <path d="M32.00 6.89L55.56 20.49L32.00 34.09L8.44 20.49Z" fill="none" stroke="#34465b" stroke-width="1.88" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M32.00 6.89L32.00 21.54" fill="none" stroke="#34465b" stroke-width="1.88" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

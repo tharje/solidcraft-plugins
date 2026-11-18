@@ -1,7 +1,7 @@
-// SolidCraft Plugins: cards from data/plugins.json, with search, tag filter and sorting.
+// SolidCraft Plugins: cards from data/plugins.json, with search, category filter and sorting.
 const $ = (s) => document.querySelector(s);
 let plugins = [];
-let tag = null;
+let category = new URLSearchParams(location.search).get("category");
 
 function ago(iso) {
   if (!iso) return "";
@@ -15,7 +15,7 @@ function ago(iso) {
 }
 
 function text(p) {
-  return [p.name, p.description, p.owner, p.repo, ...(p.entries || []), ...(p.topics || [])].join(" ").toLowerCase();
+  return [p.name, p.description, p.owner, p.repo, p.category, ...(p.entries || []), ...(p.topics || [])].join(" ").toLowerCase();
 }
 
 function message(s) {
@@ -38,6 +38,14 @@ function card(p) {
     img.onerror = () => pic.classList.add("empty");
   } else {
     pic.classList.add("empty");
+  }
+  t.querySelector(".cat").textContent = p.category || "";
+  if (p.icon) {
+    const i = document.createElement("img");
+    i.className = "icon";
+    i.src = p.icon;
+    i.alt = "";
+    t.querySelector("h3").prepend(i);
   }
   const name = t.querySelector(".name");
   name.textContent = p.name;
@@ -86,24 +94,28 @@ function show() {
     name: (a, b) => a.name.localeCompare(b.name),
   }[$("#sort").value];
   const list = plugins
-    .filter((p) => q.every((w) => text(p).includes(w)) && (!tag || (p.topics || []).includes(tag)))
+    .filter((p) => q.every((w) => text(p).includes(w)) && (!category || p.category === category))
     .sort(cmp);
   $("#list").replaceChildren(...(list.length ? list.map(card) : [message("No plugins match.")]));
   $("#count").textContent = `${list.length} of ${plugins.length} plugins`;
 }
 
-function tags() {
+// The categories, in the order update.py gives them (the order plugins first show up in), largest first.
+function categories() {
   const n = {};
-  for (const p of plugins) for (const x of p.topics || []) n[x] = (n[x] || 0) + 1;
-  const common = Object.keys(n).filter((x) => n[x] > 1).sort((a, b) => n[b] - n[a] || a.localeCompare(b)).slice(0, 14);
+  for (const p of plugins) if (p.category) n[p.category] = (n[p.category] || 0) + 1;
+  if (category && !n[category]) category = null;
   const box = $("#tags");
-  for (const x of [null, ...common]) {
+  for (const x of [null, ...Object.keys(n).sort((a, b) => n[b] - n[a] || a.localeCompare(b))]) {
     const b = document.createElement("button");
-    b.className = "tag" + (x === tag ? " on" : "");
+    b.className = "tag" + (x === category ? " on" : "");
     b.textContent = x ? `${x} (${n[x]})` : "All";
     b.onclick = () => {
-      tag = x;
+      category = x;
       box.querySelectorAll(".tag").forEach((e) => e.classList.toggle("on", e === b));
+      const url = new URL(location.href);
+      if (x) url.searchParams.set("category", x); else url.searchParams.delete("category");
+      history.replaceState(null, "", url);
       show();
     };
     box.append(b);
@@ -115,7 +127,7 @@ fetch("data/plugins.json")
   .then((d) => {
     plugins = d.plugins;
     $("#updated").textContent = `List updated ${new Date(d.generated).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}`;
-    tags();
+    categories();
     show();
   })
   .catch(() => $("#list").replaceChildren(message("Could not load the plugin list.")));

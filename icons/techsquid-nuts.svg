@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Nut</title>
+  <path d="M 57 24 L 44.5 36.5 L 44.5 51.5 L 57 39 Z" fill="#8e9faf" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 44.5 36.5 L 19.5 36.5 L 19.5 51.5 L 44.5 51.5 Z" fill="#b8c3cf" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 19.5 36.5 L 7 24 L 7 39 L 19.5 51.5 Z" fill="#b8c3cf" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 57 24 L 44.5 36.5 L 19.5 36.5 L 7 24 L 19.5 11.5 L 44.5 11.5 Z" fill="#e2e8ef" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 20.5 24 A 11.5 6.64 0 1 0 43.5 24 A 11.5 6.64 0 1 0 20.5 24 Z" fill="#236ead"/>
+  <path d="M 23.72 26.26 A 8.28 3.98 0 1 0 40.28 26.26 A 8.28 3.98 0 1 0 23.72 26.26 Z" fill="#328bd3"/>
+  <path d="M 20.5 24 A 11.5 6.64 0 1 0 43.5 24 A 11.5 6.64 0 1 0 20.5 24 Z" fill="none" stroke="#34465b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Mortise and tenon</title>
+  <path d="M13.44 4.00L21.82 8.84L13.44 13.68L5.06 8.84Z" fill="#e2e8ef" stroke="#34465b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M21.82 53.09L13.44 57.93L13.44 13.68L21.82 8.84Z" fill="#8e9faf" stroke="#34465b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M13.44 57.93L5.06 53.09L5.06 8.84L13.44 13.68Z" fill="#b8c3cf" stroke="#34465b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M26.61 25.43L36.19 30.96L32.60 33.04L23.02 27.51Z" fill="#b9ddf8" stroke="#34465b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M36.19 42.02L32.60 44.10L32.60 33.04L36.19 30.96Z" fill="#236ead" stroke="#34465b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M32.60 44.10L23.02 38.57L23.02 27.51L32.60 33.04Z" fill="#328bd3" stroke="#34465b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M38.59 26.81L58.94 38.57L50.56 43.41L30.20 31.65Z" fill="#e2e8ef" stroke="#34465b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M58.94 55.16L50.56 60.00L50.56 43.41L58.94 38.57Z" fill="#8e9faf" stroke="#34465b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M50.56 60.00L30.20 48.25L30.20 31.65L50.56 43.41Z" fill="#b8c3cf" stroke="#34465b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
