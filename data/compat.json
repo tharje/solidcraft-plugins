@@ -212,6 +212,15 @@
    "solidcraft": "0.44.1",
    "tested": "2026-11-18"
   },
+  "timber": {
+   "entries": 0,
+   "error": "error: plugin: No such file or directory (os error 2)",
+   "loads": false,
+   "ran": [],
+   "release": "0.1.1",
+   "solidcraft": "0.44.1",
+   "tested": "2026-11-19"
+  },
   "wood-joinery": {
    "entries": 13,
    "loads": true,
