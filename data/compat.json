@@ -38,7 +38,7 @@
     "optimise-plate",
     "solver-benchmark"
    ],
-   "release": "v0.4.0",
+   "release": "v0.4.1",
    "solidcraft": "0.44.1",
    "tested": "2026-11-19"
   },
@@ -146,6 +146,14 @@
    "release": "v0.1.0",
    "solidcraft": "0.44.1",
    "tested": "2026-11-18"
+  },
+  "solidcraft-laserjoints": {
+   "entries": 1,
+   "loads": true,
+   "ran": [],
+   "release": "Plugin",
+   "solidcraft": "0.44.1",
+   "tested": "2026-11-19"
   },
   "solidinserts": {
    "entries": 1,
