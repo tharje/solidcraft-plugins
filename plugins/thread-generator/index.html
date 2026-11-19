@@ -37,6 +37,7 @@
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Thread Generator</p>
   <h1>Thread Generator <span class="ver">v2.0.6</span></h1>
   <p class="lead">Cut a 3D-printable thread into a shaft or hole. Select its round face in the design, then Run. Hover a field for what it does. The thread is an editable feature in the timeline; one Ctrl+Z takes the whole run back.</p>
+  <p class="note">The plugin works in SolidCraft on every system. Its separate Thread Generator window (bolts, nuts, repaired 3MF) is Windows only.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip">Download .zip</a>
     <a class="btn gh" href="https://github.com/Stigern/SolidThreadsPlugin">Source on GitHub</a>
@@ -57,13 +58,25 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Thread+Generator&amp;plugin=Thread+Generator+%28https%3A%2F%2Fgithub.com%2FStigern%2FSolidThreadsPlugin%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/Stigern">Stigern</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>2.0.6</dd><dt>Latest release</dt><dd><a href="https://github.com/Stigern/SolidThreadsPlugin/releases/tag/v1.8.0">v1.8.0</a> (2026-10-25)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 1 stars · ⬇ 176 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.44.1 (2026-11-18)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/Stigern">Stigern</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>2.0.6</dd><dt>Latest release</dt><dd><a href="https://github.com/Stigern/SolidThreadsPlugin/releases/tag/v1.8.0">v1.8.0</a> (2026-10-25)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 1 stars · ⬇ 181 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.44.1 (2026-11-18)</dd></dl>
       
     </aside>
   </div>
+  <section class="notes">
+    <h2>What's new in v1.8.0 (2026-10-25)</h2>
+    <p>Thread Generator for <a href="https://github.com/tangency-labs/solidcraft" rel="nofollow noopener">SolidCraft</a>: 3D-printable threads with clearance, cut into the face you select in SolidCraft.</p>
+<h3>New in 1.8.0</h3>
+<ul><li><b>One Size field.</b> The separate Diameter and Pitch fields are gone, so the size you see is the size that&#x27;s cut. Pick from the list or type your own, like <code>M9x1.5</code>.</li><li><b>1 mm pitch on every size</b> from M4 to M50 (M8x1, M10x1, …), next to 2, 2.5, 3.5 and 5 mm.</li><li>When you use a new face, the <b>pitch you picked is kept</b> and the diameter follows the face.</li><li><b>New defaults:</b> M8x1, tolerance O.15, height 85%.</li></ul>
+<h3>Install</h3>
+<ul><li>Download <b>thread-generator-1.8.0.zip</b> below.</li><li>In SolidCraft open <b>Preferences → Plugins → Show in folder</b> and unzip it there, so you get <code>plugins\thread-generator\plugin.json</code>. Updating? Close Thread Generator first and replace the old folder.</li><li>Start <b>ThreadGenerator.exe</b> from that folder. Windows may say &quot;Windows protected your PC&quot; because the program isn&#x27;t code-signed: click *More info → Run anyway*.</li></ul>
+<p>Needs Windows 10/11 and SolidCraft 0.22 or later for threading a face. No Python needed.</p>
+<h3>What it does</h3>
+<ul><li><b>Thread a face in SolidCraft:</b> select a shaft or the inside of a hole, pick a size, tolerance and height, and SolidCraft cuts a modeled thread into it.</li><li><b>3D-printed metric sizes</b> after <a href="https://github.com/BalzGuenat/CustomThreads" rel="nofollow noopener">CustomThreads</a>: 1, 2 (experimental), 2.5, 3.5 and 5 mm pitches, plus ISO metric, fine and UNC.</li><li><b>Tolerance classes</b> O.0, O.1, O.15, O.2, O.4, O.8 and <b>height</b> 70–100%: lower teeth with flat tops that still fit a matching nut.</li><li>A to-scale <b>drawing</b> of bolt and nut that explains each setting.</li><li><b>Export repaired 3MF:</b> exports the selected body and runs Windows&#x27; own model repair on it, then opens it in your slicer.</li></ul>
+    <p><a href="https://github.com/Stigern/SolidThreadsPlugin/releases/tag/v1.8.0">Read all of it on GitHub ›</a></p>
+  </section>
   <section class="more">
-    <h2>More SolidCraft plugins</h2>
-    <ul><li><a href="../solidcraft-airfoil/">Airfoils &amp; Wings</a> <span>Design airfoils (NACA 4/5-digit or .dat coordinates) and loft wings: span, taper, sweep,…</span></li><li><a href="../makeorbit-cnc-studio/">An MakeOrbit CNC Studio senden</a> <span>Konstruktion als STEP an MakeOrbit CNC Studio übergeben (Übernahme dort mit Nachfrage) ·…</span></li><li><a href="../makeorbit/">An MakeOrbit senden</a> <span>Konstruktion als STEP/STL/3MF mit Quellstand an MakeOrbit übergeben (Archivierung dort…</span></li><li><a href="../easypdm/">EasyPDM</a> <span>Upload designs to an EasyPDM server and download them, through the EasyPDM companion…</span></li><li><a href="../edge-path-sweep/">Edge Path &amp; Sweep</a> <span>Create an open or closed 3D sketch path from selected edges and optionally sweep a…</span></li><li><a href="../custom-gears/">Gear Generator (ISO)</a> <span>ISO 53/54/21771 Standard and Involute Spur gear generator: d = m*Z, da = d + 2*m*(1+x),…</span></li></ul>
+    <h2>Similar SolidCraft plugins</h2>
+    <ul><li><a href="../solidinserts/">SolidInserts</a> <span>Create seats for heat-set threaded inserts at the circular rims of existing holes.</span></li><li><a href="../techsquid-extrusions/">Extrusions</a> <span>MISUMI 5 series T-slot and OpenBuilds V-slot rails, with slot nuts. Place fixed-length…</span></li><li><a href="../techsquid-inserts/">Heat-set inserts</a> <span>Based on CNC Kitchen&#x27;s heat-set inserts. Pick sketch points or circles: each gets the…</span></li><li><a href="../techsquid-nuts/">Hex nuts</a> <span>Place plain hex nuts or nylon-insert lock nuts, with optional captive pockets and bolt…</span></li><li><a href="../techsquid-screws/">Screws</a> <span>Based on the ISO metric screw standards. Pick an existing bore to seat a screw, or pick…</span></li><li><a href="../solidcraft-3d-printing-holes/">3D Printing Holes</a> <span>Holes made for 3D printing. Teardrop: select sketch circles, then run it; each gets a…</span></li></ul>
     <p><a href="../../">All SolidCraft plugins ›</a></p>
   </section>
 </main>

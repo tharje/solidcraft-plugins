@@ -75,6 +75,12 @@ function card(p) {
     el.textContent = p.tested.label;
     el.title = p.tested.title;
   }
+  if (p.asks) {
+    const el = t.querySelector(".asks");
+    el.hidden = false;
+    el.textContent = p.asks.label;
+    el.title = p.asks.title;
+  }
   t.querySelector(".report").href = p.report;
   t.querySelector(".stars").textContent = `★ ${p.stars}`;
   t.querySelector(".dl").textContent = `⬇ ${p.downloads}`;
@@ -83,6 +89,11 @@ function card(p) {
   if (p.release && p.release.zip) {
     zip.href = p.release.zip;
     zip.title = `${p.release.tag}: the zip from the latest release`;
+  } else if (p.example) {
+    zip.href = p.example;
+    zip.target = "_blank";
+    zip.rel = "noopener";
+    zip.textContent = "Plugin guide";
   } else {
     zip.classList.add("disabled");
     zip.textContent = "No release yet";

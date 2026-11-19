@@ -37,6 +37,7 @@
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › An MakeOrbit CNC Studio senden</p>
   <h1>An MakeOrbit CNC Studio senden <span class="ver">v0.2.0</span></h1>
   <p class="lead">Konstruktion als STEP an MakeOrbit CNC Studio übergeben (Übernahme dort mit Nachfrage) · Send the design as STEP to MakeOrbit CNC Studio</p>
+  <p class="note">Needs the MakeOrbit CNC Studio app, for now on macOS only (Windows is to follow).</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip">Download .zip</a>
     <a class="btn gh" href="https://github.com/645DF/MakeOrbit-SolidCraft/tree/main/manifeste/makeorbit-cnc-studio">Source on GitHub</a>
@@ -57,13 +58,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+An+MakeOrbit+CNC+Studio+senden&amp;plugin=An+MakeOrbit+CNC+Studio+senden+%28https%3A%2F%2Fgithub.com%2F645DF%2FMakeOrbit-SolidCraft%2Ftree%2Fmain%2Fmanifeste%2Fmakeorbit-cnc-studio%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/645DF">645DF</a></dd><dt>Category</dt><dd><a href="../../?category=Export%20%26%20workflow">Export &amp; workflow</a></dd><dt>Version</dt><dd>0.2.0</dd><dt>Latest release</dt><dd><a href="https://github.com/645DF/MakeOrbit-SolidCraft/releases/tag/v0.2.0">v0.2.0</a> (2026-11-16)</dd><dt>GitHub</dt><dd>★ 0 stars · ⬇ 32 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn&#x27;t run.">✓ Loads in SolidCraft 0.44.1 (2026-11-18)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/645DF">645DF</a></dd><dt>Category</dt><dd><a href="../../?category=Export%20%26%20workflow">Export &amp; workflow</a></dd><dt>Version</dt><dd>0.2.0</dd><dt>Latest release</dt><dd><a href="https://github.com/645DF/MakeOrbit-SolidCraft/releases/tag/v0.2.0">v0.2.0</a> (2026-11-16)</dd><dt>GitHub</dt><dd>★ 0 stars · ⬇ 32 downloads</dd><dt>Asks for</dt><dd title="SolidCraft asks you to allow this when you install the plugin.">files, extra SolidCraft commands</dd><dt>Tested</dt><dd title="Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn&#x27;t run.">✓ Loads in SolidCraft 0.44.1 (2026-11-18)</dd></dl>
       
     </aside>
   </div>
+  <section class="notes">
+    <h2>What's new in v0.2.0 (2026-11-16)</h2>
+    <p>First public release.</p>
+<ul><li><b>makeorbit-cnc-studio-0.2.0.zip</b> – “An MakeOrbit CNC Studio senden / Send to MakeOrbit CNC Studio”: exports the design as STEP; CNC Studio imports it after asking.</li><li><b>makeorbit-0.2.0.zip</b> – “An MakeOrbit senden / Send to MakeOrbit”: STEP, STL (binary/ASCII), 3MF and the SolidCraft design; MakeOrbit asks which project to archive it in.</li></ul>
+<p>Requires SolidCraft 0.43.0 or newer, and on macOS MakeOrbit CNC Studio 0.5.16+ and/or MakeOrbit 2.9.18+. Install via <b>Plugins › Install plugin…</b> and grant the folder <b>austausch</b> (see README). Check the files against <code>SHA256SUMS.txt</code>.</p>
+<p>Source-available, not open source – see LICENSE.</p>
+    <p><a href="https://github.com/645DF/MakeOrbit-SolidCraft/releases/tag/v0.2.0">The release on GitHub ›</a></p>
+  </section>
   <section class="more">
-    <h2>More SolidCraft plugins</h2>
-    <ul><li><a href="../makeorbit/">An MakeOrbit senden</a> <span>Konstruktion als STEP/STL/3MF mit Quellstand an MakeOrbit übergeben (Archivierung dort…</span></li><li><a href="../easypdm/">EasyPDM</a> <span>Upload designs to an EasyPDM server and download them, through the EasyPDM companion…</span></li><li><a href="../edge-path-sweep/">Edge Path &amp; Sweep</a> <span>Create an open or closed 3D sketch path from selected edges and optionally sweep a…</span></li><li><a href="../custom-gears/">Gear Generator (ISO)</a> <span>ISO 53/54/21771 Standard and Involute Spur gear generator: d = m*Z, da = d + 2*m*(1+x),…</span></li><li><a href="../gen-design-engine/">Generative Design Engine</a> <span>Engineering material library (sourced cards), material report, a 2D stress check of flat…</span></li><li><a href="../solidcraft-gridfinity/">Gridfinity</a> <span>Gridfinity bins and baseplates from a grid size: feet, stacking lip, magnet holes,…</span></li></ul>
+    <h2>Similar SolidCraft plugins</h2>
+    <ul><li><a href="../iso-sheet/">Isometric Manufacture Sheet</a> <span>Projects every body of the open design to a true isometric, removes hidden lines with a…</span></li><li><a href="../makeorbit/">An MakeOrbit senden</a> <span>Konstruktion als STEP/STL/3MF mit Quellstand an MakeOrbit übergeben (Archivierung dort…</span></li><li><a href="../easypdm/">EasyPDM</a> <span>Upload designs to an EasyPDM server and download them, through the EasyPDM companion…</span></li><li><a href="../solidcraft-laserjoints/">Laser joints</a> <span>Fingerzinken und Schlitze an Kanten von Laserplatten. Kerf und Pressung bleiben…</span></li><li><a href="../gears/">Gears</a> <span>Involute, bevel, hypoid, worm, rack, internal, planetary and cycloidal gears with…</span></li><li><a href="../techsquid-bearings/">Bearings</a> <span>Place radial bearings or create CSK clutches with editable dimensions, keyways and…</span></li></ul>
     <p><a href="../../">All SolidCraft plugins ›</a></p>
   </section>
 </main>

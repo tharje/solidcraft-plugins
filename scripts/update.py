@@ -205,10 +205,42 @@ def icon(repo, branch, folder, m):
     return None
 
 
-# What a plugin needs that its card can't tell, by plugin id.
+# The release notes kept for the plugin's page: the start is enough, the page links to the rest.
+NOTES_MAX = 6000
+
+# What a plugin needs that its card can't tell, by plugin id: other programs, and systems it's
+# limited to. Written by hand from each plugin's README.
 NOTES = {
     "easypdm": "Needs an EasyPDM server and the EasyPDM companion program, which also makes the plugin zip for each computer.",
+    "makeorbit": "Needs the MakeOrbit app, for now on macOS only (Windows is to follow).",
+    "makeorbit-cnc-studio": "Needs the MakeOrbit CNC Studio app, for now on macOS only (Windows is to follow).",
+    "thread-generator": "The plugin works in SolidCraft on every system. Its separate Thread Generator window (bolts, nuts, repaired 3MF) is Windows only.",
 }
+
+
+def permissions(m):
+    """What the plugin asks SolidCraft for (and the user approves): the ones it turns on, not those
+    it lists as false or empty."""
+    perms = m.get("runtime", {}).get("permissions")
+    return sorted(k for k, v in perms.items() if v) if isinstance(perms, dict) else []
+
+
+# Repositories whose plugins are the examples in SolidCraft's own plugin guide: shown as examples,
+# without the whole app's stars, release, topics and picture.
+EXAMPLE_REPOS = {"tangency-labs/solidcraft"}
+EXAMPLE_NOTE = ("An example from SolidCraft's own plugin guide, with its source code, for people making plugins. "
+                "There is no zip: build it as the guide describes.")
+GUIDE = "https://docs.solidcraft.io/dev/plugins.html"
+
+
+def example_description(m):
+    """The manifest's description, or what its entries say it does."""
+    if m.get("description"):
+        return m["description"]
+    exts = [x for e in m.get("runtime", {}).get("entries", []) if e.get("kind") == "importer" for x in e.get("extensions", [])]
+    if exts:
+        return "Opens " + ", ".join(f".{x}" for x in exts) + " files as a new design: the importer example from SolidCraft's plugin guide."
+    return "An example plugin from SolidCraft's plugin guide."
 
 
 def latin(text):
@@ -277,6 +309,8 @@ def plugins(repo):
         name, desc, note = english(m, r)
         if part:
             note = NOTES.get(m["id"]) or f"Part of the bigger {r['name']} project: see its README for what else it needs."
+        elif m["id"] in NOTES:
+            note = " ".join(x for x in (NOTES[m["id"]], note) if x)
         out.append({
             "repo": r["full_name"],
             "url": f"{r['html_url']}/tree/{branch}/{urllib.parse.quote(folder)}" if (several or part) and folder else r["html_url"],
@@ -289,7 +323,7 @@ def plugins(repo):
             "version": m.get("version"),
             "entries": entries(m),
             "commands": len(m.get("runtime", {}).get("commands", [])),
-            "permissions": sorted(m.get("runtime", {}).get("permissions", {}).keys()) if isinstance(m.get("runtime", {}).get("permissions"), dict) else [],
+            "permissions": permissions(m),
             "topics": [] if part else tags(r.get("topics", [])),
             "stars": r.get("stargazers_count", 0),
             "license": (r.get("license") or {}).get("spdx_id"),
@@ -300,12 +334,20 @@ def plugins(repo):
                 "url": rel["html_url"],
                 "date": rel.get("published_at"),
                 "zip": zip_["browser_download_url"] if zip_ else None,
+                "notes": (rel.get("body") or "").strip()[:NOTES_MAX],
             },
             "downloads": 0 if part else sum(a.get("download_count", 0) for a in assets if not several or mine(a)),
             "image": readme_image(r["full_name"], branch, folder if several or part else ""),
             "has_topic": "solidcraft-plugin" in r.get("topics", []),
             "icon_svg": icon(r["full_name"], branch, os.path.dirname(path), m),
         })
+        if r["full_name"].lower() in EXAMPLE_REPOS:
+            # the date of the example's own last change, not of the whole app
+            last = get(f"/repos/{r['full_name']}/commits?path={urllib.parse.quote(folder)}&per_page=1") or []
+            out[-1].update(description=example_description(m), note=EXAMPLE_NOTE, stars=0, downloads=0,
+                           topics=[], release=None, image=None, example=GUIDE, category="Examples",
+                           updated=last[0]["commit"]["committer"]["date"] if last else r.get("pushed_at"))
+            continue
         out[-1]["category"] = category(out[-1])
     return out
 

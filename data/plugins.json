@@ -1,90 +1,6 @@
 {
- "generated": "2026-11-19T07:14:13Z",
+ "generated": "2026-11-19T09:06:50Z",
  "plugins": [
-  {
-   "repo": "tangency-labs/solidcraft",
-   "url": "https://github.com/tangency-labs/solidcraft/tree/main/docs/book/plugin-examples/box-importer",
-   "owner": "tangency-labs",
-   "avatar": "https://avatars.githubusercontent.com/u/343519248?v=4",
-   "id": "box-importer",
-   "name": "Box Importer",
-   "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
-   "note": null,
-   "version": "0.1.0",
-   "entries": [
-    "convert"
-   ],
-   "commands": 0,
-   "permissions": [],
-   "topics": [
-    "3d-modeling",
-    "brep",
-    "cad",
-    "egui",
-    "mcp",
-    "parametric",
-    "step"
-   ],
-   "stars": 17149,
-   "license": "Apache-2.0",
-   "updated": "2026-11-19T07:11:18Z",
-   "created": "2026-10-07T18:57:48Z",
-   "release": {
-    "tag": "v0.44.1",
-    "url": "https://github.com/tangency-labs/solidcraft/releases/tag/v0.44.1",
-    "date": "2026-11-17T19:23:15Z",
-    "zip": null
-   },
-   "downloads": 0,
-   "image": "https://raw.githubusercontent.com/tangency-labs/solidcraft/main/assets/icons/app/linux/exports/hicolor/256x256/apps/io.tangencylabs.solidcraft.png",
-   "has_topic": false,
-   "category": "Export & workflow",
-   "slug": "box-importer",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Ftangency-labs%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29"
-  },
-  {
-   "repo": "tangency-labs/solidcraft",
-   "url": "https://github.com/tangency-labs/solidcraft/tree/main/docs/book/plugin-examples/plate-maker",
-   "owner": "tangency-labs",
-   "avatar": "https://avatars.githubusercontent.com/u/343519248?v=4",
-   "id": "plate-maker",
-   "name": "Plate Maker",
-   "description": "Adds a square plate.",
-   "note": null,
-   "version": "0.1.0",
-   "entries": [
-    "Model"
-   ],
-   "commands": 1,
-   "permissions": [],
-   "topics": [
-    "3d-modeling",
-    "brep",
-    "cad",
-    "egui",
-    "mcp",
-    "parametric",
-    "step"
-   ],
-   "stars": 17149,
-   "license": "Apache-2.0",
-   "updated": "2026-11-19T07:11:18Z",
-   "created": "2026-10-07T18:57:48Z",
-   "release": {
-    "tag": "v0.44.1",
-    "url": "https://github.com/tangency-labs/solidcraft/releases/tag/v0.44.1",
-    "date": "2026-11-17T19:23:15Z",
-    "zip": null
-   },
-   "downloads": 0,
-   "image": "https://raw.githubusercontent.com/tangency-labs/solidcraft/main/assets/icons/app/linux/exports/hicolor/256x256/apps/io.tangencylabs.solidcraft.png",
-   "has_topic": false,
-   "category": "Export & workflow",
-   "slug": "plate-maker",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Ftangency-labs%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29"
-  },
   {
    "repo": "bherbruck/solidcraft-gears",
    "url": "https://github.com/bherbruck/solidcraft-gears",
@@ -112,9 +28,10 @@
     "tag": "v0.1.1",
     "url": "https://github.com/bherbruck/solidcraft-gears/releases/tag/v0.1.1",
     "date": "2026-11-12T22:08:37Z",
-    "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip"
+    "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip",
+    "notes": "Involute spur gear generator plugin for SolidCraft. Unzip into your SolidCraft plugins folder; see the README."
    },
-   "downloads": 2139,
+   "downloads": 2170,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "category": "Gears & motion",
@@ -124,6 +41,7 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbherbruck%2Fsolidcraft-gears%29"
   },
   {
@@ -160,9 +78,10 @@
     "tag": "v0.1.8",
     "url": "https://github.com/TomasDJo/solidcraft-woodwork/releases/tag/v0.1.8",
     "date": "2026-11-18T16:02:35Z",
-    "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.8/woodwork-0.1.8.zip"
+    "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.1.8/woodwork-0.1.8.zip",
+    "notes": "## What's Changed\n* 0.1.8-rc.1: the selection as a dialog field, Place Auto, icons, SolidCraft 0.44 by @TomasDJo in https://github.com/TomasDJo/solidcraft-woodwork/pull/34\n* Cabinets in a run are held by their corners at the wall by @TomasDJo in https://github.com/TomasDJo/solidcraft-woodwork/pull/36\n* Version 0.1.8-rc.2 by @TomasDJo in https://github.com/TomasDJo/solidcraft-woodwork/pull/37\n* 0.1.8: a usage page, a shorter README by @TomasDJo in https://github.com/TomasDJo/solidcraft-woodwork/pull/38\n\n\n**Full Changelog**: https://github.com/TomasDJo/solidcraft-woodwork/compare/v0.1.7...v0.1.8"
    },
-   "downloads": 347,
+   "downloads": 351,
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/main/docs/banner.png",
    "has_topic": false,
    "category": "Woodworking",
@@ -172,6 +91,10 @@
     "label": "✓ Loads in SolidCraft 0.44.1",
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
+   "asks": {
+    "label": "Asks for: files",
+    "title": "SolidCraft asks you to allow this when you install the plugin."
    },
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Woodwork&plugin=Woodwork+%28https%3A%2F%2Fgithub.com%2FTomasDJo%2Fsolidcraft-woodwork%29"
   },
@@ -215,9 +138,10 @@
     "tag": "v1.3.1",
     "url": "https://github.com/tharje/gridfinity-solidcraft/releases/tag/v1.3.1",
     "date": "2026-11-19T07:10:10Z",
-    "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.3.1/gridfinity-1.3.1.zip"
+    "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.3.1/gridfinity-1.3.1.zip",
+    "notes": "## Fixed\n\n**Drawer floor goes up to the walls.** When you click a drawer's floor, the plate now stops at the nearest wall on each side, also when the walls are separate bodies from the floor. Before, it only used the floor's own size, so a floor that runs in under the walls gave a plate that was too big.\n\nEverything else is built exactly as before.\n\n## Install\nDownload `gridfinity-1.3.1.zip` below, then in SolidCraft: **Plugins › Install plugin…** and pick the zip. From a script, add `\"replace\": true` to update an installed version.\n\nTested with SolidCraft 0.43.0 and 0.44.1. **The drawer baseplate's form needs SolidCraft 0.44 or newer**: 0.43 can't open it because of the Drawer floor field. Bins and baseplates work in 0.43 as before, and scripts can use all three there. On macOS, use SolidCraft 0.43 or newer (0.41 and 0.42 crash there when any plugin runs)."
    },
-   "downloads": 525,
+   "downloads": 532,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "category": "Storage & organizing",
@@ -228,6 +152,7 @@
     "date": "2026-11-19",
     "title": "Tested 2026-11-19 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fgridfinity-solidcraft%29"
   },
   {
@@ -261,9 +186,10 @@
     "tag": "v1.2.0",
     "url": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/tag/v1.2.0",
     "date": "2026-11-17T21:33:38Z",
-    "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.2.0/solidinserts-1.2.0.zip"
+    "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.2.0/solidinserts-1.2.0.zip",
+    "notes": "## SolidCraft Desktop 0.44.1\n\n**Live 3D preview and hole selection work in the official SolidCraft Desktop 0.44.1, with no patch required.**\n\nInstall `solidinserts-1.2.0.zip` from **File → Plugins…**. Open **Model → Plugins → Insert Seats** and select the circular hole rims in the viewport. The preview updates as you pick rims or change the insert settings. **Run** applies the cuts in one undo step.\n\n## Italiano\n\n**L’anteprima 3D e la selezione dei bordi dei fori funzionano su SolidCraft Desktop 0.44.1 ufficiale, senza patch.**\n\nInstalla `solidinserts-1.2.0.zip` da **File → Plugin…**. Apri **Modella → Plugin → Insert Seats**, seleziona i bordi circolari dei fori e controlla l’anteprima prima di premere **Esegui**.\n\n- [SolidCraft Desktop 0.44.1](https://github.com/tangency-labs/solidcraft/releases/tag/v0.44.1)\n- [Changelog / Modifiche dalla v1.1.0](https://github.com/NoOneExceptEnderk/SolidInserts/compare/v1.1.0...v1.2.0)\n\nThe `.zip.sha256` file contains the SHA-256 checksum of the plugin ZIP."
    },
-   "downloads": 240,
+   "downloads": 241,
    "image": null,
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -273,83 +199,8 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidInserts&plugin=SolidInserts+%28https%3A%2F%2Fgithub.com%2FNoOneExceptEnderk%2FSolidInserts%29"
-  },
-  {
-   "repo": "bbonsen/solidcraftGearsPlugin",
-   "url": "https://github.com/bbonsen/solidcraftGearsPlugin",
-   "owner": "bbonsen",
-   "avatar": "https://avatars.githubusercontent.com/u/126472107?v=4",
-   "id": "gears",
-   "name": "Gears",
-   "description": "Involute, bevel, hypoid, worm, rack, internal, planetary and cycloidal gears with profile shift, root fillets, tip relief and crowning.",
-   "note": null,
-   "version": "0.10.0",
-   "entries": [
-    "Spur gear",
-    "Helical gear",
-    "Herringbone gear",
-    "Bevel gear",
-    "Worm",
-    "Worm wheel",
-    "Rack and pinion",
-    "Hypoid gear",
-    "Internal gear",
-    "Planetary gear set",
-    "Cycloidal gear",
-    "Cycloidal drive"
-   ],
-   "commands": 7,
-   "permissions": [],
-   "topics": [],
-   "stars": 5,
-   "license": "MIT",
-   "updated": "2026-11-16T23:02:31Z",
-   "created": "2026-11-16T21:44:42Z",
-   "release": null,
-   "downloads": 0,
-   "image": "https://raw.githubusercontent.com/bbonsen/solidcraftGearsPlugin/main/preview.png",
-   "has_topic": false,
-   "category": "Gears & motion",
-   "slug": "gears",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftGearsPlugin%29"
-  },
-  {
-   "repo": "TechSquidTV/SolidCraft-Plugins",
-   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-bearings",
-   "owner": "TechSquidTV",
-   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
-   "id": "techsquid-bearings",
-   "name": "Bearings",
-   "description": "Place radial bearings or create CSK clutches with editable dimensions, keyways and recorded references.",
-   "note": null,
-   "version": "0.3.0",
-   "entries": [
-    "Bearing",
-    "CSK clutch"
-   ],
-   "commands": 30,
-   "permissions": [],
-   "topics": [],
-   "stars": 3,
-   "license": "MIT",
-   "updated": "2026-11-19T01:31:10Z",
-   "created": "2026-11-14T16:04:12Z",
-   "release": {
-    "tag": "v0.2.0",
-    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
-    "date": "2026-11-15T23:31:04Z",
-    "zip": null
-   },
-   "downloads": 0,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/bearings-and-clutches/bearings-and-clutches.png",
-   "has_topic": false,
-   "category": "Hardware & fasteners",
-   "slug": "techsquid-bearings",
-   "icon": "icons/techsquid-bearings.svg",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Bearings&plugin=Bearings+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-bearings%29"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -376,9 +227,10 @@
     "tag": "v0.2.0",
     "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
     "date": "2026-11-15T23:31:04Z",
-    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip"
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-extrusions-0.2.0.zip",
+    "notes": "Screws and pocketed nuts now stay attached as designs change, and extrusion rails can follow sketch paths.\n\n## Screws\n\n- **Screw and hole** creates native rigid joints for clearance, counterbored, countersunk and tapped placements. Moving a source sketch point moves its screw; changing a counterbore depth moves the screw with the floor.\n- Tapped attachments work with layout sketches created before the solid, face-mounted sketches and placement from another active component.\n- Attachments survive save/reopen and work in saved designs without the plugin installed. Identical screw definitions remain reusable across runs.\n- The screw README compares the plugin with SolidCraft 0.42's built-in fasteners, including modeled threads, custom heads and drives, the combined hole workflow, and the built-in tool's preview and sizing advantages.\n\n## Nuts and extrusions\n\n- Nut pockets follow source sketch positions and orientation. Native joints keep pocketed nuts seated through moves and depth changes.\n- Nut pocket hexes retain their alignment through large sketch moves and share one editable across-flats dimension.\n- **Sketch driven** extrusions create independent rails from straight sketch lines. Rail length, position, orientation, end taps and cross-holes follow path edits; hole offsets can be measured from either end.\n- Fixed-length extrusion screw holes use editable reference sketches so their access and clearance cuts move together.\n\n## Try the attachments\n\nDownload `screw-attachment-test.sc` and open it in SolidCraft 0.42.0 or newer. Gold screws sit in counterbores on the left; teal screws sit in tapped holes on the right. In **Change Parameters**, try `counterbore_x = 32 mm`, `tapped_x = 18 mm`, or `recess_depth = 6 mm`, then save and reopen. Cosmetic threads keep edits responsive. The accompanying guide lists all parameters and expected results.\n\n## Breaking changes and migration\n\n- Existing screw placements and pocketed nuts are not automatically attached by upgrading. Regenerate those placements to add native joints; regenerate old nut pockets to get linked geometry and the improved hex constraints. Loose **Screw only** and **Nut only** placements remain loose.\n- New extrusion screw holes use per-face reference sketches and Access/Clearance extrusion features. Scripts selecting the old `Hole at` feature names must update. Existing saved rails are not migrated, and fixed-length rails are not converted into sketch-driven rails.\n- A missing or ambiguous screw seat is refused instead of leaving unattached hardware.\n\n## Installation\n\nDownload the `techsquid-<plugin>-0.2.0.zip` for each plugin you use. In SolidCraft, choose **Plugins > Install plugin…**, select the zip, and replace the installed version. All four packages use version 0.2.0; heat-set inserts have no new behavior in this release. SHA-256 checksum files accompany the packages.\n\n## Validation\n\nValidated with SolidCraft 0.42.0. The live test plate passed hole moves, a 4 → 6 mm recess change, a 12 → 14 mm plate-thickness change and save/reopen, checking all four joints, actual screw geometry, bore positions and plate volume. The release also runs the screw attachment regression suite, saved-example checks, Rust unit tests, formatting and native/Wasm lint checks."
    },
-   "downloads": 200,
+   "downloads": 203,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/v-slot-gantry/v-slot-gantry.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -389,6 +241,7 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Extrusions&plugin=Extrusions+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-extrusions%29"
   },
   {
@@ -415,9 +268,10 @@
     "tag": "v0.2.0",
     "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
     "date": "2026-11-15T23:31:04Z",
-    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-inserts-0.2.0.zip"
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-inserts-0.2.0.zip",
+    "notes": "Screws and pocketed nuts now stay attached as designs change, and extrusion rails can follow sketch paths.\n\n## Screws\n\n- **Screw and hole** creates native rigid joints for clearance, counterbored, countersunk and tapped placements. Moving a source sketch point moves its screw; changing a counterbore depth moves the screw with the floor.\n- Tapped attachments work with layout sketches created before the solid, face-mounted sketches and placement from another active component.\n- Attachments survive save/reopen and work in saved designs without the plugin installed. Identical screw definitions remain reusable across runs.\n- The screw README compares the plugin with SolidCraft 0.42's built-in fasteners, including modeled threads, custom heads and drives, the combined hole workflow, and the built-in tool's preview and sizing advantages.\n\n## Nuts and extrusions\n\n- Nut pockets follow source sketch positions and orientation. Native joints keep pocketed nuts seated through moves and depth changes.\n- Nut pocket hexes retain their alignment through large sketch moves and share one editable across-flats dimension.\n- **Sketch driven** extrusions create independent rails from straight sketch lines. Rail length, position, orientation, end taps and cross-holes follow path edits; hole offsets can be measured from either end.\n- Fixed-length extrusion screw holes use editable reference sketches so their access and clearance cuts move together.\n\n## Try the attachments\n\nDownload `screw-attachment-test.sc` and open it in SolidCraft 0.42.0 or newer. Gold screws sit in counterbores on the left; teal screws sit in tapped holes on the right. In **Change Parameters**, try `counterbore_x = 32 mm`, `tapped_x = 18 mm`, or `recess_depth = 6 mm`, then save and reopen. Cosmetic threads keep edits responsive. The accompanying guide lists all parameters and expected results.\n\n## Breaking changes and migration\n\n- Existing screw placements and pocketed nuts are not automatically attached by upgrading. Regenerate those placements to add native joints; regenerate old nut pockets to get linked geometry and the improved hex constraints. Loose **Screw only** and **Nut only** placements remain loose.\n- New extrusion screw holes use per-face reference sketches and Access/Clearance extrusion features. Scripts selecting the old `Hole at` feature names must update. Existing saved rails are not migrated, and fixed-length rails are not converted into sketch-driven rails.\n- A missing or ambiguous screw seat is refused instead of leaving unattached hardware.\n\n## Installation\n\nDownload the `techsquid-<plugin>-0.2.0.zip` for each plugin you use. In SolidCraft, choose **Plugins > Install plugin…**, select the zip, and replace the installed version. All four packages use version 0.2.0; heat-set inserts have no new behavior in this release. SHA-256 checksum files accompany the packages.\n\n## Validation\n\nValidated with SolidCraft 0.42.0. The live test plate passed hole moves, a 4 → 6 mm recess change, a 12 → 14 mm plate-thickness change and save/reopen, checking all four joints, actual screw geometry, bore positions and plate volume. The release also runs the screw attachment regression suite, saved-example checks, Rust unit tests, formatting and native/Wasm lint checks."
    },
-   "downloads": 177,
+   "downloads": 178,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/pcb-enclosure/insert-detail.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -428,6 +282,7 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat-set+inserts&plugin=Heat-set+inserts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-inserts%29"
   },
   {
@@ -454,9 +309,10 @@
     "tag": "v0.2.0",
     "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
     "date": "2026-11-15T23:31:04Z",
-    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip"
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-nuts-0.2.0.zip",
+    "notes": "Screws and pocketed nuts now stay attached as designs change, and extrusion rails can follow sketch paths.\n\n## Screws\n\n- **Screw and hole** creates native rigid joints for clearance, counterbored, countersunk and tapped placements. Moving a source sketch point moves its screw; changing a counterbore depth moves the screw with the floor.\n- Tapped attachments work with layout sketches created before the solid, face-mounted sketches and placement from another active component.\n- Attachments survive save/reopen and work in saved designs without the plugin installed. Identical screw definitions remain reusable across runs.\n- The screw README compares the plugin with SolidCraft 0.42's built-in fasteners, including modeled threads, custom heads and drives, the combined hole workflow, and the built-in tool's preview and sizing advantages.\n\n## Nuts and extrusions\n\n- Nut pockets follow source sketch positions and orientation. Native joints keep pocketed nuts seated through moves and depth changes.\n- Nut pocket hexes retain their alignment through large sketch moves and share one editable across-flats dimension.\n- **Sketch driven** extrusions create independent rails from straight sketch lines. Rail length, position, orientation, end taps and cross-holes follow path edits; hole offsets can be measured from either end.\n- Fixed-length extrusion screw holes use editable reference sketches so their access and clearance cuts move together.\n\n## Try the attachments\n\nDownload `screw-attachment-test.sc` and open it in SolidCraft 0.42.0 or newer. Gold screws sit in counterbores on the left; teal screws sit in tapped holes on the right. In **Change Parameters**, try `counterbore_x = 32 mm`, `tapped_x = 18 mm`, or `recess_depth = 6 mm`, then save and reopen. Cosmetic threads keep edits responsive. The accompanying guide lists all parameters and expected results.\n\n## Breaking changes and migration\n\n- Existing screw placements and pocketed nuts are not automatically attached by upgrading. Regenerate those placements to add native joints; regenerate old nut pockets to get linked geometry and the improved hex constraints. Loose **Screw only** and **Nut only** placements remain loose.\n- New extrusion screw holes use per-face reference sketches and Access/Clearance extrusion features. Scripts selecting the old `Hole at` feature names must update. Existing saved rails are not migrated, and fixed-length rails are not converted into sketch-driven rails.\n- A missing or ambiguous screw seat is refused instead of leaving unattached hardware.\n\n## Installation\n\nDownload the `techsquid-<plugin>-0.2.0.zip` for each plugin you use. In SolidCraft, choose **Plugins > Install plugin…**, select the zip, and replace the installed version. All four packages use version 0.2.0; heat-set inserts have no new behavior in this release. SHA-256 checksum files accompany the packages.\n\n## Validation\n\nValidated with SolidCraft 0.42.0. The live test plate passed hole moves, a 4 → 6 mm recess change, a 12 → 14 mm plate-thickness change and save/reopen, checking all four joints, actual screw geometry, bore positions and plate volume. The release also runs the screw attachment regression suite, saved-example checks, Rust unit tests, formatting and native/Wasm lint checks."
    },
-   "downloads": 208,
+   "downloads": 212,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/editable-mounting-plate/pockets-after.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -467,6 +323,7 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Hex+nuts&plugin=Hex+nuts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-nuts%29"
   },
   {
@@ -493,9 +350,10 @@
     "tag": "v0.2.0",
     "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
     "date": "2026-11-15T23:31:04Z",
-    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip"
+    "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.2.0/techsquid-screws-0.2.0.zip",
+    "notes": "Screws and pocketed nuts now stay attached as designs change, and extrusion rails can follow sketch paths.\n\n## Screws\n\n- **Screw and hole** creates native rigid joints for clearance, counterbored, countersunk and tapped placements. Moving a source sketch point moves its screw; changing a counterbore depth moves the screw with the floor.\n- Tapped attachments work with layout sketches created before the solid, face-mounted sketches and placement from another active component.\n- Attachments survive save/reopen and work in saved designs without the plugin installed. Identical screw definitions remain reusable across runs.\n- The screw README compares the plugin with SolidCraft 0.42's built-in fasteners, including modeled threads, custom heads and drives, the combined hole workflow, and the built-in tool's preview and sizing advantages.\n\n## Nuts and extrusions\n\n- Nut pockets follow source sketch positions and orientation. Native joints keep pocketed nuts seated through moves and depth changes.\n- Nut pocket hexes retain their alignment through large sketch moves and share one editable across-flats dimension.\n- **Sketch driven** extrusions create independent rails from straight sketch lines. Rail length, position, orientation, end taps and cross-holes follow path edits; hole offsets can be measured from either end.\n- Fixed-length extrusion screw holes use editable reference sketches so their access and clearance cuts move together.\n\n## Try the attachments\n\nDownload `screw-attachment-test.sc` and open it in SolidCraft 0.42.0 or newer. Gold screws sit in counterbores on the left; teal screws sit in tapped holes on the right. In **Change Parameters**, try `counterbore_x = 32 mm`, `tapped_x = 18 mm`, or `recess_depth = 6 mm`, then save and reopen. Cosmetic threads keep edits responsive. The accompanying guide lists all parameters and expected results.\n\n## Breaking changes and migration\n\n- Existing screw placements and pocketed nuts are not automatically attached by upgrading. Regenerate those placements to add native joints; regenerate old nut pockets to get linked geometry and the improved hex constraints. Loose **Screw only** and **Nut only** placements remain loose.\n- New extrusion screw holes use per-face reference sketches and Access/Clearance extrusion features. Scripts selecting the old `Hole at` feature names must update. Existing saved rails are not migrated, and fixed-length rails are not converted into sketch-driven rails.\n- A missing or ambiguous screw seat is refused instead of leaving unattached hardware.\n\n## Installation\n\nDownload the `techsquid-<plugin>-0.2.0.zip` for each plugin you use. In SolidCraft, choose **Plugins > Install plugin…**, select the zip, and replace the installed version. All four packages use version 0.2.0; heat-set inserts have no new behavior in this release. SHA-256 checksum files accompany the packages.\n\n## Validation\n\nValidated with SolidCraft 0.42.0. The live test plate passed hole moves, a 4 → 6 mm recess change, a 12 → 14 mm plate-thickness change and save/reopen, checking all four joints, actual screw geometry, bore positions and plate volume. The release also runs the screw attachment regression suite, saved-example checks, Rust unit tests, formatting and native/Wasm lint checks."
    },
-   "downloads": 265,
+   "downloads": 270,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/editable-mounting-plate/editable-mounting-plate.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -506,42 +364,8 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Screws&plugin=Screws+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-screws%29"
-  },
-  {
-   "repo": "TechSquidTV/SolidCraft-Plugins",
-   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-v-wheels",
-   "owner": "TechSquidTV",
-   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
-   "id": "techsquid-v-wheels",
-   "name": "V-wheels",
-   "description": "OpenBuilds V-wheels. Pick sketch points or circles: each gets a wheel, with its bearings and shim if you want them. With nothing picked, one wheel sits on the origin.",
-   "note": null,
-   "version": "0.3.0",
-   "entries": [
-    "V-wheel"
-   ],
-   "commands": 27,
-   "permissions": [],
-   "topics": [],
-   "stars": 3,
-   "license": "MIT",
-   "updated": "2026-11-19T01:31:10Z",
-   "created": "2026-11-14T16:04:12Z",
-   "release": {
-    "tag": "v0.2.0",
-    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
-    "date": "2026-11-15T23:31:04Z",
-    "zip": null
-   },
-   "downloads": 0,
-   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/v-slot-gantry/axle-section.png",
-   "has_topic": false,
-   "category": "Hardware & fasteners",
-   "slug": "techsquid-v-wheels",
-   "icon": "icons/techsquid-v-wheels.svg",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+V-wheels&plugin=V-wheels+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-v-wheels%29"
   },
   {
    "repo": "WilliamHJKL/solidcraft-wood-joinery",
@@ -573,17 +397,18 @@
    "topics": [],
    "stars": 3,
    "license": "Apache-2.0",
-   "updated": "2026-11-17T21:34:09Z",
+   "updated": "2026-11-19T07:22:17Z",
    "created": "2026-11-14T21:51:21Z",
    "release": {
     "tag": "v0.9.0",
     "url": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.9.0",
     "date": "2026-11-17T21:34:10Z",
-    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.9.0/wood-joinery-fr.zip"
+    "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.9.0/wood-joinery-en.zip",
+    "notes": "Woodworking joints for SolidCraft, as a command plugin. This version gives each command its own icon. The joints themselves are the same as in v0.8.2.\n\n## Install\n\nYou need the SolidCraft desktop application, version 0.42.0 or later. The icons show from version 0.44.0.\n\n1. Download `wood-joinery-en.zip` (English) or `wood-joinery-fr.zip` (French) below. Do not take the \"Source code\" archives, and do not unzip the file.\n2. In SolidCraft, open Preferences › Plugins › Install plugin… and pick the file.\n3. The commands are in the Plugins group of the Model tab.\n\nInstall one package only. Both have the same plugin id. The [README](https://github.com/WilliamHJKL/solidcraft-wood-joinery#install) has the full steps.\n\n## New since v0.8.2\n\n- **An icon for each command**: SolidCraft 0.44 draws it on the ribbon button, in the menus and in the dialog's header. Each icon shows the boards in grey and the part that makes the joint in blue, such as the tenon, the dowels or the screw.\n- The icons use only the colours of the SolidCraft icon palette, so they follow the light and dark themes.\n- SolidCraft 0.42 and 0.43 ignore the icons and show the generic plugin icon, as before.\n\n## Limits\n\n- The boards must lie along the X, Y and Z axes.\n- The joints are not parametric: they add ordinary features in one undo step.\n- The cuts at an angle add many features: six for a miter or a scarf, nine for each dovetail, eight for each wedge.\n- A board in a component that was turned or moved is not supported yet. The command then fails with a message and changes nothing.\n- A tenon does not adjust itself to a groove already cut.\n- Error messages are in English in both packages.\n\n## Tested\n\n`tests/check.py` runs 136 end-to-end checks. They pass with `solidcraft-cli` 0.44.1 and 0.43.0. The 13 icons pass the shape and colour rules of the SolidCraft 0.44.1 icon check.\n\nThe icons have not been checked in the desktop application yet.\n\nSHA-256:\n\n```\nf2ce91f9ed24553bc781cf7b359c6a30aa7c2ba6a6085d2bcc32d1ee218c6782  wood-joinery-en.zip\n11376f58b7d9b2a660a2b1c84f1ae88e0ec94c063cf31ab94c9d9462252b0f2a  wood-joinery-fr.zip\n```"
    },
-   "downloads": 186,
+   "downloads": 190,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
-   "has_topic": false,
+   "has_topic": true,
    "category": "Woodworking",
    "slug": "wood-joinery",
    "icon": "icons/wood-joinery.svg",
@@ -592,6 +417,7 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Wood+joinery&plugin=Wood+joinery+%28https%3A%2F%2Fgithub.com%2FWilliamHJKL%2Fsolidcraft-wood-joinery%29"
   },
   {
@@ -610,9 +436,7 @@
    "commands": 3,
    "permissions": [
     "clock",
-    "command_groups",
-    "files",
-    "net"
+    "files"
    ],
    "topics": [],
    "stars": 2,
@@ -623,9 +447,10 @@
     "tag": "v1.1.0",
     "url": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/tag/v1.1.0",
     "date": "2026-11-15T01:06:37Z",
-    "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip"
+    "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip",
+    "notes": "1.1.0 adds a native scale dropdown and hardens the form values.\n\n- **Scale** is now a real dropdown: `Auto`, `1:1`, `1:2`, `1:5`, `1:10`, `1:20`, `1:50`, `1:100` (default `Auto`).\n- **Date** is validated as `YYYY-MM-DD`; empty uses today (UTC).\n- **Write SVG to** accepts a file name or a folder ending in `/` or `\\`; `.svg` is added when missing.\n- **Bodies** match case-insensitively; an unknown name reports the available bodies.\n- Auto scale considers up to `1:100`; enlargements display as `2:1`; an overflowing drawing returns `scale_note`.\n- The result now includes `date` and `available_bodies`.\n\nStill host-limited in SolidCraft 0.42.0: a dynamic body list, calendar picker and folder Browse need plugin-form support (tangency-labs/solidcraft#16274). The manifest marks `format: date` and `format: path` for forward compatibility.\n\nInstall: Preferences > Plugins > Install plugin... and pick `iso-sheet.zip`. Restart SolidCraft after a manual folder install.\n\nBuilt with cargo-component against `craft:plugin@0.1.0`, target `wasm32-unknown-unknown` (no WASI imports)."
    },
-   "downloads": 139,
+   "downloads": 143,
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
    "category": "Export & workflow",
@@ -634,6 +459,10 @@
     "label": "✓ Loads in SolidCraft 0.44.1",
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
+   "asks": {
+    "label": "Asks for: files",
+    "title": "SolidCraft asks you to allow this when you install the plugin."
    },
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Isometric+Manufacture+Sheet&plugin=Isometric+Manufacture+Sheet+%28https%3A%2F%2Fgithub.com%2Fjcar01%2Fsolidcraft-plugin-iso-sheet%29"
   },
@@ -663,9 +492,10 @@
     "tag": "v0.2.0",
     "url": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/tag/v0.2.0",
     "date": "2026-11-16T21:17:21Z",
-    "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.2.0/solidcraft-3d-printing-holes.zip"
+    "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.2.0/solidcraft-3d-printing-holes.zip",
+    "notes": "### Changed\n- **Tip size is now given in percent of the diameter** (`tip_extra_d`, default **2.5 %**). The default teardrop is unchanged (tip at 1.05·r); only the way it is specified changed. The tip dimension keeps the percentage visible in its expression, e.g. `hole_d / 2 + hole_d * 2.5 / 100`, so you can edit it for a single hole later.\n- **Apply to all circles in sketch** is now a checkbox (replaces the *Circles* dropdown).\n- **Tip direction** (formerly *Up*) has clearer choices: `world +Z (print up)` and `sketch +X / -X / +Y / -Y`.\n- **Override: tip from centre** (formerly *Tip height*) also accepts `d` for the diameter, e.g. `d/2 + 0.3 mm` or `d*sqrt(2)/2` for a classic 45° teardrop.\n\n### Removed\n- *Flat top at* (`flat_top`).\n- The *Up angle* form field. A custom angle can still be passed from scripts, e.g. `up: \"300\"`.\n\n### Compatibility\nScripts that use the old inputs keep working: `tip_extra` (percent of the radius) and `scope` (`\"selected\"` / `\"all in sketch\"`) are still accepted, as are the short `up` values `auto`, `+x`, `-x`, `+y`, `-y`."
    },
-   "downloads": 116,
+   "downloads": 117,
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
    "category": "Hardware & fasteners",
@@ -675,6 +505,7 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+3D+Printing+Holes&plugin=3D+Printing+Holes+%28https%3A%2F%2Fgithub.com%2FSB97%2Fsolidcraft-3d-printing-holes%29"
   },
   {
@@ -708,9 +539,10 @@
     "tag": "v0.4.0",
     "url": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/tag/v0.4.0",
     "date": "2026-11-14T05:05:08Z",
-    "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip"
+    "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip",
+    "notes": "Generate editable two-color AprilTag and ArUco targets in SolidCraft desktop.\n\n- Build cuboids or voxel shapes, with distinct marker IDs across each batch.\n- Preview the marker layout and optionally engrave a label on each target.\n- Export tracking JSON and per-target 3MF files with the included Python companion.\n\nDownload the ZIP and choose **Plugins → Install plugin…** in SolidCraft desktop 0.41.0 or later. Use the accompanying SHA-256 file to verify the download."
    },
-   "downloads": 45,
+   "downloads": 46,
    "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
    "has_topic": true,
    "category": "3D printing",
@@ -720,37 +552,8 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+AprilCube&plugin=AprilCube+%28https%3A%2F%2Fgithub.com%2Ftakuto-NA%2Fsolidcraft-aprilcube%29"
-  },
-  {
-   "repo": "jamescarruthers/attractor_pattern_solidcraft",
-   "url": "https://github.com/jamescarruthers/attractor_pattern_solidcraft",
-   "owner": "jamescarruthers",
-   "avatar": "https://avatars.githubusercontent.com/u/7226201?v=4",
-   "id": "attractor-pattern",
-   "name": "Attractor pattern",
-   "description": "Copies a body over a face. Each copy is scaled, sunk, turned and coloured by its distance to attractors.",
-   "note": null,
-   "version": "0.4.0",
-   "entries": [
-    "Attractor pattern",
-    "Preview attractor pattern"
-   ],
-   "commands": 9,
-   "permissions": [],
-   "topics": [],
-   "stars": 1,
-   "license": null,
-   "updated": "2026-11-16T08:26:38Z",
-   "created": "2026-11-13T13:21:36Z",
-   "release": null,
-   "downloads": 0,
-   "image": null,
-   "has_topic": false,
-   "category": "Shapes & patterns",
-   "slug": "attractor-pattern",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Attractor+pattern&plugin=Attractor+pattern+%28https%3A%2F%2Fgithub.com%2Fjamescarruthers%2Fattractor_pattern_solidcraft%29"
   },
   {
    "repo": "tharje/filament-swatch-solidcraft",
@@ -786,9 +589,10 @@
     "tag": "v0.3.0",
     "url": "https://github.com/tharje/filament-swatch-solidcraft/releases/tag/v0.3.0",
     "date": "2026-11-18T05:24:53Z",
-    "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.3.0/filament-swatch-0.3.0.zip"
+    "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.3.0/filament-swatch-0.3.0.zip",
+    "notes": "## New\n\n**Its own icon and a short name in the ribbon** (SolidCraft 0.44): the button now says **Swatch**, with a swatch icon, instead of a plug and \"Filam... swatch\". Older SolidCraft versions ignore both.\n\nSwatches come out exactly as before.\n\n## Install\nDownload `filament-swatch-0.3.0.zip` below, then in SolidCraft: **Plugins › Install plugin…** and pick the zip.\n\nTested with SolidCraft 0.43.0 and 0.44.1 on Linux. On macOS, use SolidCraft 0.43 or newer (0.41 and 0.42 crash there when any plugin runs)."
    },
-   "downloads": 65,
+   "downloads": 67,
    "image": "https://raw.githubusercontent.com/tharje/filament-swatch-solidcraft/main/docs/images/swatch.png",
    "has_topic": true,
    "category": "3D printing",
@@ -799,6 +603,7 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Filament+Swatch&plugin=Filament+Swatch+%28https%3A%2F%2Fgithub.com%2Ftharje%2Ffilament-swatch-solidcraft%29"
   },
   {
@@ -825,9 +630,10 @@
     "tag": "v0.4.0",
     "url": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/tag/v0.4.0",
     "date": "2026-11-14T09:09:32Z",
-    "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip"
+    "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip",
+    "notes": ""
    },
-   "downloads": 138,
+   "downloads": 142,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "category": "Gears & motion",
@@ -837,39 +643,49 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear+generator&plugin=Gear+generator+%28https%3A%2F%2Fgithub.com%2Fpro-d-e-v%2Fsolidcraft-plugin-gear%29"
   },
   {
-   "repo": "Xusr404/solidcraft-gridfinity-generator",
-   "url": "https://github.com/Xusr404/solidcraft-gridfinity-generator",
-   "owner": "Xusr404",
-   "avatar": "https://avatars.githubusercontent.com/u/81714014?v=4",
-   "id": "solidcraft-gridfinity-generator",
-   "name": "Gridfinity Builder",
-   "description": "Generate editable Gridfinity bins, compartments, stacking lips and drawer baseplates.",
+   "repo": "LudaLunizz/Generative-design-plugin-for-SolidCraft",
+   "url": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft",
+   "owner": "LudaLunizz",
+   "avatar": "https://avatars.githubusercontent.com/u/33155561?v=4",
+   "id": "gen-design-engine",
+   "name": "Generative Design Engine",
+   "description": "Engineering material library (sourced cards), material report, a 2D stress check of flat parts with safety factor, and a plate optimiser (sketch + extrude). Third-party plugin, not affiliated with SolidCraft.",
    "note": null,
-   "version": "0.1.0",
+   "version": "0.4.2",
    "entries": [
-    "Gridfinity Hollow Bin",
-    "Gridfinity Solid Bin",
-    "Gridfinity Baseplate",
-    "Gridfinity Feet Only"
+    "apply-material",
+    "material-report",
+    "materials",
+    "stress-check",
+    "optimise-plate",
+    "solver-benchmark"
    ],
-   "commands": 5,
+   "commands": 11,
    "permissions": [],
    "topics": [],
    "stars": 1,
-   "license": "MIT",
-   "updated": "2026-11-15T14:05:00Z",
-   "created": "2026-11-15T14:04:01Z",
-   "release": null,
-   "downloads": 0,
-   "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-gridfinity-generator/main/docs/gridfinity-hollow-bin.png",
+   "license": "Apache-2.0",
+   "updated": "2026-11-19T08:44:28Z",
+   "created": "2026-11-17T07:12:52Z",
+   "release": {
+    "tag": "v0.4.1",
+    "url": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/releases/tag/v0.4.1",
+    "date": "2026-11-19T07:38:48Z",
+    "zip": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/releases/download/v0.4.1/gen-design-engine-0.4.1.zip",
+    "notes": "**Third-party plugin, not affiliated with SolidCraft or Tangency Labs; made independently, it only builds on their software.** Tested with SolidCraft 0.44.1.\n\n**Changed in 0.4.1**\n- Aluminium 6061-T6 and 7075-T6 now carry guaranteed specification minimums instead of ASM typical values: 6061-T6 yield 240 / tensile 260 MPa (extrusion and bar minimum; sheet and plate guarantee 240 / 290), 7075-T6 yield 460 / tensile 540 MPa (plate 6.3-12.5 mm, unclad). Sources: ASTM B209M-14 table 3, Aluminum Association table 11.1, EN 485-2 / EN 755-2. The shear strengths were removed (no specification guarantees one).\n- The stress check is therefore stricter for aluminium: allowable stress at safety factor 2 is 120 MPa (6061) and 230 MPa (7075). A design that passed with 0.4.0 may now report a lower safety factor.\n- The README and the plugin description state that this is a third-party project.\n\nEverything else is as in 0.4.0: `optimise-plate`, `apply-material`, `material-report`, `materials`, `stress-check`, `solver-benchmark`, and the command-line tools `stress3d`, `stress3d_printed`, `beam_opt`.\n\n**Limits**\n- A design aid, not a certified analysis. The plate optimiser checks stiffness only; run `stress-check` on its result.\n- Thicker plate, clad sheet and other product forms have other minimums; check your supplier's certificate. The inch-pound ASTM text is paywalled, so the ksi figures are converted.\n- Designs that already hold an older aluminium card (same name, other values) make `apply-material` refuse until the old material is renamed.\n\n**Install:** Preferences > Plugins > Install plugin... and pick `gen-design-engine-0.4.1.zip`, or `plugin.install {\"path\": \".../gen-design-engine-0.4.1.zip\", \"replace\": true}`. Check the download with `gen-design-engine-0.4.1.zip.sha256` (`sha256sum -c`).\n\nDual-licensed MIT OR Apache-2.0."
+   },
+   "downloads": 8,
+   "image": null,
    "has_topic": false,
-   "category": "Storage & organizing",
-   "slug": "solidcraft-gridfinity-generator",
+   "category": "Other",
+   "slug": "gen-design-engine",
    "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity+Builder&plugin=Gridfinity+Builder+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-gridfinity-generator%29"
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Generative+Design+Engine&plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2FGenerative-design-plugin-for-SolidCraft%29"
   },
   {
    "repo": "Xusr404/solidcraft-honeycomb-plugin",
@@ -895,9 +711,10 @@
     "tag": "v0.1.0",
     "url": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/tag/v0.1.0",
     "date": "2026-11-15T09:02:24Z",
-    "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip"
+    "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip",
+    "notes": "**Full Changelog**: https://github.com/Xusr404/solidcraft-honeycomb-plugin/commits/v0.1.0"
    },
-   "downloads": 140,
+   "downloads": 147,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
    "category": "Shapes & patterns",
@@ -907,45 +724,8 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Honeycomb+%26+Hexagon+Generator&plugin=Honeycomb+%26+Hexagon+Generator+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-honeycomb-plugin%29"
-  },
-  {
-   "repo": "Frosty-Eldin/Solidcraft-lattice",
-   "url": "https://github.com/Frosty-Eldin/Solidcraft-lattice",
-   "owner": "Frosty-Eldin",
-   "avatar": "https://avatars.githubusercontent.com/u/356501104?v=4",
-   "id": "lattice",
-   "name": "Lattice Generator",
-   "description": "Gyroid/TPMS, strut and honeycomb lattices that fill the selected body as watertight meshes, with variable density by control points. SolidCraft 0.42+.",
-   "note": null,
-   "version": "0.5.2",
-   "entries": [
-    "Gyroid",
-    "Gyroid VD",
-    "Struts",
-    "Struts VD",
-    "Honeycomb"
-   ],
-   "commands": 13,
-   "permissions": [],
-   "topics": [],
-   "stars": 1,
-   "license": "MIT",
-   "updated": "2026-11-16T16:22:10Z",
-   "created": "2026-11-16T16:15:20Z",
-   "release": {
-    "tag": "v0.5.2",
-    "url": "https://github.com/Frosty-Eldin/Solidcraft-lattice/releases/tag/v0.5.2",
-    "date": "2026-11-16T16:22:11Z",
-    "zip": null
-   },
-   "downloads": 0,
-   "image": "https://raw.githubusercontent.com/Frosty-Eldin/Solidcraft-lattice/main/docs/showcase.jpg",
-   "has_topic": false,
-   "category": "Shapes & patterns",
-   "slug": "lattice",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Lattice+Generator&plugin=Lattice+Generator+%28https%3A%2F%2Fgithub.com%2FFrosty-Eldin%2FSolidcraft-lattice%29"
   },
   {
    "repo": "JakeMathews/mesh-solidify",
@@ -978,9 +758,10 @@
     "tag": "v0.2.0",
     "url": "https://github.com/JakeMathews/mesh-solidify/releases/tag/v0.2.0",
     "date": "2026-11-14T01:10:07Z",
-    "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip"
+    "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip",
+    "notes": "Rewritten in Rust, primarily as a **SolidCraft plugin**, with a standalone command line that needs no Python.\n\n## Assets\n\n| file | what it is |\n|---|---|\n| `mesh-solidify-plugin.zip` | SolidCraft plugin (0.41+). Preferences › Plugins › Install plugin…, then Plugins › Mesh Solidify. |\n| `mesh-solidify-v0.2.0-<target>.tar.gz` / `.zip` | Command line for macOS (Apple Silicon, Intel), Linux (x86-64, ARM64) and Windows. |\n| `mesh-solidify-skill.zip` | Claude Code skill. Unzip into `.claude/skills/`. |\n| `solidify.py` | The original Python version (0.1.1), for reference. |\n| `SHA256SUMS.txt` | Checksums. |\n\n## Highlights\n\n- **Plugin:** *Solidify Mesh…* rebuilds the selected mesh body as a new watertight body in one undo step. The dialog defaults to 10% scale. *Inspect Mesh…* reports holes, loose parts and size.\n- **CLI:** same flags, `--json` and exit codes as 0.1; about 2× faster with a quarter of the memory (978k-triangle compressor: 35 s instead of 76 s; 650k-triangle toolbox at 400M voxels: 34 s and 2 GB instead of 123 s and 7.8 GB). New `--voxel auto` and `--threads`; reads PLY.\n- Octree winding-number evaluation, marching tetrahedra, manifold-preserving decimation, void filling.\n\n## SolidCraft 0.41.0 limits\n\nThese are the host's limits, not the plugin's:\n- A plugin can read mesh bodies of at most **2,730 triangles**, and send back about 30,000. For larger scans use the CLI and *Insert Mesh*.\n- **macOS:** the signed 0.41.0 build lacks the JIT entitlement Wasmtime needs, so running *any* plugin kills the process (\"Code Signature Invalid\"). Use a build without the hardened runtime until SolidCraft fixes it.\n\nSee [CHANGELOG.md](https://github.com/JakeMathews/mesh-solidify/blob/main/CHANGELOG.md)."
    },
-   "downloads": 115,
+   "downloads": 116,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "category": "3D printing",
@@ -990,6 +771,7 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Mesh+Solidify&plugin=Mesh+Solidify+%28https%3A%2F%2Fgithub.com%2FJakeMathews%2Fmesh-solidify%29"
   },
   {
@@ -1029,9 +811,10 @@
     "tag": "v0.3.0",
     "url": "https://github.com/tharje/opengrid-solidcraft/releases/tag/v0.3.0",
     "date": "2026-11-18T05:24:49Z",
-    "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.3.0/opengrid-0.3.0.zip"
+    "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.3.0/opengrid-0.3.0.zip",
+    "notes": "## New\n\n**Its own icon and a short name in the ribbon** (SolidCraft 0.44): the button now says **Board**, with an openGrid board icon, instead of a plug and \"open... board\". Older SolidCraft versions ignore both.\n\nBoards come out exactly as before.\n\n## Install\nDownload `opengrid-0.3.0.zip` below, then in SolidCraft: **Plugins › Install plugin…** and pick the zip.\n\nTested with SolidCraft 0.43.0 and 0.44.1 on Linux. On macOS, use SolidCraft 0.43 or newer (0.41 and 0.42 crash there when any plugin runs). Not printed yet: please report how snaps fit."
    },
-   "downloads": 76,
+   "downloads": 80,
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
    "category": "Storage & organizing",
@@ -1042,6 +825,7 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+openGrid&plugin=openGrid+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fopengrid-solidcraft%29"
   },
   {
@@ -1052,7 +836,7 @@
    "id": "thread-generator",
    "name": "Thread Generator",
    "description": "Cut a 3D-printable thread into a shaft or hole. Select its round face in the design, then Run. Hover a field for what it does. The thread is an editable feature in the timeline; one Ctrl+Z takes the whole run back.",
-   "note": null,
+   "note": "The plugin works in SolidCraft on every system. Its separate Thread Generator window (bolts, nuts, repaired 3MF) is Windows only.",
    "version": "2.0.6",
    "entries": [
     "Add thread"
@@ -1068,9 +852,10 @@
     "tag": "v1.8.0",
     "url": "https://github.com/Stigern/SolidThreadsPlugin/releases/tag/v1.8.0",
     "date": "2026-10-25T11:10:49Z",
-    "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip"
+    "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip",
+    "notes": "Thread Generator for [SolidCraft](https://github.com/tangency-labs/solidcraft): 3D-printable threads with clearance, cut into the face you select in SolidCraft.\n\n## New in 1.8.0\n\n- **One Size field.** The separate Diameter and Pitch fields are gone, so the size you see is the size that's cut. Pick from the list or type your own, like `M9x1.5`.\n- **1 mm pitch on every size** from M4 to M50 (M8x1, M10x1, …), next to 2, 2.5, 3.5 and 5 mm.\n- When you use a new face, the **pitch you picked is kept** and the diameter follows the face.\n- **New defaults:** M8x1, tolerance O.15, height 85%.\n\n## Install\n\n1. Download **thread-generator-1.8.0.zip** below.\n2. In SolidCraft open **Preferences → Plugins → Show in folder** and unzip it there, so you get `plugins\\thread-generator\\plugin.json`. Updating? Close Thread Generator first and replace the old folder.\n3. Start **ThreadGenerator.exe** from that folder. Windows may say \"Windows protected your PC\" because the program isn't code-signed: click *More info → Run anyway*.\n\nNeeds Windows 10/11 and SolidCraft 0.22 or later for threading a face. No Python needed.\n\n## What it does\n\n- **Thread a face in SolidCraft:** select a shaft or the inside of a hole, pick a size, tolerance and height, and SolidCraft cuts a modeled thread into it.\n- **3D-printed metric sizes** after [CustomThreads](https://github.com/BalzGuenat/CustomThreads): 1, 2 (experimental), 2.5, 3.5 and 5 mm pitches, plus ISO metric, fine and UNC.\n- **Tolerance classes** O.0, O.1, O.15, O.2, O.4, O.8 and **height** 70–100%: lower teeth with flat tops that still fit a matching nut.\n- A to-scale **drawing** of bolt and nut that explains each setting.\n- **Export repaired 3MF:** exports the selected body and runs Windows' own model repair on it, then opens it in your slicer.\n- **Make parts (STL):** bolts, nuts, threaded rods and thread cutters as watertight STL.\n- Follows SolidCraft's light or dark theme."
    },
-   "downloads": 176,
+   "downloads": 181,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -1080,38 +865,8 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Thread+Generator&plugin=Thread+Generator+%28https%3A%2F%2Fgithub.com%2FStigern%2FSolidThreadsPlugin%29"
-  },
-  {
-   "repo": "bbonsen/solidcraftAirfoilPlugin",
-   "url": "https://github.com/bbonsen/solidcraftAirfoilPlugin",
-   "owner": "bbonsen",
-   "avatar": "https://avatars.githubusercontent.com/u/126472107?v=4",
-   "id": "solidcraft-airfoil",
-   "name": "Airfoils & Wings",
-   "description": "Design airfoils (NACA 4/5-digit or .dat coordinates) and loft wings: span, taper, sweep, dihedral, twist, elliptical planforms, rounded tips and winglets, as editable features.",
-   "note": null,
-   "version": "0.1.0",
-   "entries": [
-    "make-wing",
-    "make-airfoil",
-    "airfoil-info"
-   ],
-   "commands": 8,
-   "permissions": [],
-   "topics": [],
-   "stars": 0,
-   "license": "MIT",
-   "updated": "2026-11-17T00:00:30Z",
-   "created": "2026-11-16T23:15:29Z",
-   "release": null,
-   "downloads": 0,
-   "image": null,
-   "has_topic": false,
-   "category": "Aero & marine",
-   "slug": "solidcraft-airfoil",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Airfoils+%26+Wings&plugin=Airfoils+%26+Wings+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftAirfoilPlugin%29"
   },
   {
    "repo": "645DF/MakeOrbit-SolidCraft",
@@ -1121,7 +876,7 @@
    "id": "makeorbit-cnc-studio",
    "name": "An MakeOrbit CNC Studio senden",
    "description": "Konstruktion als STEP an MakeOrbit CNC Studio übergeben (Übernahme dort mit Nachfrage) · Send the design as STEP to MakeOrbit CNC Studio",
-   "note": null,
+   "note": "Needs the MakeOrbit CNC Studio app, for now on macOS only (Windows is to follow).",
    "version": "0.2.0",
    "entries": [
     "an-cnc-studio"
@@ -1141,7 +896,8 @@
     "tag": "v0.2.0",
     "url": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/tag/v0.2.0",
     "date": "2026-11-16T04:55:50Z",
-    "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip"
+    "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip",
+    "notes": "First public release.\n\n- **makeorbit-cnc-studio-0.2.0.zip** – “An MakeOrbit CNC Studio senden / Send to MakeOrbit CNC Studio”: exports the design as STEP; CNC Studio imports it after asking.\n- **makeorbit-0.2.0.zip** – “An MakeOrbit senden / Send to MakeOrbit”: STEP, STL (binary/ASCII), 3MF and the SolidCraft design; MakeOrbit asks which project to archive it in.\n\nRequires SolidCraft 0.43.0 or newer, and on macOS MakeOrbit CNC Studio 0.5.16+ and/or MakeOrbit 2.9.18+. Install via **Plugins › Install plugin…** and grant the folder **austausch** (see README). Check the files against `SHA256SUMS.txt`.\n\nSource-available, not open source – see LICENSE."
    },
    "downloads": 32,
    "image": null,
@@ -1153,6 +909,10 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
    },
+   "asks": {
+    "label": "Asks for: files, extra SolidCraft commands",
+    "title": "SolidCraft asks you to allow this when you install the plugin."
+   },
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+An+MakeOrbit+CNC+Studio+senden&plugin=An+MakeOrbit+CNC+Studio+senden+%28https%3A%2F%2Fgithub.com%2F645DF%2FMakeOrbit-SolidCraft%2Ftree%2Fmain%2Fmanifeste%2Fmakeorbit-cnc-studio%29"
   },
   {
@@ -1163,7 +923,7 @@
    "id": "makeorbit",
    "name": "An MakeOrbit senden",
    "description": "Konstruktion als STEP/STL/3MF mit Quellstand an MakeOrbit übergeben (Archivierung dort mit Nachfrage) · Send STEP/STL/3MF with the design to MakeOrbit",
-   "note": null,
+   "note": "Needs the MakeOrbit app, for now on macOS only (Windows is to follow).",
    "version": "0.2.0",
    "entries": [
     "an-makeorbit"
@@ -1183,9 +943,10 @@
     "tag": "v0.2.0",
     "url": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/tag/v0.2.0",
     "date": "2026-11-16T04:55:50Z",
-    "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-0.2.0.zip"
+    "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-0.2.0.zip",
+    "notes": "First public release.\n\n- **makeorbit-cnc-studio-0.2.0.zip** – “An MakeOrbit CNC Studio senden / Send to MakeOrbit CNC Studio”: exports the design as STEP; CNC Studio imports it after asking.\n- **makeorbit-0.2.0.zip** – “An MakeOrbit senden / Send to MakeOrbit”: STEP, STL (binary/ASCII), 3MF and the SolidCraft design; MakeOrbit asks which project to archive it in.\n\nRequires SolidCraft 0.43.0 or newer, and on macOS MakeOrbit CNC Studio 0.5.16+ and/or MakeOrbit 2.9.18+. Install via **Plugins › Install plugin…** and grant the folder **austausch** (see README). Check the files against `SHA256SUMS.txt`.\n\nSource-available, not open source – see LICENSE."
    },
-   "downloads": 62,
+   "downloads": 63,
    "image": null,
    "has_topic": false,
    "category": "Export & workflow",
@@ -1194,6 +955,10 @@
     "label": "✓ Loads in SolidCraft 0.44.1",
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
+   "asks": {
+    "label": "Asks for: files, extra SolidCraft commands",
+    "title": "SolidCraft asks you to allow this when you install the plugin."
    },
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+An+MakeOrbit+senden&plugin=An+MakeOrbit+senden+%28https%3A%2F%2Fgithub.com%2F645DF%2FMakeOrbit-SolidCraft%2Ftree%2Fmain%2Fmanifeste%2Fmakeorbit%29"
   },
@@ -1205,7 +970,7 @@
    "id": "easypdm",
    "name": "EasyPDM",
    "description": "Upload designs to an EasyPDM server and download them, through the EasyPDM companion program.",
-   "note": null,
+   "note": "Needs an EasyPDM server and the EasyPDM companion program, which also makes the plugin zip for each computer.",
    "version": "0.9.0",
    "entries": [
     "Upload",
@@ -1232,7 +997,8 @@
     "tag": "v0.9.0",
     "url": "https://github.com/pawelcel/EasyPDM-SolidCraft/releases/tag/v0.9.0",
     "date": "2026-11-17T10:47:50Z",
-    "zip": "https://github.com/pawelcel/EasyPDM-SolidCraft/releases/download/v0.9.0/EasyPDM_SolidCraft_Companion_linux-x64_v0.9.0.zip"
+    "zip": "https://github.com/pawelcel/EasyPDM-SolidCraft/releases/download/v0.9.0/EasyPDM_SolidCraft_Companion_linux-x64_v0.9.0.zip",
+    "notes": "**In short:** the first release of EasyPDM for SolidCraft from its own repository: the same plugin and companion as attached to [EasyPDM 0.9.0](https://github.com/pawelcel/EasyPDM/releases/tag/v0.9.0), now released here. Upload, Download, Log in and Log out in SolidCraft's Plugins menu, assemblies of linked designs, transparent previews, signing in through the browser. Needs SolidCraft 0.43 or later and an EasyPDM 0.9 server.\r\n\r\n![SolidCraft's Plugins menu and ribbon with EasyPDM's Upload, Download, Log in and Log out](https://raw.githubusercontent.com/wiki/pawelcel/EasyPDM/images/solidcraft-plugins-menu.png)\r\n\r\n![SolidCraft Preferences → Plugins with the EasyPDM plugin installed and turned on](https://raw.githubusercontent.com/wiki/pawelcel/EasyPDM/images/solidcraft-plugin-installed.png)\r\n\r\n**Install:** download the companion zip for your system below (`win-x64` or `linux-x64`); it holds the companion program and the plugin, with nothing else to install. Then follow [installing step by step](https://github.com/pawelcel/EasyPDM/wiki/SolidCraft) on the wiki: log in, set up the plugin, install it in SolidCraft, start the companion with your login.\r\n\r\n### Changed\r\n- **A repository of its own**, moved out of EasyPDM (`EasyPDM.SolidCraft/` became the top level and `plugin/`, `EasyPDM.Companion/` became `companion/`) with its history, released on its own as the FreeCAD and SolidWorks integrations are."
    },
    "downloads": 24,
    "image": "https://raw.githubusercontent.com/wiki/pawelcel/EasyPDM/images/solidcraft-plugins-menu.png",
@@ -1240,109 +1006,11 @@
    "category": "Export & workflow",
    "slug": "easypdm",
    "tested": null,
+   "asks": {
+    "label": "Asks for: files, extra SolidCraft commands",
+    "title": "SolidCraft asks you to allow this when you install the plugin."
+   },
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+EasyPDM&plugin=EasyPDM+%28https%3A%2F%2Fgithub.com%2Fpawelcel%2FEasyPDM-SolidCraft%29"
-  },
-  {
-   "repo": "GaryMoFS/solidcraft-edge-path-sweep",
-   "url": "https://github.com/GaryMoFS/solidcraft-edge-path-sweep",
-   "owner": "GaryMoFS",
-   "avatar": "https://avatars.githubusercontent.com/u/219060719?v=4",
-   "id": "edge-path-sweep",
-   "name": "Edge Path & Sweep",
-   "description": "Create an open or closed 3D sketch path from selected edges and optionally sweep a sketch or built-in profile with rotation and offset.",
-   "note": null,
-   "version": "0.2.0",
-   "entries": [
-    "Edge Path & Sweep..."
-   ],
-   "commands": 17,
-   "permissions": [],
-   "topics": [],
-   "stars": 0,
-   "license": null,
-   "updated": "2026-11-19T06:31:33Z",
-   "created": "2026-11-19T06:31:22Z",
-   "release": null,
-   "downloads": 0,
-   "image": null,
-   "has_topic": false,
-   "category": "Other",
-   "slug": "edge-path-sweep",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Edge+Path+%26+Sweep&plugin=Edge+Path+%26+Sweep+%28https%3A%2F%2Fgithub.com%2FGaryMoFS%2Fsolidcraft-edge-path-sweep%29"
-  },
-  {
-   "repo": "LevLobanov/Solidcraft-gears-plugin",
-   "url": "https://github.com/LevLobanov/Solidcraft-gears-plugin",
-   "owner": "LevLobanov",
-   "avatar": "https://avatars.githubusercontent.com/u/176216816?v=4",
-   "id": "custom-gears",
-   "name": "Gear Generator (ISO)",
-   "description": "ISO 53/54/21771 Standard and Involute Spur gear generator: d = m*Z, da = d + 2*m*(1+x), df = d - 2*m*(1.25-x).",
-   "note": null,
-   "version": "0.6.0",
-   "entries": [
-    "Standard gear",
-    "Spur gear"
-   ],
-   "commands": 9,
-   "permissions": [],
-   "topics": [],
-   "stars": 0,
-   "license": null,
-   "updated": "2026-11-18T16:28:05Z",
-   "created": "2026-11-18T16:26:42Z",
-   "release": null,
-   "downloads": 0,
-   "image": null,
-   "has_topic": false,
-   "category": "Gears & motion",
-   "slug": "custom-gears",
-   "tested": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear+Generator+%28ISO%29&plugin=Gear+Generator+%28ISO%29+%28https%3A%2F%2Fgithub.com%2FLevLobanov%2FSolidcraft-gears-plugin%29"
-  },
-  {
-   "repo": "LudaLunizz/solidcraft-generative-design",
-   "url": "https://github.com/LudaLunizz/solidcraft-generative-design",
-   "owner": "LudaLunizz",
-   "avatar": "https://avatars.githubusercontent.com/u/33155561?v=4",
-   "id": "gen-design-engine",
-   "name": "Generative Design Engine",
-   "description": "Engineering material library (sourced cards), material report, a 2D stress check of flat parts with safety factor, and a plate optimiser that draws its result as a sketch and an extrude.",
-   "note": null,
-   "version": "0.4.1",
-   "entries": [
-    "apply-material",
-    "material-report",
-    "materials",
-    "stress-check",
-    "optimise-plate",
-    "solver-benchmark"
-   ],
-   "commands": 11,
-   "permissions": [],
-   "topics": [],
-   "stars": 0,
-   "license": "Apache-2.0",
-   "updated": "2026-11-19T06:20:16Z",
-   "created": "2026-11-17T07:12:52Z",
-   "release": {
-    "tag": "v0.4.0",
-    "url": "https://github.com/LudaLunizz/solidcraft-generative-design/releases/tag/v0.4.0",
-    "date": "2026-11-19T05:40:32Z",
-    "zip": "https://github.com/LudaLunizz/solidcraft-generative-design/releases/download/v0.4.0/gen-design-engine-0.4.0.zip"
-   },
-   "downloads": 2,
-   "image": null,
-   "has_topic": false,
-   "category": "Other",
-   "slug": "gen-design-engine",
-   "tested": {
-    "label": "✓ Loads in SolidCraft 0.44.1",
-    "date": "2026-11-19",
-    "title": "Tested 2026-11-19 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
-   },
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Generative+Design+Engine&plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2Fsolidcraft-generative-design%29"
   },
   {
    "repo": "haashimrehan/solidcraft-gridfinity",
@@ -1373,9 +1041,10 @@
     "tag": "v0.1.0",
     "url": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/tag/v0.1.0",
     "date": "2026-11-13T06:32:36Z",
-    "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip"
+    "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip",
+    "notes": "First release: Gridfinity bins and baseplates for SolidCraft 0.41 or newer.\n\n**Install:** download `solidcraft-gridfinity-0.1.0.zip` below, then in SolidCraft choose **Plugins > Install plugin…** and pick the zip. The entries appear under **Plugins > Gridfinity**.\n\n- **Bin:** 1 to 6 grid units a side (at most 25 cells), 2 to 20 height units, wall thickness, stacking lip, magnet holes, compartments along X and Y, scoop and label tab.\n- **Baseplate:** 1 to 6 grid units a side.\n\nEverything is built from ordinary sketches and extrudes, so it stays editable. The plugin needs no files, no network and no clock.\n\nKnown limits: no screw holes, no weighted or magnet baseplates, no half-pitch grids. The stacking lip is 4.15 mm tall (a 0.25 mm flat replaces the knife edge). Fit against printed Gridfinity parts has not been test-printed yet.\n\nThe `.sha256` file checks the download."
    },
-   "downloads": 77,
+   "downloads": 79,
    "image": null,
    "has_topic": false,
    "category": "Storage & organizing",
@@ -1385,7 +1054,388 @@
     "date": "2026-11-18",
     "title": "Tested 2026-11-18 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
    },
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Fhaashimrehan%2Fsolidcraft-gridfinity%29"
+  },
+  {
+   "repo": "timobickert/Laser-joints-for-Solidcraft",
+   "url": "https://github.com/timobickert/Laser-joints-for-Solidcraft",
+   "owner": "timobickert",
+   "avatar": "https://avatars.githubusercontent.com/u/5088167?v=4",
+   "id": "solidcraft-laserjoints",
+   "name": "Laser joints",
+   "description": "Fingerzinken und Schlitze an Kanten von Laserplatten. Kerf und Pressung bleiben Parameter, die Features liegen in der Timeline.",
+   "note": null,
+   "version": "0.1.0",
+   "entries": [
+    "Plugins"
+   ],
+   "commands": 8,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-19T08:47:53Z",
+   "created": "2026-11-19T08:20:41Z",
+   "release": {
+    "tag": "Plugin",
+    "url": "https://github.com/timobickert/Laser-joints-for-Solidcraft/releases/tag/Plugin",
+    "date": "2026-11-19T08:34:13Z",
+    "zip": "https://github.com/timobickert/Laser-joints-for-Solidcraft/releases/download/Plugin/solidcraft-laserjoints.zip",
+    "notes": "V 0.1.0\r\nTested with SolidCraft v0.44.1\r\n\r\n<img width=\"1624\" height=\"962\" alt=\"image\" src=\"https://github.com/user-attachments/assets/10c999a1-a635-4f38-b3c4-c36dc3330a88\" />"
+   },
+   "downloads": 1,
+   "image": "https://github.com/user-attachments/assets/b86871d0-faf3-410d-b06a-9951d7fefa1e",
+   "has_topic": false,
+   "category": "Other",
+   "slug": "solidcraft-laserjoints",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Laser+joints&plugin=Laser+joints+%28https%3A%2F%2Fgithub.com%2Ftimobickert%2FLaser-joints-for-Solidcraft%29"
+  },
+  {
+   "repo": "bbonsen/solidcraftGearsPlugin",
+   "url": "https://github.com/bbonsen/solidcraftGearsPlugin",
+   "owner": "bbonsen",
+   "avatar": "https://avatars.githubusercontent.com/u/126472107?v=4",
+   "id": "gears",
+   "name": "Gears",
+   "description": "Involute, bevel, hypoid, worm, rack, internal, planetary and cycloidal gears with profile shift, root fillets, tip relief and crowning.",
+   "note": null,
+   "version": "0.10.0",
+   "entries": [
+    "Spur gear",
+    "Helical gear",
+    "Herringbone gear",
+    "Bevel gear",
+    "Worm",
+    "Worm wheel",
+    "Rack and pinion",
+    "Hypoid gear",
+    "Internal gear",
+    "Planetary gear set",
+    "Cycloidal gear",
+    "Cycloidal drive"
+   ],
+   "commands": 7,
+   "permissions": [],
+   "topics": [],
+   "stars": 5,
+   "license": "MIT",
+   "updated": "2026-11-16T23:02:31Z",
+   "created": "2026-11-16T21:44:42Z",
+   "release": null,
+   "downloads": 0,
+   "image": "https://raw.githubusercontent.com/bbonsen/solidcraftGearsPlugin/main/preview.png",
+   "has_topic": false,
+   "category": "Gears & motion",
+   "slug": "gears",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftGearsPlugin%29"
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-bearings",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-bearings",
+   "name": "Bearings",
+   "description": "Place radial bearings or create CSK clutches with editable dimensions, keyways and recorded references.",
+   "note": null,
+   "version": "0.3.0",
+   "entries": [
+    "Bearing",
+    "CSK clutch"
+   ],
+   "commands": 30,
+   "permissions": [],
+   "topics": [],
+   "stars": 3,
+   "license": "MIT",
+   "updated": "2026-11-19T01:31:10Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": null,
+    "notes": "Screws and pocketed nuts now stay attached as designs change, and extrusion rails can follow sketch paths.\n\n## Screws\n\n- **Screw and hole** creates native rigid joints for clearance, counterbored, countersunk and tapped placements. Moving a source sketch point moves its screw; changing a counterbore depth moves the screw with the floor.\n- Tapped attachments work with layout sketches created before the solid, face-mounted sketches and placement from another active component.\n- Attachments survive save/reopen and work in saved designs without the plugin installed. Identical screw definitions remain reusable across runs.\n- The screw README compares the plugin with SolidCraft 0.42's built-in fasteners, including modeled threads, custom heads and drives, the combined hole workflow, and the built-in tool's preview and sizing advantages.\n\n## Nuts and extrusions\n\n- Nut pockets follow source sketch positions and orientation. Native joints keep pocketed nuts seated through moves and depth changes.\n- Nut pocket hexes retain their alignment through large sketch moves and share one editable across-flats dimension.\n- **Sketch driven** extrusions create independent rails from straight sketch lines. Rail length, position, orientation, end taps and cross-holes follow path edits; hole offsets can be measured from either end.\n- Fixed-length extrusion screw holes use editable reference sketches so their access and clearance cuts move together.\n\n## Try the attachments\n\nDownload `screw-attachment-test.sc` and open it in SolidCraft 0.42.0 or newer. Gold screws sit in counterbores on the left; teal screws sit in tapped holes on the right. In **Change Parameters**, try `counterbore_x = 32 mm`, `tapped_x = 18 mm`, or `recess_depth = 6 mm`, then save and reopen. Cosmetic threads keep edits responsive. The accompanying guide lists all parameters and expected results.\n\n## Breaking changes and migration\n\n- Existing screw placements and pocketed nuts are not automatically attached by upgrading. Regenerate those placements to add native joints; regenerate old nut pockets to get linked geometry and the improved hex constraints. Loose **Screw only** and **Nut only** placements remain loose.\n- New extrusion screw holes use per-face reference sketches and Access/Clearance extrusion features. Scripts selecting the old `Hole at` feature names must update. Existing saved rails are not migrated, and fixed-length rails are not converted into sketch-driven rails.\n- A missing or ambiguous screw seat is refused instead of leaving unattached hardware.\n\n## Installation\n\nDownload the `techsquid-<plugin>-0.2.0.zip` for each plugin you use. In SolidCraft, choose **Plugins > Install plugin…**, select the zip, and replace the installed version. All four packages use version 0.2.0; heat-set inserts have no new behavior in this release. SHA-256 checksum files accompany the packages.\n\n## Validation\n\nValidated with SolidCraft 0.42.0. The live test plate passed hole moves, a 4 → 6 mm recess change, a 12 → 14 mm plate-thickness change and save/reopen, checking all four joints, actual screw geometry, bore positions and plate volume. The release also runs the screw attachment regression suite, saved-example checks, Rust unit tests, formatting and native/Wasm lint checks."
+   },
+   "downloads": 0,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/bearings-and-clutches/bearings-and-clutches.png",
+   "has_topic": false,
+   "category": "Hardware & fasteners",
+   "slug": "techsquid-bearings",
+   "icon": "icons/techsquid-bearings.svg",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Bearings&plugin=Bearings+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-bearings%29"
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/tree/main/plugins/techsquid-v-wheels",
+   "owner": "TechSquidTV",
+   "avatar": "https://avatars.githubusercontent.com/u/35825931?v=4",
+   "id": "techsquid-v-wheels",
+   "name": "V-wheels",
+   "description": "OpenBuilds V-wheels. Pick sketch points or circles: each gets a wheel, with its bearings and shim if you want them. With nothing picked, one wheel sits on the origin.",
+   "note": null,
+   "version": "0.3.0",
+   "entries": [
+    "V-wheel"
+   ],
+   "commands": 27,
+   "permissions": [],
+   "topics": [],
+   "stars": 3,
+   "license": "MIT",
+   "updated": "2026-11-19T01:31:10Z",
+   "created": "2026-11-14T16:04:12Z",
+   "release": {
+    "tag": "v0.2.0",
+    "url": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.2.0",
+    "date": "2026-11-15T23:31:04Z",
+    "zip": null,
+    "notes": "Screws and pocketed nuts now stay attached as designs change, and extrusion rails can follow sketch paths.\n\n## Screws\n\n- **Screw and hole** creates native rigid joints for clearance, counterbored, countersunk and tapped placements. Moving a source sketch point moves its screw; changing a counterbore depth moves the screw with the floor.\n- Tapped attachments work with layout sketches created before the solid, face-mounted sketches and placement from another active component.\n- Attachments survive save/reopen and work in saved designs without the plugin installed. Identical screw definitions remain reusable across runs.\n- The screw README compares the plugin with SolidCraft 0.42's built-in fasteners, including modeled threads, custom heads and drives, the combined hole workflow, and the built-in tool's preview and sizing advantages.\n\n## Nuts and extrusions\n\n- Nut pockets follow source sketch positions and orientation. Native joints keep pocketed nuts seated through moves and depth changes.\n- Nut pocket hexes retain their alignment through large sketch moves and share one editable across-flats dimension.\n- **Sketch driven** extrusions create independent rails from straight sketch lines. Rail length, position, orientation, end taps and cross-holes follow path edits; hole offsets can be measured from either end.\n- Fixed-length extrusion screw holes use editable reference sketches so their access and clearance cuts move together.\n\n## Try the attachments\n\nDownload `screw-attachment-test.sc` and open it in SolidCraft 0.42.0 or newer. Gold screws sit in counterbores on the left; teal screws sit in tapped holes on the right. In **Change Parameters**, try `counterbore_x = 32 mm`, `tapped_x = 18 mm`, or `recess_depth = 6 mm`, then save and reopen. Cosmetic threads keep edits responsive. The accompanying guide lists all parameters and expected results.\n\n## Breaking changes and migration\n\n- Existing screw placements and pocketed nuts are not automatically attached by upgrading. Regenerate those placements to add native joints; regenerate old nut pockets to get linked geometry and the improved hex constraints. Loose **Screw only** and **Nut only** placements remain loose.\n- New extrusion screw holes use per-face reference sketches and Access/Clearance extrusion features. Scripts selecting the old `Hole at` feature names must update. Existing saved rails are not migrated, and fixed-length rails are not converted into sketch-driven rails.\n- A missing or ambiguous screw seat is refused instead of leaving unattached hardware.\n\n## Installation\n\nDownload the `techsquid-<plugin>-0.2.0.zip` for each plugin you use. In SolidCraft, choose **Plugins > Install plugin…**, select the zip, and replace the installed version. All four packages use version 0.2.0; heat-set inserts have no new behavior in this release. SHA-256 checksum files accompany the packages.\n\n## Validation\n\nValidated with SolidCraft 0.42.0. The live test plate passed hole moves, a 4 → 6 mm recess change, a 12 → 14 mm plate-thickness change and save/reopen, checking all four joints, actual screw geometry, bore positions and plate volume. The release also runs the screw attachment regression suite, saved-example checks, Rust unit tests, formatting and native/Wasm lint checks."
+   },
+   "downloads": 0,
+   "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/v-slot-gantry/axle-section.png",
+   "has_topic": false,
+   "category": "Hardware & fasteners",
+   "slug": "techsquid-v-wheels",
+   "icon": "icons/techsquid-v-wheels.svg",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+V-wheels&plugin=V-wheels+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-v-wheels%29"
+  },
+  {
+   "repo": "jamescarruthers/attractor_pattern_solidcraft",
+   "url": "https://github.com/jamescarruthers/attractor_pattern_solidcraft",
+   "owner": "jamescarruthers",
+   "avatar": "https://avatars.githubusercontent.com/u/7226201?v=4",
+   "id": "attractor-pattern",
+   "name": "Attractor pattern",
+   "description": "Copies a body over a face. Each copy is scaled, sunk, turned and coloured by its distance to attractors.",
+   "note": null,
+   "version": "0.4.0",
+   "entries": [
+    "Attractor pattern",
+    "Preview attractor pattern"
+   ],
+   "commands": 9,
+   "permissions": [],
+   "topics": [],
+   "stars": 1,
+   "license": null,
+   "updated": "2026-11-16T08:26:38Z",
+   "created": "2026-11-13T13:21:36Z",
+   "release": null,
+   "downloads": 0,
+   "image": null,
+   "has_topic": false,
+   "category": "Shapes & patterns",
+   "slug": "attractor-pattern",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Attractor+pattern&plugin=Attractor+pattern+%28https%3A%2F%2Fgithub.com%2Fjamescarruthers%2Fattractor_pattern_solidcraft%29"
+  },
+  {
+   "repo": "Xusr404/solidcraft-gridfinity-generator",
+   "url": "https://github.com/Xusr404/solidcraft-gridfinity-generator",
+   "owner": "Xusr404",
+   "avatar": "https://avatars.githubusercontent.com/u/81714014?v=4",
+   "id": "solidcraft-gridfinity-generator",
+   "name": "Gridfinity Builder",
+   "description": "Generate editable Gridfinity bins, compartments, stacking lips and drawer baseplates.",
+   "note": null,
+   "version": "0.1.0",
+   "entries": [
+    "Gridfinity Hollow Bin",
+    "Gridfinity Solid Bin",
+    "Gridfinity Baseplate",
+    "Gridfinity Feet Only"
+   ],
+   "commands": 5,
+   "permissions": [],
+   "topics": [],
+   "stars": 1,
+   "license": "MIT",
+   "updated": "2026-11-15T14:05:00Z",
+   "created": "2026-11-15T14:04:01Z",
+   "release": null,
+   "downloads": 0,
+   "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-gridfinity-generator/main/docs/gridfinity-hollow-bin.png",
+   "has_topic": false,
+   "category": "Storage & organizing",
+   "slug": "solidcraft-gridfinity-generator",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity+Builder&plugin=Gridfinity+Builder+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-gridfinity-generator%29"
+  },
+  {
+   "repo": "Frosty-Eldin/Solidcraft-lattice",
+   "url": "https://github.com/Frosty-Eldin/Solidcraft-lattice",
+   "owner": "Frosty-Eldin",
+   "avatar": "https://avatars.githubusercontent.com/u/356501104?v=4",
+   "id": "lattice",
+   "name": "Lattice Generator",
+   "description": "Gyroid/TPMS, strut and honeycomb lattices that fill the selected body as watertight meshes, with variable density by control points. SolidCraft 0.42+.",
+   "note": null,
+   "version": "0.5.2",
+   "entries": [
+    "Gyroid",
+    "Gyroid VD",
+    "Struts",
+    "Struts VD",
+    "Honeycomb"
+   ],
+   "commands": 13,
+   "permissions": [],
+   "topics": [],
+   "stars": 1,
+   "license": "MIT",
+   "updated": "2026-11-16T16:22:10Z",
+   "created": "2026-11-16T16:15:20Z",
+   "release": {
+    "tag": "v0.5.2",
+    "url": "https://github.com/Frosty-Eldin/Solidcraft-lattice/releases/tag/v0.5.2",
+    "date": "2026-11-16T16:22:11Z",
+    "zip": null,
+    "notes": ""
+   },
+   "downloads": 0,
+   "image": "https://raw.githubusercontent.com/Frosty-Eldin/Solidcraft-lattice/main/docs/showcase.jpg",
+   "has_topic": false,
+   "category": "Shapes & patterns",
+   "slug": "lattice",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Lattice+Generator&plugin=Lattice+Generator+%28https%3A%2F%2Fgithub.com%2FFrosty-Eldin%2FSolidcraft-lattice%29"
+  },
+  {
+   "repo": "bbonsen/solidcraftAirfoilPlugin",
+   "url": "https://github.com/bbonsen/solidcraftAirfoilPlugin",
+   "owner": "bbonsen",
+   "avatar": "https://avatars.githubusercontent.com/u/126472107?v=4",
+   "id": "solidcraft-airfoil",
+   "name": "Airfoils & Wings",
+   "description": "Design airfoils (NACA 4/5-digit or .dat coordinates) and loft wings: span, taper, sweep, dihedral, twist, elliptical planforms, rounded tips and winglets, as editable features.",
+   "note": null,
+   "version": "0.1.0",
+   "entries": [
+    "make-wing",
+    "make-airfoil",
+    "airfoil-info"
+   ],
+   "commands": 8,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "MIT",
+   "updated": "2026-11-17T00:00:30Z",
+   "created": "2026-11-16T23:15:29Z",
+   "release": null,
+   "downloads": 0,
+   "image": null,
+   "has_topic": false,
+   "category": "Aero & marine",
+   "slug": "solidcraft-airfoil",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Airfoils+%26+Wings&plugin=Airfoils+%26+Wings+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftAirfoilPlugin%29"
+  },
+  {
+   "repo": "tangency-labs/solidcraft",
+   "url": "https://github.com/tangency-labs/solidcraft/tree/main/docs/book/plugin-examples/box-importer",
+   "owner": "tangency-labs",
+   "avatar": "https://avatars.githubusercontent.com/u/343519248?v=4",
+   "id": "box-importer",
+   "name": "Box Importer",
+   "description": "Opens .box files as a new design: the importer example from SolidCraft's plugin guide.",
+   "note": "An example from SolidCraft's own plugin guide, with its source code, for people making plugins. There is no zip: build it as the guide describes.",
+   "version": "0.1.0",
+   "entries": [
+    "convert"
+   ],
+   "commands": 0,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "Apache-2.0",
+   "updated": "2026-11-18T16:43:45Z",
+   "created": "2026-10-07T18:57:48Z",
+   "release": null,
+   "downloads": 0,
+   "image": null,
+   "has_topic": false,
+   "example": "https://docs.solidcraft.io/dev/plugins.html",
+   "category": "Examples",
+   "slug": "box-importer",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Ftangency-labs%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29"
+  },
+  {
+   "repo": "GaryMoFS/solidcraft-edge-path-sweep",
+   "url": "https://github.com/GaryMoFS/solidcraft-edge-path-sweep",
+   "owner": "GaryMoFS",
+   "avatar": "https://avatars.githubusercontent.com/u/219060719?v=4",
+   "id": "edge-path-sweep",
+   "name": "Edge Path & Sweep",
+   "description": "Create an open or closed 3D sketch path from selected edges and optionally sweep a sketch or built-in profile with rotation and offset.",
+   "note": null,
+   "version": "0.2.0",
+   "entries": [
+    "Edge Path & Sweep..."
+   ],
+   "commands": 17,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": null,
+   "updated": "2026-11-19T06:31:33Z",
+   "created": "2026-11-19T06:31:22Z",
+   "release": null,
+   "downloads": 0,
+   "image": null,
+   "has_topic": false,
+   "category": "Other",
+   "slug": "edge-path-sweep",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Edge+Path+%26+Sweep&plugin=Edge+Path+%26+Sweep+%28https%3A%2F%2Fgithub.com%2FGaryMoFS%2Fsolidcraft-edge-path-sweep%29"
+  },
+  {
+   "repo": "LevLobanov/Solidcraft-gears-plugin",
+   "url": "https://github.com/LevLobanov/Solidcraft-gears-plugin",
+   "owner": "LevLobanov",
+   "avatar": "https://avatars.githubusercontent.com/u/176216816?v=4",
+   "id": "custom-gears",
+   "name": "Gear Generator (ISO)",
+   "description": "ISO 53/54/21771 Standard and Involute Spur gear generator: d = m*Z, da = d + 2*m*(1+x), df = d - 2*m*(1.25-x).",
+   "note": null,
+   "version": "0.6.0",
+   "entries": [
+    "Standard gear",
+    "Spur gear"
+   ],
+   "commands": 9,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": null,
+   "updated": "2026-11-18T16:28:05Z",
+   "created": "2026-11-18T16:26:42Z",
+   "release": null,
+   "downloads": 0,
+   "image": null,
+   "has_topic": false,
+   "category": "Gears & motion",
+   "slug": "custom-gears",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear+Generator+%28ISO%29&plugin=Gear+Generator+%28ISO%29+%28https%3A%2F%2Fgithub.com%2FLevLobanov%2FSolidcraft-gears-plugin%29"
   },
   {
    "repo": "GaryMoFS/solidcraft-helical-sketch",
@@ -1415,7 +1465,39 @@
    "category": "Shapes & patterns",
    "slug": "helical-sketch",
    "tested": null,
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Helical+Sketch+Generator&plugin=Helical+Sketch+Generator+%28https%3A%2F%2Fgithub.com%2FGaryMoFS%2Fsolidcraft-helical-sketch%29"
+  },
+  {
+   "repo": "tangency-labs/solidcraft",
+   "url": "https://github.com/tangency-labs/solidcraft/tree/main/docs/book/plugin-examples/plate-maker",
+   "owner": "tangency-labs",
+   "avatar": "https://avatars.githubusercontent.com/u/343519248?v=4",
+   "id": "plate-maker",
+   "name": "Plate Maker",
+   "description": "Adds a square plate.",
+   "note": "An example from SolidCraft's own plugin guide, with its source code, for people making plugins. There is no zip: build it as the guide describes.",
+   "version": "0.1.0",
+   "entries": [
+    "Model"
+   ],
+   "commands": 1,
+   "permissions": [],
+   "topics": [],
+   "stars": 0,
+   "license": "Apache-2.0",
+   "updated": "2026-11-18T16:43:45Z",
+   "created": "2026-10-07T18:57:48Z",
+   "release": null,
+   "downloads": 0,
+   "image": null,
+   "has_topic": false,
+   "example": "https://docs.solidcraft.io/dev/plugins.html",
+   "category": "Examples",
+   "slug": "plate-maker",
+   "tested": null,
+   "asks": null,
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Ftangency-labs%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29"
   },
   {
    "repo": "bbonsen/solidcraftPropellerPlugin",
@@ -1449,6 +1531,7 @@
    "category": "Aero & marine",
    "slug": "propellers",
    "tested": null,
+   "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Propellers&plugin=Propellers+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftPropellerPlugin%29"
   }
  ]

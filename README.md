@@ -15,6 +15,9 @@ entries come from the manifest.
 
 A plugin without the topic can be added to [repos.txt](repos.txt) with a pull request.
 
+The example plugins in SolidCraft's own [plugin guide](https://docs.solidcraft.io/dev/plugins.html)
+are listed under **Examples**, with a link to the guide instead of a download.
+
 Give your commands an icon (`x-solidcraft-icon`, SolidCraft 0.44) and the first one is shown on
 the card too. It must be a plain SVG: one with scripts, event handlers or outside links is left out.
 

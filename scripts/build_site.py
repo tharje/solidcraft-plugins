@@ -20,6 +20,25 @@ def report_url(p):
     return f"{REPORT}&{q}"
 
 
+# What each permission means to someone installing the plugin; clock (the time of day) is left out.
+ASKS = {"files": "files", "input_folder": "a folder", "net": "the network", "command_groups": "extra SolidCraft commands"}
+
+
+def asks(p):
+    """The permissions a plugin asks for, in words, or None."""
+    words = [w for x, w in ASKS.items() if x in p.get("permissions", [])]
+    return {"label": "Asks for: " + ", ".join(words),
+            "title": "SolidCraft asks you to allow this when you install the plugin."} if words else None
+
+
+def similar(p, plugins, i, n=6):
+    """Other plugins for the page's end: the same category first, then a different handful of the rest."""
+    same = [o for o in plugins if o is not p and o.get("category") == p.get("category")]
+    rest = [o for o in plugins if o is not p and o not in same]
+    rest = rest[i % len(rest):] + rest[:i % len(rest)] if rest else []
+    return (same + rest)[:n]
+
+
 def tested(p, compat):
     """What the newest SolidCraft made of the plugin's latest release (scripts/compat.py), as the
     card's line and its tooltip, or None. Only good news is shown: a command that needs something
@@ -55,6 +74,7 @@ def card(p, prefix=""):
     first = e((p["name"].strip() or "?")[0].upper())
     zip_ = p.get("release") and p["release"].get("zip")
     download = (f'<a class="btn primary zip" href="{e(zip_)}">Download .zip</a>' if zip_
+                else f'<a class="btn primary zip" href="{e(p["example"])}" target="_blank" rel="noopener">Plugin guide</a>' if p.get("example")
                 else '<a class="btn primary zip disabled">No release yet</a>')
     chips = "".join(f"<span>{e(t)}</span>" for t in p.get("topics", [])[:5])
     entries = ("Menu: " + " · ".join(e(x) for x in p["entries"])) if p.get("entries") else ""
@@ -71,6 +91,7 @@ def card(p, prefix=""):
       <p class="note">{e(p["note"])}</p>""" if p.get("note") else ""}
       <div class="chips">{chips}</div>
       <p class="tested"{f' title="{e(p["tested"]["title"])}"' if p.get("tested") else " hidden"}>{e(p["tested"]["label"]) if p.get("tested") else ""}</p>
+      <p class="asks"{f' title="{e(p["asks"]["title"])}"' if p.get("asks") else " hidden"}>{e(p["asks"]["label"]) if p.get("asks") else ""}</p>
       <div class="meta">
         <span class="stars" title="GitHub stars">★ {p["stars"]}</span>
         <span class="dl" title="Downloads of all releases">⬇ {p["downloads"]}</span>
@@ -121,6 +142,82 @@ def short(text, n=155):
     return text if len(text) <= n else text[: n - 1].rsplit(" ", 1)[0] + "…"
 
 
+LINK = re.compile(r"!?\[([^\]]*)\]\(\s*<?([^)\s>]+)>?[^)]*\)|(https?://[^\s<>()]+[^\s<>().,:;!?'\"])|`([^`]+)`|\*\*(.+?)\*\*|__(.+?)__")
+
+
+def inline(text):
+    """One line of Markdown as HTML: links (http and https only), code and bold. Pictures are left
+    out, everything else is shown as text."""
+    out, i = [], 0
+    for m in LINK.finditer(text):
+        out.append(e(text[i:m.start()]))
+        i = m.end()
+        label, url, bare, code, bold = m.group(1), m.group(2), m.group(3), m.group(4), m.group(5) or m.group(6)
+        if m.group(0).startswith("!"):
+            continue
+        if url is not None:
+            out.append(f'<a href="{e(url)}" rel="nofollow noopener">{inline(label)}</a>' if url.startswith(("http://", "https://")) else inline(label))
+        elif bare:
+            # GitHub's own short form for pull requests and issues: #34
+            short_ = re.fullmatch(r"https://github\.com/[^/]+/[^/]+/(?:pull|issues)/(\d+)", bare)
+            out.append(f'<a href="{e(bare)}" rel="nofollow noopener">{"#" + short_.group(1) if short_ else e(bare)}</a>')
+        elif code is not None:
+            out.append(f"<code>{e(code)}</code>")
+        else:
+            out.append(f"<b>{inline(bold)}</b>")
+    out.append(e(text[i:]))
+    return "".join(out)
+
+
+def notes_html(md, limit=1800):
+    """The start of a release's notes (Markdown) as HTML: headings, lists and paragraphs. Returns the
+    HTML and whether some was left out."""
+    blocks, para, items, size, cut = [], [], [], 0, False
+
+    def flush():
+        if para:
+            blocks.append(f"<p>{inline(' '.join(para))}</p>")
+            para.clear()
+        if items:
+            blocks.append("<ul>" + "".join(f"<li>{inline(x)}</li>" for x in items) + "</ul>")
+            items.clear()
+
+    lines = md.replace("\r", "").split("\n")
+    in_code = False
+    for line in lines:
+        if line.strip().startswith("```"):
+            in_code = not in_code
+            continue
+        if in_code or re.match(r"\s*(<!--|<img|!\[)", line):
+            continue
+        size += len(line)
+        if size > limit:
+            cut = True
+            break
+        t = line.strip()
+        h = re.match(r"(#{1,6})\s+(.*?)\s*#*$", t)
+        li = re.match(r"(?:[-*+]|\d+[.)])\s+(.*)", t)
+        if not t:
+            flush()
+        elif h:
+            flush()
+            blocks.append(f"<h3>{inline(h.group(2))}</h3>")
+        elif li:
+            if para:
+                flush()
+            items.append(li.group(1))
+        elif items and line[:1] in " \t":
+            items[-1] += " " + t
+        else:
+            if items:
+                flush()
+            para.append(t)
+    flush()
+    if cut and blocks and blocks[-1].startswith("<h3>"):  # a heading with nothing under it
+        blocks.pop()
+    return "\n".join(blocks), cut
+
+
 def plugin_page(p, others):
     url = SITE + f"plugins/{p['slug']}/"
     title = f"{p['name']}: SolidCraft plugin by {p['owner']}"
@@ -137,6 +234,8 @@ def plugin_page(p, others):
     if p.get("license") and p["license"] != "NOASSERTION":
         facts.append(f"<dt>Licence</dt><dd>{e(p['license'])}</dd>")
     facts.append(f"<dt>GitHub</dt><dd>★ {p['stars']} stars · ⬇ {p['downloads']} downloads</dd>")
+    if p.get("asks"):
+        facts.append(f"<dt>Asks for</dt><dd title=\"{e(p['asks']['title'])}\">{e(p['asks']['label'][len('Asks for: '):])}</dd>")
     if p.get("tested"):
         t = p["tested"]
         facts.append(f"<dt>Tested</dt><dd title=\"{e(t['title'])}\">{e(t['label'])} ({e(t['date'])})</dd>")
@@ -144,6 +243,7 @@ def plugin_page(p, others):
     tags = "".join(f"<span>{e(t)}</span>" for t in p.get("topics", []))
     zip_ = rel.get("zip")
     download = (f'<a class="btn primary" href="{e(zip_)}">Download .zip</a>' if zip_
+                else f'<a class="btn primary" href="{e(p["example"])}">Plugin guide</a>' if p.get("example")
                 else '<a class="btn primary disabled">No release yet</a>')
     pic = (f'<img class="hero-pic" src="{e(p["image"])}" alt="{e(p["name"])} in SolidCraft">'
            if p.get("image") else "")
@@ -204,7 +304,7 @@ def plugin_page(p, others):
       {f"<ul>{entries}</ul>" if entries else "<p>See the plugin's README on GitHub.</p>"}
       <h2>Install {e(p["name"])}</h2>
       <ol>
-        <li>{"Download the zip above (from release " + e(rel["tag"]) + ")." if zip_ else "Build or download the plugin as described in its README on GitHub."}</li>
+        <li>{"Download the zip above (from release " + e(rel["tag"]) + ")." if zip_ else f'Build it as SolidCraft\'s <a href="{e(p["example"])}">plugin guide</a> describes.' if p.get("example") else "Build or download the plugin as described in its README on GitHub."}</li>
         <li>In SolidCraft: <b>Plugins › Install plugin…</b> and pick the zip.</li>
         <li>Run it from the <b>Plugins</b> menu, or its button in the ribbon (SolidCraft 0.42 and later).</li>
       </ol>
@@ -217,8 +317,9 @@ def plugin_page(p, others):
       {f'<div class="chips">{tags}</div>' if tags else ""}
     </aside>
   </div>
+  {notes_section(p)}
   <section class="more">
-    <h2>More SolidCraft plugins</h2>
+    <h2>Similar SolidCraft plugins</h2>
     <ul>{more}</ul>
     <p><a href="../../">All SolidCraft plugins ›</a></p>
   </section>
@@ -230,6 +331,21 @@ def plugin_page(p, others):
 </body>
 </html>
 '''
+
+
+def notes_section(p):
+    rel = p.get("release") or {}
+    body, cut = notes_html(rel.get("notes") or "")
+    if not body:
+        return ""
+    when = f" ({e(rel['date'][:10])})" if rel.get("date") else ""
+    more = (f'<p><a href="{e(rel["url"])}">Read all of it on GitHub ›</a></p>' if cut
+            else f'<p><a href="{e(rel["url"])}">The release on GitHub ›</a></p>')
+    return f'''<section class="notes">
+    <h2>What's new in {e(rel["tag"])}{when}</h2>
+    {body}
+    {more}
+  </section>'''
 
 
 def replace(text, name, new):
@@ -271,6 +387,7 @@ def build(plugins):
         compat = {}
     for p in plugins:
         p["tested"] = tested(p, compat)
+        p["asks"] = asks(p)
         p["report"] = report_url(p)
     path = os.path.join(ROOT, "index.html")
     with open(path) as f:
@@ -288,8 +405,7 @@ def build(plugins):
     out = os.path.join(ROOT, "plugins")
     keep = set()
     for i, p in enumerate(plugins):
-        others = [o for o in plugins if o is not p]
-        others = (others[i:] + others[:i])[:6]  # a different handful on each page
+        others = similar(p, plugins, i)
         d = os.path.join(out, p["slug"])
         os.makedirs(d, exist_ok=True)
         with open(os.path.join(d, "index.html"), "w") as f:
