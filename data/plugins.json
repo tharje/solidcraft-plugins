@@ -223,7 +223,11 @@
    "category": "Storage & organizing",
    "slug": "gridfinity",
    "icon": "icons/gridfinity.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.44.1",
+    "date": "2026-11-19",
+    "title": "Tested 2026-11-19 on Linux: SolidCraft 0.44.1 loaded this release and ran every command with its default values."
+   },
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fgridfinity-solidcraft%29"
   },
   {
@@ -1333,7 +1337,11 @@
    "has_topic": false,
    "category": "Other",
    "slug": "gen-design-engine",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.44.1",
+    "date": "2026-11-19",
+    "title": "Tested 2026-11-19 on Linux: SolidCraft 0.44.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Generative+Design+Engine&plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2Fsolidcraft-generative-design%29"
   },
   {

@@ -29,6 +29,19 @@
    "solidcraft": "0.44.1",
    "tested": "2026-11-18"
   },
+  "gen-design-engine": {
+   "entries": 6,
+   "loads": true,
+   "ran": [
+    "material-report",
+    "materials",
+    "optimise-plate",
+    "solver-benchmark"
+   ],
+   "release": "v0.4.0",
+   "solidcraft": "0.44.1",
+   "tested": "2026-11-19"
+  },
   "gridfinity": {
    "entries": 3,
    "loads": true,
@@ -37,9 +50,9 @@
     "baseplate",
     "drawer"
    ],
-   "release": "v1.3.0",
+   "release": "v1.3.1",
    "solidcraft": "0.44.1",
-   "tested": "2026-11-18"
+   "tested": "2026-11-19"
   },
   "iso-sheet": {
    "entries": 1,
