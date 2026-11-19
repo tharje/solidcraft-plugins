@@ -315,7 +315,8 @@ def main():
     for repo in listed():
         print(repo, file=sys.stderr)
         out += plugins(repo)
-    out.sort(key=lambda p: (-p["stars"], p["name"].lower()))
+    # plugins without a zip to download last, as on the page
+    out.sort(key=lambda p: (not (p.get("release") or {}).get("zip"), -p["stars"], p["name"].lower()))
     build_site.build(out)  # gives each plugin its slug, and writes the pages and sitemap
     data = {"generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "plugins": out}
     with open(os.path.join(ROOT, "data", "plugins.json"), "w") as f:

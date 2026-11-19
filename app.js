@@ -100,9 +100,11 @@ function show() {
     created: (a, b) => (b.created || "").localeCompare(a.created || ""),
     name: (a, b) => a.name.localeCompare(b.name),
   }[$("#sort").value];
+  // Plugins without a zip to download go last, whatever the sort.
+  const hasZip = (p) => (p.release && p.release.zip ? 0 : 1);
   const list = plugins
     .filter((p) => q.every((w) => text(p).includes(w)) && (!category || p.category === category))
-    .sort(cmp);
+    .sort((a, b) => hasZip(a) - hasZip(b) || cmp(a, b));
   $("#list").replaceChildren(...(list.length ? list.map(card) : [message("No plugins match.")]));
   $("#count").textContent = `${list.length} of ${plugins.length} plugins`;
 }
