@@ -270,6 +270,7 @@ def plugin_page(p, others):
 <meta property="og:image" content="{e(image)}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../../style.css">
+<script data-goatcounter="https://tharje.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 {ld(app(p))}
 {ld(crumbs)}
 </head>
