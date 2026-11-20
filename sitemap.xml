@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tharje.github.io/solidcraft-plugins/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-gears/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/woodwork/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/gridfinity/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/woodwork/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidinserts/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/techsquid-bearings/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/techsquid-extrusions/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/techsquid-inserts/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/techsquid-nuts/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/techsquid-screws/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/techsquid-v-wheels/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/wood-joinery/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/custom-threads/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/gen-design-engine/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/iso-sheet/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-3d-printing-holes/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-aprilcube/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/filament-swatch/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/gear-generator/</loc><lastmod>2026-11-14</lastmod></url>
-  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/gen-design-engine/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-honeycomb/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/mesh-solidify/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/opengrid/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/thread-generator/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/makeorbit-cnc-studio/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/makeorbit/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/custom-threads/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/easypdm/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-gridfinity/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-laserjoints/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/timber/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/gears/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/techsquid-bearings/</loc><lastmod>2026-11-19</lastmod></url>
-  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/techsquid-v-wheels/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/lattice/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/attractor-pattern/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-gridfinity-generator/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/propellers/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-airfoil/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/box-importer/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/box-importer-jianzhichun/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/edge-path-sweep/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/custom-gears/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/helical-sketch/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/plate-maker/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tharje.github.io/solidcraft-plugins/plugins/plate-maker-jianzhichun/</loc><lastmod>2026-11-20</lastmod></url>
 </urlset>
