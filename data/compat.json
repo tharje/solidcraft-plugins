@@ -175,6 +175,17 @@
    "solidcraft": "0.45.0",
    "tested": "2026-11-19"
   },
+  "techsquid-bearings": {
+   "entries": 4,
+   "loads": true,
+   "ran": [
+    "make-bearing",
+    "make-csk"
+   ],
+   "release": "v0.3.0",
+   "solidcraft": "0.45.0",
+   "tested": "2026-11-20"
+  },
   "techsquid-extrusions": {
    "entries": 2,
    "loads": true,
@@ -182,9 +193,9 @@
     "make-extrusion",
     "make-t-nut"
    ],
-   "release": "v0.2.0",
+   "release": "v0.3.0",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
   },
   "techsquid-inserts": {
    "entries": 1,
@@ -192,9 +203,9 @@
    "ran": [
     "make-insert"
    ],
-   "release": "v0.2.0",
+   "release": "v0.3.0",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
   },
   "techsquid-nuts": {
    "entries": 1,
@@ -202,9 +213,9 @@
    "ran": [
     "make-nut"
    ],
-   "release": "v0.2.0",
+   "release": "v0.3.0",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
   },
   "techsquid-screws": {
    "entries": 1,
@@ -212,9 +223,19 @@
    "ran": [
     "make-screw"
    ],
-   "release": "v0.2.0",
+   "release": "v0.3.0",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
+  },
+  "techsquid-v-wheels": {
+   "entries": 1,
+   "loads": true,
+   "ran": [
+    "make-v-wheel"
+   ],
+   "release": "v0.3.0",
+   "solidcraft": "0.45.0",
+   "tested": "2026-11-20"
   },
   "thread-generator": {
    "entries": 0,

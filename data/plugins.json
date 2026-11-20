@@ -238,7 +238,11 @@
    "category": "Hardware & fasteners",
    "slug": "techsquid-bearings",
    "icon": "icons/techsquid-bearings.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Bearings&plugin=Bearings+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-bearings%29"
   },
@@ -276,7 +280,11 @@
    "category": "Hardware & fasteners",
    "slug": "techsquid-extrusions",
    "icon": "icons/techsquid-extrusions.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Extrusions&plugin=Extrusions+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-extrusions%29"
   },
@@ -313,7 +321,11 @@
    "category": "Hardware & fasteners",
    "slug": "techsquid-inserts",
    "icon": "icons/techsquid-inserts.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat-set+inserts&plugin=Heat-set+inserts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-inserts%29"
   },
@@ -350,7 +362,11 @@
    "category": "Hardware & fasteners",
    "slug": "techsquid-nuts",
    "icon": "icons/techsquid-nuts.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Hex+nuts&plugin=Hex+nuts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-nuts%29"
   },
@@ -387,7 +403,11 @@
    "category": "Hardware & fasteners",
    "slug": "techsquid-screws",
    "icon": "icons/techsquid-screws.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Screws&plugin=Screws+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-screws%29"
   },
@@ -424,7 +444,11 @@
    "category": "Hardware & fasteners",
    "slug": "techsquid-v-wheels",
    "icon": "icons/techsquid-v-wheels.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+V-wheels&plugin=V-wheels+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-v-wheels%29"
   },
