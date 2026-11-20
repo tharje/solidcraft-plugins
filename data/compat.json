@@ -53,16 +53,16 @@
    "tested": "2026-11-19"
   },
   "gridfinity": {
-   "entries": 3,
+   "entries": 4,
    "loads": true,
    "ran": [
     "bin",
     "baseplate",
     "drawer"
    ],
-   "release": "v1.3.1",
+   "release": "v1.4.0",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
   },
   "iso-sheet": {
    "entries": 1,
