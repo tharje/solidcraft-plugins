@@ -1,14 +1,16 @@
 {
  "plugins": {
   "custom-threads": {
-   "entries": 3,
+   "entries": 4,
    "loads": true,
    "ran": [
-    "create-thread-pair"
+    "preset-thread",
+    "custom-thread",
+    "advanced-thread"
    ],
-   "release": "v0.2.0",
+   "release": "v0.3.0",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
   },
   "easypdm": {
    "entries": 0,
@@ -98,6 +100,14 @@
    "release": "v0.2.0",
    "solidcraft": "0.45.0",
    "tested": "2026-11-19"
+  },
+  "mould-maker": {
+   "entries": 3,
+   "loads": true,
+   "ran": [],
+   "release": "v0.5.2",
+   "solidcraft": "0.45.0",
+   "tested": "2026-11-20"
   },
   "opengrid": {
    "entries": 1,
@@ -258,18 +268,18 @@
    "entries": 13,
    "loads": true,
    "ran": [],
-   "release": "v0.9.1",
+   "release": "v0.10.0",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
   },
   "woodwork": {
-   "entries": 6,
+   "entries": 7,
    "loads": true,
    "ran": [],
-   "release": "v0.1.8",
+   "release": "v0.2.0",
    "skipped": "asks for permissions",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
   }
  },
  "solidcraft": "0.45.0"

@@ -146,7 +146,11 @@
    "category": "Woodworking",
    "slug": "woodwork",
    "icon": "icons/woodwork.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
    "asks": {
     "label": "Asks for: files",
     "title": "SolidCraft asks you to allow this when you install the plugin."
@@ -540,7 +544,11 @@
    "category": "Woodworking",
    "slug": "wood-joinery",
    "icon": "icons/wood-joinery.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Wood+joinery&plugin=Wood+joinery+%28https%3A%2F%2Fgithub.com%2FWilliamHJKL%2Fsolidcraft-wood-joinery%29"
   },
@@ -580,7 +588,11 @@
    "category": "Hardware & fasteners",
    "slug": "custom-threads",
    "icon": "icons/custom-threads.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Custom+Threads&plugin=Custom+Threads+%28https%3A%2F%2Fgithub.com%2FSooner4500%2Fsolidcraft-custom-threads%29"
   },
@@ -1258,7 +1270,11 @@
    "has_topic": true,
    "category": "3D printing",
    "slug": "mould-maker",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Mould+Maker&plugin=Mould+Maker+%28https%3A%2F%2Fgithub.com%2FMechmoth%2Fsolidcraft-mould-maker%29"
   },
