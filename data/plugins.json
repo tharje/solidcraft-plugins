@@ -771,7 +771,11 @@
    "category": "3D printing",
    "slug": "filament-swatch",
    "icon": "icons/filament-swatch.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Filament+Swatch&plugin=Filament+Swatch+%28https%3A%2F%2Fgithub.com%2Ftharje%2Ffilament-swatch-solidcraft%29"
   },
@@ -948,7 +952,11 @@
    "category": "Storage & organizing",
    "slug": "opengrid",
    "icon": "icons/opengrid.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.45.0",
+    "date": "2026-11-20",
+    "title": "Tested 2026-11-20 on Linux: SolidCraft 0.45.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+openGrid&plugin=openGrid+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fopengrid-solidcraft%29"
   },

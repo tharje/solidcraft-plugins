@@ -25,9 +25,9 @@
    "ran": [
     "swatch"
    ],
-   "release": "v0.3.0",
+   "release": "v0.3.1",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
   },
   "gear-generator": {
    "entries": 1,
@@ -105,9 +105,9 @@
    "ran": [
     "board"
    ],
-   "release": "v0.3.0",
+   "release": "v0.3.1",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-20"
   },
   "solidcraft-3d-printing-holes": {
    "entries": 1,
