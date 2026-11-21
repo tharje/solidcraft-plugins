@@ -492,7 +492,11 @@
    "has_topic": false,
    "category": "Other",
    "slug": "gen-design-engine",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.45.0",
+    "date": "2026-11-21",
+    "title": "Tested 2026-11-21 on Linux: SolidCraft 0.45.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Generative+Design+Engine&plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2FGenerative-design-plugin-for-SolidCraft%29"
   },
@@ -541,7 +545,11 @@
    "category": "Woodworking",
    "slug": "wood-joinery",
    "icon": "icons/wood-joinery.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.45.0",
+    "date": "2026-11-21",
+    "title": "Tested 2026-11-21 on Linux: SolidCraft 0.45.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Wood+joinery&plugin=Wood+joinery+%28https%3A%2F%2Fgithub.com%2FWilliamHJKL%2Fsolidcraft-wood-joinery%29"
   },

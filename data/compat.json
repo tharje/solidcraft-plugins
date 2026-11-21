@@ -42,17 +42,18 @@
    "tested": "2026-11-19"
   },
   "gen-design-engine": {
-   "entries": 6,
+   "entries": 7,
    "loads": true,
    "ran": [
     "material-report",
     "materials",
     "optimise-plate",
+    "bar-bracket",
     "solver-benchmark"
    ],
-   "release": "v0.6.0",
+   "release": "v0.8.0",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-19"
+   "tested": "2026-11-21"
   },
   "gridfinity": {
    "entries": 4,
@@ -268,9 +269,9 @@
    "entries": 13,
    "loads": true,
    "ran": [],
-   "release": "v0.10.0",
+   "release": "v0.10.1",
    "solidcraft": "0.45.0",
-   "tested": "2026-11-20"
+   "tested": "2026-11-21"
   },
   "woodwork": {
    "entries": 7,
