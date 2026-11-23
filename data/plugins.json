@@ -1332,7 +1332,11 @@
    "has_topic": false,
    "category": "Hardware & fasteners",
    "slug": "jis-hex-bolt",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.47.0",
+    "date": "2026-11-23",
+    "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Jis+hex+bolt&plugin=Jis+hex+bolt+%28https%3A%2F%2Fgithub.com%2Faoka2%2Fsolidcraft-jis-screws%29",
    "report_author": "https://github.com/aoka2/solidcraft-jis-screws/issues/new?title=Jis+hex+bolt%3A+"

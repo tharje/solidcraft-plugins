@@ -75,6 +75,16 @@
    "solidcraft": "0.47.0",
    "tested": "2026-11-23"
   },
+  "jis-hex-bolt": {
+   "entries": 1,
+   "loads": true,
+   "ran": [
+    "make"
+   ],
+   "release": "v0.3.0",
+   "solidcraft": "0.47.0",
+   "tested": "2026-11-23"
+  },
   "makeorbit": {
    "entries": 1,
    "loads": true,
