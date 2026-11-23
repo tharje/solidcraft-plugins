@@ -97,7 +97,11 @@
    "category": "Storage & organizing",
    "slug": "gridfinity",
    "icon": "icons/gridfinity.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.47.0",
+    "date": "2026-11-23",
+    "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fgridfinity-solidcraft%29",
    "report_author": "https://github.com/tharje/gridfinity-solidcraft/issues/new?title=Gridfinity%3A+"
@@ -149,7 +153,11 @@
    "category": "Woodworking",
    "slug": "woodwork",
    "icon": "icons/woodwork.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.47.0",
+    "date": "2026-11-23",
+    "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
    "asks": {
     "label": "Asks for: files",
     "title": "SolidCraft asks you to allow this when you install the plugin."
@@ -1408,7 +1416,11 @@
    "has_topic": false,
    "category": "Other",
    "slug": "sw2sc",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.47.0",
+    "date": "2026-11-23",
+    "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidWorks+Parts+%28sw2sc%29&plugin=SolidWorks+Parts+%28sw2sc%29+%28https%3A%2F%2Fgithub.com%2Fbobthecooldad%2Fsw2sc%29",
    "report_author": "https://github.com/bobthecooldad/sw2sc/issues/new?title=SolidWorks+Parts+%28sw2sc%29%3A+"

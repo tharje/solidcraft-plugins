@@ -62,7 +62,7 @@
     "baseplate",
     "drawer"
    ],
-   "release": "v1.4.2",
+   "release": "v1.5.0",
    "solidcraft": "0.47.0",
    "tested": "2026-11-23"
   },
@@ -195,6 +195,14 @@
    "solidcraft": "0.47.0",
    "tested": "2026-11-23"
   },
+  "sw2sc": {
+   "entries": 1,
+   "loads": true,
+   "ran": [],
+   "release": "v0.17.3",
+   "solidcraft": "0.47.0",
+   "tested": "2026-11-23"
+  },
   "techsquid-bearings": {
    "entries": 4,
    "loads": true,
@@ -285,10 +293,10 @@
    "tested": "2026-11-23"
   },
   "woodwork": {
-   "entries": 10,
+   "entries": 8,
    "loads": true,
    "ran": [],
-   "release": "v0.3.0",
+   "release": "v0.4.0",
    "skipped": "asks for permissions",
    "solidcraft": "0.47.0",
    "tested": "2026-11-23"
