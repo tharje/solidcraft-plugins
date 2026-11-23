@@ -42,7 +42,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbherbruck%2Fsolidcraft-gears%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbherbruck%2Fsolidcraft-gears%29",
+   "report_author": "https://github.com/bherbruck/solidcraft-gears/issues/new?title=Gears%3A+"
   },
   {
    "repo": "tharje/gridfinity-solidcraft",
@@ -100,7 +101,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fgridfinity-solidcraft%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fgridfinity-solidcraft%29",
+   "report_author": "https://github.com/tharje/gridfinity-solidcraft/issues/new?title=Gridfinity%3A+"
   },
   {
    "repo": "TomasDJo/solidcraft-woodwork",
@@ -159,7 +161,8 @@
     "label": "Asks for: files",
     "title": "SolidCraft asks you to allow this when you install the plugin."
    },
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Woodwork&plugin=Woodwork+%28https%3A%2F%2Fgithub.com%2FTomasDJo%2Fsolidcraft-woodwork%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Woodwork&plugin=Woodwork+%28https%3A%2F%2Fgithub.com%2FTomasDJo%2Fsolidcraft-woodwork%29",
+   "report_author": "https://github.com/TomasDJo/solidcraft-woodwork/issues/new?title=Woodwork%3A+"
   },
   {
    "repo": "NoOneExceptEnderk/SolidInserts",
@@ -206,7 +209,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidInserts&plugin=SolidInserts+%28https%3A%2F%2Fgithub.com%2FNoOneExceptEnderk%2FSolidInserts%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidInserts&plugin=SolidInserts+%28https%3A%2F%2Fgithub.com%2FNoOneExceptEnderk%2FSolidInserts%29",
+   "report_author": "https://github.com/NoOneExceptEnderk/SolidInserts/issues/new?title=SolidInserts%3A+"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -250,7 +254,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Bearings&plugin=Bearings+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-bearings%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Bearings&plugin=Bearings+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-bearings%29",
+   "report_author": "https://github.com/TechSquidTV/SolidCraft-Plugins/issues/new?title=Bearings%3A+"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -292,7 +297,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Extrusions&plugin=Extrusions+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-extrusions%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Extrusions&plugin=Extrusions+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-extrusions%29",
+   "report_author": "https://github.com/TechSquidTV/SolidCraft-Plugins/issues/new?title=Extrusions%3A+"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -333,7 +339,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat-set+inserts&plugin=Heat-set+inserts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-inserts%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat-set+inserts&plugin=Heat-set+inserts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-inserts%29",
+   "report_author": "https://github.com/TechSquidTV/SolidCraft-Plugins/issues/new?title=Heat-set+inserts%3A+"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -374,7 +381,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Hex+nuts&plugin=Hex+nuts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-nuts%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Hex+nuts&plugin=Hex+nuts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-nuts%29",
+   "report_author": "https://github.com/TechSquidTV/SolidCraft-Plugins/issues/new?title=Hex+nuts%3A+"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -415,7 +423,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Screws&plugin=Screws+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-screws%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Screws&plugin=Screws+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-screws%29",
+   "report_author": "https://github.com/TechSquidTV/SolidCraft-Plugins/issues/new?title=Screws%3A+"
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -456,7 +465,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+V-wheels&plugin=V-wheels+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-v-wheels%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+V-wheels&plugin=V-wheels+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-v-wheels%29",
+   "report_author": "https://github.com/TechSquidTV/SolidCraft-Plugins/issues/new?title=V-wheels%3A+"
   },
   {
    "repo": "LudaLunizz/Generative-design-plugin-for-SolidCraft",
@@ -502,7 +512,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Generative+Design+Engine&plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2FGenerative-design-plugin-for-SolidCraft%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Generative+Design+Engine&plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2FGenerative-design-plugin-for-SolidCraft%29",
+   "report_author": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/issues/new?title=Generative+Design+Engine%3A+"
   },
   {
    "repo": "Sooner4500/solidcraft-custom-threads",
@@ -546,7 +557,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Custom+Threads&plugin=Custom+Threads+%28https%3A%2F%2Fgithub.com%2FSooner4500%2Fsolidcraft-custom-threads%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Custom+Threads&plugin=Custom+Threads+%28https%3A%2F%2Fgithub.com%2FSooner4500%2Fsolidcraft-custom-threads%29",
+   "report_author": "https://github.com/Sooner4500/solidcraft-custom-threads/issues/new?title=Custom+Threads%3A+"
   },
   {
    "repo": "WilliamHJKL/solidcraft-wood-joinery",
@@ -601,7 +613,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Wood+joinery&plugin=Wood+joinery+%28https%3A%2F%2Fgithub.com%2FWilliamHJKL%2Fsolidcraft-wood-joinery%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Wood+joinery&plugin=Wood+joinery+%28https%3A%2F%2Fgithub.com%2FWilliamHJKL%2Fsolidcraft-wood-joinery%29",
+   "report_author": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/issues/new?title=Wood+joinery%3A+"
   },
   {
    "repo": "Xusr404/solidcraft-honeycomb-plugin",
@@ -641,7 +654,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Honeycomb+%26+Hexagon+Generator&plugin=Honeycomb+%26+Hexagon+Generator+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-honeycomb-plugin%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Honeycomb+%26+Hexagon+Generator&plugin=Honeycomb+%26+Hexagon+Generator+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-honeycomb-plugin%29",
+   "report_author": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/issues/new?title=Honeycomb+%26+Hexagon+Generator%3A+"
   },
   {
    "repo": "jcar01/solidcraft-plugin-iso-sheet",
@@ -687,7 +701,8 @@
     "label": "Asks for: files",
     "title": "SolidCraft asks you to allow this when you install the plugin."
    },
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Isometric+Manufacture+Sheet&plugin=Isometric+Manufacture+Sheet+%28https%3A%2F%2Fgithub.com%2Fjcar01%2Fsolidcraft-plugin-iso-sheet%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Isometric+Manufacture+Sheet&plugin=Isometric+Manufacture+Sheet+%28https%3A%2F%2Fgithub.com%2Fjcar01%2Fsolidcraft-plugin-iso-sheet%29",
+   "report_author": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/issues/new?title=Isometric+Manufacture+Sheet%3A+"
   },
   {
    "repo": "Mechmoth/solidcraft-mould-maker",
@@ -733,7 +748,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Mould+Maker&plugin=Mould+Maker+%28https%3A%2F%2Fgithub.com%2FMechmoth%2Fsolidcraft-mould-maker%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Mould+Maker&plugin=Mould+Maker+%28https%3A%2F%2Fgithub.com%2FMechmoth%2Fsolidcraft-mould-maker%29",
+   "report_author": "https://github.com/Mechmoth/solidcraft-mould-maker/issues/new?title=Mould+Maker%3A+"
   },
   {
    "repo": "SB97/solidcraft-3d-printing-holes",
@@ -775,7 +791,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+3D+Printing+Holes&plugin=3D+Printing+Holes+%28https%3A%2F%2Fgithub.com%2FSB97%2Fsolidcraft-3d-printing-holes%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+3D+Printing+Holes&plugin=3D+Printing+Holes+%28https%3A%2F%2Fgithub.com%2FSB97%2Fsolidcraft-3d-printing-holes%29",
+   "report_author": "https://github.com/SB97/solidcraft-3d-printing-holes/issues/new?title=3D+Printing+Holes%3A+"
   },
   {
    "repo": "takuto-NA/solidcraft-aprilcube",
@@ -822,7 +839,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+AprilCube&plugin=AprilCube+%28https%3A%2F%2Fgithub.com%2Ftakuto-NA%2Fsolidcraft-aprilcube%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+AprilCube&plugin=AprilCube+%28https%3A%2F%2Fgithub.com%2Ftakuto-NA%2Fsolidcraft-aprilcube%29",
+   "report_author": "https://github.com/takuto-NA/solidcraft-aprilcube/issues/new?title=AprilCube%3A+"
   },
   {
    "repo": "pawelcel/EasyPDM-SolidCraft-Addon",
@@ -872,7 +890,8 @@
     "label": "Asks for: files, extra SolidCraft commands",
     "title": "SolidCraft asks you to allow this when you install the plugin."
    },
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+EasyPDM&plugin=EasyPDM+%28https%3A%2F%2Fgithub.com%2Fpawelcel%2FEasyPDM-SolidCraft-Addon%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+EasyPDM&plugin=EasyPDM+%28https%3A%2F%2Fgithub.com%2Fpawelcel%2FEasyPDM-SolidCraft-Addon%29",
+   "report_author": "https://github.com/pawelcel/EasyPDM-SolidCraft-Addon/issues/new?title=EasyPDM%3A+"
   },
   {
    "repo": "tharje/filament-swatch-solidcraft",
@@ -923,7 +942,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Filament+Swatch&plugin=Filament+Swatch+%28https%3A%2F%2Fgithub.com%2Ftharje%2Ffilament-swatch-solidcraft%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Filament+Swatch&plugin=Filament+Swatch+%28https%3A%2F%2Fgithub.com%2Ftharje%2Ffilament-swatch-solidcraft%29",
+   "report_author": "https://github.com/tharje/filament-swatch-solidcraft/issues/new?title=Filament+Swatch%3A+"
   },
   {
    "repo": "pro-d-e-v/solidcraft-plugin-gear",
@@ -963,7 +983,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear+generator&plugin=Gear+generator+%28https%3A%2F%2Fgithub.com%2Fpro-d-e-v%2Fsolidcraft-plugin-gear%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear+generator&plugin=Gear+generator+%28https%3A%2F%2Fgithub.com%2Fpro-d-e-v%2Fsolidcraft-plugin-gear%29",
+   "report_author": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/issues/new?title=Gear+generator%3A+"
   },
   {
    "repo": "JakeMathews/mesh-solidify",
@@ -1010,7 +1031,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Mesh+Solidify&plugin=Mesh+Solidify+%28https%3A%2F%2Fgithub.com%2FJakeMathews%2Fmesh-solidify%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Mesh+Solidify&plugin=Mesh+Solidify+%28https%3A%2F%2Fgithub.com%2FJakeMathews%2Fmesh-solidify%29",
+   "report_author": "https://github.com/JakeMathews/mesh-solidify/issues/new?title=Mesh+Solidify%3A+"
   },
   {
    "repo": "tharje/opengrid-solidcraft",
@@ -1064,7 +1086,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+openGrid&plugin=openGrid+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fopengrid-solidcraft%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+openGrid&plugin=openGrid+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fopengrid-solidcraft%29",
+   "report_author": "https://github.com/tharje/opengrid-solidcraft/issues/new?title=openGrid%3A+"
   },
   {
    "repo": "Stigern/SolidThreadsPlugin",
@@ -1104,7 +1127,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Thread+Generator&plugin=Thread+Generator+%28https%3A%2F%2Fgithub.com%2FStigern%2FSolidThreadsPlugin%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Thread+Generator&plugin=Thread+Generator+%28https%3A%2F%2Fgithub.com%2FStigern%2FSolidThreadsPlugin%29",
+   "report_author": "https://github.com/Stigern/SolidThreadsPlugin/issues/new?title=Thread+Generator%3A+"
   },
   {
    "repo": "645DF/MakeOrbit-SolidCraft",
@@ -1151,7 +1175,8 @@
     "label": "Asks for: files, extra SolidCraft commands",
     "title": "SolidCraft asks you to allow this when you install the plugin."
    },
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+An+MakeOrbit+CNC+Studio+senden&plugin=An+MakeOrbit+CNC+Studio+senden+%28https%3A%2F%2Fgithub.com%2F645DF%2FMakeOrbit-SolidCraft%2Ftree%2Fmain%2Fmanifeste%2Fmakeorbit-cnc-studio%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+An+MakeOrbit+CNC+Studio+senden&plugin=An+MakeOrbit+CNC+Studio+senden+%28https%3A%2F%2Fgithub.com%2F645DF%2FMakeOrbit-SolidCraft%2Ftree%2Fmain%2Fmanifeste%2Fmakeorbit-cnc-studio%29",
+   "report_author": "https://github.com/645DF/MakeOrbit-SolidCraft/issues/new?title=An+MakeOrbit+CNC+Studio+senden%3A+"
   },
   {
    "repo": "645DF/MakeOrbit-SolidCraft",
@@ -1198,7 +1223,8 @@
     "label": "Asks for: files, extra SolidCraft commands",
     "title": "SolidCraft asks you to allow this when you install the plugin."
    },
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+An+MakeOrbit+senden&plugin=An+MakeOrbit+senden+%28https%3A%2F%2Fgithub.com%2F645DF%2FMakeOrbit-SolidCraft%2Ftree%2Fmain%2Fmanifeste%2Fmakeorbit%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+An+MakeOrbit+senden&plugin=An+MakeOrbit+senden+%28https%3A%2F%2Fgithub.com%2F645DF%2FMakeOrbit-SolidCraft%2Ftree%2Fmain%2Fmanifeste%2Fmakeorbit%29",
+   "report_author": "https://github.com/645DF/MakeOrbit-SolidCraft/issues/new?title=An+MakeOrbit+senden%3A+"
   },
   {
    "repo": "haashimrehan/solidcraft-gridfinity",
@@ -1243,7 +1269,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release and ran every command with its default values."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Fhaashimrehan%2Fsolidcraft-gridfinity%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Fhaashimrehan%2Fsolidcraft-gridfinity%29",
+   "report_author": "https://github.com/haashimrehan/solidcraft-gridfinity/issues/new?title=Gridfinity%3A+"
   },
   {
    "repo": "timobickert/Laser-joints-for-Solidcraft",
@@ -1283,7 +1310,8 @@
     "title": "Tested 2026-11-23 on Linux: SolidCraft 0.47.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Laser+joints&plugin=Laser+joints+%28https%3A%2F%2Fgithub.com%2Ftimobickert%2FLaser-joints-for-Solidcraft%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Laser+joints&plugin=Laser+joints+%28https%3A%2F%2Fgithub.com%2Ftimobickert%2FLaser-joints-for-Solidcraft%29",
+   "report_author": "https://github.com/timobickert/Laser-joints-for-Solidcraft/issues/new?title=Laser+joints%3A+"
   },
   {
    "repo": "TheCraftyAlien/SolidCraft-Timber-Plugin",
@@ -1324,7 +1352,8 @@
    "slug": "timber",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Timber&plugin=Timber+%28https%3A%2F%2Fgithub.com%2FTheCraftyAlien%2FSolidCraft-Timber-Plugin%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Timber&plugin=Timber+%28https%3A%2F%2Fgithub.com%2FTheCraftyAlien%2FSolidCraft-Timber-Plugin%29",
+   "report_author": "https://github.com/TheCraftyAlien/SolidCraft-Timber-Plugin/issues/new?title=Timber%3A+"
   },
   {
    "repo": "deveshrai/Solidcraft-Android-Port",
@@ -1360,7 +1389,8 @@
    "slug": "box-importer",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Fdeveshrai%2FSolidcraft-Android-Port%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Fdeveshrai%2FSolidcraft-Android-Port%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29",
+   "report_author": "https://github.com/deveshrai/Solidcraft-Android-Port/issues/new?title=Box+Importer%3A+"
   },
   {
    "repo": "deveshrai/Solidcraft-Android-Port",
@@ -1396,7 +1426,8 @@
    "slug": "plate-maker",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Fdeveshrai%2FSolidcraft-Android-Port%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Fdeveshrai%2FSolidcraft-Android-Port%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29",
+   "report_author": "https://github.com/deveshrai/Solidcraft-Android-Port/issues/new?title=Plate+Maker%3A+"
   },
   {
    "repo": "bbonsen/solidcraftGearsPlugin",
@@ -1437,7 +1468,8 @@
    "slug": "gears",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftGearsPlugin%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftGearsPlugin%29",
+   "report_author": "https://github.com/bbonsen/solidcraftGearsPlugin/issues/new?title=Gears%3A+"
   },
   {
    "repo": "Frosty-Eldin/Solidcraft-lattice",
@@ -1477,7 +1509,8 @@
    "slug": "lattice",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Lattice+Generator&plugin=Lattice+Generator+%28https%3A%2F%2Fgithub.com%2FFrosty-Eldin%2FSolidcraft-lattice%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Lattice+Generator&plugin=Lattice+Generator+%28https%3A%2F%2Fgithub.com%2FFrosty-Eldin%2FSolidcraft-lattice%29",
+   "report_author": "https://github.com/Frosty-Eldin/Solidcraft-lattice/issues/new?title=Lattice+Generator%3A+"
   },
   {
    "repo": "stritti/meshwright",
@@ -1511,7 +1544,8 @@
    "slug": "meshwright",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+meshwright&plugin=meshwright+%28https%3A%2F%2Fgithub.com%2Fstritti%2Fmeshwright%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+meshwright&plugin=meshwright+%28https%3A%2F%2Fgithub.com%2Fstritti%2Fmeshwright%29",
+   "report_author": "https://github.com/stritti/meshwright/issues/new?title=meshwright%3A+"
   },
   {
    "repo": "Xusr404/solidcraft-gridfinity-generator",
@@ -1544,7 +1578,8 @@
    "slug": "solidcraft-gridfinity-generator",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity+Builder&plugin=Gridfinity+Builder+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-gridfinity-generator%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity+Builder&plugin=Gridfinity+Builder+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-gridfinity-generator%29",
+   "report_author": "https://github.com/Xusr404/solidcraft-gridfinity-generator/issues/new?title=Gridfinity+Builder%3A+"
   },
   {
    "repo": "bbonsen/solidcraftPropellerPlugin",
@@ -1579,7 +1614,8 @@
    "slug": "propellers",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Propellers&plugin=Propellers+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftPropellerPlugin%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Propellers&plugin=Propellers+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftPropellerPlugin%29",
+   "report_author": "https://github.com/bbonsen/solidcraftPropellerPlugin/issues/new?title=Propellers%3A+"
   },
   {
    "repo": "jamescarruthers/attractor_pattern_solidcraft",
@@ -1610,7 +1646,8 @@
    "slug": "attractor-pattern",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Attractor+pattern&plugin=Attractor+pattern+%28https%3A%2F%2Fgithub.com%2Fjamescarruthers%2Fattractor_pattern_solidcraft%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Attractor+pattern&plugin=Attractor+pattern+%28https%3A%2F%2Fgithub.com%2Fjamescarruthers%2Fattractor_pattern_solidcraft%29",
+   "report_author": "https://github.com/jamescarruthers/attractor_pattern_solidcraft/issues/new?title=Attractor+pattern%3A+"
   },
   {
    "repo": "andrej-cds/CDS-SolidCraft",
@@ -1646,7 +1683,8 @@
    "slug": "box-importer-andrej-cds",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Fandrej-cds%2FCDS-SolidCraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Fandrej-cds%2FCDS-SolidCraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29",
+   "report_author": "https://github.com/andrej-cds/CDS-SolidCraft/issues/new?title=Box+Importer%3A+"
   },
   {
    "repo": "GaryMoFS/solidcraft-edge-path-sweep",
@@ -1676,7 +1714,8 @@
    "slug": "edge-path-sweep",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Edge+Path+%26+Sweep&plugin=Edge+Path+%26+Sweep+%28https%3A%2F%2Fgithub.com%2FGaryMoFS%2Fsolidcraft-edge-path-sweep%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Edge+Path+%26+Sweep&plugin=Edge+Path+%26+Sweep+%28https%3A%2F%2Fgithub.com%2FGaryMoFS%2Fsolidcraft-edge-path-sweep%29",
+   "report_author": "https://github.com/GaryMoFS/solidcraft-edge-path-sweep/issues/new?title=Edge+Path+%26+Sweep%3A+"
   },
   {
    "repo": "GaryMoFS/solidcraft-helical-sketch",
@@ -1707,7 +1746,8 @@
    "slug": "helical-sketch",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Helical+Sketch+Generator&plugin=Helical+Sketch+Generator+%28https%3A%2F%2Fgithub.com%2FGaryMoFS%2Fsolidcraft-helical-sketch%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Helical+Sketch+Generator&plugin=Helical+Sketch+Generator+%28https%3A%2F%2Fgithub.com%2FGaryMoFS%2Fsolidcraft-helical-sketch%29",
+   "report_author": "https://github.com/GaryMoFS/solidcraft-helical-sketch/issues/new?title=Helical+Sketch+Generator%3A+"
   },
   {
    "repo": "andrej-cds/CDS-SolidCraft",
@@ -1743,7 +1783,8 @@
    "slug": "plate-maker-andrej-cds",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Fandrej-cds%2FCDS-SolidCraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Fandrej-cds%2FCDS-SolidCraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29",
+   "report_author": "https://github.com/andrej-cds/CDS-SolidCraft/issues/new?title=Plate+Maker%3A+"
   },
   {
    "repo": "crono2250/SolidCraft_SolidWorks_FileImportPlugin",
@@ -1779,7 +1820,8 @@
     "label": "Asks for: a folder",
     "title": "SolidCraft asks you to allow this when you install the plugin."
    },
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidWorks+File+Import&plugin=SolidWorks+File+Import+%28https%3A%2F%2Fgithub.com%2Fcrono2250%2FSolidCraft_SolidWorks_FileImportPlugin%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidWorks+File+Import&plugin=SolidWorks+File+Import+%28https%3A%2F%2Fgithub.com%2Fcrono2250%2FSolidCraft_SolidWorks_FileImportPlugin%29",
+   "report_author": "https://github.com/crono2250/SolidCraft_SolidWorks_FileImportPlugin/issues/new?title=SolidWorks+File+Import%3A+"
   },
   {
    "repo": "crono2250/SolidCraft_STLtoSTEP_ImportPlugin",
@@ -1809,7 +1851,8 @@
    "slug": "stl-to-step-import",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+STL+to+STEP+Import&plugin=STL+to+STEP+Import+%28https%3A%2F%2Fgithub.com%2Fcrono2250%2FSolidCraft_STLtoSTEP_ImportPlugin%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+STL+to+STEP+Import&plugin=STL+to+STEP+Import+%28https%3A%2F%2Fgithub.com%2Fcrono2250%2FSolidCraft_STLtoSTEP_ImportPlugin%29",
+   "report_author": "https://github.com/crono2250/SolidCraft_STLtoSTEP_ImportPlugin/issues/new?title=STL+to+STEP+Import%3A+"
   },
   {
    "repo": "bbonsen/solidcraftAirfoilPlugin",
@@ -1841,7 +1884,8 @@
    "slug": "solidcraft-airfoil",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Airfoils+%26+Wings&plugin=Airfoils+%26+Wings+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftAirfoilPlugin%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Airfoils+%26+Wings&plugin=Airfoils+%26+Wings+%28https%3A%2F%2Fgithub.com%2Fbbonsen%2FsolidcraftAirfoilPlugin%29",
+   "report_author": "https://github.com/bbonsen/solidcraftAirfoilPlugin/issues/new?title=Airfoils+%26+Wings%3A+"
   },
   {
    "repo": "oxidized-elias/solidcraft-plugins",
@@ -1872,7 +1916,8 @@
    "icon": "icons/aluminum-extrusions.svg",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Aluminum+Extrusions&plugin=Aluminum+Extrusions+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Faluminum-extrusions%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Aluminum+Extrusions&plugin=Aluminum+Extrusions+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Faluminum-extrusions%29",
+   "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Aluminum+Extrusions%3A+"
   },
   {
    "repo": "tangency-labs/solidcraft",
@@ -1903,7 +1948,8 @@
    "slug": "box-importer-tangency-labs",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Ftangency-labs%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Ftangency-labs%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29",
+   "report_author": "https://github.com/tangency-labs/solidcraft/issues/new?title=Box+Importer%3A+"
   },
   {
    "repo": "quackez-dev/solidcraft",
@@ -1933,7 +1979,8 @@
    "slug": "box-importer-quackez-dev",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Fquackez-dev%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Fquackez-dev%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29",
+   "report_author": "https://github.com/quackez-dev/solidcraft/issues/new?title=Box+Importer%3A+"
   },
   {
    "repo": "jianzhichun/solidz-render-server",
@@ -1969,7 +2016,8 @@
    "slug": "box-importer-jianzhichun",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Fjianzhichun%2Fsolidz-render-server%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Box+Importer&plugin=Box+Importer+%28https%3A%2F%2Fgithub.com%2Fjianzhichun%2Fsolidz-render-server%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fbox-importer%29",
+   "report_author": "https://github.com/jianzhichun/solidz-render-server/issues/new?title=Box+Importer%3A+"
   },
   {
    "repo": "LevLobanov/Solidcraft-gears-plugin",
@@ -2000,7 +2048,8 @@
    "icon": "icons/custom-gears.svg",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear&plugin=Gear+%28https%3A%2F%2Fgithub.com%2FLevLobanov%2FSolidcraft-gears-plugin%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear&plugin=Gear+%28https%3A%2F%2Fgithub.com%2FLevLobanov%2FSolidcraft-gears-plugin%29",
+   "report_author": "https://github.com/LevLobanov/Solidcraft-gears-plugin/issues/new?title=Gear%3A+"
   },
   {
    "repo": "oxidized-elias/solidcraft-plugins",
@@ -2031,7 +2080,8 @@
    "icon": "icons/heatset-insert.svg",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat+Set+Inserts&plugin=Heat+Set+Inserts+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Fheatset-insert%2Fheatset-insert%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat+Set+Inserts&plugin=Heat+Set+Inserts+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Fheatset-insert%2Fheatset-insert%29",
+   "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Heat+Set+Inserts%3A+"
   },
   {
    "repo": "tangency-labs/solidcraft",
@@ -2062,7 +2112,8 @@
    "slug": "plate-maker-tangency-labs",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Ftangency-labs%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Ftangency-labs%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29",
+   "report_author": "https://github.com/tangency-labs/solidcraft/issues/new?title=Plate+Maker%3A+"
   },
   {
    "repo": "quackez-dev/solidcraft",
@@ -2092,7 +2143,8 @@
    "slug": "plate-maker-quackez-dev",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Fquackez-dev%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Fquackez-dev%2Fsolidcraft%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29",
+   "report_author": "https://github.com/quackez-dev/solidcraft/issues/new?title=Plate+Maker%3A+"
   },
   {
    "repo": "jianzhichun/solidz-render-server",
@@ -2128,7 +2180,8 @@
    "slug": "plate-maker-jianzhichun",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Fjianzhichun%2Fsolidz-render-server%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Plate+Maker&plugin=Plate+Maker+%28https%3A%2F%2Fgithub.com%2Fjianzhichun%2Fsolidz-render-server%2Ftree%2Fmain%2Fdocs%2Fbook%2Fplugin-examples%2Fplate-maker%29",
+   "report_author": "https://github.com/jianzhichun/solidz-render-server/issues/new?title=Plate+Maker%3A+"
   },
   {
    "repo": "mbeadell/subd-modeller",
@@ -2158,7 +2211,8 @@
    "slug": "subd-cage",
    "tested": null,
    "asks": null,
-   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SubD+Cage+Importer&plugin=SubD+Cage+Importer+%28https%3A%2F%2Fgithub.com%2Fmbeadell%2Fsubd-modeller%2Ftree%2Fmain%2Fsolidcraft-importer%29"
+   "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SubD+Cage+Importer&plugin=SubD+Cage+Importer+%28https%3A%2F%2Fgithub.com%2Fmbeadell%2Fsubd-modeller%2Ftree%2Fmain%2Fsolidcraft-importer%29",
+   "report_author": "https://github.com/mbeadell/subd-modeller/issues/new?title=SubD+Cage+Importer%3A+"
   }
  ]
 }

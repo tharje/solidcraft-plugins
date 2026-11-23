@@ -81,7 +81,10 @@ function card(p) {
     el.textContent = p.asks.label;
     el.title = p.asks.title;
   }
-  t.querySelector(".report").href = p.report;
+  t.querySelector(".to-list").href = p.report;
+  const author = t.querySelector(".to-author");
+  if (p.report_author) author.href = p.report_author;
+  else author.remove();
   t.querySelector(".stars").textContent = `★ ${p.stars}`;
   t.querySelector(".dl").textContent = `⬇ ${p.downloads}`;
   t.querySelector(".upd").textContent = ago(p.updated);
@@ -153,3 +156,10 @@ fetch("data/plugins.json")
   .catch(() => $("#list").replaceChildren(message("Could not load the plugin list.")));
 $("#q").addEventListener("input", show);
 $("#sort").addEventListener("change", show);
+
+// one report menu open at a time; a click elsewhere closes it
+document.addEventListener("click", (ev) => {
+  for (const d of document.querySelectorAll("details.report[open]")) {
+    if (!d.contains(ev.target)) d.open = false;
+  }
+});

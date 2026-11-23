@@ -20,6 +20,24 @@ def report_url(p):
     return f"{REPORT}&{q}"
 
 
+def author_report_url(p):
+    """A new issue in the plugin's own repository, or None if it has issues turned off."""
+    if p.get("issues") is False:
+        return None
+    q = urllib.parse.urlencode({"title": f"{p['name']}: "})
+    return f"https://github.com/{p['repo']}/issues/new?{q}"
+
+
+def report_menu(p):
+    """Report a problem: to the plugin's author (bugs, questions) or to this list (warnings)."""
+    author = author_report_url(p)
+    to_author = (f'<a class="to-author" href="{e(author)}" target="_blank" rel="noopener"><b>To the author</b>'
+                 f'<span>Bugs, questions and ideas</span></a>') if author else ""
+    return (f'<details class="report"><summary>Report a problem</summary><div class="menu">{to_author}'
+            f'<a class="to-list" href="{e(report_url(p))}" target="_blank" rel="noopener"><b>To this list</b>'
+            f'<span>Crashes SolidCraft, harms a design, won\'t install or looks unsafe</span></a></div></details>')
+
+
 # What each permission means to someone installing the plugin; clock (the time of day) is left out.
 ASKS = {"files": "files", "input_folder": "a folder", "net": "the network", "command_groups": "extra SolidCraft commands"}
 
@@ -95,7 +113,7 @@ def card(p, prefix=""):
       <div class="meta">
         <span class="stars" title="GitHub stars">★ {p["stars"]}</span>
         <span class="dl" title="Downloads of all releases">⬇ {p["downloads"]}</span>
-        <a class="report" href="{e(report_url(p))}" target="_blank" rel="noopener">Report a problem</a>
+        {report_menu(p)}
       </div>
       <div class="actions">
         {download}
@@ -391,6 +409,7 @@ def build(plugins):
         p["tested"] = tested(p, compat)
         p["asks"] = asks(p)
         p["report"] = report_url(p)
+        p["report_author"] = author_report_url(p)
     path = os.path.join(ROOT, "index.html")
     with open(path) as f:
         page = f.read()

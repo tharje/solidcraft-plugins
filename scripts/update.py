@@ -326,6 +326,7 @@ def plugins(repo):
             "permissions": permissions(m),
             "topics": [] if part else tags(r.get("topics", [])),
             "stars": r.get("stargazers_count", 0),
+            "issues": r.get("has_issues", True),
             "license": (r.get("license") or {}).get("spdx_id"),
             "updated": r.get("pushed_at"),
             "created": r.get("created_at"),
