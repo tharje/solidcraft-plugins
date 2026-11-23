@@ -109,6 +109,7 @@ nav a { color: var(--muted); }
   padding: 6px 24px 14px; margin-top: 34px;
 }
 .info h2 { font-size: 22px; margin: 16px 0 6px; }
+.info h3 { font-size: 17px; margin: 18px 0 4px; }
 .info li { margin: 4px 0; }
 .note { color: var(--muted); font-size: 14px; }
 .empty-list { color: var(--muted); grid-column: 1 / -1; text-align: center; padding: 40px 0; }

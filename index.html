@@ -1277,12 +1277,27 @@
     </ol>
     <p>The first picture in your README becomes the card's picture. Name, description and menu
       entries come from your manifest.</p>
+    <h3>“Loads in” and “Runs in”</h3>
+    <p>Every day, each plugin's newest release zip is tried in the newest SolidCraft release, on Linux, with
+      SolidCraft's command-line app and nothing installed or set up:</p>
+    <ul>
+      <li><b>✓ Loads in SolidCraft 0.x.y</b>: SolidCraft accepted the zip, its <code>plugin.json</code> and its
+        WebAssembly component (<code>plugin.inspect</code>).</li>
+      <li><b>✓ Runs in SolidCraft 0.x.y</b>: it loads, and every command in its menu ran without an error in an
+        empty design with the default values from your manifest (<code>plugin.run</code> with no parameters),
+        each within 2 minutes.</li>
+    </ul>
+    <p>A command that needs something picked first (a face, a body), or a plugin that asks for file access or
+      other permissions, can't run on its own there, so it shows <i>Loads in</i>. That is no sign of a fault.
+      To get <i>Runs in</i>, give every field a default that works in an empty design. A plugin is tried again
+      when it has a new release or SolidCraft has a new version; nothing is shown when a test fails.</p>
   </section>
 </main>
 
 <footer class="wrap foot">
   <span id="updated"></span>
-  <span>A community list, not made by Tangency Labs. Each plugin belongs to its author.</span>
+  <span>A community list, not made by Tangency Labs. Each plugin belongs to its author.
+    <a href="https://github.com/tharje/solidcraft-plugins">This list on GitHub</a> (ideas and problems with the list: <a href="https://github.com/tharje/solidcraft-plugins/issues">Issues</a>).</span>
 </footer>
 
 <template id="card">
