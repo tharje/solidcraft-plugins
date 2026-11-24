@@ -56,14 +56,24 @@
    "tested": "2026-11-24"
   },
   "gridfinity": {
-   "entries": 4,
+   "entries": 15,
    "loads": true,
    "ran": [
     "bin",
     "baseplate",
-    "drawer"
+    "drawer",
+    "panel",
+    "panel-refresh",
+    "panel-select",
+    "quick-bin-1x1",
+    "quick-bin-scoop",
+    "quick-bin-4",
+    "quick-bin-eco",
+    "quick-plate",
+    "layout-remove",
+    "layout-restore"
    ],
-   "release": "v1.5.0",
+   "release": "v1.6.0",
    "solidcraft": "0.48.1",
    "tested": "2026-11-24"
   },
@@ -198,10 +208,10 @@
    "tested": "2026-11-24"
   },
   "solidinserts": {
-   "entries": 1,
+   "entries": 2,
    "loads": true,
    "ran": [],
-   "release": "v1.2.0",
+   "release": "v1.3.1",
    "solidcraft": "0.48.1",
    "tested": "2026-11-24"
   },
