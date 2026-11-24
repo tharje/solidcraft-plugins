@@ -60,8 +60,6 @@
    "loads": true,
    "ran": [
     "bin",
-    "baseplate",
-    "drawer",
     "panel",
     "panel-refresh",
     "panel-select",
@@ -73,7 +71,7 @@
     "layout-remove",
     "layout-restore"
    ],
-   "release": "v1.6.0",
+   "release": "v1.6.1",
    "solidcraft": "0.48.1",
    "tested": "2026-11-24"
   },
