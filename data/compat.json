@@ -51,9 +51,9 @@
     "bar-bracket",
     "solver-benchmark"
    ],
-   "release": "v0.12.0",
+   "release": "v0.13.0",
    "solidcraft": "0.48.1",
-   "tested": "2026-11-24"
+   "tested": "2026-11-25"
   },
   "gridfinity": {
    "entries": 15,
@@ -144,9 +144,9 @@
    "ran": [
     "teardrop"
    ],
-   "release": "v0.2.1",
+   "release": "v0.2.2",
    "solidcraft": "0.48.1",
-   "tested": "2026-11-24"
+   "tested": "2026-11-25"
   },
   "solidcraft-aprilcube": {
    "entries": 3,
@@ -318,6 +318,16 @@
    "skipped": "asks for permissions",
    "solidcraft": "0.48.1",
    "tested": "2026-11-24"
+  },
+  "zahnrad": {
+   "entries": 1,
+   "loads": true,
+   "ran": [
+    "gear"
+   ],
+   "release": "v1.4.0",
+   "solidcraft": "0.48.1",
+   "tested": "2026-11-25"
   }
  },
  "solidcraft": "0.48.1"

@@ -528,7 +528,11 @@
    "has_topic": false,
    "category": "Other",
    "slug": "gen-design-engine",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.48.1",
+    "date": "2026-11-25",
+    "title": "Tested 2026-11-25 on Linux: SolidCraft 0.48.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Generative+Design+Engine&plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2FGenerative-design-plugin-for-SolidCraft%29",
    "report_author": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/issues/new?title=Generative+Design+Engine%3A+"
@@ -851,7 +855,11 @@
    "has_topic": true,
    "category": "Hardware & fasteners",
    "slug": "solidcraft-3d-printing-holes",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.48.1",
+    "date": "2026-11-25",
+    "title": "Tested 2026-11-25 on Linux: SolidCraft 0.48.1 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+3D+Printing+Holes&plugin=3D+Printing+Holes+%28https%3A%2F%2Fgithub.com%2FSB97%2Fsolidcraft-3d-printing-holes%29",
    "report_author": "https://github.com/SB97/solidcraft-3d-printing-holes/issues/new?title=3D+Printing+Holes%3A+"
@@ -1566,7 +1574,11 @@
    "has_topic": false,
    "category": "Gears & motion",
    "slug": "zahnrad",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.48.1",
+    "date": "2026-11-25",
+    "title": "Tested 2026-11-25 on Linux: SolidCraft 0.48.1 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Zahnrad-Generator&plugin=Zahnrad-Generator+%28https%3A%2F%2Fgithub.com%2FColpa1972%2Fzahnrad-gear-generator%29",
    "report_author": "https://github.com/Colpa1972/zahnrad-gear-generator/issues/new?title=Zahnrad-Generator%3A+"
