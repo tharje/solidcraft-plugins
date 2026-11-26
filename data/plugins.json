@@ -93,7 +93,11 @@
    "category": "Woodworking",
    "slug": "woodwork",
    "icon": "icons/woodwork.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
    "asks": {
     "label": "Asks for: files",
     "title": "SolidCraft asks you to allow this when you install the plugin."
@@ -570,7 +574,11 @@
    "category": "Hardware & fasteners",
    "slug": "revmesh",
    "icon": "icons/revmesh.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+revmesh&plugin=revmesh+%28https%3A%2F%2Fgithub.com%2Fstritti%2Frevmesh%29",
    "report_author": "https://github.com/stritti/revmesh/issues/new?title=revmesh%3A+"
@@ -1521,7 +1529,11 @@
    "category": "Other",
    "slug": "code-maker",
    "icon": "icons/code-maker.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Code+Maker&plugin=Code+Maker+%28https%3A%2F%2Fgithub.com%2FMMMatth%2Fsolidcraft-code-maker%29",
    "report_author": "https://github.com/MMMatth/solidcraft-code-maker/issues/new?title=Code+Maker%3A+"

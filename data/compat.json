@@ -16,6 +16,14 @@
    "solidcraft": "0.49.1",
    "tested": "2026-11-26"
   },
+  "code-maker": {
+   "entries": 1,
+   "loads": true,
+   "ran": [],
+   "release": "v0.6.0",
+   "solidcraft": "0.49.1",
+   "tested": "2026-11-26"
+  },
   "custom-threads": {
    "entries": 4,
    "loads": true,
@@ -174,19 +182,11 @@
    "solidcraft": "0.49.1",
    "tested": "2026-11-25"
   },
-  "qr-code": {
-   "entries": 1,
-   "loads": true,
-   "ran": [],
-   "release": "v0.5.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
-  },
   "revmesh": {
    "entries": 1,
    "loads": true,
    "ran": [],
-   "release": "v0.1.0",
+   "release": "v0.2.0",
    "solidcraft": "0.49.1",
    "tested": "2026-11-26"
   },
@@ -256,6 +256,15 @@
    "release": "Plugin",
    "solidcraft": "0.49.1",
    "tested": "2026-11-25"
+  },
+  "solidcraft-parasolid": {
+   "entries": 0,
+   "error": "error: plugin: invalid manifest field runtime.entries.import.extensions: an import or export slot claims 1..32 distinct lowercase extensions without the dot, such as \"f3d\"",
+   "loads": false,
+   "ran": [],
+   "release": "v0.1.0",
+   "solidcraft": "0.49.1",
+   "tested": "2026-11-26"
   },
   "solidinserts": {
    "entries": 2,
@@ -374,10 +383,10 @@
    "entries": 8,
    "loads": true,
    "ran": [],
-   "release": "v0.4.0",
+   "release": "v0.5.0",
    "skipped": "asks for permissions",
    "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "tested": "2026-11-26"
   },
   "zahnrad": {
    "entries": 1,
