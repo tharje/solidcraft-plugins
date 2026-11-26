@@ -67,15 +67,17 @@
     "bar-bracket",
     "solver-benchmark"
    ],
-   "release": "v0.13.0",
+   "release": "v0.14.0",
    "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "tested": "2026-11-26"
   },
   "gridfinity": {
    "entries": 15,
    "loads": true,
    "ran": [
     "bin",
+    "baseplate",
+    "drawer",
     "panel",
     "panel-refresh",
     "panel-select",
@@ -87,9 +89,9 @@
     "layout-remove",
     "layout-restore"
    ],
-   "release": "v1.6.1",
+   "release": "v1.6.2",
    "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "tested": "2026-11-26"
   },
   "heatset-insert": {
    "entries": 1,
