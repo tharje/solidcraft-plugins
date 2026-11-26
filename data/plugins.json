@@ -575,7 +575,11 @@
    "category": "Hardware & fasteners",
    "slug": "revmesh",
    "icon": "icons/revmesh.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+revmesh&plugin=revmesh+%28https%3A%2F%2Fgithub.com%2Fstritti%2Frevmesh%29",
    "report_author": "https://github.com/stritti/revmesh/issues/new?title=revmesh%3A+"
@@ -722,7 +726,11 @@
    "category": "Woodworking",
    "slug": "wood-joinery",
    "icon": "icons/wood-joinery.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Wood+joinery&plugin=Wood+joinery+%28https%3A%2F%2Fgithub.com%2FWilliamHJKL%2Fsolidcraft-wood-joinery%29",
    "report_author": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/issues/new?title=Wood+joinery%3A+"
@@ -1294,7 +1302,11 @@
    "category": "Hardware & fasteners",
    "slug": "aluminum-extrusions",
    "icon": "icons/aluminum-extrusions.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Aluminum+Extrusions&plugin=Aluminum+Extrusions+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Faluminum-extrusions%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Aluminum+Extrusions%3A+"
@@ -1478,7 +1490,11 @@
    "category": "Hardware & fasteners",
    "slug": "heatset-insert",
    "icon": "icons/heatset-insert.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat+Set+Inserts&plugin=Heat+Set+Inserts+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Fheatset-insert%2Fheatset-insert%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Heat+Set+Inserts%3A+"
@@ -1607,7 +1623,11 @@
    "category": "Other",
    "slug": "linear-rails",
    "icon": "icons/linear-rails.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Linear+Rails&plugin=Linear+Rails+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Flinear-rails%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Linear+Rails%3A+"
@@ -1646,7 +1666,11 @@
    "category": "Other",
    "slug": "qr-code",
    "icon": "icons/qr-code.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+QR+Code&plugin=QR+Code+%28https%3A%2F%2Fgithub.com%2FMMMatth%2Fsolidcraft-qr-code%29",
    "report_author": "https://github.com/MMMatth/solidcraft-qr-code/issues/new?title=QR+Code%3A+"
@@ -1777,7 +1801,11 @@
    "has_topic": true,
    "category": "Other",
    "slug": "tubecraft",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+TubeCraft&plugin=TubeCraft+%28https%3A%2F%2Fgithub.com%2FJPDoesDev%2FTubeCraft%29",
    "report_author": "https://github.com/JPDoesDev/TubeCraft/issues/new?title=TubeCraft%3A+"
