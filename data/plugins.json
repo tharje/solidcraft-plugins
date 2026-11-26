@@ -1302,7 +1302,11 @@
    "category": "Hardware & fasteners",
    "slug": "aluminum-extrusions",
    "icon": "icons/aluminum-extrusions.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Aluminum+Extrusions&plugin=Aluminum+Extrusions+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Faluminum-extrusions%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Aluminum+Extrusions%3A+"
@@ -1439,7 +1443,11 @@
    "category": "Other",
    "slug": "breakaway-supports",
    "icon": "icons/breakaway-supports.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Breakaway+Supports&plugin=Breakaway+Supports+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Fbreakaway-supports%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Breakaway+Supports%3A+"
@@ -1525,7 +1533,11 @@
    "category": "Hardware & fasteners",
    "slug": "heatset-insert",
    "icon": "icons/heatset-insert.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat+Set+Inserts&plugin=Heat+Set+Inserts+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Fheatset-insert%2Fheatset-insert%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Heat+Set+Inserts%3A+"
@@ -1654,7 +1666,11 @@
    "category": "Other",
    "slug": "linear-rails",
    "icon": "icons/linear-rails.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.49.1",
+    "date": "2026-11-26",
+    "title": "Tested 2026-11-26 on Linux: SolidCraft 0.49.1 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Linear+Rails&plugin=Linear+Rails+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Flinear-rails%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Linear+Rails%3A+"

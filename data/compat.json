@@ -4,7 +4,15 @@
    "entries": 1,
    "loads": true,
    "ran": [],
-   "release": "build-21c2355d26a76d5dcb5c6f252b35ed4ba8bd8862",
+   "release": "build-45b8897f7fc75a5949b8ee10a23c7e2826f1c67e",
+   "solidcraft": "0.49.1",
+   "tested": "2026-11-26"
+  },
+  "breakaway-supports": {
+   "entries": 1,
+   "loads": true,
+   "ran": [],
+   "release": "build-45b8897f7fc75a5949b8ee10a23c7e2826f1c67e",
    "solidcraft": "0.49.1",
    "tested": "2026-11-26"
   },
@@ -89,7 +97,7 @@
    "ran": [
     "insert"
    ],
-   "release": "build-21c2355d26a76d5dcb5c6f252b35ed4ba8bd8862",
+   "release": "build-45b8897f7fc75a5949b8ee10a23c7e2826f1c67e",
    "solidcraft": "0.49.1",
    "tested": "2026-11-26"
   },
@@ -116,7 +124,7 @@
    "entries": 1,
    "loads": true,
    "ran": [],
-   "release": "build-21c2355d26a76d5dcb5c6f252b35ed4ba8bd8862",
+   "release": "build-45b8897f7fc75a5949b8ee10a23c7e2826f1c67e",
    "solidcraft": "0.49.1",
    "tested": "2026-11-26"
   },
