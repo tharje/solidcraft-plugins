@@ -175,7 +175,11 @@
    "category": "Storage & organizing",
    "slug": "gridfinity",
    "icon": "icons/gridfinity.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fgridfinity-solidcraft%29",
    "report_author": "https://github.com/tharje/gridfinity-solidcraft/issues/new?title=Gridfinity%3A+"
@@ -905,7 +909,11 @@
    "has_topic": false,
    "category": "Other",
    "slug": "sw2sc",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidWorks+Parts+%28sw2sc%29&plugin=SolidWorks+Parts+%28sw2sc%29+%28https%3A%2F%2Fgithub.com%2Fbobthecooldad%2Fsw2sc%29",
    "report_author": "https://github.com/bobthecooldad/sw2sc/issues/new?title=SolidWorks+Parts+%28sw2sc%29%3A+"
@@ -1345,7 +1353,11 @@
    "category": "Hardware & fasteners",
    "slug": "aluminum-extrusions",
    "icon": "icons/aluminum-extrusions.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Aluminum+Extrusions&plugin=Aluminum+Extrusions+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Faluminum-extrusions%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Aluminum+Extrusions%3A+"
@@ -1482,7 +1494,11 @@
    "category": "Other",
    "slug": "breakaway-supports",
    "icon": "icons/breakaway-supports.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Breakaway+Supports&plugin=Breakaway+Supports+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Fbreakaway-supports%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Breakaway+Supports%3A+"
@@ -1521,7 +1537,11 @@
    "category": "Other",
    "slug": "code-maker",
    "icon": "icons/code-maker.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Code+Maker&plugin=Code+Maker+%28https%3A%2F%2Fgithub.com%2FMMMatth%2Fsolidcraft-code-maker%29",
    "report_author": "https://github.com/MMMatth/solidcraft-code-maker/issues/new?title=Code+Maker%3A+"
@@ -1709,7 +1729,11 @@
    "category": "Hardware & fasteners",
    "slug": "heatset-insert",
    "icon": "icons/heatset-insert.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat+Set+Inserts&plugin=Heat+Set+Inserts+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Fheatset-insert%2Fheatset-insert%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Heat+Set+Inserts%3A+"
@@ -1838,7 +1862,11 @@
    "category": "Other",
    "slug": "linear-rails",
    "icon": "icons/linear-rails.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Linear+Rails&plugin=Linear+Rails+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Flinear-rails%29",
    "report_author": "https://github.com/oxidized-elias/solidcraft-plugins/issues/new?title=Linear+Rails%3A+"
@@ -1971,7 +1999,11 @@
    "has_topic": false,
    "category": "Gears & motion",
    "slug": "planetary-gear",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Planetary+gear&plugin=Planetary+gear+%28https%3A%2F%2Fgithub.com%2Fbarry941105-ctrl%2FSolidcraft-planetary-gear-0.1.2%29",
    "report_author": "https://github.com/barry941105-ctrl/Solidcraft-planetary-gear-0.1.2/issues/new?title=Planetary+gear%3A+"
