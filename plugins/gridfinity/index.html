@@ -28,6 +28,7 @@
     </a>
     <nav>
       <a href="../../">All plugins</a>
+      <a href="../../quality/">Quality checks</a>
       <a href="../../#install">Install</a>
       <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a>
     </nav>
@@ -37,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Gridfinity</p>
   <h1><img class="icon" src="../../icons/gridfinity.svg" alt="">Gridfinity <span class="ver">v1.7.0</span></h1>
-  <a class="qc big" href="https://github.com/tharje/solidcraft-plugins/blob/main/checks/gridfinity.md" title="Version 1.7.0 was checked 2026-11-27 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs." target="_blank" rel="noopener">✓ Quality checked</a>
+  <a class="qc big" href="#quality" title="Version 1.7.0 was checked 2026-11-27 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs.">✓ Quality checked</a>
   <p class="lead">Gridfinity bins (hollow, eco or solid), baseplates, and drawer baseplates split to fit your printer or a picked drawer floor, on a full, half or custom grid. Edit bin changes a bin it made, showing its settings.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.7.0/gridfinity-1.7.0.zip">Download .zip</a>
@@ -61,10 +62,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Gridfinity&amp;plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fgridfinity-solidcraft%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/tharje">tharje</a></dd><dt>Category</dt><dd><a href="../../?category=Storage%20%26%20organizing">Storage &amp; organizing</a></dd><dt>Version</dt><dd>1.7.0</dd><dt>Latest release</dt><dd><a href="https://github.com/tharje/gridfinity-solidcraft/releases/tag/v1.7.0">v1.7.0</a> (2026-11-27)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 34 stars · ⬇ 1447 downloads</dd><dt>Quality check</dt><dd title="Version 1.7.0 was checked 2026-11-27 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs."><a href="https://github.com/tharje/solidcraft-plugins/blob/main/checks/gridfinity.md">v1.7.0, 2026-11-27</a></dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/tharje">tharje</a></dd><dt>Category</dt><dd><a href="../../?category=Storage%20%26%20organizing">Storage &amp; organizing</a></dd><dt>Version</dt><dd>1.7.0</dd><dt>Latest release</dt><dd><a href="https://github.com/tharje/gridfinity-solidcraft/releases/tag/v1.7.0">v1.7.0</a> (2026-11-27)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 34 stars · ⬇ 1447 downloads</dd><dt>Quality check</dt><dd title="Version 1.7.0 was checked 2026-11-27 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs."><a href="#quality">Passed, v1.7.0 (2026-11-27)</a></dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       <div class="chips"><span>3d-printing</span><span>baseplate</span><span>bins</span><span>cad</span><span>gridfinity</span><span>half-grid</span><span>maker</span><span>organizer</span><span>parametric</span><span>stl</span><span>storage</span><span>tool-holder</span><span>workshop</span></div>
     </aside>
   </div>
+  <section class="quality" id="quality">
+    <h2>Quality check: passed</h2>
+    <p class="meta-line">Version 1.7.0, checked 2026-11-27 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why">Also in 0.49.1. <code>plugin check</code>: no problems.</span></li><li class="yes"><b>✓</b> Every command runs, with its defaults and with real settings <span class="why">30 of 30 test cases in <code>solidcraft-cli plugin test</code>.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">Every case checks the body count and volume. Bins and plates are ordinary sketches and features in a timeline folder, with the height and labels as parameters.</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Modelling commands, its own storage and a panel. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">MIT, README with install and use, a zip on every release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    <p>Also checked by hand in the desktop app: the dialogs, Edit bin filling in a picked bin&#x27;s settings, and a lid sitting in a bin&#x27;s stacking lip (no overlap, resting on the lip).</p>
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="yes"><td>Bin</td><td>Defaults; 3×2×6 with dividers, scoop, label tab and text (raised and flush), magnet and screw holes; eco and solid bins; half and custom grids; filler; a flat and a stackable lid</td><td>under 16 s each</td><td>passed</td></tr><tr class="yes"><td>Base plate</td><td>4×3, half cells, magnets and screws, cells left out</td><td>under 12 s each</td><td>passed</td></tr><tr class="yes"><td>Drawer plate</td><td>400×300 and 800×600 (as a long job), with magnets</td><td>up to 76 s as a job</td><td>passed</td></tr><tr class="yes"><td>Edit bin</td><td>A picked bin with its settings filled in, changed and made again</td><td>under 10 s</td><td>passed</td></tr><tr class="yes"><td>Panel</td><td>Parts list, Quick buttons, Layout, Settings</td><td>under 1 s each</td><td>passed</td></tr></tbody></table>
+    
+  </section>
   <section class="notes">
     <h2>What's new in v1.7.0 (2026-11-27)</h2>
     <p><b>Needs SolidCraft 0.49.1 or newer; 0.50.0 is best.</b> On 0.49 big bins and plates can hit the time limit, because joins are slow there. For SolidCraft 0.48, use <a href="https://github.com/tharje/gridfinity-solidcraft/releases/tag/v1.6.1" rel="nofollow noopener">1.6.1</a>.</p>

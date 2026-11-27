@@ -46,9 +46,10 @@ It passed when:
 6. its repository takes issues, for questions and bugs.
 
 Anyone can ask for a check with the [Request a quality check](../../issues/new?template=quality-check.yml)
-form. The plugin is tested, a short report goes into the issue and [checks/](checks/), and the
-check is added to [verified.json](verified.json): the version, the date, who tested it and in which
-SolidCraft. After a newer release the badge turns grey and names the version that was checked,
+form. The plugin is tested and the check is added to [verified.json](verified.json): the version,
+the date, who tested it, in which SolidCraft, each criterion and every run. Checks that did not pass
+are shown too. The plugin's page shows the result, and the [Quality checks](https://tharje.github.io/solidcraft-plugins/quality/)
+page lists them all. After a newer release the badge turns grey and names the version that was checked,
 until the new one is checked too. The **✓ Quality checked** button above the list shows only these
 plugins.
 

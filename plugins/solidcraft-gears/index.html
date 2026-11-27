@@ -28,6 +28,7 @@
     </a>
     <nav>
       <a href="../../">All plugins</a>
+      <a href="../../quality/">Quality checks</a>
       <a href="../../#install">Install</a>
       <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a>
     </nav>
@@ -37,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Gears</p>
   <h1>Gears <span class="ver">v0.1.1</span></h1>
-  
+  <a class="qc fail big" href="#quality" title="Version 0.1.1, checked 2026-11-27 in SolidCraft 0.50.0: A gear with many teeth goes over the plugin&#x27;s 30 s time limit: 80 teeth, which the dialog allows, can&#x27;t be made. Click for what was tested.">Quality check: not passed (v0.1.1)</a>
   <p class="lead">Involute spur gear generator: module, teeth, pressure angle, face width, bore and profile shift. Builds an editable sketch and features.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip">Download .zip</a>
@@ -59,10 +60,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Gears&amp;plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbherbruck%2Fsolidcraft-gears%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/bherbruck">bherbruck</a></dd><dt>Category</dt><dd><a href="../../?category=Gears%20%26%20motion">Gears &amp; motion</a></dd><dt>Version</dt><dd>0.1.1</dd><dt>Latest release</dt><dd><a href="https://github.com/bherbruck/solidcraft-gears/releases/tag/v0.1.1">v0.1.1</a> (2026-11-12)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 40 stars · ⬇ 4078 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/bherbruck">bherbruck</a></dd><dt>Category</dt><dd><a href="../../?category=Gears%20%26%20motion">Gears &amp; motion</a></dd><dt>Version</dt><dd>0.1.1</dd><dt>Latest release</dt><dd><a href="https://github.com/bherbruck/solidcraft-gears/releases/tag/v0.1.1">v0.1.1</a> (2026-11-12)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 40 stars · ⬇ 4078 downloads</dd><dt>Quality check</dt><dd title="Version 0.1.1, checked 2026-11-27 in SolidCraft 0.50.0: A gear with many teeth goes over the plugin&#x27;s 30 s time limit: 80 teeth, which the dialog allows, can&#x27;t be made. Click for what was tested."><a href="#quality">Not passed, v0.1.1 (2026-11-27)</a></dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       <div class="chips"><span>cad</span><span>gears</span></div>
     </aside>
   </div>
+  <section class="quality" id="quality">
+    <h2>Quality check: not passed</h2>
+    <p class="meta-line">Version 0.1.1, checked 2026-11-27 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    <p>A gear with many teeth goes over the plugin&#x27;s 30 s time limit: 80 teeth, which the dialog allows, can&#x27;t be made.</p>
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="no"><b>✗</b> Every command runs, with its defaults and with real settings <span class="why">9 of 11 runs passed; 80 teeth was stopped at the 30 s limit.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">One closed body per gear, made of a sketch and an extrude.</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Only sketch and solid commands. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">MIT, README, a zip on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="yes"><td>Make gear</td><td>Defaults: module 2, 20 teeth, face 10 mm</td><td>6.9 s</td><td>passed (12290 mm³)</td></tr><tr class="yes"><td>Make gear</td><td>Module 1, 12 teeth</td><td>3.8 s</td><td>passed</td></tr><tr class="yes"><td>Make gear</td><td>Module 1.5, 40 teeth, bore 8 mm</td><td>15.3 s</td><td>passed</td></tr><tr class="yes"><td>Make gear</td><td>8 teeth (the smallest allowed)</td><td>2.9 s</td><td>passed</td></tr><tr class="yes"><td>Make gear</td><td>60 teeth</td><td>21.2 s</td><td>passed</td></tr><tr class="yes"><td>Make gear</td><td>Pressure angle 14.5°</td><td>5.7 s</td><td>passed</td></tr><tr class="yes"><td>Make gear</td><td>Pressure angle 25°, profile shift −0.3</td><td>6.3 s</td><td>passed</td></tr><tr class="yes"><td>Make gear</td><td>Module 0.5, 30 teeth, bore 3 mm</td><td>11.6 s</td><td>passed</td></tr><tr class="no"><td>Make gear</td><td><b>80 teeth (the largest allowed)</b></td><td>41.2 s</td><td>stopped at the 30 s limit</td></tr><tr class="no"><td>Make gear</td><td><b>Module 3, 80 teeth, face 20 mm</b></td><td>31.9 s</td><td>stopped at the 30 s limit</td></tr><tr class="na"><td>Make gear</td><td>8 teeth, profile shift +0.5</td><td>0.2 s</td><td>refused: &quot;the tooth comes to a point; lower the profile shift&quot;. Right to refuse, but it comes as an error inside the plugin (&quot;Report this to its author&quot;) rather than a message about the setting</td></tr></tbody></table>
+    <h3>How it could pass</h3><p>The time grows with the number of teeth, about 0.35 s a tooth here. Making Make gear a long job (<code>&quot;job&quot;: true</code>, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel), or drawing one tooth and patterning it, would fix it. Reporting a pointed tooth as an invalid setting would make that message clearer.</p>
+  </section>
   <section class="notes">
     <h2>What's new in v0.1.1 (2026-11-12)</h2>
     <p>Involute spur gear generator plugin for SolidCraft. Unzip into your SolidCraft plugins folder; see the README.</p>

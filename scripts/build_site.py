@@ -76,20 +76,38 @@ def tested(p, compat):
 
 
 QUALITY = "https://github.com/tharje/solidcraft-plugins#quality-checked"
+# What a quality check looks at, in order: verified.json's "criteria" uses these keys.
+CRITERIA = [
+    ("installs", "Installs and loads in the newest SolidCraft"),
+    ("runs", "Every command runs, with its defaults and with real settings"),
+    ("valid", "Makes whole, valid bodies that can be edited"),
+    ("permissions", "Asks for no more than it needs, and never for the network"),
+    ("release", "Open source licence, a README, and a release with its zip"),
+    ("issues", "Takes issues, for questions and bugs"),
+]
+RESULT = {"passed": "Passed", "not passed": "Not passed", "not checkable": "Could not be checked"}
 
 
 def checked(p, verified):
     """The plugin's quality check (verified.json), or None: the badge's text, its tooltip and the
-    report. A check is for one version; after a newer release the badge names the version checked."""
+    report. A check is for one version; after a newer release the badge names the version checked.
+    A check that did not pass is shown too, so anyone can read what failed."""
     v = next((x for x in verified if x["repo"].lower() == p["repo"].lower() and x["id"] == p.get("id")), None)
     if not v:
         return None
     current = v["version"] == p.get("version")
-    return {"label": "✓ Quality checked" if current else f"✓ Quality checked (v{v['version']})",
-            "current": current, "report": v.get("report") or QUALITY, "date": v["date"], "version": v["version"],
-            "title": (f"Version {v['version']} was checked {v['date']} by {v['by']} in SolidCraft {v['solidcraft']}: it installs, "
+    passed = v.get("result", "passed") == "passed"
+    q = {"current": current, "passed": passed, "report": f"{SITE}plugins/{p['slug']}/#quality", "date": v["date"],
+         "version": v["version"], "result": v.get("result", "passed"), "data": v}
+    if passed:
+        q["label"] = "✓ Quality checked" if current else f"✓ Quality checked (v{v['version']})"
+        q["title"] = (f"Version {v['version']} was checked {v['date']} by {v['by']} in SolidCraft {v['solidcraft']}: it installs, "
                       "every command runs with its defaults and with real settings, it makes valid bodies you can edit, "
-                      "and it asks for no more than it needs." + ("" if current else " The newer version has not been checked yet."))}
+                      "and it asks for no more than it needs." + ("" if current else " The newer version has not been checked yet."))
+    else:
+        q["label"] = ("Quality check: not passed" if v["result"] == "not passed" else "Quality check: could not be checked") + f" (v{v['version']})"
+        q["title"] = f"Version {v['version']}, checked {v['date']} in SolidCraft {v['solidcraft']}: {v.get('summary', '')} Click for what was tested."
+    return q
 
 
 def slugs(plugins):
@@ -107,8 +125,9 @@ def qc_badge(p, page=False):
     q = p.get("checked")
     if not q:
         return ""
-    cls = "qc" + ("" if q["current"] else " old") + (" big" if page else "")
-    return f'\n      <a class="{cls}" href="{e(q["report"])}" title="{e(q["title"])}" target="_blank" rel="noopener">{e(q["label"])}</a>'
+    cls = "qc" + ("" if q["passed"] else " fail") + ("" if q["current"] or not q["passed"] else " old") + (" big" if page else "")
+    href = "#quality" if page else q["report"]
+    return f'\n      <a class="{cls}" href="{e(href)}" title="{e(q["title"])}">{e(q["label"])}</a>'
 
 
 def card(p, prefix=""):
@@ -283,7 +302,8 @@ def plugin_page(p, others):
         facts.append(f"<dt>Asks for</dt><dd title=\"{e(p['asks']['title'])}\">{e(p['asks']['label'][len('Asks for: '):])}</dd>")
     if p.get("checked"):
         q = p["checked"]
-        facts.append(f"<dt>Quality check</dt><dd title=\"{e(q['title'])}\"><a href=\"{e(q['report'])}\">v{e(q['version'])}, {e(q['date'])}</a></dd>")
+        verdict = {"passed": "Passed", "not passed": "Not passed", "not checkable": "Could not be checked"}.get(q["result"], q["result"])
+        facts.append(f"<dt>Quality check</dt><dd title=\"{e(q['title'])}\"><a href=\"#quality\">{verdict}, v{e(q['version'])} ({e(q['date'])})</a></dd>")
     if p.get("tested"):
         t = p["tested"]
         facts.append(f"<dt>Tested</dt><dd title=\"{e(t['title'])}\">{e(t['label'])} ({e(t['date'])})</dd>")
@@ -331,6 +351,7 @@ def plugin_page(p, others):
     </a>
     <nav>
       <a href="../../">All plugins</a>
+      <a href="../../quality/">Quality checks</a>
       <a href="../../#install">Install</a>
       <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a>
     </nav>
@@ -369,6 +390,7 @@ def plugin_page(p, others):
       {f'<div class="chips">{tags}</div>' if tags else ""}
     </aside>
   </div>
+  {quality_section(p)}
   {notes_section(p)}
   <section class="more">
     <h2>Similar SolidCraft plugins</h2>
@@ -377,6 +399,118 @@ def plugin_page(p, others):
   </section>
 </main>
 
+<footer class="wrap foot">
+  <span>A community list of <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a> plugins, not made by Tangency Labs. Each plugin belongs to its author.
+    <a href="https://github.com/tharje/solidcraft-plugins">This list on GitHub</a>.</span>
+</footer>
+</body>
+</html>
+'''
+
+
+def quality_section(p):
+    """What the quality check tested and found: the criteria ticked off, the runs, and how a plugin
+    that did not pass could."""
+    q = p.get("checked")
+    if not q:
+        return ""
+    v = q["data"]
+    crit = v.get("criteria", {})
+    rows = []
+    for key, text in CRITERIA:
+        c = crit.get(key)
+        if c is None:
+            continue
+        ok = c.get("ok")
+        mark = "✓" if ok else "✗" if ok is False else "–"
+        cls = "yes" if ok else "no" if ok is False else "na"
+        note = f' <span class="why">{inline(c["note"])}</span>' if c.get("note") else ""
+        rows.append(f'<li class="{cls}"><b>{mark}</b> {e(text)}{note}</li>')
+    runs = "".join(
+        f'<tr class="{"yes" if r.get("ok") else "no" if r.get("ok") is False else "na"}"><td>{e(r.get("entry", ""))}</td>'
+        f'<td>{inline(r["settings"])}</td><td>{e(r.get("time", ""))}</td><td>{inline(r["result"])}</td></tr>'
+        for r in v.get("runs", []))
+    table = (f'<table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead>'
+             f'<tbody>{runs}</tbody></table>') if runs else ""
+    extra = "".join(f"<p>{inline(t)}</p>" for t in v.get("notes", []))
+    fix = f'<h3>How it could pass</h3><p>{inline(v["fix"])}</p>' if v.get("fix") else ""
+    older = "" if q["current"] else f'<p class="note">This check is for version {e(v["version"])}; version {e(p.get("version") or "")} has not been checked yet.</p>'
+    return f'''<section class="quality" id="quality">
+    <h2>Quality check: {RESULT.get(q["result"], q["result"]).lower()}</h2>
+    <p class="meta-line">Version {e(v["version"])}, checked {e(v["date"])} by {e(v["by"])} in SolidCraft {e(v["solidcraft"])}{" on " + e(v["machine"]) if v.get("machine") else ""}.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    {older}
+    {f"<p>{inline(v['summary'])}</p>" if v.get("summary") and not q["passed"] else ""}
+    <ul class="criteria">{"".join(rows)}</ul>
+    {extra}
+    {table}
+    {fix}
+  </section>'''
+
+
+def quality_page(plugins):
+    """quality/index.html: what a quality check is, and every check so far."""
+    checked = sorted((p for p in plugins if p.get("checked")), key=lambda p: (not p["checked"]["passed"], p["name"].lower()))
+    rows = "".join(
+        f'<tr class="{"yes" if p["checked"]["passed"] else "na" if p["checked"]["result"] == "not checkable" else "no"}"><td><a href="../plugins/{p["slug"]}/#quality">{e(p["name"])}</a></td>'
+        f'<td>{e(p["checked"]["version"])}</td><td>{e(p["checked"]["date"])}</td>'
+        f'<td>{RESULT.get(p["checked"]["result"], "")}</td><td>{inline(p["checked"]["data"].get("summary", ""))}</td></tr>'
+        for p in checked)
+    crit = "".join(f"<li>{e(t)}</li>" for _, t in CRITERIA)
+    return f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quality checks: SolidCraft plugins tested by hand</title>
+<meta name="description" content="Which SolidCraft plugins were tested by hand, what was tested, and what passed or failed.">
+<link rel="canonical" href="{SITE}quality/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<script data-goatcounter="https://tharje.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2v4H7a1 1 0 0 0-1 1v4a6 6 0 0 0 5 5.9V22h2v-5.1A6 6 0 0 0 18 11V7a1 1 0 0 0-1-1h-2V2h-2v4h-2V2z"/></svg>
+      <span>SolidCraft Plugins</span>
+    </a>
+    <nav>
+      <a href="../">All plugins</a>
+      <a href="./">Quality checks</a>
+      <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap page">
+  <p class="crumbs"><a href="../">SolidCraft Plugins</a> › Quality checks</p>
+  <h1>Quality checks</h1>
+  <p class="lead">Some plugins on this list have been tested by hand, one version at a time. A plugin that
+    passes gets the green <span class="qc">✓ Quality checked</span> badge. One that doesn't is listed too,
+    with what failed, so you can judge for yourself, and its author can see what to fix.</p>
+  <div class="cols">
+    <section>
+      <h2>What is tested</h2>
+      <p>A plugin passes when all of these hold for the version checked:</p>
+      <ol>{crit}</ol>
+      <h2>How</h2>
+      <p>The plugin's release zip is installed in the newest SolidCraft. Every command is run with its
+        default values, and then with settings someone would really use: other sizes, the choices in
+        its dialog, the largest and smallest values it allows, and on parts it is meant to work on.
+        Each run is timed, and the bodies it makes are measured: they must be closed solids. Runs go
+        through SolidCraft's own <code>solidcraft-cli plugin test</code> and the desktop app.</p>
+      <p>A plugin's page shows the result: each point ticked off or not, and a table of the runs with
+        their settings, times and results. A check is for one version: after a newer release the
+        badge turns grey until that one is checked too.</p>
+      <h2>Ask for a check</h2>
+      <p>Anyone can ask, authors too: use the <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=quality-check.yml">Request a quality check</a> form.</p>
+    </section>
+  </div>
+  <h2>Checked so far</h2>
+  <table class="runs overview"><thead><tr><th>Plugin</th><th>Version</th><th>Checked</th><th>Result</th><th>Summary</th></tr></thead>
+    <tbody>{rows}</tbody></table>
+</main>
 <footer class="wrap foot">
   <span>A community list of <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a> plugins, not made by Tangency Labs. Each plugin belongs to its author.
     <a href="https://github.com/tharje/solidcraft-plugins">This list on GitHub</a>.</span>
@@ -476,8 +610,12 @@ def build(plugins):
             os.remove(os.path.join(out, old, "index.html"))
             os.rmdir(os.path.join(out, old))
 
+    os.makedirs(os.path.join(ROOT, "quality"), exist_ok=True)
+    with open(os.path.join(ROOT, "quality", "index.html"), "w") as f:
+        f.write(quality_page(plugins))
+
     newest = max((p.get("updated") or "")[:10] for p in plugins)
-    urls = [(SITE, newest)] + [(SITE + f"plugins/{p['slug']}/", (p.get("updated") or "")[:10]) for p in plugins]
+    urls = [(SITE, newest), (SITE + "quality/", newest)] + [(SITE + f"plugins/{p['slug']}/", (p.get("updated") or "")[:10]) for p in plugins]
     with open(os.path.join(ROOT, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         for u, mod in urls:

@@ -28,6 +28,7 @@
     </a>
     <nav>
       <a href="../../">All plugins</a>
+      <a href="../../quality/">Quality checks</a>
       <a href="../../#install">Install</a>
       <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a>
     </nav>
@@ -63,6 +64,7 @@
       
     </aside>
   </div>
+  
   <section class="notes">
     <h2>What's new in v0.18.0 (2026-11-27)</h2>
     <p>This release expands editable feature-tree conversion and fixes a serious rebuild-memory failure. Rust previously allocated every sketch-plane combination before trying one: 293,932,800,000 combinations in one public NIST case, driving a conversion to <b>43 GB</b>. The search now iterates lazily, and the process watchdog terminates a conversion and its process tree when its memory cap is exceeded. The complete 356-part public batch finished with <b>zero memory-limit terminations</b>.</p>

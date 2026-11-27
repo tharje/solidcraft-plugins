@@ -28,6 +28,7 @@
     </a>
     <nav>
       <a href="../../">All plugins</a>
+      <a href="../../quality/">Quality checks</a>
       <a href="../../#install">Install</a>
       <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a>
     </nav>
@@ -37,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Thread Generator</p>
   <h1>Thread Generator <span class="ver">v2.0.6</span></h1>
-  
+  <a class="qc fail big" href="#quality" title="Version 1.8.0, checked 2026-11-27 in SolidCraft 0.50.0: The latest release holds the standalone Windows program, not the SolidCraft plugin, so there is nothing to run in SolidCraft yet. Click for what was tested.">Quality check: could not be checked (v1.8.0)</a>
   <p class="lead">Cut a 3D-printable thread into a shaft or hole. Select its round face in the design, then Run. Hover a field for what it does. The thread is an editable feature in the timeline; one Ctrl+Z takes the whole run back.</p>
   <p class="note">The plugin works in SolidCraft on every system. Its separate Thread Generator window (bolts, nuts, repaired 3MF) is Windows only.</p>
   <div class="actions">
@@ -60,10 +61,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Thread+Generator&amp;plugin=Thread+Generator+%28https%3A%2F%2Fgithub.com%2FStigern%2FSolidThreadsPlugin%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/Stigern">Stigern</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>2.0.6</dd><dt>Latest release</dt><dd><a href="https://github.com/Stigern/SolidThreadsPlugin/releases/tag/v1.8.0">v1.8.0</a> (2026-10-25)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 1 stars · ⬇ 752 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/Stigern">Stigern</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>2.0.6</dd><dt>Latest release</dt><dd><a href="https://github.com/Stigern/SolidThreadsPlugin/releases/tag/v1.8.0">v1.8.0</a> (2026-10-25)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 1 stars · ⬇ 752 downloads</dd><dt>Quality check</dt><dd title="Version 1.8.0, checked 2026-11-27 in SolidCraft 0.50.0: The latest release holds the standalone Windows program, not the SolidCraft plugin, so there is nothing to run in SolidCraft yet. Click for what was tested."><a href="#quality">Could not be checked, v1.8.0 (2026-11-27)</a></dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       
     </aside>
   </div>
+  <section class="quality" id="quality">
+    <h2>Quality check: could not be checked</h2>
+    <p class="meta-line">Version 1.8.0, checked 2026-11-27 by tharje in SolidCraft 0.50.0.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    <p class="note">This check is for version 1.8.0; version 2.0.6 has not been checked yet.</p>
+    <p>The latest release holds the standalone Windows program, not the SolidCraft plugin, so there is nothing to run in SolidCraft yet.</p>
+    <ul class="criteria"><li class="no"><b>✗</b> Installs and loads in the newest SolidCraft <span class="why">It installs, but adds no commands: <code>plugin check</code> says &quot;the plugin has no runtime&quot;.</span></li><li class="na"><b>–</b> Every command runs, with its defaults and with real settings <span class="why">Nothing to run.</span></li><li class="na"><b>–</b> Makes whole, valid bodies that can be edited</li><li class="na"><b>–</b> Asks for no more than it needs, and never for the network</li><li class="no"><b>✗</b> Open source licence, a README, and a release with its zip <span class="why">MIT and a README, but the release zip (<code>thread-generator-1.8.0.zip</code>) holds <code>ThreadGenerator.exe</code>, not the plugin the README describes.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    <p>The README describes a WebAssembly plugin (<b>Plugins › Add thread…</b>, version 2.0.6 in the repository&#x27;s <code>plugin/</code> folder), but no release holds it yet. When one does, it can be checked.</p>
+    
+    
+  </section>
   <section class="notes">
     <h2>What's new in v1.8.0 (2026-10-25)</h2>
     <p>Thread Generator for <a href="https://github.com/tangency-labs/solidcraft" rel="nofollow noopener">SolidCraft</a>: 3D-printable threads with clearance, cut into the face you select in SolidCraft.</p>

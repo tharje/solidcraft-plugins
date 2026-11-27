@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quality checks: SolidCraft plugins tested by hand</title>
+<meta name="description" content="Which SolidCraft plugins were tested by hand, what was tested, and what passed or failed.">
+<link rel="canonical" href="https://tharje.github.io/solidcraft-plugins/quality/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<script data-goatcounter="https://tharje.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2v4H7a1 1 0 0 0-1 1v4a6 6 0 0 0 5 5.9V22h2v-5.1A6 6 0 0 0 18 11V7a1 1 0 0 0-1-1h-2V2h-2v4h-2V2z"/></svg>
+      <span>SolidCraft Plugins</span>
+    </a>
+    <nav>
+      <a href="../">All plugins</a>
+      <a href="./">Quality checks</a>
+      <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap page">
+  <p class="crumbs"><a href="../">SolidCraft Plugins</a> › Quality checks</p>
+  <h1>Quality checks</h1>
+  <p class="lead">Some plugins on this list have been tested by hand, one version at a time. A plugin that
+    passes gets the green <span class="qc">✓ Quality checked</span> badge. One that doesn't is listed too,
+    with what failed, so you can judge for yourself, and its author can see what to fix.</p>
+  <div class="cols">
+    <section>
+      <h2>What is tested</h2>
+      <p>A plugin passes when all of these hold for the version checked:</p>
+      <ol><li>Installs and loads in the newest SolidCraft</li><li>Every command runs, with its defaults and with real settings</li><li>Makes whole, valid bodies that can be edited</li><li>Asks for no more than it needs, and never for the network</li><li>Open source licence, a README, and a release with its zip</li><li>Takes issues, for questions and bugs</li></ol>
+      <h2>How</h2>
+      <p>The plugin's release zip is installed in the newest SolidCraft. Every command is run with its
+        default values, and then with settings someone would really use: other sizes, the choices in
+        its dialog, the largest and smallest values it allows, and on parts it is meant to work on.
+        Each run is timed, and the bodies it makes are measured: they must be closed solids. Runs go
+        through SolidCraft's own <code>solidcraft-cli plugin test</code> and the desktop app.</p>
+      <p>A plugin's page shows the result: each point ticked off or not, and a table of the runs with
+        their settings, times and results. A check is for one version: after a newer release the
+        badge turns grey until that one is checked too.</p>
+      <h2>Ask for a check</h2>
+      <p>Anyone can ask, authors too: use the <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=quality-check.yml">Request a quality check</a> form.</p>
+    </section>
+  </div>
+  <h2>Checked so far</h2>
+  <table class="runs overview"><thead><tr><th>Plugin</th><th>Version</th><th>Checked</th><th>Result</th><th>Summary</th></tr></thead>
+    <tbody><tr class="yes"><td><a href="../plugins/gridfinity/#quality">Gridfinity</a></td><td>1.7.0</td><td>2026-11-27</td><td>Passed</td><td>Every command ran, 30 of 30 test cases.</td></tr><tr class="yes"><td><a href="../plugins/techsquid-nuts/#quality">Hex nuts</a></td><td>0.3.0</td><td>2026-11-27</td><td>Passed</td><td>Every nut and pocket ran. With a modelled thread a nut takes 18–29 s, close to the 30 s limit.</td></tr><tr class="no"><td><a href="../plugins/solidcraft-gears/#quality">Gears</a></td><td>0.1.1</td><td>2026-11-27</td><td>Not passed</td><td>A gear with many teeth goes over the plugin&#x27;s 30 s time limit: 80 teeth, which the dialog allows, can&#x27;t be made.</td></tr><tr class="no"><td><a href="../plugins/techsquid-screws/#quality">Screws</a></td><td>0.3.0</td><td>2026-11-27</td><td>Not passed</td><td>Every screw with a modelled thread, the default, goes over the plugin&#x27;s 30 s time limit. Without the modelled thread, and for holes only, it works.</td></tr><tr class="na"><td><a href="../plugins/thread-generator/#quality">Thread Generator</a></td><td>1.8.0</td><td>2026-11-27</td><td>Could not be checked</td><td>The latest release holds the standalone Windows program, not the SolidCraft plugin, so there is nothing to run in SolidCraft yet.</td></tr><tr class="no"><td><a href="../plugins/woodwork/#quality">Woodwork</a></td><td>0.5.0</td><td>2026-11-27</td><td>Not passed</td><td>Tall cabinets with doors go over the plugin&#x27;s 30 s time limit, and so does Edit in a design with many cabinets. Everything else ran well.</td></tr></tbody></table>
+</main>
+<footer class="wrap foot">
+  <span>A community list of <a href="https://github.com/tangency-labs/solidcraft">SolidCraft</a> plugins, not made by Tangency Labs. Each plugin belongs to its author.
+    <a href="https://github.com/tharje/solidcraft-plugins">This list on GitHub</a>.</span>
+</footer>
+</body>
+</html>

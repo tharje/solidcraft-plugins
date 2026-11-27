@@ -1,14 +1,614 @@
 {
-  "about": "Plugins that passed a quality check, one entry per check: the version checked, when, by whom, in which SolidCraft, and the report. See README.md, Quality checked.",
-  "checked": [
-    {
-      "repo": "tharje/gridfinity-solidcraft",
-      "id": "gridfinity",
-      "version": "1.7.0",
-      "date": "2026-11-27",
-      "by": "tharje",
-      "solidcraft": "0.50.0",
-      "report": "https://github.com/tharje/solidcraft-plugins/blob/main/checks/gridfinity.md"
+ "about": "Quality checks, one per plugin: the version checked, when, by whom, in which SolidCraft, the result, each criterion, and the runs. The site shows them on each plugin's page and on quality/.",
+ "checked": [
+  {
+   "repo": "tharje/gridfinity-solidcraft",
+   "id": "gridfinity",
+   "version": "1.7.0",
+   "date": "2026-11-27",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "passed",
+   "summary": "Every command ran, 30 of 30 test cases.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "Also in 0.49.1. `plugin check`: no problems."
+    },
+    "runs": {
+     "ok": true,
+     "note": "30 of 30 test cases in `solidcraft-cli plugin test`."
+    },
+    "valid": {
+     "ok": true,
+     "note": "Every case checks the body count and volume. Bins and plates are ordinary sketches and features in a timeline folder, with the height and labels as parameters."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Modelling commands, its own storage and a panel. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README with install and use, a zip on every release."
+    },
+    "issues": {
+     "ok": true
     }
-  ]
+   },
+   "runs": [
+    {
+     "entry": "Bin",
+     "settings": "Defaults; 3×2×6 with dividers, scoop, label tab and text (raised and flush), magnet and screw holes; eco and solid bins; half and custom grids; filler; a flat and a stackable lid",
+     "time": "under 16 s each",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Base plate",
+     "settings": "4×3, half cells, magnets and screws, cells left out",
+     "time": "under 12 s each",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Drawer plate",
+     "settings": "400×300 and 800×600 (as a long job), with magnets",
+     "time": "up to 76 s as a job",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Edit bin",
+     "settings": "A picked bin with its settings filled in, changed and made again",
+     "time": "under 10 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Panel",
+     "settings": "Parts list, Quick buttons, Layout, Settings",
+     "time": "under 1 s each",
+     "result": "passed",
+     "ok": true
+    }
+   ],
+   "notes": [
+    "Also checked by hand in the desktop app: the dialogs, Edit bin filling in a picked bin's settings, and a lid sitting in a bin's stacking lip (no overlap, resting on the lip)."
+   ]
+  },
+  {
+   "repo": "TomasDJo/solidcraft-woodwork",
+   "id": "woodwork",
+   "version": "0.5.0",
+   "date": "2026-11-27",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "not passed",
+   "summary": "Tall cabinets with doors go over the plugin's 30 s time limit, and so does Edit in a design with many cabinets. Everything else ran well.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": false,
+     "note": "About 30 runs: all passed except a tall cabinet with doors and an edit in a big design, which were stopped at the 30 s limit."
+    },
+    "valid": {
+     "ok": true,
+     "note": "Every body closed (0 open bodies after every run). Cabinets are components with ordinary features."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Writes to one folder (cut lists) and reads the clock. No network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, a detailed README with an example kitchen, a zip on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Cabinet",
+     "settings": "Defaults (600×560×720, one shelf)",
+     "time": "3 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "3 and 4 drawers with pulls",
+     "time": "7–8 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "2 doors, 2 shelves, knobs, shelf pins",
+     "time": "9 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "Sink base 800 mm, matched to the cabinet beside it",
+     "time": "6 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "L-shaped corner 1000×1000, corner door",
+     "time": "8–13 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "Wall cabinet placed above, French cleat",
+     "time": "7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "Diagonal wall corner",
+     "time": "11 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "Inset doors, legs, overlay back, oak, a divider",
+     "time": "12 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "Inch units: 24 × 22 × 34.5 in, ¾ in boards",
+     "time": "8 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "1200 mm high, 2 doors, 3 shelves",
+     "time": "10 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "2100 mm high, no doors, 5 shelves",
+     "time": "24 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "2100 mm high, 1 door, 4 shelves",
+     "time": "27.7 s",
+     "result": "passed, close to the limit",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "**2100 mm high, 2 doors, 2 shelves**",
+     "time": "31 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Cabinet",
+     "settings": "**2100 mm high, 2 doors, 5 shelves** (with and without labels)",
+     "time": "44 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Cabinet (Edit)",
+     "settings": "3 to 4 drawers, in a design with one cabinet",
+     "time": "10 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cabinet (Edit)",
+     "settings": "**3 to 4 drawers, in a design with nine cabinets (about 160 bodies)**",
+     "time": "35 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Material",
+     "settings": "White melamine on a cabinet",
+     "time": "under 1 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Panel",
+     "settings": "End panel on a cabinet's free side",
+     "time": "under 1 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Worktop",
+     "settings": "Over three cabinets, with a sink cut-out",
+     "time": "1 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Settings",
+     "settings": "Joinery section",
+     "time": "under 1 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Rebuild",
+     "settings": "With the settings",
+     "time": "under 1 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Drawing",
+     "settings": "All cabinets (8 sheets)",
+     "time": "4 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Cut list",
+     "settings": "CSV, and PDF with cutting diagrams",
+     "time": "under 1 s",
+     "result": "passed",
+     "ok": true
+    }
+   ],
+   "fix": "SolidCraft stops an ordinary command after the time limit in its manifest, at most 30 s. Since SolidCraft 0.48 an entry can be a long job (`\"job\": true`): it may run for up to ten minutes, shows progress and can be cancelled. Making Cabinet a job, or a tall cabinet faster, would very likely be enough. The times depend on the computer; on a faster one these may pass."
+  },
+  {
+   "repo": "bherbruck/solidcraft-gears",
+   "id": "solidcraft-gears",
+   "version": "0.1.1",
+   "date": "2026-11-27",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "not passed",
+   "summary": "A gear with many teeth goes over the plugin's 30 s time limit: 80 teeth, which the dialog allows, can't be made.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": false,
+     "note": "9 of 11 runs passed; 80 teeth was stopped at the 30 s limit."
+    },
+    "valid": {
+     "ok": true,
+     "note": "One closed body per gear, made of a sketch and an extrude."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only sketch and solid commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Make gear",
+     "settings": "Defaults: module 2, 20 teeth, face 10 mm",
+     "time": "6.9 s",
+     "result": "passed (12290 mm³)",
+     "ok": true
+    },
+    {
+     "entry": "Make gear",
+     "settings": "Module 1, 12 teeth",
+     "time": "3.8 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make gear",
+     "settings": "Module 1.5, 40 teeth, bore 8 mm",
+     "time": "15.3 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make gear",
+     "settings": "8 teeth (the smallest allowed)",
+     "time": "2.9 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make gear",
+     "settings": "60 teeth",
+     "time": "21.2 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make gear",
+     "settings": "Pressure angle 14.5°",
+     "time": "5.7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make gear",
+     "settings": "Pressure angle 25°, profile shift −0.3",
+     "time": "6.3 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make gear",
+     "settings": "Module 0.5, 30 teeth, bore 3 mm",
+     "time": "11.6 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make gear",
+     "settings": "**80 teeth (the largest allowed)**",
+     "time": "41.2 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make gear",
+     "settings": "**Module 3, 80 teeth, face 20 mm**",
+     "time": "31.9 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make gear",
+     "settings": "8 teeth, profile shift +0.5",
+     "time": "0.2 s",
+     "result": "refused: \"the tooth comes to a point; lower the profile shift\". Right to refuse, but it comes as an error inside the plugin (\"Report this to its author\") rather than a message about the setting",
+     "ok": null
+    }
+   ],
+   "fix": "The time grows with the number of teeth, about 0.35 s a tooth here. Making Make gear a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel), or drawing one tooth and patterning it, would fix it. Reporting a pointed tooth as an invalid setting would make that message clearer."
+  },
+  {
+   "repo": "Stigern/SolidThreadsPlugin",
+   "id": "thread-generator",
+   "version": "1.8.0",
+   "date": "2026-11-27",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "result": "not checkable",
+   "summary": "The latest release holds the standalone Windows program, not the SolidCraft plugin, so there is nothing to run in SolidCraft yet.",
+   "criteria": {
+    "installs": {
+     "ok": false,
+     "note": "It installs, but adds no commands: `plugin check` says \"the plugin has no runtime\"."
+    },
+    "runs": {
+     "ok": null,
+     "note": "Nothing to run."
+    },
+    "valid": {
+     "ok": null
+    },
+    "permissions": {
+     "ok": null
+    },
+    "release": {
+     "ok": false,
+     "note": "MIT and a README, but the release zip (`thread-generator-1.8.0.zip`) holds `ThreadGenerator.exe`, not the plugin the README describes."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "notes": [
+    "The README describes a WebAssembly plugin (**Plugins › Add thread…**, version 2.0.6 in the repository's `plugin/` folder), but no release holds it yet. When one does, it can be checked."
+   ]
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "id": "techsquid-screws",
+   "version": "0.3.0",
+   "date": "2026-11-27",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "not passed",
+   "summary": "Every screw with a modelled thread, the default, goes over the plugin's 30 s time limit. Without the modelled thread, and for holes only, it works.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": false,
+     "note": "21 of 22 screws were stopped at the 30 s limit, the defaults (M3×12) too. Only screws with Thread modelled off, and holes, were made."
+    },
+    "valid": {
+     "ok": true,
+     "note": "What was made was closed (0 open bodies)."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only modelling commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip for each plugin on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Make screw",
+     "settings": "**Defaults: M3×12, socket head, thread modelled**",
+     "time": "75 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make screw",
+     "settings": "**Every head**: button, countersunk, hex, pan, cheese, set screw, threaded rod",
+     "time": "58–73 s each",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make screw",
+     "settings": "**Every drive**: hex socket, Phillips, slotted, Torx, none",
+     "time": "70–73 s each",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make screw",
+     "settings": "**M1.6×4, M5×20, M8×40, M12×60, M20×80**",
+     "time": "37–81 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make screw",
+     "settings": "**Point tip; set screw with cup tip; flipped**",
+     "time": "58–72 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make screw",
+     "settings": "M6×30, thread not modelled",
+     "time": "0.7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make screw",
+     "settings": "Hole only, clearance with the head recessed, at a sketch point in a block",
+     "time": "1.3 s",
+     "result": "passed",
+     "ok": true
+    }
+   ],
+   "notes": [
+    "The time limit stopped the run after the plugin had asked SolidCraft for the threaded body, which is why the runs took longer than 30 s before they ended."
+   ],
+   "fix": "The modelled thread is what takes the time. Making Make screw a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish; a simpler thread, or Thread modelled off by default, would make it fast."
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "id": "techsquid-nuts",
+   "version": "0.3.0",
+   "date": "2026-11-27",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "passed",
+   "summary": "Every nut and pocket ran. With a modelled thread a nut takes 18–29 s, close to the 30 s limit.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": true,
+     "note": "11 of 11 runs, from M1.6 to M30, the nylon lock nut, and pockets in a block."
+    },
+    "valid": {
+     "ok": true,
+     "note": "Closed bodies (0 open); the nut is a component of its own, the pocket is cut into the picked body."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only modelling commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip for each plugin on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Make nut",
+     "settings": "Defaults: M3 plain hex, thread modelled",
+     "time": "22.3 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make nut",
+     "settings": "Nylon-insert lock nut",
+     "time": "20.9 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make nut",
+     "settings": "M1.6, M5, M8, M12",
+     "time": "18–25 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make nut",
+     "settings": "M20, M30",
+     "time": "28.2 s, 28.9 s",
+     "result": "passed, close to the limit",
+     "ok": true
+    },
+    {
+     "entry": "Make nut",
+     "settings": "M10, thread not modelled",
+     "time": "2.9 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make nut",
+     "settings": "Nut and pocket, at a sketch point in a block",
+     "time": "26.7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make nut",
+     "settings": "Pocket only, thread not modelled, at a sketch point in a block",
+     "time": "0.9 s",
+     "result": "passed",
+     "ok": true
+    }
+   ],
+   "notes": [
+    "The big nuts are close to the 30 s limit on this computer; a slower one could go over it."
+   ]
+  }
+ ]
 }

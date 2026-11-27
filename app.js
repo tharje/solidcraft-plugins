@@ -62,7 +62,8 @@ function card(p) {
     qc.textContent = p.checked.label;
     qc.title = p.checked.title;
     qc.href = p.checked.report;
-    if (!p.checked.current) qc.classList.add("old");
+    if (!p.checked.passed) qc.classList.add("fail");
+    else if (!p.checked.current) qc.classList.add("old");
   } else {
     qc.remove();
   }
@@ -131,7 +132,7 @@ function show() {
   // Plugins without a zip to download go last, whatever the sort.
   const hasZip = (p) => (p.release && p.release.zip ? 0 : 1);
   const list = plugins
-    .filter((p) => q.every((w) => text(p).includes(w)) && (!category || p.category === category) && (!onlyChecked || p.checked))
+    .filter((p) => q.every((w) => text(p).includes(w)) && (!category || p.category === category) && (!onlyChecked || (p.checked && p.checked.passed)))
     .sort((a, b) => hasZip(a) - hasZip(b) || cmp(a, b));
   $("#list").replaceChildren(...(list.length ? list.map(card) : [message("No plugins match.")]));
   $("#count").textContent = `${list.length} of ${plugins.length} plugins`;
