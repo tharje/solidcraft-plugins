@@ -2,6 +2,7 @@
 const $ = (s) => document.querySelector(s);
 let plugins = [];
 let category = new URLSearchParams(location.search).get("category");
+let onlyChecked = new URLSearchParams(location.search).has("checked");
 
 function ago(iso) {
   if (!iso) return "";
@@ -55,6 +56,16 @@ function card(p) {
   by.href = `https://github.com/${p.owner}`;
   by.querySelector("img").src = `${p.avatar}&s=40`;
   by.querySelector("span").textContent = p.owner;
+  const qc = t.querySelector(".qc");
+  if (p.checked) {
+    qc.hidden = false;
+    qc.textContent = p.checked.label;
+    qc.title = p.checked.title;
+    qc.href = p.checked.report;
+    if (!p.checked.current) qc.classList.add("old");
+  } else {
+    qc.remove();
+  }
   t.querySelector(".desc").textContent = p.description;
   t.querySelector(".entries").textContent = p.entries && p.entries.length ? "Menu: " + p.entries.join(" · ") : "";
   if (p.note) {
@@ -120,7 +131,7 @@ function show() {
   // Plugins without a zip to download go last, whatever the sort.
   const hasZip = (p) => (p.release && p.release.zip ? 0 : 1);
   const list = plugins
-    .filter((p) => q.every((w) => text(p).includes(w)) && (!category || p.category === category))
+    .filter((p) => q.every((w) => text(p).includes(w)) && (!category || p.category === category) && (!onlyChecked || p.checked))
     .sort((a, b) => hasZip(a) - hasZip(b) || cmp(a, b));
   $("#list").replaceChildren(...(list.length ? list.map(card) : [message("No plugins match.")]));
   $("#count").textContent = `${list.length} of ${plugins.length} plugins`;
@@ -159,6 +170,15 @@ fetch("data/plugins.json")
   .catch(() => $("#list").replaceChildren(message("Could not load the plugin list.")));
 $("#q").addEventListener("input", show);
 $("#sort").addEventListener("change", show);
+$("#checked").setAttribute("aria-pressed", onlyChecked);
+$("#checked").addEventListener("click", () => {
+  onlyChecked = !onlyChecked;
+  $("#checked").setAttribute("aria-pressed", onlyChecked);
+  const url = new URL(location.href);
+  if (onlyChecked) url.searchParams.set("checked", ""); else url.searchParams.delete("checked");
+  history.replaceState(null, "", url);
+  show();
+});
 
 // one report menu open at a time; a click elsewhere closes it
 document.addEventListener("click", (ev) => {

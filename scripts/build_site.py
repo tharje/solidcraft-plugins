@@ -75,6 +75,23 @@ def tested(p, compat):
             "title": f"Tested {when} on Linux: SolidCraft {v} loaded this release. {why}"}
 
 
+QUALITY = "https://github.com/tharje/solidcraft-plugins#quality-checked"
+
+
+def checked(p, verified):
+    """The plugin's quality check (verified.json), or None: the badge's text, its tooltip and the
+    report. A check is for one version; after a newer release the badge names the version checked."""
+    v = next((x for x in verified if x["repo"].lower() == p["repo"].lower() and x["id"] == p.get("id")), None)
+    if not v:
+        return None
+    current = v["version"] == p.get("version")
+    return {"label": "✓ Quality checked" if current else f"✓ Quality checked (v{v['version']})",
+            "current": current, "report": v.get("report") or QUALITY, "date": v["date"], "version": v["version"],
+            "title": (f"Version {v['version']} was checked {v['date']} by {v['by']} in SolidCraft {v['solidcraft']}: it installs, "
+                      "every command runs with its defaults and with real settings, it makes valid bodies you can edit, "
+                      "and it asks for no more than it needs." + ("" if current else " The newer version has not been checked yet."))}
+
+
 def slugs(plugins):
     """A short, stable address per plugin: its manifest id, with the owner added when two collide."""
     seen = set()
@@ -83,6 +100,15 @@ def slugs(plugins):
         slug = base if base not in seen else f"{base}-{p['owner'].lower()}"
         seen.add(slug)
         p["slug"] = slug
+
+
+def qc_badge(p, page=False):
+    """The quality check badge, on a card or (bigger) on a plugin's page."""
+    q = p.get("checked")
+    if not q:
+        return ""
+    cls = "qc" + ("" if q["current"] else " old") + (" big" if page else "")
+    return f'\n      <a class="{cls}" href="{e(q["report"])}" title="{e(q["title"])}" target="_blank" rel="noopener">{e(q["label"])}</a>'
 
 
 def card(p, prefix=""):
@@ -103,7 +129,7 @@ def card(p, prefix=""):
     <div class="body">
       <p class="cat">{e(p.get("category") or "")}</p>
       <h3>{icon}<a class="name" href="{page}">{e(p["name"])}</a> <span class="ver">{"v" + e(p["version"]) if p.get("version") else ""}</span></h3>
-      <a class="by" href="https://github.com/{e(p["owner"])}" target="_blank" rel="noopener"><img src="{e(p["avatar"])}&amp;s=40" alt="" loading="lazy"><span>{e(p["owner"])}</span></a>
+      <a class="by" href="https://github.com/{e(p["owner"])}" target="_blank" rel="noopener"><img src="{e(p["avatar"])}&amp;s=40" alt="" loading="lazy"><span>{e(p["owner"])}</span></a>{qc_badge(p)}
       <p class="desc">{e(p["description"])}</p>
       <p class="entries">{entries}</p>{f"""
       <p class="note">{e(p["note"])}</p>""" if p.get("note") else ""}
@@ -255,6 +281,9 @@ def plugin_page(p, others):
     facts.append(f"<dt>GitHub</dt><dd>★ {p['stars']} stars · ⬇ {p['downloads']} downloads</dd>")
     if p.get("asks"):
         facts.append(f"<dt>Asks for</dt><dd title=\"{e(p['asks']['title'])}\">{e(p['asks']['label'][len('Asks for: '):])}</dd>")
+    if p.get("checked"):
+        q = p["checked"]
+        facts.append(f"<dt>Quality check</dt><dd title=\"{e(q['title'])}\"><a href=\"{e(q['report'])}\">v{e(q['version'])}, {e(q['date'])}</a></dd>")
     if p.get("tested"):
         t = p["tested"]
         facts.append(f"<dt>Tested</dt><dd title=\"{e(t['title'])}\">{e(t['label'])} ({e(t['date'])})</dd>")
@@ -311,6 +340,7 @@ def plugin_page(p, others):
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › {e(p["name"])}</p>
   <h1>{f'<img class="icon" src="../../{e(p["icon"])}" alt="">' if p.get("icon") else ""}{e(p["name"])} <span class="ver">{"v" + e(p["version"]) if p.get("version") else ""}</span></h1>
+  {qc_badge(p, page=True).strip()}
   <p class="lead">{e(p["description"])}</p>{f"""
   <p class="note">{e(p["note"])}</p>""" if p.get("note") else ""}
   <div class="actions">
@@ -408,7 +438,13 @@ def build(plugins):
             compat = json.load(f).get("plugins", {})
     except (OSError, ValueError):
         compat = {}
+    try:
+        with open(os.path.join(ROOT, "verified.json")) as f:
+            verified = json.load(f).get("checked", [])
+    except (OSError, ValueError):
+        verified = []
     for p in plugins:
+        p["checked"] = checked(p, verified)
         p["tested"] = tested(p, compat)
         p["asks"] = asks(p)
         p["report"] = report_url(p)

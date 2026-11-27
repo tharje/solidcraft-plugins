@@ -1,0 +1,36 @@
+name: Request a quality check
+description: Ask for a plugin to be tested for the ✓ Quality checked badge.
+title: "[Quality check] "
+labels: ["quality check"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A quality check tests one version of a plugin by hand: it installs, every command runs with
+        its defaults and with real settings, it makes valid bodies you can edit, it asks for no more
+        than it needs (never the network), and it has an open source licence, a README, a release zip
+        and open issues. See [Quality checked](https://github.com/tharje/solidcraft-plugins#quality-checked).
+        Authors are welcome to ask for their own plugins.
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin
+      description: Its name or the link to its repository.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release to check (the latest if left empty).
+  - type: textarea
+    id: what
+    attributes:
+      label: What it is good for
+      description: What you use it for, and settings worth trying. This helps the test cover what matters.
+  - type: checkboxes
+    id: author
+    attributes:
+      label: Author
+      options:
+        - label: I am the plugin's author.

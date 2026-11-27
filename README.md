@@ -13,7 +13,10 @@ Publish a release with the plugin zip attached to get a **Download .zip** button
 picture in the README becomes the card's picture; the name, description, version and menu
 entries come from the manifest.
 
-A plugin without the topic can be added to [repos.txt](repos.txt) with a pull request.
+A plugin without the topic can be added to [repos.txt](repos.txt) with a pull request. Every
+plugin on the [SolidCraft Workshop](https://workshop.solidcraft.io) is listed too, and gets a
+**Workshop** button. A theme or shader plugin (no `runtime`) is listed when its release has a zip
+named after its id.
 
 The example plugins in SolidCraft's own [plugin guide](https://docs.solidcraft.io/dev/plugins.html)
 are listed under **Examples**, with a link to the guide instead of a download.
@@ -30,6 +33,24 @@ then says **✓ Runs in SolidCraft x.y** (every command ran) or **✓ Loads in S
 commands and so isn't run). Nothing is shown when it doesn't load: that may be the test's fault.
 A plugin is tested again when its release or SolidCraft's changes. The results are in
 `data/compat.json`. The plugins run in a job that can't push to this repository.
+
+## Quality checked
+A plugin with the green **✓ Quality checked** badge has been tested by hand, one version at a time.
+It passed when:
+
+1. it installs and loads in the newest SolidCraft;
+2. every command runs without errors, with its default values and with real settings;
+3. it makes whole, valid bodies that can be edited in SolidCraft;
+4. it asks for no more than it needs, and never for the network;
+5. it has an open source licence, a README that says how to use it, and a release with its zip;
+6. its repository takes issues, for questions and bugs.
+
+Anyone can ask for a check with the [Request a quality check](../../issues/new?template=quality-check.yml)
+form. The plugin is tested, a short report goes into the issue and [checks/](checks/), and the
+check is added to [verified.json](verified.json): the version, the date, who tested it and in which
+SolidCraft. After a newer release the badge turns grey and names the version that was checked,
+until the new one is checked too. The **✓ Quality checked** button above the list shows only these
+plugins.
 
 ## Report a problem
 Each card has a **Report a problem** link to an issue form here, for a plugin that crashes

@@ -1,0 +1,14 @@
+{
+  "about": "Plugins that passed a quality check, one entry per check: the version checked, when, by whom, in which SolidCraft, and the report. See README.md, Quality checked.",
+  "checked": [
+    {
+      "repo": "tharje/gridfinity-solidcraft",
+      "id": "gridfinity",
+      "version": "1.7.0",
+      "date": "2026-11-27",
+      "by": "tharje",
+      "solidcraft": "0.50.0",
+      "report": "https://github.com/tharje/solidcraft-plugins/blob/main/checks/gridfinity.md"
+    }
+  ]
+}
