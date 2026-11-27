@@ -4,7 +4,7 @@
   {
    "repo": "tharje/gridfinity-solidcraft",
    "id": "gridfinity",
-   "version": "1.7.0",
+   "version": "1.7.1",
    "date": "2026-11-27",
    "by": "tharje",
    "solidcraft": "0.50.0",
@@ -14,7 +14,7 @@
    "criteria": {
     "installs": {
      "ok": true,
-     "note": "Also in 0.49.1. `plugin check`: no problems."
+     "note": "`plugin check`: no problems. Needs SolidCraft 0.50."
     },
     "runs": {
      "ok": true,
@@ -39,7 +39,7 @@
    "runs": [
     {
      "entry": "Bin",
-     "settings": "Defaults; 3×2×6 with dividers, scoop, label tab and text (raised and flush), magnet and screw holes; eco and solid bins; half and custom grids; filler; a flat and a stackable lid",
+     "settings": "Defaults; 3×2×6 with dividers, scoop, label tab and text (raised and flush), magnet and screw holes; eco and solid bins; half and custom grids; filler; a flat lid and a stackable lid with a grid on top",
      "time": "under 16 s each",
      "result": "passed",
      "ok": true
