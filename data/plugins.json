@@ -1551,7 +1551,11 @@
    "category": "Woodworking",
    "slug": "cabinet-studio",
    "icon": "icons/cabinet-studio.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
    "asks": {
     "label": "Asks for: files",
     "title": "SolidCraft asks you to allow this when you install the plugin."
@@ -1594,7 +1598,11 @@
    "workshop": "https://workshop.solidcraft.io/plugin/mmmatth/code-maker",
    "slug": "code-maker",
    "icon": "icons/code-maker.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Code+Maker&plugin=Code+Maker+%28https%3A%2F%2Fgithub.com%2FMMMatth%2Fsolidcraft-code-maker%29",
    "report_author": "https://github.com/MMMatth/solidcraft-code-maker/issues/new?title=Code+Maker%3A+"
@@ -1692,7 +1700,11 @@
    "workshop": "https://workshop.solidcraft.io/plugin/ooishoo/first-gear-maker",
    "slug": "first-gear-maker",
    "icon": "icons/first-gear-maker.svg",
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+First+Gear+Maker&plugin=First+Gear+Maker+%28https%3A%2F%2Fgithub.com%2FooISHoo%2Fsolidcraft-first-gear-maker%2Ftree%2Fmain%2Ffirst-gear-maker%29",
    "report_author": "https://github.com/ooISHoo/solidcraft-first-gear-maker/issues/new?title=First+Gear+Maker%3A+"

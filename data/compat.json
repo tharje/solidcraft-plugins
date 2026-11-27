@@ -16,11 +16,20 @@
    "solidcraft": "0.50.0",
    "tested": "2026-11-27"
   },
+  "cabinet-studio": {
+   "entries": 11,
+   "loads": true,
+   "ran": [],
+   "release": "v0.3.0",
+   "skipped": "asks for permissions",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
   "code-maker": {
    "entries": 1,
    "loads": true,
    "ran": [],
-   "release": "v0.6.1",
+   "release": "v0.7.1",
    "solidcraft": "0.50.0",
    "tested": "2026-11-27"
   },
@@ -61,6 +70,24 @@
     "swatch"
    ],
    "release": "v0.3.1",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
+  "first-gear-maker": {
+   "entries": 9,
+   "loads": true,
+   "ran": [
+    "spur",
+    "helical",
+    "herringbone",
+    "internal",
+    "rack",
+    "bevel",
+    "worm",
+    "worm-wheel",
+    "center-distance"
+   ],
+   "release": "v0.1.0",
    "solidcraft": "0.50.0",
    "tested": "2026-11-27"
   },
