@@ -17,10 +17,10 @@
    "tested": "2026-11-27"
   },
   "cabinet-studio": {
-   "entries": 11,
+   "entries": 9,
    "loads": true,
    "ran": [],
-   "release": "v0.3.0",
+   "release": "v0.4.0",
    "skipped": "asks for permissions",
    "solidcraft": "0.50.0",
    "tested": "2026-11-27"

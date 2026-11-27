@@ -1675,7 +1675,11 @@
    "slug": "cabinet-studio",
    "icon": "icons/cabinet-studio.svg",
    "checked": null,
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
    "asks": {
     "label": "Asks for: files",
     "title": "SolidCraft asks you to allow this when you install the plugin."
