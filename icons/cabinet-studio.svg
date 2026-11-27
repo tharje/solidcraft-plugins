@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Job setup</title>
+  <path d="M4.00 37.00L23.92 48.50L23.92 25.50L4.00 14.00Z" fill="#b8c3cf"/>
+  <path d="M23.92 48.50L38.86 39.88L38.86 16.88L23.92 25.50Z" fill="#8e9faf"/>
+  <path d="M4.00 14.00L23.92 25.50L38.86 16.88L18.94 5.38Z" fill="#e2e8ef"/>
+  <path d="M4.00 37.00L23.92 48.50L38.86 39.88L38.86 16.88L18.94 5.38L4.00 14.00Z" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M4.00 14.00L23.92 25.50L38.86 16.88" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M23.92 48.50L23.92 25.50" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M13.96 41.83L13.96 20.67" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M12.37 27.57L12.37 22.51" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M15.55 29.41L15.55 24.35" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="46" cy="45" r="10" fill="#328bd3"/>
+  <circle cx="46" cy="45" r="10" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="46" cy="45" r="4" fill="#e2e8ef"/>
+  <circle cx="46" cy="45" r="4" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M46.00 31.00L46.00 34.00" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M46.00 56.00L46.00 59.00" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M32.00 45.00L35.00 45.00" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M57.00 45.00L60.00 45.00" fill="none" stroke="#34465b" stroke-width="2.55" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
