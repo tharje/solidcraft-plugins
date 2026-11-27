@@ -1397,7 +1397,11 @@
    "looks": true,
    "category": "Themes & looks",
    "slug": "galaxy",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+360+Galaxy&plugin=360+Galaxy+%28https%3A%2F%2Fgithub.com%2Fdudedagger42%2Fsolidcraft-galaxy%29",
    "report_author": "https://github.com/dudedagger42/solidcraft-galaxy/issues/new?title=360+Galaxy%3A+"
@@ -2054,7 +2058,11 @@
    "category": "Themes & looks",
    "workshop": "https://workshop.solidcraft.io/plugin/daggerdude42/liquid-craft",
    "slug": "liquid-craft",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Liquid+Craft&plugin=Liquid+Craft+%28https%3A%2F%2Fgithub.com%2Fdudedagger42%2Fsolidcraft-liquid-craft%29",
    "report_author": "https://github.com/dudedagger42/solidcraft-liquid-craft/issues/new?title=Liquid+Craft%3A+"
@@ -2105,7 +2113,11 @@
    "category": "Gears & motion",
    "workshop": "https://workshop.solidcraft.io/plugin/omi/omigears",
    "slug": "omigears",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+OmiGears&plugin=OmiGears+%28https%3A%2F%2Fgithub.com%2Fomigamedev%2Fomigears%29",
    "report_author": null
@@ -2279,7 +2291,11 @@
    "looks": true,
    "category": "Themes & looks",
    "slug": "rain",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Rain+on+the+Window&plugin=Rain+on+the+Window+%28https%3A%2F%2Fgithub.com%2Fdudedagger42%2Fsolidcraft-rain%29",
    "report_author": "https://github.com/dudedagger42/solidcraft-rain/issues/new?title=Rain+on+the+Window%3A+"
@@ -2316,7 +2332,11 @@
    "looks": true,
    "category": "Themes & looks",
    "slug": "rgb-wave",
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.50.0",
+    "date": "2026-11-27",
+    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+RGB+Wave&plugin=RGB+Wave+%28https%3A%2F%2Fgithub.com%2Fdudedagger42%2Fsolidcraft-rgb-wave%29",
    "report_author": "https://github.com/dudedagger42/solidcraft-rgb-wave/issues/new?title=RGB+Wave%3A+"

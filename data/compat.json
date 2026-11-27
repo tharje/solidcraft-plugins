@@ -91,6 +91,14 @@
    "solidcraft": "0.50.0",
    "tested": "2026-11-27"
   },
+  "galaxy": {
+   "entries": 0,
+   "loads": true,
+   "ran": [],
+   "release": "v3.0.2",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
   "gear-generator": {
    "entries": 1,
    "loads": true,
@@ -187,6 +195,14 @@
    "solidcraft": "0.50.0",
    "tested": "2026-11-27"
   },
+  "liquid-craft": {
+   "entries": 0,
+   "loads": true,
+   "ran": [],
+   "release": "v3.0.5",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
   "makeorbit": {
    "entries": 1,
    "loads": true,
@@ -221,6 +237,27 @@
    "solidcraft": "0.50.0",
    "tested": "2026-11-27"
   },
+  "omigears": {
+   "entries": 13,
+   "loads": true,
+   "ran": [
+    "spur",
+    "helical",
+    "herringbone",
+    "bevel",
+    "worm",
+    "worm-wheel",
+    "rack",
+    "hypoid",
+    "internal",
+    "planetary",
+    "cycloidal",
+    "cycloidal-drive"
+   ],
+   "release": "v0.50.2",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
   "opengrid": {
    "entries": 1,
    "loads": true,
@@ -239,11 +276,27 @@
    "solidcraft": "0.50.0",
    "tested": "2026-11-27"
   },
+  "rain": {
+   "entries": 0,
+   "loads": true,
+   "ran": [],
+   "release": "v4.0.2",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
   "revmesh": {
    "entries": 1,
    "loads": true,
    "ran": [],
    "release": "v0.2.0",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
+  "rgb-wave": {
+   "entries": 0,
+   "loads": true,
+   "ran": [],
+   "release": "v2.0.2",
    "solidcraft": "0.50.0",
    "tested": "2026-11-27"
   },
