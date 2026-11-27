@@ -102,6 +102,9 @@ function card(p) {
     zip.textContent = "No release yet";
   }
   t.querySelector(".gh").href = p.url;
+  const ws = t.querySelector(".ws");
+  if (p.workshop) ws.href = p.workshop;
+  else ws.remove();
   return t;
 }
 

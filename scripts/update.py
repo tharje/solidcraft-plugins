@@ -353,11 +353,37 @@ def plugins(repo):
     return out
 
 
+WORKSHOP_INDEX = "https://workshop.solidcraft.io/api/index.json"
+
+
+def workshop():
+    """The SolidCraft Workshop's plugin pages, by repository and plugin id. The page only links to
+    them, so the index's signature is not checked here; the app checks it before installing."""
+    try:
+        index = get(WORKSHOP_INDEX) or {}
+    except (urllib.error.URLError, ValueError) as e:
+        print(f"  Workshop index: {e}", file=sys.stderr)
+        return {}
+    delisted = set(index.get("delisted") or [])
+    return {((i.get("repo") or "").lower(), (i.get("id") or "").lower()): i["page_url"]
+            for i in index.get("items", [])
+            if i.get("kind") == "plugin" and i.get("repo") and i.get("page_url") and i.get("id") not in delisted}
+
+
 def main():
     out = []
     for repo in listed():
         print(repo, file=sys.stderr)
         out += plugins(repo)
+    pages = workshop()
+    for p in out:
+        # a repository with one plugin is matched on the repository alone: its Workshop id may differ
+        repo = p["repo"].lower()
+        same_repo = [u for (r, _), u in pages.items() if r == repo]
+        alone = sum(q["repo"].lower() == repo for q in out) == 1
+        page = pages.get((repo, (p.get("id") or "").lower())) or (same_repo[0] if alone and len(same_repo) == 1 else None)
+        if page:
+            p["workshop"] = page
     # plugins without a zip to download last, as on the page
     out.sort(key=lambda p: (not (p.get("release") or {}).get("zip"), -p["stars"], p["name"].lower()))
     build_site.build(out)  # gives each plugin its slug, and writes the pages and sitemap

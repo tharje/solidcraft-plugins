@@ -117,7 +117,8 @@ def card(p, prefix=""):
       </div>
       <div class="actions">
         {download}
-        <a class="btn gh" href="{e(p["url"])}" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn gh" href="{e(p["url"])}" target="_blank" rel="noopener">GitHub</a>{f"""
+        <a class="btn ws" href="{e(p["workshop"])}" target="_blank" rel="noopener" title="Its page on the SolidCraft Workshop: Open in SolidCraft installs it">Workshop</a>""" if p.get("workshop") else ""}
       </div>
     </div>
   </article>'''
@@ -314,7 +315,8 @@ def plugin_page(p, others):
   <p class="note">{e(p["note"])}</p>""" if p.get("note") else ""}
   <div class="actions">
     {download}
-    <a class="btn gh" href="{e(p["url"])}">Source on GitHub</a>
+    <a class="btn gh" href="{e(p["url"])}">Source on GitHub</a>{f"""
+    <a class="btn ws" href="{e(p["workshop"])}">On the SolidCraft Workshop</a>""" if p.get("workshop") else ""}
   </div>
   {pic}
   <div class="cols">
@@ -326,7 +328,8 @@ def plugin_page(p, others):
         <li>{"Download the zip above (from release " + e(rel["tag"]) + ")." if zip_ else f'Build it as SolidCraft\'s <a href="{e(p["example"])}">plugin guide</a> describes.' if p.get("example") else "Build or download the plugin as described in its README on GitHub."}</li>
         <li>In SolidCraft: <b>Plugins › Install plugin…</b> and pick the zip.</li>
         <li>Run it from the <b>Plugins</b> menu, or its button in the ribbon (SolidCraft 0.42 and later).</li>
-      </ol>
+      </ol>{f"""
+      <p>It is on the <a href="{e(p["workshop"])}">SolidCraft Workshop</a> too: its <b>Open in SolidCraft</b> button installs it, after SolidCraft shows what it asks for.</p>""" if p.get("workshop") else ""}
       <p>Questions and bug reports go to the plugin's author, in the
         <a href="{e(p["url"])}/issues">issues on GitHub</a>. If it crashes SolidCraft, harms a design
         or looks unsafe, please also <a href="{e(report_url(p))}">report it to this list</a>, so others can be warned.</p>
