@@ -49,9 +49,35 @@ def has_manifest_file(item):
     return any(t["path"].endswith("plugin.json") for t in (tree or {}).get("tree", []))
 
 
+WORKSHOP_INDEX = "https://workshop.solidcraft.io/api/index.json"
+_workshop = None
+
+
+def workshop_items():
+    """The SolidCraft Workshop's plugins that name their GitHub repository (read once). The page
+    only links to them and finds their repositories, so the index's signature is not checked
+    here; the app checks it before installing."""
+    global _workshop
+    if _workshop is None:
+        try:
+            index = get(WORKSHOP_INDEX) or {}
+        except (urllib.error.URLError, ValueError) as e:
+            print(f"  Workshop index: {e}", file=sys.stderr)
+            index = {}
+        delisted = set(index.get("delisted") or [])
+        _workshop = [i for i in index.get("items", [])
+                     if i.get("kind") == "plugin" and i.get("repo") and i.get("page_url") and i.get("id") not in delisted]
+    return _workshop
+
+
+def workshop():
+    """The Workshop's plugin pages, by repository and plugin id."""
+    return {(i["repo"].lower(), (i.get("id") or "").lower()): i["page_url"] for i in workshop_items()}
+
+
 def listed():
-    """repos.txt, the repositories with the topic, and those with "solidcraft" in their name,
-    description or README that hold a plugin.json. Lines starting with "-" in repos.txt leave a
+    """repos.txt, the repositories with the topic, the plugins on the SolidCraft Workshop, and
+    those with "solidcraft" in their name, description or README that hold a plugin.json. Lines starting with "-" in repos.txt leave a
     repository out."""
     names, skip = [], set()
     with open(os.path.join(ROOT, "repos.txt")) as f:
@@ -62,6 +88,8 @@ def listed():
             elif line:
                 names.append(line)
     names += [i["full_name"] for i in search("topic:solidcraft-plugin")]
+    # every plugin on the SolidCraft Workshop, by the repository it names
+    names += [i["repo"] for i in workshop_items()]
     known = {n.lower() for n in names}
     for i in search("solidcraft"):
         if i["full_name"].lower() not in known | skip and not i.get("archived") and has_manifest_file(i):
@@ -88,7 +116,10 @@ def manifests(repo, branch):
             m = json.loads(text)
         except (TypeError, ValueError):
             continue
-        if isinstance(m, dict) and m.get("id") and isinstance(m.get("runtime"), dict) and m["id"] not in ids:
+        # a plugin with code has a runtime; a theme or shader plugin only SolidCraft capabilities
+        caps = m.get("capabilities") if isinstance(m, dict) else None
+        sc_caps = isinstance(caps, list) and caps and all(isinstance(c, str) and re.fullmatch(r"[a-z-]+@\d+\.\d+", c) for c in caps)
+        if isinstance(m, dict) and m.get("id") and (isinstance(m.get("runtime"), dict) or sc_caps) and m["id"] not in ids:
             ids.add(m["id"])  # the same plugin copied into a build folder counts once
             out.append((p, m))
     return out
@@ -172,6 +203,8 @@ CATEGORY_OF = {
 def category(p):
     if p["id"] in CATEGORY_OF:
         return CATEGORY_OF[p["id"]]
+    if p.get("looks"):
+        return "Themes & looks"
     words = " ".join([p["id"], p["name"], p["description"], *p["topics"]]).lower()
     return next((name for name, rx in CATEGORIES if re.search(rx, words)), "Other")
 
@@ -289,6 +322,12 @@ def plugins(repo):
         return []
     rel = get(f"/repos/{r['full_name']}/releases/latest")
     zips = [a for a in (rel or {}).get("assets", []) if a["name"].lower().endswith(".zip")]
+    # a theme or shader plugin (no runtime) only with its own zip in a release: SolidCraft's own
+    # examples and the forks of the app hold such manifests too
+    found = [(p, m) for p, m in found
+             if isinstance(m.get("runtime"), dict) or any(a["name"].lower().startswith(m["id"].lower()) for a in zips)]
+    if not found:
+        return []
     assets = []
     for page in range(1, 4):
         rels = get(f"/repos/{r['full_name']}/releases?per_page=100&page={page}") or []
@@ -342,6 +381,8 @@ def plugins(repo):
             "has_topic": "solidcraft-plugin" in r.get("topics", []),
             "icon_svg": icon(r["full_name"], branch, os.path.dirname(path), m),
         })
+        if not isinstance(m.get("runtime"), dict):
+            out[-1]["looks"] = True  # a theme or shader plugin: it changes how SolidCraft looks
         if r["full_name"].lower() in EXAMPLE_REPOS:
             # the date of the example's own last change, not of the whole app
             last = get(f"/repos/{r['full_name']}/commits?path={urllib.parse.quote(folder)}&per_page=1") or []
@@ -351,23 +392,6 @@ def plugins(repo):
             continue
         out[-1]["category"] = category(out[-1])
     return out
-
-
-WORKSHOP_INDEX = "https://workshop.solidcraft.io/api/index.json"
-
-
-def workshop():
-    """The SolidCraft Workshop's plugin pages, by repository and plugin id. The page only links to
-    them, so the index's signature is not checked here; the app checks it before installing."""
-    try:
-        index = get(WORKSHOP_INDEX) or {}
-    except (urllib.error.URLError, ValueError) as e:
-        print(f"  Workshop index: {e}", file=sys.stderr)
-        return {}
-    delisted = set(index.get("delisted") or [])
-    return {((i.get("repo") or "").lower(), (i.get("id") or "").lower()): i["page_url"]
-            for i in index.get("items", [])
-            if i.get("kind") == "plugin" and i.get("repo") and i.get("page_url") and i.get("id") not in delisted}
 
 
 def main():
