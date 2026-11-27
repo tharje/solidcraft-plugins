@@ -5,24 +5,33 @@
    "loads": true,
    "ran": [],
    "release": "build-45b8897f7fc75a5949b8ee10a23c7e2826f1c67e",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "breakaway-supports": {
    "entries": 1,
    "loads": true,
    "ran": [],
    "release": "build-45b8897f7fc75a5949b8ee10a23c7e2826f1c67e",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "code-maker": {
    "entries": 1,
    "loads": true,
    "ran": [],
    "release": "v0.6.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
+  "codemode": {
+   "entries": 3,
+   "loads": true,
+   "ran": [],
+   "release": "v0.1.0",
+   "skipped": "asks for permissions",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "custom-threads": {
    "entries": 4,
@@ -33,8 +42,8 @@
     "advanced-thread"
    ],
    "release": "v0.3.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "easypdm": {
    "entries": 0,
@@ -42,8 +51,8 @@
    "loads": false,
    "ran": [],
    "release": "v0.9.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "filament-swatch": {
    "entries": 1,
@@ -52,8 +61,8 @@
     "swatch"
    ],
    "release": "v0.3.1",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "gear-generator": {
    "entries": 1,
@@ -62,8 +71,21 @@
     "gear"
    ],
    "release": "v0.4.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
+  "gear-kit": {
+   "entries": 5,
+   "loads": true,
+   "ran": [
+    "spur-gears",
+    "bevel-gears",
+    "worm-gears",
+    "timing-pulleys"
+   ],
+   "release": "v1.0.0",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "gen-design-engine": {
    "entries": 7,
@@ -75,9 +97,9 @@
     "bar-bracket",
     "solver-benchmark"
    ],
-   "release": "v0.14.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "release": "v0.14.1",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "gridfinity": {
    "entries": 15,
@@ -98,8 +120,8 @@
     "layout-restore"
    ],
    "release": "v1.6.2",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "heatset-insert": {
    "entries": 1,
@@ -108,8 +130,8 @@
     "insert"
    ],
    "release": "build-45b8897f7fc75a5949b8ee10a23c7e2826f1c67e",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "iso-sheet": {
    "entries": 1,
@@ -117,8 +139,8 @@
    "ran": [],
    "release": "v1.1.0",
    "skipped": "asks for permissions",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "jis-hex-bolt": {
    "entries": 1,
@@ -127,16 +149,16 @@
     "make"
    ],
    "release": "v0.3.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "linear-rails": {
    "entries": 1,
    "loads": true,
    "ran": [],
    "release": "build-45b8897f7fc75a5949b8ee10a23c7e2826f1c67e",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "makeorbit": {
    "entries": 1,
@@ -144,8 +166,8 @@
    "ran": [],
    "release": "v0.2.0",
    "skipped": "asks for permissions",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "makeorbit-cnc-studio": {
    "entries": 1,
@@ -153,24 +175,24 @@
    "ran": [],
    "release": "v0.2.0",
    "skipped": "asks for permissions",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "mesh-solidify": {
    "entries": 2,
    "loads": true,
    "ran": [],
    "release": "v0.2.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "mould-maker": {
    "entries": 3,
    "loads": true,
    "ran": [],
    "release": "v0.5.2",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "opengrid": {
    "entries": 1,
@@ -179,16 +201,16 @@
     "board"
    ],
    "release": "v0.3.1",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "revmesh": {
    "entries": 1,
    "loads": true,
    "ran": [],
    "release": "v0.2.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "solidcraft-3d-printing-holes": {
    "entries": 1,
@@ -197,8 +219,8 @@
     "teardrop"
    ],
    "release": "v0.2.2",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "solidcraft-aprilcube": {
    "entries": 3,
@@ -208,8 +230,8 @@
     "preview-target"
    ],
    "release": "v0.4.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "solidcraft-gears": {
    "entries": 1,
@@ -218,8 +240,8 @@
     "make-gear"
    ],
    "release": "v0.1.1",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "solidcraft-gridfinity": {
    "entries": 2,
@@ -229,16 +251,16 @@
     "make-baseplate"
    ],
    "release": "v0.1.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "solidcraft-honeycomb": {
    "entries": 1,
    "loads": true,
    "ran": [],
    "release": "v0.1.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "solidcraft-kicad": {
    "entries": 0,
@@ -246,41 +268,48 @@
    "loads": false,
    "ran": [],
    "release": "v0.4.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "solidcraft-laserjoints": {
    "entries": 1,
    "loads": true,
    "ran": [],
    "release": "Plugin",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "solidcraft-parasolid": {
-   "entries": 0,
-   "error": "error: plugin: invalid manifest field runtime.entries.import.extensions: an import or export slot claims 1..32 distinct lowercase extensions without the dot, such as \"f3d\"",
-   "loads": false,
+   "entries": 1,
+   "loads": true,
    "ran": [],
-   "release": "v0.1.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "release": "v0.2.0",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
+  },
+  "solidcraft-parasolid-export": {
+   "entries": 2,
+   "loads": true,
+   "ran": [],
+   "release": "v0.2.0",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "solidinserts": {
    "entries": 2,
    "loads": true,
    "ran": [],
    "release": "v1.3.1",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "sw2sc": {
    "entries": 1,
    "loads": true,
    "ran": [],
    "release": "v0.17.3",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "techsquid-bearings": {
    "entries": 4,
@@ -290,8 +319,8 @@
     "make-csk"
    ],
    "release": "v0.3.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "techsquid-extrusions": {
    "entries": 2,
@@ -301,8 +330,8 @@
     "make-t-nut"
    ],
    "release": "v0.3.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "techsquid-inserts": {
    "entries": 1,
@@ -311,8 +340,8 @@
     "make-insert"
    ],
    "release": "v0.3.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "techsquid-nuts": {
    "entries": 1,
@@ -321,8 +350,8 @@
     "make-nut"
    ],
    "release": "v0.3.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "techsquid-screws": {
    "entries": 1,
@@ -331,8 +360,8 @@
     "make-screw"
    ],
    "release": "v0.3.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "techsquid-v-wheels": {
    "entries": 1,
@@ -341,16 +370,16 @@
     "make-v-wheel"
    ],
    "release": "v0.3.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "thread-generator": {
    "entries": 0,
    "loads": true,
    "ran": [],
    "release": "v1.8.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "timber": {
    "entries": 0,
@@ -358,16 +387,16 @@
    "loads": false,
    "ran": [],
    "release": "0.1.1",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "tubecraft": {
    "entries": 1,
    "loads": true,
    "ran": [],
    "release": "v0.4.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "wood-joinery": {
    "entries": 15,
@@ -375,9 +404,9 @@
    "ran": [
     "update-joints"
    ],
-   "release": "v0.12.1",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "release": "v0.14.0",
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "woodwork": {
    "entries": 8,
@@ -385,8 +414,8 @@
    "ran": [],
    "release": "v0.5.0",
    "skipped": "asks for permissions",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-26"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   },
   "zahnrad": {
    "entries": 1,
@@ -395,9 +424,9 @@
     "gear"
    ],
    "release": "v1.4.0",
-   "solidcraft": "0.49.1",
-   "tested": "2026-11-25"
+   "solidcraft": "0.50.0",
+   "tested": "2026-11-27"
   }
  },
- "solidcraft": "0.49.1"
+ "solidcraft": "0.50.0"
 }
