@@ -181,23 +181,37 @@ def entries(m):
 # turn up in its id, name, description or topics; CATEGORY_OF settles the ones words get wrong.
 CATEGORIES = [
     ("Storage & organizing", r"gridfinity|opengrid|organi[sz]|storage|drawer|bins?\b"),
-    ("Hardware & fasteners", r"screw|nut\b|nuts\b|insert|thread|bolt|bearing|extrusion|v-wheel|fastener|hole"),
+    ("Hardware & fasteners", r"screw|nut\b|nuts\b|insert|thread|bolt|bearing|extrusion|v-wheel|fastener|linear rail|luer"),
     ("Gears & motion", r"gear|cycloid|rack\b|pulley|cam\b"),
-    ("Woodworking", r"wood|joiner|cabinet|carcass|sheet goods"),
+    ("Woodworking", r"wood|joiner|cabinet|carcass|sheet goods|timber"),
+    ("CNC, laser & tubes", r"\bcnc\b|laser|dogbone|tube"),
     ("Aero & marine", r"airfoil|wing|propeller|turbine|rotor"),
-    ("Shapes & patterns", r"pattern|lattice|honeycomb|gyroid|helix|helical|voronoi|text\b"),
-    ("3D printing", r"3d-print|printable|filament|mesh|stl\b|watertight"),
-    ("Export & workflow", r"export|step\b|pdm|drawing|sheet|upload|send"),
+    ("Analysis & simulation", r"topology|stress|simulation|\bfea\b"),
+    ("Shapes & patterns", r"pattern|lattice|honeycomb|gyroid|helix|helical|voronoi|text\b|qr code|barcode"),
+    ("3D printing", r"3d-print|3d print|printable|filament|mesh|stl\b|watertight|supports?\b|mould"),
+    ("Import & export", r"import|export|step\b|\.ipt|parasolid|solidworks|kicad"),
+    ("Workflow", r"pdm|drawing|sheet|upload|send"),
+    ("Modeling tools", r"sweep|javascript|scripts?\b|trivariate"),
 ]
 CATEGORY_OF = {
     "solidcraft-aprilcube": "3D printing",
     "filament-swatch": "3D printing",
     "mesh-solidify": "3D printing",
     "helical-sketch": "Shapes & patterns",
-    "iso-sheet": "Export & workflow",
-    "makeorbit": "Export & workflow",
+    "iso-sheet": "Workflow",
+    "makeorbit": "Workflow",
+    "makeorbit-cnc-studio": "Workflow",
     "wood-joinery": "Woodworking",
+    "revmesh": "Import & export",
+    "stl-to-step-import": "Import & export",
+    "subd-cage": "Import & export",
+    "my-plugin": "Examples",
+    "pick-probe": "Examples",
+    "pick-probe-b": "Examples",
 }
+# The examples SolidCraft ships: in a copy of the app (a fork pushed as its own repository) they're
+# the same examples again, not plugins of that repository's own.
+EXAMPLE_IDS = {"box-importer", "job-list", "plate-maker"}
 
 
 def category(p):
@@ -326,6 +340,8 @@ def plugins(repo):
     # examples and the forks of the app hold such manifests too
     found = [(p, m) for p, m in found
              if isinstance(m.get("runtime"), dict) or any(a["name"].lower().startswith(m["id"].lower()) for a in zips)]
+    if r["full_name"].lower() not in EXAMPLE_REPOS:
+        found = [(p, m) for p, m in found if m["id"] not in EXAMPLE_IDS]
     if not found:
         return []
     assets = []
