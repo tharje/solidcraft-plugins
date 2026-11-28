@@ -122,6 +122,28 @@
    "solidcraft": "0.51.2",
    "tested": "2026-11-28"
   },
+  "gears": {
+   "entries": 13,
+   "loads": true,
+   "ran": [
+    "spur-pair",
+    "spur",
+    "helical",
+    "herringbone",
+    "bevel",
+    "worm",
+    "worm-wheel",
+    "rack",
+    "hypoid",
+    "internal",
+    "planetary",
+    "cycloidal",
+    "cycloidal-drive"
+   ],
+   "release": "v0.10.10",
+   "solidcraft": "0.51.2",
+   "tested": "2026-11-28"
+  },
   "gen-design-engine": {
    "entries": 7,
    "loads": true,
@@ -132,7 +154,7 @@
     "bar-bracket",
     "solver-benchmark"
    ],
-   "release": "v0.15.0",
+   "release": "v0.16.1",
    "solidcraft": "0.51.2",
    "tested": "2026-11-28"
   },
@@ -238,23 +260,30 @@
    "tested": "2026-11-28"
   },
   "omigears": {
-   "entries": 13,
+   "entries": 20,
    "loads": true,
    "ran": [
     "spur",
     "helical",
     "herringbone",
+    "internal",
+    "rack",
     "bevel",
+    "hypoid",
     "worm",
     "worm-wheel",
-    "rack",
-    "hypoid",
-    "internal",
-    "planetary",
     "cycloidal",
-    "cycloidal-drive"
+    "planetary",
+    "planetary-gearbox",
+    "gear-train",
+    "cycloidal-drive",
+    "cycloidal-reducer",
+    "pulley",
+    "sprocket",
+    "ratchet",
+    "geneva"
    ],
-   "release": "v0.50.2",
+   "release": "v0.50.3",
    "solidcraft": "0.51.2",
    "tested": "2026-11-28"
   },
@@ -281,14 +310,6 @@
    "loads": true,
    "ran": [],
    "release": "v4.0.2",
-   "solidcraft": "0.51.2",
-   "tested": "2026-11-28"
-  },
-  "revmesh": {
-   "entries": 1,
-   "loads": true,
-   "ran": [],
-   "release": "v0.2.0",
    "solidcraft": "0.51.2",
    "tested": "2026-11-28"
   },
@@ -475,6 +496,15 @@
    "loads": false,
    "ran": [],
    "release": "0.1.1",
+   "solidcraft": "0.51.2",
+   "tested": "2026-11-28"
+  },
+  "topopt": {
+   "entries": 11,
+   "loads": true,
+   "ran": [],
+   "release": "v0.12.2",
+   "skipped": "asks for permissions",
    "solidcraft": "0.51.2",
    "tested": "2026-11-28"
   },

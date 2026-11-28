@@ -1634,7 +1634,11 @@
     "label": "✓ Quality checked (v0.15.0) · 39/39",
     "title": "Version 0.15.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 39 of 39 runs passed. The newer version has not been checked yet."
    },
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Generative+Design+Engine&plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2FGenerative-design-plugin-for-SolidCraft%29",
    "report_author": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/issues/new?title=Generative+Design+Engine%3A+"
@@ -1886,7 +1890,11 @@
    "slug": "topopt",
    "icon": "icons/topopt.svg",
    "checked": null,
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
    "asks": {
     "label": "Asks for: files, extra SolidCraft commands",
     "title": "SolidCraft asks you to allow this when you install the plugin."
@@ -3792,7 +3800,11 @@
    "workshop": "https://workshop.solidcraft.io/plugin/omi/omigears",
    "slug": "omigears",
    "checked": null,
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+OmiGears&plugin=OmiGears+%28https%3A%2F%2Fgithub.com%2Fomigamedev%2Fomigears%29",
    "report_author": null
@@ -4208,7 +4220,11 @@
    "slug": "gears",
    "icon": "icons/gears.svg",
    "checked": null,
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+%D0%97%D1%83%D0%B1%D1%87%D0%B0%D1%82%D1%8B%D0%B5+%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8&plugin=%D0%97%D1%83%D0%B1%D1%87%D0%B0%D1%82%D1%8B%D0%B5+%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8+%28https%3A%2F%2Fgithub.com%2FDizory%2Fsolidcraft-gears-ru%29",
    "report_author": "https://github.com/Dizory/solidcraft-gears-ru/issues/new?title=%D0%97%D1%83%D0%B1%D1%87%D0%B0%D1%82%D1%8B%D0%B5+%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8%3A+"
