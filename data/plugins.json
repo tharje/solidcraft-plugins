@@ -263,15 +263,18 @@
        "ok": true
       }
      ],
-     "fix": "SolidCraft stops an ordinary command after the time limit in its manifest, at most 30 s. Since SolidCraft 0.48 an entry can be a long job (`\"job\": true`): it may run for up to ten minutes, shows progress and can be cancelled. Making Cabinet a job, or a tall cabinet faster, would very likely be enough. The times depend on the computer; on a faster one these may pass."
+     "fix": "SolidCraft stops an ordinary command after the time limit in its manifest, at most 30 s. Since SolidCraft 0.48 an entry can be a long job (`\"job\": true`): it may run for up to ten minutes, shows progress and can be cancelled. Making Cabinet a job, or a tall cabinet faster, would very likely be enough. The times depend on the computer; on a faster one these may pass.",
+     "runs_passed": 25,
+     "runs_total": 32
     },
-    "label": "Quality check: not passed (v0.5.0)",
-    "title": "Version 0.5.0, checked 2026-11-27 in SolidCraft 0.50.0: Tall cabinets with doors go over the plugin's 30 s time limit, and so does Edit in a design with many cabinets. Everything else ran well. Click for what was tested."
+    "runs": "25 of 32 runs passed",
+    "label": "Quality check: not passed (v0.5.0) · 25/32",
+    "title": "Version 0.5.0, checked 2026-11-27 in SolidCraft 0.50.0: 25 of 32 runs passed. Tall cabinets with doors go over the plugin's 30 s time limit, and so does Edit in a design with many cabinets. Everything else ran well. Click for what was tested."
    },
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
    },
    "asks": {
     "label": "Asks for: files",
@@ -437,15 +440,18 @@
        "ok": null
       }
      ],
-     "fix": "The time grows with the number of teeth, about 0.35 s a tooth here. Making Make gear a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel), or drawing one tooth and patterning it, would fix it. Reporting a pointed tooth as an invalid setting would make that message clearer."
+     "fix": "The time grows with the number of teeth, about 0.35 s a tooth here. Making Make gear a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel), or drawing one tooth and patterning it, would fix it. Reporting a pointed tooth as an invalid setting would make that message clearer.",
+     "runs_passed": 9,
+     "runs_total": 11
     },
-    "label": "Quality check: not passed (v0.1.1)",
-    "title": "Version 0.1.1, checked 2026-11-27 in SolidCraft 0.50.0: A gear with many teeth goes over the plugin's 30 s time limit: 80 teeth, which the dialog allows, can't be made. Click for what was tested."
+    "runs": "9 of 11 runs passed",
+    "label": "Quality check: not passed (v0.1.1) · 9/11",
+    "title": "Version 0.1.1, checked 2026-11-27 in SolidCraft 0.50.0: 9 of 11 runs passed. A gear with many teeth goes over the plugin's 30 s time limit: 80 teeth, which the dialog allows, can't be made. Click for what was tested."
    },
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gears&plugin=Gears+%28https%3A%2F%2Fgithub.com%2Fbherbruck%2Fsolidcraft-gears%29",
@@ -595,12 +601,19 @@
      ],
      "notes": [
       "Also checked by hand in the desktop app: the dialogs, Edit bin filling in a picked bin's settings, and a lid sitting in a bin's stacking lip (no overlap, resting on the lip)."
-     ]
+     ],
+     "runs_passed": 30,
+     "runs_total": 30
     },
-    "label": "✓ Quality checked",
-    "title": "Version 1.7.1 was checked 2026-11-27 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs."
+    "runs": "30 of 30 runs passed",
+    "label": "✓ Quality checked · 30/30",
+    "title": "Version 1.7.1 was checked 2026-11-27 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 30 of 30 runs passed."
    },
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fgridfinity-solidcraft%29",
    "report_author": "https://github.com/tharje/gridfinity-solidcraft/issues/new?title=Gridfinity%3A+"
@@ -646,11 +659,89 @@
    "has_topic": false,
    "category": "Hardware & fasteners",
    "slug": "solidinserts",
-   "checked": null,
+   "checked": {
+    "current": true,
+    "passed": true,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/solidinserts/#quality",
+    "date": "2026-11-28",
+    "version": "1.3.1",
+    "result": "passed",
+    "data": {
+     "repo": "NoOneExceptEnderk/SolidInserts",
+     "id": "solidinserts",
+     "version": "1.3.1",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "passed",
+     "summary": "Insert seats and captive nut pockets were made in a picked hole in under a second; sizes that don't fit the hole are refused with a clear reason.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": true,
+       "note": "21 runs on an 8 mm hole: every one either made the seat or pocket, or refused a size that can't fit it."
+      },
+      "valid": {
+       "ok": true,
+       "note": "0 open bodies; the seats and pockets are cut into the picked body."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Only modelling commands. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "MIT, README, a zip on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Apply (insert seats)",
+       "settings": "Automatic size on an 8 mm hole; M6; ±1 mm compensation",
+       "time": "0.6 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Apply (insert seats)",
+       "settings": "M2–M5 inserts, and series without M8, on an 8 mm hole",
+       "time": "0.2–0.4 s",
+       "result": "refused: the seat would be narrower than the hole. Right, and clear",
+       "ok": null
+      },
+      {
+       "entry": "Captive nut pockets",
+       "settings": "Automatic, M5, M6; inset, clearances, layer heights changed",
+       "time": "0.6–0.8 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Captive nut pockets",
+       "settings": "M2–M4 nuts on an 8 mm hole",
+       "time": "0.4–0.6 s",
+       "result": "refused: the hole doesn't fit that screw. Right, and clear",
+       "ok": null
+      }
+     ],
+     "runs_passed": 22,
+     "runs_total": 22
+    },
+    "runs": "22 of 22 runs passed",
+    "label": "✓ Quality checked · 22/22",
+    "title": "Version 1.3.1 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 22 of 22 runs passed."
+   },
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidInserts&plugin=SolidInserts+%28https%3A%2F%2Fgithub.com%2FNoOneExceptEnderk%2FSolidInserts%29",
@@ -693,11 +784,97 @@
    "category": "Hardware & fasteners",
    "slug": "techsquid-bearings",
    "icon": "icons/techsquid-bearings.svg",
-   "checked": null,
+   "checked": {
+    "current": true,
+    "passed": false,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/techsquid-bearings/#quality",
+    "date": "2026-11-28",
+    "version": "0.3.0",
+    "result": "not passed",
+    "data": {
+     "repo": "TechSquidTV/SolidCraft-Plugins",
+     "id": "techsquid-bearings",
+     "version": "0.3.0",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "not passed",
+     "summary": "Bearings and clutches are made in 2–3 s, but each one's shields or covers are not closed solids.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": true,
+       "note": "Every size, closure and keyway ran; sizes it doesn't have are refused with a clear message."
+      },
+      "valid": {
+       "ok": false,
+       "note": "Every bearing and clutch has 2 open bodies: the front and back Shield (bearings) or Cover (CSK clutches). The rings and balls are closed."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Only modelling commands. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "MIT, README, a zip for each plugin on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Make bearing",
+       "settings": "Defaults (608ZZ); sealed; 105, 625, 626, 6000–6002",
+       "time": "1.2–3.0 s",
+       "result": "made, with 2 open bodies (the shields)",
+       "ok": false
+      },
+      {
+       "entry": "Make bearing",
+       "settings": "Open closure on a size without it",
+       "time": "0.2 s",
+       "result": "refused: only for 626. Clear",
+       "ok": null
+      },
+      {
+       "entry": "Make CSK clutch",
+       "settings": "Defaults (CSK12P); every closure; keyways; CSK8; from scratch 10/30/9; outer keyway 4 mm",
+       "time": "1.6–2.3 s",
+       "result": "made, with 2 open bodies (the covers)",
+       "ok": false
+      },
+      {
+       "entry": "Make bearing by dimensions",
+       "settings": "Bore 8; 8 × 22 × 7",
+       "time": "2.4–2.6 s",
+       "result": "made 608ZZ, with 2 open bodies",
+       "ok": false
+      },
+      {
+       "entry": "Make CSK by dimensions",
+       "settings": "Bore 12",
+       "time": "0.3 s",
+       "result": "refused: lists the three that match. Clear",
+       "ok": null
+      }
+     ],
+     "fix": "Making the shields and covers closed solids (they are probably surfaces or thin open shapes now) would pass it; the rest is fine.",
+     "runs_passed": 17,
+     "runs_total": 39
+    },
+    "runs": "17 of 39 runs passed",
+    "label": "Quality check: not passed (v0.3.0) · 17/39",
+    "title": "Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 17 of 39 runs passed. Bearings and clutches are made in 2–3 s, but each one's shields or covers are not closed solids. Click for what was tested."
+   },
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Bearings&plugin=Bearings+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-bearings%29",
@@ -738,11 +915,104 @@
    "category": "Hardware & fasteners",
    "slug": "techsquid-extrusions",
    "icon": "icons/techsquid-extrusions.svg",
-   "checked": null,
+   "checked": {
+    "current": true,
+    "passed": false,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/techsquid-extrusions/#quality",
+    "date": "2026-11-28",
+    "version": "0.3.0",
+    "result": "not passed",
+    "data": {
+     "repo": "TechSquidTV/SolidCraft-Plugins",
+     "id": "techsquid-extrusions",
+     "version": "0.3.0",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "not passed",
+     "summary": "Rails and T-nuts are made quickly, but a rail with tapped ends goes over the plugin's 30 s time limit.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": false,
+       "note": "18 of 21 runs passed; the three runs with tapped ends were stopped at the 30 s limit."
+      },
+      "valid": {
+       "ok": true,
+       "note": "0 open bodies."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Only modelling commands. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "MIT, README, a zip for each plugin on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Make extrusion",
+       "settings": "Defaults: 2020 × 500 mm",
+       "time": "2.6 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Make extrusion",
+       "settings": "2040, 2060, 2080, 4040; 1500 mm long; holes on each face, from the end",
+       "time": "1.6–5.5 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Make extrusion",
+       "settings": "**Tapped ends: start, end, both**",
+       "time": "87–93 s",
+       "result": "stopped at the 30 s limit",
+       "ok": false
+      },
+      {
+       "entry": "Make extrusion",
+       "settings": "Sketch driven, with only a point picked",
+       "time": "0.3 s",
+       "result": "refused: pick 1 to 16 straight lines. Right, and clear",
+       "ok": null
+      },
+      {
+       "entry": "Make T-nut",
+       "settings": "Defaults (M5); M3, M4; along sketch Y; V-slot; post-assembly",
+       "time": "17–25 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Make T-nut",
+       "settings": "Thread not modelled",
+       "time": "1.2 s",
+       "result": "passed",
+       "ok": true
+      }
+     ],
+     "fix": "The tapped thread in the rail's end takes the time. Making it a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish.",
+     "runs_passed": 18,
+     "runs_total": 21
+    },
+    "runs": "18 of 21 runs passed",
+    "label": "Quality check: not passed (v0.3.0) · 18/21",
+    "title": "Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 18 of 21 runs passed. Rails and T-nuts are made quickly, but a rail with tapped ends goes over the plugin's 30 s time limit. Click for what was tested."
+   },
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Extrusions&plugin=Extrusions+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-extrusions%29",
@@ -782,11 +1052,104 @@
    "category": "Hardware & fasteners",
    "slug": "techsquid-inserts",
    "icon": "icons/techsquid-inserts.svg",
-   "checked": null,
+   "checked": {
+    "current": true,
+    "passed": false,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/techsquid-inserts/#quality",
+    "date": "2026-11-28",
+    "version": "0.3.0",
+    "result": "not passed",
+    "data": {
+     "repo": "TechSquidTV/SolidCraft-Plugins",
+     "id": "techsquid-inserts",
+     "version": "0.3.0",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "not passed",
+     "summary": "Every insert with a modelled thread, the default, goes over the plugin's 30 s time limit. Holes, and inserts without the modelled thread, work.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": false,
+       "note": "8 of 13 runs stopped at the 30 s limit, the defaults too."
+      },
+      "valid": {
+       "ok": true,
+       "note": "What was made was closed (0 open bodies)."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Only modelling commands. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "MIT, README, a zip for each plugin on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Make insert",
+       "settings": "**Defaults: M3 × 5.7, heat-set, hole and insert, thread modelled**",
+       "time": "38.7 s",
+       "result": "stopped at the 30 s limit",
+       "ok": false
+      },
+      {
+       "entry": "Make insert",
+       "settings": "**Insert only; glue-in (stepped); M1.6, M2, M2.5, M3 × 4 Voron, M4 × 8.1**",
+       "time": "31–39 s",
+       "result": "stopped at the 30 s limit",
+       "ok": false
+      },
+      {
+       "entry": "Make insert",
+       "settings": "M3 × 3 short",
+       "time": "29.2 s",
+       "result": "passed, close to the limit",
+       "ok": true
+      },
+      {
+       "entry": "Make insert",
+       "settings": "Thread not modelled",
+       "time": "9.5 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Make insert",
+       "settings": "Hole only",
+       "time": "0.6 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Make insert",
+       "settings": "Hole adjust +1 mm; Through with two bodies under the point",
+       "time": "0.2–0.6 s",
+       "result": "refused with a clear message about the setting",
+       "ok": null
+      }
+     ],
+     "fix": "The modelled thread takes the time, as in TechSquid Screws. Making it a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish.",
+     "runs_passed": 5,
+     "runs_total": 13
+    },
+    "runs": "5 of 13 runs passed",
+    "label": "Quality check: not passed (v0.3.0) · 5/13",
+    "title": "Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 5 of 13 runs passed. Every insert with a modelled thread, the default, goes over the plugin's 30 s time limit. Holes, and inserts without the modelled thread, work. Click for what was tested."
+   },
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat-set+inserts&plugin=Heat-set+inserts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-inserts%29",
@@ -921,15 +1284,18 @@
      ],
      "notes": [
       "The big nuts are close to the 30 s limit on this computer; a slower one could go over it."
-     ]
+     ],
+     "runs_passed": 11,
+     "runs_total": 11
     },
-    "label": "✓ Quality checked",
-    "title": "Version 0.3.0 was checked 2026-11-27 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs."
+    "runs": "11 of 11 runs passed",
+    "label": "✓ Quality checked · 11/11",
+    "title": "Version 0.3.0 was checked 2026-11-27 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 11 of 11 runs passed."
    },
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Hex+nuts&plugin=Hex+nuts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-nuts%29",
@@ -1065,15 +1431,18 @@
      "notes": [
       "The time limit stopped the run after the plugin had asked SolidCraft for the threaded body, which is why the runs took longer than 30 s before they ended."
      ],
-     "fix": "The modelled thread is what takes the time. Making Make screw a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish; a simpler thread, or Thread modelled off by default, would make it fast."
+     "fix": "The modelled thread is what takes the time. Making Make screw a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish; a simpler thread, or Thread modelled off by default, would make it fast.",
+     "runs_passed": 2,
+     "runs_total": 23
     },
-    "label": "Quality check: not passed (v0.3.0)",
-    "title": "Version 0.3.0, checked 2026-11-27 in SolidCraft 0.50.0: Every screw with a modelled thread, the default, goes over the plugin's 30 s time limit. Without the modelled thread, and for holes only, it works. Click for what was tested."
+    "runs": "2 of 23 runs passed",
+    "label": "Quality check: not passed (v0.3.0) · 2/23",
+    "title": "Version 0.3.0, checked 2026-11-27 in SolidCraft 0.50.0: 2 of 23 runs passed. Every screw with a modelled thread, the default, goes over the plugin's 30 s time limit. Without the modelled thread, and for holes only, it works. Click for what was tested."
    },
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Screws&plugin=Screws+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-screws%29",
@@ -1115,9 +1484,9 @@
    "icon": "icons/techsquid-v-wheels.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+V-wheels&plugin=V-wheels+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-v-wheels%29",
@@ -1162,8 +1531,114 @@
    "has_topic": false,
    "category": "Other",
    "slug": "gen-design-engine",
-   "checked": null,
-   "tested": null,
+   "checked": {
+    "current": true,
+    "passed": true,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/gen-design-engine/#quality",
+    "date": "2026-11-28",
+    "version": "0.15.0",
+    "result": "passed",
+    "data": {
+     "repo": "LudaLunizz/Generative-design-plugin-for-SolidCraft",
+     "id": "gen-design-engine",
+     "version": "0.15.0",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "passed",
+     "summary": "Every command ran: materials, reports, the stress check, the plate optimiser and the bar bracket, most in a second or two.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": true,
+       "note": "About 40 runs. A bracket with too long a reach is refused (\"no stable truss found\") with what to change."
+      },
+      "valid": {
+       "ok": true,
+       "note": "0 open bodies, also for brackets of up to 69 bodies."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Modelling and material commands. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "Apache-2.0, a long README, a zip on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Apply material",
+       "settings": "Six metals on a body",
+       "time": "0.2–0.5 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Material report; materials",
+       "settings": "Defaults, a body, safety factor 10, metal and polymer families",
+       "time": "0.2–0.5 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Stress check",
+       "settings": "A block fixed at one end, 100 N and 1000 N at the other, aluminium",
+       "time": "1.1–1.3 s",
+       "result": "passed (safety factor reported; verify says when the mesh is too coarse)",
+       "ok": true
+      },
+      {
+       "entry": "Optimise plate",
+       "settings": "Defaults; 600 wide; 300 high; 30 thick; three aluminiums",
+       "time": "1.5–3.7 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Bar bracket",
+       "settings": "Defaults; wider and taller plate; thicker; bigger pad",
+       "time": "9–25 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Bar bracket",
+       "settings": "Reach 450 mm",
+       "time": "1.0 s",
+       "result": "refused: no stable truss found, with what to change. Clear",
+       "ok": null
+      },
+      {
+       "entry": "Solver benchmark",
+       "settings": "Defaults, finer grids, 150 iterations, MBB load, volume share 0.95",
+       "time": "0.8–2.5 s",
+       "result": "passed",
+       "ok": true
+      }
+     ],
+     "notes": [
+      "Its commands have no ribbon slots; they are in the Plugins menu."
+     ],
+     "runs_passed": 39,
+     "runs_total": 39
+    },
+    "runs": "39 of 39 runs passed",
+    "label": "✓ Quality checked · 39/39",
+    "title": "Version 0.15.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 39 of 39 runs passed."
+   },
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Generative+Design+Engine&plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2FGenerative-design-plugin-for-SolidCraft%29",
    "report_author": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/issues/new?title=Generative+Design+Engine%3A+"
@@ -1217,8 +1692,146 @@
    "category": "Woodworking",
    "slug": "wood-joinery",
    "icon": "icons/wood-joinery.svg",
-   "checked": null,
-   "tested": null,
+   "checked": {
+    "current": true,
+    "passed": true,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/wood-joinery/#quality",
+    "date": "2026-11-28",
+    "version": "0.15.0",
+    "result": "passed",
+    "data": {
+     "repo": "WilliamHJKL/solidcraft-wood-joinery",
+     "id": "wood-joinery",
+     "version": "0.15.0",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "passed",
+     "summary": "Every joint ran, in under 3 s each, on boards laid out for it; a joint that doesn't fit the boards is refused with a clear reason.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": true,
+       "note": "About 60 runs: every joint and its options. Edit joint opens the joint's own form, so it was checked to refuse running from a script, as it should."
+      },
+      "valid": {
+       "ok": true,
+       "note": "0 open bodies after every run. Each joint is a folder of ordinary features, kept up to date by Update joints."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Modelling commands, its own storage, a panel and forms. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "Apache-2.0, a long README, a zip (English and French) on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Mortise and tenon",
+       "settings": "Defaults, haunched, through, double",
+       "time": "0.7–1.3 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Mortise and tenon",
+       "settings": "Bridle on a rail away from the stile's end; low and high positions on a thin stile",
+       "time": "0.4–0.5 s",
+       "result": "refused with a clear reason (the bridle needs the rail at the end; no cheek left)",
+       "ok": null
+      },
+      {
+       "entry": "Loose tenon",
+       "settings": "Defaults and every Domino size, 4×20 to 10×50",
+       "time": "0.4–2.4 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Groove",
+       "settings": "On each of the six faces",
+       "time": "0.3–0.4 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Tongue and groove; housing; mitre",
+       "settings": "Defaults, spline, keys, align",
+       "time": "0.4–0.7 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Half lap",
+       "settings": "Crossing boards: defaults, flip, align",
+       "time": "0.4–0.7 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Scarf",
+       "settings": "Boards end to end: defaults, flip, key, align",
+       "time": "0.4–0.6 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Box joint; dovetail",
+       "settings": "Boards meeting on edge at a corner",
+       "time": "0.9–1.7 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Dowels",
+       "settings": "Defaults, without dowel bodies, align",
+       "time": "0.9–1.1 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Biscuits",
+       "settings": "A 150 mm wide board: sizes 0, 10, 20, without biscuit bodies",
+       "time": "0.8–1.8 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Screws",
+       "settings": "One board laid on the other: with and without countersink",
+       "time": "1.2–2.2 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Update joints",
+       "settings": "After a mortise and tenon",
+       "time": "under 1 s",
+       "result": "passed",
+       "ok": true
+      }
+     ],
+     "runs_passed": 83,
+     "runs_total": 83
+    },
+    "runs": "83 of 83 runs passed",
+    "label": "✓ Quality checked · 83/83",
+    "title": "Version 0.15.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 83 of 83 runs passed."
+   },
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Wood+joinery&plugin=Wood+joinery+%28https%3A%2F%2Fgithub.com%2FWilliamHJKL%2Fsolidcraft-wood-joinery%29",
    "report_author": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/issues/new?title=Wood+joinery%3A+"
@@ -1263,9 +1876,9 @@
    "icon": "icons/revmesh.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+revmesh&plugin=revmesh+%28https%3A%2F%2Fgithub.com%2Fstritti%2Frevmesh%29",
@@ -1308,11 +1921,111 @@
    "category": "Hardware & fasteners",
    "slug": "custom-threads",
    "icon": "icons/custom-threads.svg",
-   "checked": null,
+   "checked": {
+    "current": true,
+    "passed": false,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/custom-threads/#quality",
+    "date": "2026-11-28",
+    "version": "0.3.0",
+    "result": "not passed",
+    "data": {
+     "repo": "Sooner4500/solidcraft-custom-threads",
+     "id": "custom-threads",
+     "version": "0.3.0",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "not passed",
+     "summary": "A thread on a 10 mm shaft 25 mm long goes over the plugin's 30 s time limit; on a shaft 8 mm long Custom and Advanced thread work.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": false,
+       "note": "Every thread on a 10 × 25 mm shaft was stopped at the 30 s limit; on a 10 × 8 mm shaft, Custom and Advanced thread passed in 17–18 s."
+      },
+      "valid": {
+       "ok": true,
+       "note": "What was made was closed (0 open bodies)."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Only modelling commands. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "MIT, README, a zip on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Custom thread",
+       "settings": "**Defaults on a 10 × 25 mm shaft; fit tight, wide, none; metal; chamfers; left-hand**",
+       "time": "36–49 s",
+       "result": "stopped at the 30 s limit",
+       "ok": false
+      },
+      {
+       "entry": "Advanced thread",
+       "settings": "**Defaults on a 10 × 25 mm shaft; left-hand; metal; chamfers; external; internal**",
+       "time": "33–43 s",
+       "result": "stopped at the 30 s limit",
+       "ok": false
+      },
+      {
+       "entry": "Preset thread",
+       "settings": "**Auto ISO, Auto UNC on a 10 × 25 mm shaft**",
+       "time": "43–49 s",
+       "result": "stopped at the 30 s limit",
+       "ok": false
+      },
+      {
+       "entry": "Custom thread; Advanced thread",
+       "settings": "Defaults on a 10 × 8 mm shaft",
+       "time": "18.1 s; 17.3 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Preset thread",
+       "settings": "Auto ISO on a 10 × 8 mm shaft",
+       "time": "31.2 s",
+       "result": "stopped at the 30 s limit",
+       "ok": false
+      },
+      {
+       "entry": "Preset thread",
+       "settings": "Garden hose, soda bottle, Mason jar, broom presets on a 10 mm shaft",
+       "time": "0.2–0.5 s",
+       "result": "refused: the shaft is far from that preset's size. Right, and clear",
+       "ok": null
+      },
+      {
+       "entry": "Edit thread",
+       "settings": "With no thread in the design",
+       "time": "0.3 s",
+       "result": "refused: no threads found yet. Not tested on a thread",
+       "ok": null
+      }
+     ],
+     "fix": "The time grows with the thread's length. Making it a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish.",
+     "runs_passed": 23,
+     "runs_total": 46
+    },
+    "runs": "23 of 46 runs passed",
+    "label": "Quality check: not passed (v0.3.0) · 23/46",
+    "title": "Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 23 of 46 runs passed. A thread on a 10 mm shaft 25 mm long goes over the plugin's 30 s time limit; on a shaft 8 mm long Custom and Advanced thread work. Click for what was tested."
+   },
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Custom+Threads&plugin=Custom+Threads+%28https%3A%2F%2Fgithub.com%2FSooner4500%2Fsolidcraft-custom-threads%29",
@@ -1359,9 +2072,9 @@
    "slug": "mould-maker",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Mould+Maker&plugin=Mould+Maker+%28https%3A%2F%2Fgithub.com%2FMechmoth%2Fsolidcraft-mould-maker%29",
@@ -1400,11 +2113,104 @@
    "has_topic": false,
    "category": "Gears & motion",
    "slug": "gear-generator",
-   "checked": null,
+   "checked": {
+    "current": true,
+    "passed": false,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/gear-generator/#quality",
+    "date": "2026-11-28",
+    "version": "0.4.0",
+    "result": "not passed",
+    "data": {
+     "repo": "pro-d-e-v/solidcraft-plugin-gear",
+     "id": "gear-generator",
+     "version": "0.4.0",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "not passed",
+     "summary": "Everything works up to 100 teeth, but 200 teeth, which the dialog allows, goes over the plugin's 30 s time limit.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": false,
+       "note": "14 of 15 runs passed; 200 teeth was stopped at the 30 s limit."
+      },
+      "valid": {
+       "ok": true,
+       "note": "One closed body per gear."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Only sketch and solid commands. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "MIT, README, a zip on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Gear",
+       "settings": "Defaults: 20 teeth, module 2, bore 8",
+       "time": "4.4 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Gear",
+       "settings": "Module 20; pressure angle 30°; thickness 24; bore 24",
+       "time": "3.5–4.4 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Gear",
+       "settings": "Keyway on, its width, depth and angle changed",
+       "time": "3.5–5.3 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Gear",
+       "settings": "60 teeth; 100 teeth",
+       "time": "19.9 s; 24.3 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Gear",
+       "settings": "**200 teeth (the largest allowed)**",
+       "time": "43.4 s",
+       "result": "stopped at the 30 s limit",
+       "ok": false
+      },
+      {
+       "entry": "Gear",
+       "settings": "6 teeth with the default 8 mm bore",
+       "time": "0.4 s",
+       "result": "refused: the bore leaves no rim, it must stay under 5 mm. Right, and clear",
+       "ok": null
+      }
+     ],
+     "fix": "The time grows with the number of teeth, about 0.25 s a tooth here, so around 120 teeth is the most that fits in 30 s. Making it a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish. Or lower the largest number of teeth the dialog allows.",
+     "runs_passed": 12,
+     "runs_total": 13
+    },
+    "runs": "12 of 13 runs passed",
+    "label": "Quality check: not passed (v0.4.0) · 12/13",
+    "title": "Version 0.4.0, checked 2026-11-28 in SolidCraft 0.50.0: 12 of 13 runs passed. Everything works up to 100 teeth, but 200 teeth, which the dialog allows, goes over the plugin's 30 s time limit. Click for what was tested."
+   },
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear+generator&plugin=Gear+generator+%28https%3A%2F%2Fgithub.com%2Fpro-d-e-v%2Fsolidcraft-plugin-gear%29",
@@ -1443,11 +2249,96 @@
    "has_topic": false,
    "category": "Shapes & patterns",
    "slug": "solidcraft-honeycomb",
-   "checked": null,
+   "checked": {
+    "current": true,
+    "passed": true,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-honeycomb/#quality",
+    "date": "2026-11-28",
+    "version": "0.1.0",
+    "result": "passed",
+    "data": {
+     "repo": "Xusr404/solidcraft-honeycomb-plugin",
+     "id": "solidcraft-honeycomb",
+     "version": "0.1.0",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "passed",
+     "summary": "Every option filled a picked sketch region with hexagons in under a second.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": true,
+       "note": "14 runs in an open sketch with a rectangle picked. It needs straight lines for the boundary and the sketch open, as its description says; it tells you so if not."
+      },
+      "valid": {
+       "ok": true,
+       "note": "It draws sketch geometry; no bodies are made."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Only sketch commands. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "MIT, README, a zip on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Generate",
+       "settings": "Defaults: 10 mm across flats, 0.5 mm gap, flat top",
+       "time": "0.6 s",
+       "result": "passed (17 hexagons and the clipped edges)",
+       "ok": true
+      },
+      {
+       "entry": "Generate",
+       "settings": "Pointy top; 30 mm; 1.5 mm gap; rotated 3°; not trimmed",
+       "time": "0.3–0.7 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Generate",
+       "settings": "Anchor at each corner; offsets in X and Y; 3 mm inset",
+       "time": "0.5–0.7 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Generate",
+       "settings": "Anchor at a selected sketch point, without one selected",
+       "time": "0.3 s",
+       "result": "refused: select exactly one sketch point. Right, and clear",
+       "ok": null
+      },
+      {
+       "entry": "Generate",
+       "settings": "A circle as the boundary, or the sketch not open",
+       "time": "0.2–0.5 s",
+       "result": "refused: only straight lines; open the sketch. Clear",
+       "ok": null
+      }
+     ],
+     "runs_passed": 14,
+     "runs_total": 14
+    },
+    "runs": "14 of 14 runs passed",
+    "label": "✓ Quality checked · 14/14",
+    "title": "Version 0.1.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 14 of 14 runs passed."
+   },
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Honeycomb+%26+Hexagon+Generator&plugin=Honeycomb+%26+Hexagon+Generator+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-honeycomb-plugin%29",
@@ -1491,9 +2382,9 @@
    "slug": "iso-sheet",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
    },
    "asks": {
     "label": "Asks for: files",
@@ -1539,9 +2430,9 @@
    "slug": "sw2sc",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+SolidWorks+Parts+%28sw2sc%29&plugin=SolidWorks+Parts+%28sw2sc%29+%28https%3A%2F%2Fgithub.com%2Fbobthecooldad%2Fsw2sc%29",
@@ -1582,11 +2473,82 @@
    "has_topic": true,
    "category": "Hardware & fasteners",
    "slug": "solidcraft-3d-printing-holes",
-   "checked": null,
+   "checked": {
+    "current": true,
+    "passed": true,
+    "report": "https://tharje.github.io/solidcraft-plugins/plugins/solidcraft-3d-printing-holes/#quality",
+    "date": "2026-11-28",
+    "version": "0.2.2",
+    "result": "passed",
+    "data": {
+     "repo": "SB97/solidcraft-3d-printing-holes",
+     "id": "solidcraft-3d-printing-holes",
+     "version": "0.2.2",
+     "date": "2026-11-28",
+     "by": "tharje",
+     "solidcraft": "0.50.0",
+     "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+     "result": "passed",
+     "summary": "Teardrop ran with every option in under half a second, with clear warnings where a setting has no effect.",
+     "criteria": {
+      "installs": {
+       "ok": true,
+       "note": "`plugin check`: no problems."
+      },
+      "runs": {
+       "ok": true,
+       "note": "7 runs on a picked sketch circle. Apply to all needs the sketch open, and says so."
+      },
+      "valid": {
+       "ok": true,
+       "note": "It changes sketch circles; no bodies are made."
+      },
+      "permissions": {
+       "ok": true,
+       "note": "Only sketch commands. No files, no network."
+      },
+      "release": {
+       "ok": true,
+       "note": "MIT, README, a zip on the release."
+      },
+      "issues": {
+       "ok": true
+      }
+     },
+     "runs": [
+      {
+       "entry": "Teardrop",
+       "settings": "Defaults on a horizontal sketch (warns that world +Z gives no direction there)",
+       "time": "0.4 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Teardrop",
+       "settings": "Up: sketch +X, −X, +Y, −Y; horizontal warning off",
+       "time": "0.2–0.3 s",
+       "result": "passed",
+       "ok": true
+      },
+      {
+       "entry": "Teardrop",
+       "settings": "Apply to all, with the sketch closed",
+       "time": "0.4 s",
+       "result": "refused: open a sketch, or select circles in one. Clear",
+       "ok": null
+      }
+     ],
+     "runs_passed": 7,
+     "runs_total": 7
+    },
+    "runs": "7 of 7 runs passed",
+    "label": "✓ Quality checked · 7/7",
+    "title": "Version 0.2.2 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 7 of 7 runs passed."
+   },
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+3D+Printing+Holes&plugin=3D+Printing+Holes+%28https%3A%2F%2Fgithub.com%2FSB97%2Fsolidcraft-3d-printing-holes%29",
@@ -1634,9 +2596,9 @@
    "slug": "solidcraft-aprilcube",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+AprilCube&plugin=AprilCube+%28https%3A%2F%2Fgithub.com%2Ftakuto-NA%2Fsolidcraft-aprilcube%29",
@@ -1678,7 +2640,11 @@
    "slug": "code-maker",
    "icon": "icons/code-maker.svg",
    "checked": null,
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Code+Maker&plugin=Code+Maker+%28https%3A%2F%2Fgithub.com%2FMMMatth%2Fsolidcraft-code-maker%29",
    "report_author": "https://github.com/MMMatth/solidcraft-code-maker/issues/new?title=Code+Maker%3A+"
@@ -1784,9 +2750,9 @@
    "icon": "icons/filament-swatch.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Filament+Swatch&plugin=Filament+Swatch+%28https%3A%2F%2Fgithub.com%2Ftharje%2Ffilament-swatch-solidcraft%29",
@@ -1889,9 +2855,9 @@
    "slug": "mesh-solidify",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Mesh+Solidify&plugin=Mesh+Solidify+%28https%3A%2F%2Fgithub.com%2FJakeMathews%2Fmesh-solidify%29",
@@ -1946,9 +2912,9 @@
    "icon": "icons/opengrid.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+openGrid&plugin=openGrid+%28https%3A%2F%2Fgithub.com%2Ftharje%2Fopengrid-solidcraft%29",
@@ -2028,15 +2994,18 @@
      },
      "notes": [
       "The README describes a WebAssembly plugin (**Plugins › Add thread…**, version 2.0.6 in the repository's `plugin/` folder), but no release holds it yet. When one does, it can be checked."
-     ]
+     ],
+     "runs_passed": 0,
+     "runs_total": 0
     },
+    "runs": "no runs",
     "label": "Quality check: could not be checked (v1.8.0)",
-    "title": "Version 1.8.0, checked 2026-11-27 in SolidCraft 0.50.0: The latest release holds the standalone Windows program, not the SolidCraft plugin, so there is nothing to run in SolidCraft yet. Click for what was tested."
+    "title": "Version 1.8.0, checked 2026-11-27 in SolidCraft 0.50.0: no runs. The latest release holds the standalone Windows program, not the SolidCraft plugin, so there is nothing to run in SolidCraft yet. Click for what was tested."
    },
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Thread+Generator&plugin=Thread+Generator+%28https%3A%2F%2Fgithub.com%2FStigern%2FSolidThreadsPlugin%29",
@@ -2076,9 +3045,9 @@
    "slug": "galaxy",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+360+Galaxy&plugin=360+Galaxy+%28https%3A%2F%2Fgithub.com%2Fdudedagger42%2Fsolidcraft-galaxy%29",
@@ -2120,9 +3089,9 @@
    "icon": "icons/aluminum-extrusions.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Aluminum+Extrusions&plugin=Aluminum+Extrusions+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Faluminum-extrusions%29",
@@ -2167,9 +3136,9 @@
    "slug": "makeorbit-cnc-studio",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
    },
    "asks": {
     "label": "Asks for: files, extra SolidCraft commands",
@@ -2217,9 +3186,9 @@
    "slug": "makeorbit",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
    },
    "asks": {
     "label": "Asks for: files, extra SolidCraft commands",
@@ -2264,9 +3233,9 @@
    "icon": "icons/breakaway-supports.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Breakaway+Supports&plugin=Breakaway+Supports+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Fbreakaway-supports%29",
@@ -2319,7 +3288,11 @@
    "slug": "cabinet-studio",
    "icon": "icons/cabinet-studio.svg",
    "checked": null,
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+   },
    "asks": {
     "label": "Asks for: files",
     "title": "SolidCraft asks you to allow this when you install the plugin."
@@ -2367,9 +3340,9 @@
    "icon": "icons/codemode.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. It asks for file access or sensitive commands, so it wasn't run."
    },
    "asks": {
     "label": "Asks for: extra SolidCraft commands",
@@ -2422,7 +3395,11 @@
    "slug": "first-gear-maker",
    "icon": "icons/first-gear-maker.svg",
    "checked": null,
-   "tested": null,
+   "tested": {
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+First+Gear+Maker&plugin=First+Gear+Maker+%28https%3A%2F%2Fgithub.com%2FooISHoo%2Fsolidcraft-first-gear-maker%2Ftree%2Fmain%2Ffirst-gear-maker%29",
    "report_author": "https://github.com/ooISHoo/solidcraft-first-gear-maker/issues/new?title=First+Gear+Maker%3A+"
@@ -2472,9 +3449,9 @@
    "icon": "icons/gear-kit.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gear+Kit&plugin=Gear+Kit+%28https%3A%2F%2Fgithub.com%2Frob089%2Fsolidcraft-gear-kit%29",
@@ -2520,9 +3497,9 @@
    "slug": "solidcraft-gridfinity",
    "checked": null,
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Gridfinity&plugin=Gridfinity+%28https%3A%2F%2Fgithub.com%2Fhaashimrehan%2Fsolidcraft-gridfinity%29",
@@ -2564,9 +3541,9 @@
    "icon": "icons/heatset-insert.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Heat+Set+Inserts&plugin=Heat+Set+Inserts+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Fheatset-insert%2Fheatset-insert%29",
@@ -2613,9 +3590,9 @@
    "slug": "jis-hex-bolt",
    "checked": null,
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Jis+hex+bolt&plugin=Jis+hex+bolt+%28https%3A%2F%2Fgithub.com%2Faoka2%2Fsolidcraft-jis-screws%29",
@@ -2656,9 +3633,9 @@
    "slug": "solidcraft-laserjoints",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Laser+joints&plugin=Laser+joints+%28https%3A%2F%2Fgithub.com%2Ftimobickert%2FLaser-joints-for-Solidcraft%29",
@@ -2700,9 +3677,9 @@
    "icon": "icons/linear-rails.svg",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Linear+Rails&plugin=Linear+Rails+%28https%3A%2F%2Fgithub.com%2Foxidized-elias%2Fsolidcraft-plugins%2Ftree%2Fmain%2Fplugins%2Flinear-rails%29",
@@ -2743,9 +3720,9 @@
    "slug": "liquid-craft",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Liquid+Craft&plugin=Liquid+Craft+%28https%3A%2F%2Fgithub.com%2Fdudedagger42%2Fsolidcraft-liquid-craft%29",
@@ -2799,9 +3776,9 @@
    "slug": "omigears",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+OmiGears&plugin=OmiGears+%28https%3A%2F%2Fgithub.com%2Fomigamedev%2Fomigears%29",
@@ -2847,7 +3824,11 @@
    "category": "Export & workflow",
    "slug": "solidcraft-parasolid-export",
    "checked": null,
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Parasolid+XT+Exporter&plugin=Parasolid+XT+Exporter+%28https%3A%2F%2Fgithub.com%2F41Opty41%2Fsolidcraft-parasolid%2Ftree%2Fmain%2Fsolidcraft-parasolid-export%29",
    "report_author": "https://github.com/41Opty41/solidcraft-parasolid/issues/new?title=Parasolid+XT+Exporter%3A+"
@@ -2891,7 +3872,11 @@
    "category": "Export & workflow",
    "slug": "solidcraft-parasolid",
    "checked": null,
-   "tested": null,
+   "tested": {
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+   },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Parasolid+XT+Importer&plugin=Parasolid+XT+Importer+%28https%3A%2F%2Fgithub.com%2F41Opty41%2Fsolidcraft-parasolid%2Ftree%2Fmain%2Fsolidcraft-parasolid%29",
    "report_author": "https://github.com/41Opty41/solidcraft-parasolid/issues/new?title=Parasolid+XT+Importer%3A+"
@@ -2931,9 +3916,9 @@
    "slug": "planetary-gear",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Planetary+gear&plugin=Planetary+gear+%28https%3A%2F%2Fgithub.com%2Fbarry941105-ctrl%2FSolidcraft-planetary-gear-0.1.2%29",
@@ -2973,9 +3958,9 @@
    "slug": "rain",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Rain+on+the+Window&plugin=Rain+on+the+Window+%28https%3A%2F%2Fgithub.com%2Fdudedagger42%2Fsolidcraft-rain%29",
@@ -3015,9 +4000,9 @@
    "slug": "rgb-wave",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+RGB+Wave&plugin=RGB+Wave+%28https%3A%2F%2Fgithub.com%2Fdudedagger42%2Fsolidcraft-rgb-wave%29",
@@ -3108,9 +4093,9 @@
    "slug": "tubecraft",
    "checked": null,
    "tested": {
-    "label": "✓ Loads in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren't all run."
+    "label": "✓ Loads in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release. Its commands need something picked or set up first, so they weren't all run."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+TubeCraft&plugin=TubeCraft+%28https%3A%2F%2Fgithub.com%2FJPDoesDev%2FTubeCraft%29",
@@ -3155,9 +4140,9 @@
    "slug": "zahnrad",
    "checked": null,
    "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
+    "label": "✓ Runs in SolidCraft 0.51.2",
+    "date": "2026-11-28",
+    "title": "Tested 2026-11-28 on Linux: SolidCraft 0.51.2 loaded this release and ran every command with its default values."
    },
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+Zahnrad-Generator&plugin=Zahnrad-Generator+%28https%3A%2F%2Fgithub.com%2FColpa1972%2Fzahnrad-gear-generator%29",
