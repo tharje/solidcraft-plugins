@@ -38,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › SolidInserts</p>
   <h1>SolidInserts <span class="ver">v1.3.1</span></h1>
-  
+  <a class="qc big" href="#quality" title="Version 1.3.1 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 22 of 22 runs passed.">✓ Quality checked · 22/22</a>
   <p class="lead">Create heat-set insert seats and embedded hex nut pockets in existing holes.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.3.1/solidinserts-1.3.1.zip">Download .zip</a>
@@ -60,11 +60,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+SolidInserts&amp;plugin=SolidInserts+%28https%3A%2F%2Fgithub.com%2FNoOneExceptEnderk%2FSolidInserts%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/NoOneExceptEnderk">NoOneExceptEnderk</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>1.3.1</dd><dt>Latest release</dt><dd><a href="https://github.com/NoOneExceptEnderk/SolidInserts/releases/tag/v1.3.1">v1.3.1</a> (2026-11-24)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 13 stars · ⬇ 631 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/NoOneExceptEnderk">NoOneExceptEnderk</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>1.3.1</dd><dt>Latest release</dt><dd><a href="https://github.com/NoOneExceptEnderk/SolidInserts/releases/tag/v1.3.1">v1.3.1</a> (2026-11-24)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 13 stars · ⬇ 631 downloads</dd><dt>Quality check</dt><dd title="Version 1.3.1 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 22 of 22 runs passed."><a href="#quality">Passed, v1.3.1 (2026-11-28)</a><br>22 of 22 runs passed</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       <div class="chips"><span>3d-printing</span><span>cad</span><span>heat-set-inserts</span><span>mechanical-design</span><span>parametric</span><span>threaded-inserts</span></div>
     </aside>
   </div>
-  
+  <section class="quality" id="quality">
+    <h2>Quality check: passed · 22 of 22 runs passed</h2>
+    <p class="meta-line">Version 1.3.1, checked 2026-11-28 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="yes"><b>✓</b> Every command runs, with its defaults and with real settings <span class="why">21 runs on an 8 mm hole: every one either made the seat or pocket, or refused a size that can&#x27;t fit it.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">0 open bodies; the seats and pockets are cut into the picked body.</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Only modelling commands. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">MIT, README, a zip on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="yes"><td>Apply (insert seats)</td><td>Automatic size on an 8 mm hole; M6; ±1 mm compensation</td><td>0.6 s</td><td>passed</td></tr><tr class="na"><td>Apply (insert seats)</td><td>M2–M5 inserts, and series without M8, on an 8 mm hole</td><td>0.2–0.4 s</td><td>refused: the seat would be narrower than the hole. Right, and clear</td></tr><tr class="yes"><td>Captive nut pockets</td><td>Automatic, M5, M6; inset, clearances, layer heights changed</td><td>0.6–0.8 s</td><td>passed</td></tr><tr class="na"><td>Captive nut pockets</td><td>M2–M4 nuts on an 8 mm hole</td><td>0.4–0.6 s</td><td>refused: the hole doesn&#x27;t fit that screw. Right, and clear</td></tr></tbody></table>
+    
+  </section>
   <section class="notes">
     <h2>What's new in v1.3.1 (2026-11-24)</h2>
     <h3>Captive Nut Pockets</h3>

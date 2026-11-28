@@ -38,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Generative Design Engine</p>
   <h1>Generative Design Engine <span class="ver">v0.15.0</span></h1>
-  
+  <a class="qc big" href="#quality" title="Version 0.15.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 39 of 39 runs passed.">✓ Quality checked · 39/39</a>
   <p class="lead">Engineering material library (sourced cards), material report, a 2D stress check of flat parts with safety factor, a plate optimiser and a round-bar bracket designer (truss). Third-party plugin, not affiliated with SolidCraft.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/releases/download/v0.15.0/gen-design-engine-0.15.0.zip">Download .zip</a>
@@ -60,11 +60,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Generative+Design+Engine&amp;plugin=Generative+Design+Engine+%28https%3A%2F%2Fgithub.com%2FLudaLunizz%2FGenerative-design-plugin-for-SolidCraft%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/LudaLunizz">LudaLunizz</a></dd><dt>Category</dt><dd><a href="../../?category=Other">Other</a></dd><dt>Version</dt><dd>0.15.0</dd><dt>Latest release</dt><dd><a href="https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/releases/tag/v0.15.0">v0.15.0</a> (2026-11-28)</dd><dt>Licence</dt><dd>Apache-2.0</dd><dt>GitHub</dt><dd>★ 5 stars · ⬇ 522 downloads</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/LudaLunizz">LudaLunizz</a></dd><dt>Category</dt><dd><a href="../../?category=Other">Other</a></dd><dt>Version</dt><dd>0.15.0</dd><dt>Latest release</dt><dd><a href="https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/releases/tag/v0.15.0">v0.15.0</a> (2026-11-28)</dd><dt>Licence</dt><dd>Apache-2.0</dd><dt>GitHub</dt><dd>★ 5 stars · ⬇ 522 downloads</dd><dt>Quality check</dt><dd title="Version 0.15.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 39 of 39 runs passed."><a href="#quality">Passed, v0.15.0 (2026-11-28)</a><br>39 of 39 runs passed</dd></dl>
       
     </aside>
   </div>
-  
+  <section class="quality" id="quality">
+    <h2>Quality check: passed · 39 of 39 runs passed</h2>
+    <p class="meta-line">Version 0.15.0, checked 2026-11-28 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="yes"><b>✓</b> Every command runs, with its defaults and with real settings <span class="why">About 40 runs. A bracket with too long a reach is refused (&quot;no stable truss found&quot;) with what to change.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">0 open bodies, also for brackets of up to 69 bodies.</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Modelling and material commands. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">Apache-2.0, a long README, a zip on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    <p>Its commands have no ribbon slots; they are in the Plugins menu.</p>
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="yes"><td>Apply material</td><td>Six metals on a body</td><td>0.2–0.5 s</td><td>passed</td></tr><tr class="yes"><td>Material report; materials</td><td>Defaults, a body, safety factor 10, metal and polymer families</td><td>0.2–0.5 s</td><td>passed</td></tr><tr class="yes"><td>Stress check</td><td>A block fixed at one end, 100 N and 1000 N at the other, aluminium</td><td>1.1–1.3 s</td><td>passed (safety factor reported; verify says when the mesh is too coarse)</td></tr><tr class="yes"><td>Optimise plate</td><td>Defaults; 600 wide; 300 high; 30 thick; three aluminiums</td><td>1.5–3.7 s</td><td>passed</td></tr><tr class="yes"><td>Bar bracket</td><td>Defaults; wider and taller plate; thicker; bigger pad</td><td>9–25 s</td><td>passed</td></tr><tr class="na"><td>Bar bracket</td><td>Reach 450 mm</td><td>1.0 s</td><td>refused: no stable truss found, with what to change. Clear</td></tr><tr class="yes"><td>Solver benchmark</td><td>Defaults, finer grids, 150 iterations, MBB load, volume share 0.95</td><td>0.8–2.5 s</td><td>passed</td></tr></tbody></table>
+    
+  </section>
   <section class="notes">
     <h2>What's new in v0.15.0 (2026-11-28)</h2>
     <p>Third-party plugin, not affiliated with SolidCraft; it only builds on their software.</p>

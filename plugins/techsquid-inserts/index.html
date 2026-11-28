@@ -38,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Heat-set inserts</p>
   <h1><img class="icon" src="../../icons/techsquid-inserts.svg" alt="">Heat-set inserts <span class="ver">v0.3.0</span></h1>
-  
+  <a class="qc fail big" href="#quality" title="Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 5 of 13 runs passed. Every insert with a modelled thread, the default, goes over the plugin&#x27;s 30 s time limit. Holes, and inserts without the modelled thread, work. Click for what was tested.">Quality check: not passed (v0.3.0) · 5/13</a>
   <p class="lead">Based on CNC Kitchen&#x27;s heat-set inserts. Pick sketch points or circles: each gets the hole for an insert, and the insert.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.3.0/techsquid-inserts-0.3.0.zip">Download .zip</a>
@@ -60,11 +60,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Heat-set+inserts&amp;plugin=Heat-set+inserts+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-inserts%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/TechSquidTV">TechSquidTV</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>0.3.0</dd><dt>Latest release</dt><dd><a href="https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.3.0">v0.3.0</a> (2026-11-19)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 7 stars · ⬇ 657 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/TechSquidTV">TechSquidTV</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>0.3.0</dd><dt>Latest release</dt><dd><a href="https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.3.0">v0.3.0</a> (2026-11-19)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 7 stars · ⬇ 657 downloads</dd><dt>Quality check</dt><dd title="Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 5 of 13 runs passed. Every insert with a modelled thread, the default, goes over the plugin&#x27;s 30 s time limit. Holes, and inserts without the modelled thread, work. Click for what was tested."><a href="#quality">Not passed, v0.3.0 (2026-11-28)</a><br>5 of 13 runs passed</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       
     </aside>
   </div>
-  
+  <section class="quality" id="quality">
+    <h2>Quality check: not passed · 5 of 13 runs passed</h2>
+    <p class="meta-line">Version 0.3.0, checked 2026-11-28 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    <p>Every insert with a modelled thread, the default, goes over the plugin&#x27;s 30 s time limit. Holes, and inserts without the modelled thread, work.</p>
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="no"><b>✗</b> Every command runs, with its defaults and with real settings <span class="why">8 of 13 runs stopped at the 30 s limit, the defaults too.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">What was made was closed (0 open bodies).</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Only modelling commands. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">MIT, README, a zip for each plugin on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="no"><td>Make insert</td><td><b>Defaults: M3 × 5.7, heat-set, hole and insert, thread modelled</b></td><td>38.7 s</td><td>stopped at the 30 s limit</td></tr><tr class="no"><td>Make insert</td><td><b>Insert only; glue-in (stepped); M1.6, M2, M2.5, M3 × 4 Voron, M4 × 8.1</b></td><td>31–39 s</td><td>stopped at the 30 s limit</td></tr><tr class="yes"><td>Make insert</td><td>M3 × 3 short</td><td>29.2 s</td><td>passed, close to the limit</td></tr><tr class="yes"><td>Make insert</td><td>Thread not modelled</td><td>9.5 s</td><td>passed</td></tr><tr class="yes"><td>Make insert</td><td>Hole only</td><td>0.6 s</td><td>passed</td></tr><tr class="na"><td>Make insert</td><td>Hole adjust +1 mm; Through with two bodies under the point</td><td>0.2–0.6 s</td><td>refused with a clear message about the setting</td></tr></tbody></table>
+    <h3>How it could pass</h3><p>The modelled thread takes the time, as in TechSquid Screws. Making it a long job (<code>&quot;job&quot;: true</code>, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish.</p>
+  </section>
   <section class="notes">
     <h2>What's new in v0.3.0 (2026-11-19)</h2>
     <p>All six plugins now share internal part definitions and verified component reuse. Bearings and V-wheels add supplier products with visible exterior detail. The Bearing dialog also offers a supplier-neutral sealed 105. CSK clutches add customizable exterior geometry with reference sources recorded separately.</p>

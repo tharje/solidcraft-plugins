@@ -38,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Custom Threads</p>
   <h1><img class="icon" src="../../icons/custom-threads.svg" alt="">Custom Threads <span class="ver">v0.3.0</span></h1>
-  
+  <a class="qc fail big" href="#quality" title="Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 23 of 46 runs passed. A thread on a 10 mm shaft 25 mm long goes over the plugin&#x27;s 30 s time limit; on a shaft 8 mm long Custom and Advanced thread work. Click for what was tested.">Quality check: not passed (v0.3.0) · 23/46</a>
   <p class="lead">Smooth B-rep custom threads for 3D printing with presets, clearances, multi-start leads &amp; live parameters.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/Sooner4500/solidcraft-custom-threads/releases/download/v0.3.0/custom-threads.zip">Download .zip</a>
@@ -60,11 +60,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Custom+Threads&amp;plugin=Custom+Threads+%28https%3A%2F%2Fgithub.com%2FSooner4500%2Fsolidcraft-custom-threads%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/Sooner4500">Sooner4500</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>0.3.0</dd><dt>Latest release</dt><dd><a href="https://github.com/Sooner4500/solidcraft-custom-threads/releases/tag/v0.3.0">v0.3.0</a> (2026-11-20)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 3 stars · ⬇ 456 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/Sooner4500">Sooner4500</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>0.3.0</dd><dt>Latest release</dt><dd><a href="https://github.com/Sooner4500/solidcraft-custom-threads/releases/tag/v0.3.0">v0.3.0</a> (2026-11-20)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 3 stars · ⬇ 456 downloads</dd><dt>Quality check</dt><dd title="Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 23 of 46 runs passed. A thread on a 10 mm shaft 25 mm long goes over the plugin&#x27;s 30 s time limit; on a shaft 8 mm long Custom and Advanced thread work. Click for what was tested."><a href="#quality">Not passed, v0.3.0 (2026-11-28)</a><br>23 of 46 runs passed</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       
     </aside>
   </div>
-  
+  <section class="quality" id="quality">
+    <h2>Quality check: not passed · 23 of 46 runs passed</h2>
+    <p class="meta-line">Version 0.3.0, checked 2026-11-28 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    <p>A thread on a 10 mm shaft 25 mm long goes over the plugin&#x27;s 30 s time limit; on a shaft 8 mm long Custom and Advanced thread work.</p>
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="no"><b>✗</b> Every command runs, with its defaults and with real settings <span class="why">Every thread on a 10 × 25 mm shaft was stopped at the 30 s limit; on a 10 × 8 mm shaft, Custom and Advanced thread passed in 17–18 s.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">What was made was closed (0 open bodies).</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Only modelling commands. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">MIT, README, a zip on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="no"><td>Custom thread</td><td><b>Defaults on a 10 × 25 mm shaft; fit tight, wide, none; metal; chamfers; left-hand</b></td><td>36–49 s</td><td>stopped at the 30 s limit</td></tr><tr class="no"><td>Advanced thread</td><td><b>Defaults on a 10 × 25 mm shaft; left-hand; metal; chamfers; external; internal</b></td><td>33–43 s</td><td>stopped at the 30 s limit</td></tr><tr class="no"><td>Preset thread</td><td><b>Auto ISO, Auto UNC on a 10 × 25 mm shaft</b></td><td>43–49 s</td><td>stopped at the 30 s limit</td></tr><tr class="yes"><td>Custom thread; Advanced thread</td><td>Defaults on a 10 × 8 mm shaft</td><td>18.1 s; 17.3 s</td><td>passed</td></tr><tr class="no"><td>Preset thread</td><td>Auto ISO on a 10 × 8 mm shaft</td><td>31.2 s</td><td>stopped at the 30 s limit</td></tr><tr class="na"><td>Preset thread</td><td>Garden hose, soda bottle, Mason jar, broom presets on a 10 mm shaft</td><td>0.2–0.5 s</td><td>refused: the shaft is far from that preset&#x27;s size. Right, and clear</td></tr><tr class="na"><td>Edit thread</td><td>With no thread in the design</td><td>0.3 s</td><td>refused: no threads found yet. Not tested on a thread</td></tr></tbody></table>
+    <h3>How it could pass</h3><p>The time grows with the thread&#x27;s length. Making it a long job (<code>&quot;job&quot;: true</code>, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish.</p>
+  </section>
   <section class="notes">
     <h2>What's new in v0.3.0 (2026-11-20)</h2>
     <p><b>Full Changelog</b>: <a href="https://github.com/Sooner4500/solidcraft-custom-threads/compare/v0.2.0...v0.3.0" rel="nofollow noopener">https://github.com/Sooner4500/solidcraft-custom-threads/compare/v0.2.0...v0.3.0</a></p>

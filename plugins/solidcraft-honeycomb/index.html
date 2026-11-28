@@ -38,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Honeycomb &amp; Hexagon Generator</p>
   <h1>Honeycomb &amp; Hexagon Generator <span class="ver">v0.1.0</span></h1>
-  
+  <a class="qc big" href="#quality" title="Version 0.1.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 14 of 14 runs passed.">✓ Quality checked · 14/14</a>
   <p class="lead">Fill up to 250 cells across selected sketch regions. End the active tool with Esc and Shift-click regions before opening Honeycomb.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip">Download .zip</a>
@@ -60,11 +60,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Honeycomb+%26+Hexagon+Generator&amp;plugin=Honeycomb+%26+Hexagon+Generator+%28https%3A%2F%2Fgithub.com%2FXusr404%2Fsolidcraft-honeycomb-plugin%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/Xusr404">Xusr404</a></dd><dt>Category</dt><dd><a href="../../?category=Shapes%20%26%20patterns">Shapes &amp; patterns</a></dd><dt>Version</dt><dd>0.1.0</dd><dt>Latest release</dt><dd><a href="https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/tag/v0.1.0">v0.1.0</a> (2026-11-15)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 2 stars · ⬇ 622 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/Xusr404">Xusr404</a></dd><dt>Category</dt><dd><a href="../../?category=Shapes%20%26%20patterns">Shapes &amp; patterns</a></dd><dt>Version</dt><dd>0.1.0</dd><dt>Latest release</dt><dd><a href="https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/tag/v0.1.0">v0.1.0</a> (2026-11-15)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 2 stars · ⬇ 622 downloads</dd><dt>Quality check</dt><dd title="Version 0.1.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 14 of 14 runs passed."><a href="#quality">Passed, v0.1.0 (2026-11-28)</a><br>14 of 14 runs passed</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release. Its commands need something picked or set up first, so they weren&#x27;t all run.">✓ Loads in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       
     </aside>
   </div>
-  
+  <section class="quality" id="quality">
+    <h2>Quality check: passed · 14 of 14 runs passed</h2>
+    <p class="meta-line">Version 0.1.0, checked 2026-11-28 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="yes"><b>✓</b> Every command runs, with its defaults and with real settings <span class="why">14 runs in an open sketch with a rectangle picked. It needs straight lines for the boundary and the sketch open, as its description says; it tells you so if not.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">It draws sketch geometry; no bodies are made.</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Only sketch commands. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">MIT, README, a zip on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="yes"><td>Generate</td><td>Defaults: 10 mm across flats, 0.5 mm gap, flat top</td><td>0.6 s</td><td>passed (17 hexagons and the clipped edges)</td></tr><tr class="yes"><td>Generate</td><td>Pointy top; 30 mm; 1.5 mm gap; rotated 3°; not trimmed</td><td>0.3–0.7 s</td><td>passed</td></tr><tr class="yes"><td>Generate</td><td>Anchor at each corner; offsets in X and Y; 3 mm inset</td><td>0.5–0.7 s</td><td>passed</td></tr><tr class="na"><td>Generate</td><td>Anchor at a selected sketch point, without one selected</td><td>0.3 s</td><td>refused: select exactly one sketch point. Right, and clear</td></tr><tr class="na"><td>Generate</td><td>A circle as the boundary, or the sketch not open</td><td>0.2–0.5 s</td><td>refused: only straight lines; open the sketch. Clear</td></tr></tbody></table>
+    
+  </section>
   <section class="notes">
     <h2>What's new in v0.1.0 (2026-11-15)</h2>
     <p><b>Full Changelog</b>: <a href="https://github.com/Xusr404/solidcraft-honeycomb-plugin/commits/v0.1.0" rel="nofollow noopener">https://github.com/Xusr404/solidcraft-honeycomb-plugin/commits/v0.1.0</a></p>

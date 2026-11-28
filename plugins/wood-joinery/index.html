@@ -38,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Wood joinery</p>
   <h1><img class="icon" src="../../icons/wood-joinery.svg" alt="">Wood joinery <span class="ver">v0.15.0</span></h1>
-  
+  <a class="qc big" href="#quality" title="Version 0.15.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 83 of 83 runs passed.">✓ Quality checked · 83/83</a>
   <p class="lead">Woodworking joints between boards: mortise and tenon, grooves, half laps, dowels, box joints, loose tenons, housings, miters, tongue and groove, scarfs, dovetails, screws and biscuits.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.15.0/wood-joinery-en.zip">Download .zip</a>
@@ -60,11 +60,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Wood+joinery&amp;plugin=Wood+joinery+%28https%3A%2F%2Fgithub.com%2FWilliamHJKL%2Fsolidcraft-wood-joinery%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/WilliamHJKL">WilliamHJKL</a></dd><dt>Category</dt><dd><a href="../../?category=Woodworking">Woodworking</a></dd><dt>Version</dt><dd>0.15.0</dd><dt>Latest release</dt><dd><a href="https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.15.0">v0.15.0</a> (2026-11-27)</dd><dt>Licence</dt><dd>Apache-2.0</dd><dt>GitHub</dt><dd>★ 5 stars · ⬇ 635 downloads</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/WilliamHJKL">WilliamHJKL</a></dd><dt>Category</dt><dd><a href="../../?category=Woodworking">Woodworking</a></dd><dt>Version</dt><dd>0.15.0</dd><dt>Latest release</dt><dd><a href="https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.15.0">v0.15.0</a> (2026-11-27)</dd><dt>Licence</dt><dd>Apache-2.0</dd><dt>GitHub</dt><dd>★ 5 stars · ⬇ 635 downloads</dd><dt>Quality check</dt><dd title="Version 0.15.0 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 83 of 83 runs passed."><a href="#quality">Passed, v0.15.0 (2026-11-28)</a><br>83 of 83 runs passed</dd></dl>
       
     </aside>
   </div>
-  
+  <section class="quality" id="quality">
+    <h2>Quality check: passed · 83 of 83 runs passed</h2>
+    <p class="meta-line">Version 0.15.0, checked 2026-11-28 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="yes"><b>✓</b> Every command runs, with its defaults and with real settings <span class="why">About 60 runs: every joint and its options. Edit joint opens the joint&#x27;s own form, so it was checked to refuse running from a script, as it should.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">0 open bodies after every run. Each joint is a folder of ordinary features, kept up to date by Update joints.</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Modelling commands, its own storage, a panel and forms. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">Apache-2.0, a long README, a zip (English and French) on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="yes"><td>Mortise and tenon</td><td>Defaults, haunched, through, double</td><td>0.7–1.3 s</td><td>passed</td></tr><tr class="na"><td>Mortise and tenon</td><td>Bridle on a rail away from the stile&#x27;s end; low and high positions on a thin stile</td><td>0.4–0.5 s</td><td>refused with a clear reason (the bridle needs the rail at the end; no cheek left)</td></tr><tr class="yes"><td>Loose tenon</td><td>Defaults and every Domino size, 4×20 to 10×50</td><td>0.4–2.4 s</td><td>passed</td></tr><tr class="yes"><td>Groove</td><td>On each of the six faces</td><td>0.3–0.4 s</td><td>passed</td></tr><tr class="yes"><td>Tongue and groove; housing; mitre</td><td>Defaults, spline, keys, align</td><td>0.4–0.7 s</td><td>passed</td></tr><tr class="yes"><td>Half lap</td><td>Crossing boards: defaults, flip, align</td><td>0.4–0.7 s</td><td>passed</td></tr><tr class="yes"><td>Scarf</td><td>Boards end to end: defaults, flip, key, align</td><td>0.4–0.6 s</td><td>passed</td></tr><tr class="yes"><td>Box joint; dovetail</td><td>Boards meeting on edge at a corner</td><td>0.9–1.7 s</td><td>passed</td></tr><tr class="yes"><td>Dowels</td><td>Defaults, without dowel bodies, align</td><td>0.9–1.1 s</td><td>passed</td></tr><tr class="yes"><td>Biscuits</td><td>A 150 mm wide board: sizes 0, 10, 20, without biscuit bodies</td><td>0.8–1.8 s</td><td>passed</td></tr><tr class="yes"><td>Screws</td><td>One board laid on the other: with and without countersink</td><td>1.2–2.2 s</td><td>passed</td></tr><tr class="yes"><td>Update joints</td><td>After a mortise and tenon</td><td>under 1 s</td><td>passed</td></tr></tbody></table>
+    
+  </section>
   <section class="notes">
     <h2>What's new in v0.15.0 (2026-11-27)</h2>
     <p>Woodworking joints for SolidCraft, as a command plugin. In this version you pick the boards with a click, a docked *Joints* panel lists the joints of the design, and the French package speaks French. It is made for SolidCraft 0.51.</p>

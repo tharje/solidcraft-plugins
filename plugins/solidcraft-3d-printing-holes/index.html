@@ -38,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › 3D Printing Holes</p>
   <h1>3D Printing Holes <span class="ver">v0.2.2</span></h1>
-  
+  <a class="qc big" href="#quality" title="Version 0.2.2 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 7 of 7 runs passed.">✓ Quality checked · 7/7</a>
   <p class="lead">Holes made for 3D printing. Teardrop: select sketch circles and run it; each gets a small tip a few percent of the diameter above it, so the top of a horizontal hole does not sag. Nothing selected: it draws an example hole.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.2.2/solidcraft-3d-printing-holes.zip">Download .zip</a>
@@ -60,11 +60,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+3D+Printing+Holes&amp;plugin=3D+Printing+Holes+%28https%3A%2F%2Fgithub.com%2FSB97%2Fsolidcraft-3d-printing-holes%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/SB97">SB97</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>0.2.2</dd><dt>Latest release</dt><dd><a href="https://github.com/SB97/solidcraft-3d-printing-holes/releases/tag/v0.2.2">v0.2.2</a> (2026-11-24)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 1 stars · ⬇ 542 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/SB97">SB97</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>0.2.2</dd><dt>Latest release</dt><dd><a href="https://github.com/SB97/solidcraft-3d-printing-holes/releases/tag/v0.2.2">v0.2.2</a> (2026-11-24)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 1 stars · ⬇ 542 downloads</dd><dt>Quality check</dt><dd title="Version 0.2.2 was checked 2026-11-28 by tharje in SolidCraft 0.50.0: it installs, every command runs with its defaults and with real settings, it makes valid bodies you can edit, and it asks for no more than it needs. 7 of 7 runs passed."><a href="#quality">Passed, v0.2.2 (2026-11-28)</a><br>7 of 7 runs passed</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       <div class="chips"><span>3d-printing</span></div>
     </aside>
   </div>
-  
+  <section class="quality" id="quality">
+    <h2>Quality check: passed · 7 of 7 runs passed</h2>
+    <p class="meta-line">Version 0.2.2, checked 2026-11-28 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="yes"><b>✓</b> Every command runs, with its defaults and with real settings <span class="why">7 runs on a picked sketch circle. Apply to all needs the sketch open, and says so.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">It changes sketch circles; no bodies are made.</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Only sketch commands. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">MIT, README, a zip on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="yes"><td>Teardrop</td><td>Defaults on a horizontal sketch (warns that world +Z gives no direction there)</td><td>0.4 s</td><td>passed</td></tr><tr class="yes"><td>Teardrop</td><td>Up: sketch +X, −X, +Y, −Y; horizontal warning off</td><td>0.2–0.3 s</td><td>passed</td></tr><tr class="na"><td>Teardrop</td><td>Apply to all, with the sketch closed</td><td>0.4 s</td><td>refused: open a sketch, or select circles in one. Clear</td></tr></tbody></table>
+    
+  </section>
   <section class="notes">
     <h2>What's new in v0.2.2 (2026-11-24)</h2>
     <p><b>Full Changelog</b>: <a href="https://github.com/SB97/solidcraft-3d-printing-holes/compare/v0.2.1...v0.2.2" rel="nofollow noopener">https://github.com/SB97/solidcraft-3d-printing-holes/compare/v0.2.1...v0.2.2</a></p>

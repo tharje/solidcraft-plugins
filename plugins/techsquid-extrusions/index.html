@@ -38,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Extrusions</p>
   <h1><img class="icon" src="../../icons/techsquid-extrusions.svg" alt="">Extrusions <span class="ver">v0.3.0</span></h1>
-  
+  <a class="qc fail big" href="#quality" title="Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 18 of 21 runs passed. Rails and T-nuts are made quickly, but a rail with tapped ends goes over the plugin&#x27;s 30 s time limit. Click for what was tested.">Quality check: not passed (v0.3.0) · 18/21</a>
   <p class="lead">MISUMI 5 series T-slot and OpenBuilds V-slot rails, with slot nuts. Place fixed-length components on points, or build independent rails along straight sketch lines.</p>
   <div class="actions">
     <a class="btn primary" href="https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.3.0/techsquid-extrusions-0.3.0.zip">Download .zip</a>
@@ -60,11 +60,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Extrusions&amp;plugin=Extrusions+%28https%3A%2F%2Fgithub.com%2FTechSquidTV%2FSolidCraft-Plugins%2Ftree%2Fmain%2Fplugins%2Ftechsquid-extrusions%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/TechSquidTV">TechSquidTV</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>0.3.0</dd><dt>Latest release</dt><dd><a href="https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.3.0">v0.3.0</a> (2026-11-19)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 7 stars · ⬇ 628 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/TechSquidTV">TechSquidTV</a></dd><dt>Category</dt><dd><a href="../../?category=Hardware%20%26%20fasteners">Hardware &amp; fasteners</a></dd><dt>Version</dt><dd>0.3.0</dd><dt>Latest release</dt><dd><a href="https://github.com/TechSquidTV/SolidCraft-Plugins/releases/tag/v0.3.0">v0.3.0</a> (2026-11-19)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 7 stars · ⬇ 628 downloads</dd><dt>Quality check</dt><dd title="Version 0.3.0, checked 2026-11-28 in SolidCraft 0.50.0: 18 of 21 runs passed. Rails and T-nuts are made quickly, but a rail with tapped ends goes over the plugin&#x27;s 30 s time limit. Click for what was tested."><a href="#quality">Not passed, v0.3.0 (2026-11-28)</a><br>18 of 21 runs passed</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       
     </aside>
   </div>
-  
+  <section class="quality" id="quality">
+    <h2>Quality check: not passed · 18 of 21 runs passed</h2>
+    <p class="meta-line">Version 0.3.0, checked 2026-11-28 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    <p>Rails and T-nuts are made quickly, but a rail with tapped ends goes over the plugin&#x27;s 30 s time limit.</p>
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="no"><b>✗</b> Every command runs, with its defaults and with real settings <span class="why">18 of 21 runs passed; the three runs with tapped ends were stopped at the 30 s limit.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">0 open bodies.</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Only modelling commands. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">MIT, README, a zip for each plugin on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="yes"><td>Make extrusion</td><td>Defaults: 2020 × 500 mm</td><td>2.6 s</td><td>passed</td></tr><tr class="yes"><td>Make extrusion</td><td>2040, 2060, 2080, 4040; 1500 mm long; holes on each face, from the end</td><td>1.6–5.5 s</td><td>passed</td></tr><tr class="no"><td>Make extrusion</td><td><b>Tapped ends: start, end, both</b></td><td>87–93 s</td><td>stopped at the 30 s limit</td></tr><tr class="na"><td>Make extrusion</td><td>Sketch driven, with only a point picked</td><td>0.3 s</td><td>refused: pick 1 to 16 straight lines. Right, and clear</td></tr><tr class="yes"><td>Make T-nut</td><td>Defaults (M5); M3, M4; along sketch Y; V-slot; post-assembly</td><td>17–25 s</td><td>passed</td></tr><tr class="yes"><td>Make T-nut</td><td>Thread not modelled</td><td>1.2 s</td><td>passed</td></tr></tbody></table>
+    <h3>How it could pass</h3><p>The tapped thread in the rail&#x27;s end takes the time. Making it a long job (<code>&quot;job&quot;: true</code>, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish.</p>
+  </section>
   <section class="notes">
     <h2>What's new in v0.3.0 (2026-11-19)</h2>
     <p>All six plugins now share internal part definitions and verified component reuse. Bearings and V-wheels add supplier products with visible exterior detail. The Bearing dialog also offers a supplier-neutral sealed 105. CSK clutches add customizable exterior geometry with reference sources recorded separately.</p>

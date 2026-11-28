@@ -38,7 +38,7 @@
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › Gear generator</p>
   <h1>Gear generator <span class="ver">v0.4.0</span></h1>
-  
+  <a class="qc fail big" href="#quality" title="Version 0.4.0, checked 2026-11-28 in SolidCraft 0.50.0: 12 of 13 runs passed. Everything works up to 100 teeth, but 200 teeth, which the dialog allows, goes over the plugin&#x27;s 30 s time limit. Click for what was tested.">Quality check: not passed (v0.4.0) · 12/13</a>
   <p class="lead">A SolidCraft plugin: parametric involute spur gear generator (wasm component per RFC 0002)</p>
   <p class="note">The plugin&#x27;s menu and form are in Russian (Генератор шестерён).</p>
   <div class="actions">
@@ -61,11 +61,21 @@
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+Gear+generator&amp;plugin=Gear+generator+%28https%3A%2F%2Fgithub.com%2Fpro-d-e-v%2Fsolidcraft-plugin-gear%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/pro-d-e-v">pro-d-e-v</a></dd><dt>Category</dt><dd><a href="../../?category=Gears%20%26%20motion">Gears &amp; motion</a></dd><dt>Version</dt><dd>0.4.0</dd><dt>Latest release</dt><dd><a href="https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/tag/v0.4.0">v0.4.0</a> (2026-11-14)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 2 stars · ⬇ 651 downloads</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/pro-d-e-v">pro-d-e-v</a></dd><dt>Category</dt><dd><a href="../../?category=Gears%20%26%20motion">Gears &amp; motion</a></dd><dt>Version</dt><dd>0.4.0</dd><dt>Latest release</dt><dd><a href="https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/tag/v0.4.0">v0.4.0</a> (2026-11-14)</dd><dt>Licence</dt><dd>MIT</dd><dt>GitHub</dt><dd>★ 2 stars · ⬇ 651 downloads</dd><dt>Quality check</dt><dd title="Version 0.4.0, checked 2026-11-28 in SolidCraft 0.50.0: 12 of 13 runs passed. Everything works up to 100 teeth, but 200 teeth, which the dialog allows, goes over the plugin&#x27;s 30 s time limit. Click for what was tested."><a href="#quality">Not passed, v0.4.0 (2026-11-28)</a><br>12 of 13 runs passed</dd><dt>Tested</dt><dd title="Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values.">✓ Runs in SolidCraft 0.50.0 (2026-11-27)</dd></dl>
       
     </aside>
   </div>
-  
+  <section class="quality" id="quality">
+    <h2>Quality check: not passed · 12 of 13 runs passed</h2>
+    <p class="meta-line">Version 0.4.0, checked 2026-11-28 by tharje in SolidCraft 0.50.0 on a 4-core Intel i7-4770K with 6 GB, Linux.
+      <a href="../../quality/">What a quality check is ›</a></p>
+    
+    <p>Everything works up to 100 teeth, but 200 teeth, which the dialog allows, goes over the plugin&#x27;s 30 s time limit.</p>
+    <ul class="criteria"><li class="yes"><b>✓</b> Installs and loads in the newest SolidCraft <span class="why"><code>plugin check</code>: no problems.</span></li><li class="no"><b>✗</b> Every command runs, with its defaults and with real settings <span class="why">14 of 15 runs passed; 200 teeth was stopped at the 30 s limit.</span></li><li class="yes"><b>✓</b> Makes whole, valid bodies that can be edited <span class="why">One closed body per gear.</span></li><li class="yes"><b>✓</b> Asks for no more than it needs, and never for the network <span class="why">Only sketch and solid commands. No files, no network.</span></li><li class="yes"><b>✓</b> Open source licence, a README, and a release with its zip <span class="why">MIT, README, a zip on the release.</span></li><li class="yes"><b>✓</b> Takes issues, for questions and bugs</li></ul>
+    
+    <table class="runs"><thead><tr><th>Command</th><th>Settings</th><th>Time</th><th>Result</th></tr></thead><tbody><tr class="yes"><td>Gear</td><td>Defaults: 20 teeth, module 2, bore 8</td><td>4.4 s</td><td>passed</td></tr><tr class="yes"><td>Gear</td><td>Module 20; pressure angle 30°; thickness 24; bore 24</td><td>3.5–4.4 s</td><td>passed</td></tr><tr class="yes"><td>Gear</td><td>Keyway on, its width, depth and angle changed</td><td>3.5–5.3 s</td><td>passed</td></tr><tr class="yes"><td>Gear</td><td>60 teeth; 100 teeth</td><td>19.9 s; 24.3 s</td><td>passed</td></tr><tr class="no"><td>Gear</td><td><b>200 teeth (the largest allowed)</b></td><td>43.4 s</td><td>stopped at the 30 s limit</td></tr><tr class="na"><td>Gear</td><td>6 teeth with the default 8 mm bore</td><td>0.4 s</td><td>refused: the bore leaves no rim, it must stay under 5 mm. Right, and clear</td></tr></tbody></table>
+    <h3>How it could pass</h3><p>The time grows with the number of teeth, about 0.25 s a tooth here, so around 120 teeth is the most that fits in 30 s. Making it a long job (<code>&quot;job&quot;: true</code>, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish. Or lower the largest number of teeth the dialog allows.</p>
+  </section>
   
   <section class="more">
     <h2>Similar SolidCraft plugins</h2>

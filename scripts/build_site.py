@@ -98,15 +98,16 @@ def checked(p, verified):
     current = v["version"] == p.get("version")
     passed = v.get("result", "passed") == "passed"
     q = {"current": current, "passed": passed, "report": f"{SITE}plugins/{p['slug']}/#quality", "date": v["date"],
-         "version": v["version"], "result": v.get("result", "passed"), "data": v}
+         "version": v["version"], "result": v.get("result", "passed"), "data": v,
+         "runs": f"{v['runs_passed']} of {v['runs_total']} runs passed" if v.get("runs_total") else "no runs"}
     if passed:
-        q["label"] = "✓ Quality checked" if current else f"✓ Quality checked (v{v['version']})"
+        q["label"] = ("✓ Quality checked" if current else f"✓ Quality checked (v{v['version']})") + f" · {v['runs_passed']}/{v['runs_total']}"
         q["title"] = (f"Version {v['version']} was checked {v['date']} by {v['by']} in SolidCraft {v['solidcraft']}: it installs, "
                       "every command runs with its defaults and with real settings, it makes valid bodies you can edit, "
-                      "and it asks for no more than it needs." + ("" if current else " The newer version has not been checked yet."))
+                      "and it asks for no more than it needs. " + q["runs"] + "." + ("" if current else " The newer version has not been checked yet."))
     else:
-        q["label"] = ("Quality check: not passed" if v["result"] == "not passed" else "Quality check: could not be checked") + f" (v{v['version']})"
-        q["title"] = f"Version {v['version']}, checked {v['date']} in SolidCraft {v['solidcraft']}: {v.get('summary', '')} Click for what was tested."
+        q["label"] = ("Quality check: not passed" if v["result"] == "not passed" else "Quality check: could not be checked") + f" (v{v['version']})" + (f" · {v['runs_passed']}/{v['runs_total']}" if v.get("runs_total") else "")
+        q["title"] = f"Version {v['version']}, checked {v['date']} in SolidCraft {v['solidcraft']}: {q['runs']}. {v.get('summary', '')} Click for what was tested."
     return q
 
 
@@ -303,7 +304,7 @@ def plugin_page(p, others):
     if p.get("checked"):
         q = p["checked"]
         verdict = {"passed": "Passed", "not passed": "Not passed", "not checkable": "Could not be checked"}.get(q["result"], q["result"])
-        facts.append(f"<dt>Quality check</dt><dd title=\"{e(q['title'])}\"><a href=\"#quality\">{verdict}, v{e(q['version'])} ({e(q['date'])})</a></dd>")
+        facts.append(f"<dt>Quality check</dt><dd title=\"{e(q['title'])}\"><a href=\"#quality\">{verdict}, v{e(q['version'])} ({e(q['date'])})</a><br>{e(q['runs'])}</dd>")
     if p.get("tested"):
         t = p["tested"]
         facts.append(f"<dt>Tested</dt><dd title=\"{e(t['title'])}\">{e(t['label'])} ({e(t['date'])})</dd>")
@@ -436,7 +437,7 @@ def quality_section(p):
     fix = f'<h3>How it could pass</h3><p>{inline(v["fix"])}</p>' if v.get("fix") else ""
     older = "" if q["current"] else f'<p class="note">This check is for version {e(v["version"])}; version {e(p.get("version") or "")} has not been checked yet.</p>'
     return f'''<section class="quality" id="quality">
-    <h2>Quality check: {RESULT.get(q["result"], q["result"]).lower()}</h2>
+    <h2>Quality check: {RESULT.get(q["result"], q["result"]).lower()}{" · " + q["runs"] if v.get("runs_total") else ""}</h2>
     <p class="meta-line">Version {e(v["version"])}, checked {e(v["date"])} by {e(v["by"])} in SolidCraft {e(v["solidcraft"])}{" on " + e(v["machine"]) if v.get("machine") else ""}.
       <a href="../../quality/">What a quality check is ›</a></p>
     {older}
@@ -454,7 +455,7 @@ def quality_page(plugins):
     rows = "".join(
         f'<tr class="{"yes" if p["checked"]["passed"] else "na" if p["checked"]["result"] == "not checkable" else "no"}"><td><a href="../plugins/{p["slug"]}/#quality">{e(p["name"])}</a></td>'
         f'<td>{e(p["checked"]["version"])}</td><td>{e(p["checked"]["date"])}</td>'
-        f'<td>{RESULT.get(p["checked"]["result"], "")}</td><td>{inline(p["checked"]["data"].get("summary", ""))}</td></tr>'
+        f'<td>{RESULT.get(p["checked"]["result"], "")}</td><td>{e(p["checked"]["runs"])}</td><td>{inline(p["checked"]["data"].get("summary", ""))}</td></tr>'
         for p in checked)
     crit = "".join(f"<li>{e(t)}</li>" for _, t in CRITERIA)
     return f'''<!DOCTYPE html>
@@ -500,6 +501,9 @@ def quality_page(plugins):
         its dialog, the largest and smallest values it allows, and on parts it is meant to work on.
         Each run is timed, and the bodies it makes are measured: they must be closed solids. Runs go
         through SolidCraft's own <code>solidcraft-cli plugin test</code> and the desktop app.</p>
+      <p>Each check counts its runs: <b>9 of 10 runs passed</b> means nine runs made what they should, or
+        refused a setting that can't work with a clear reason, and one failed (stopped at the time
+        limit, made a body that isn't closed, or broke).</p>
       <p>A plugin's page shows the result: each point ticked off or not, and a table of the runs with
         their settings, times and results. A check is for one version: after a newer release the
         badge turns grey until that one is checked too.</p>
@@ -508,7 +512,7 @@ def quality_page(plugins):
     </section>
   </div>
   <h2>Checked so far</h2>
-  <table class="runs overview"><thead><tr><th>Plugin</th><th>Version</th><th>Checked</th><th>Result</th><th>Summary</th></tr></thead>
+  <table class="runs overview"><thead><tr><th>Plugin</th><th>Version</th><th>Checked</th><th>Result</th><th>Runs</th><th>Summary</th></tr></thead>
     <tbody>{rows}</tbody></table>
 </main>
 <footer class="wrap foot">

@@ -1,5 +1,5 @@
 {
- "about": "Quality checks, one per plugin: the version checked, when, by whom, in which SolidCraft, the result, each criterion, and the runs. The site shows them on each plugin's page and on quality/.",
+ "about": "Quality checks, one per plugin: the version checked, when, by whom, in which SolidCraft, the result, each criterion, and the runs. The site shows them on each plugin's page and on quality/. runs_passed counts the runs that worked or refused a setting with a clear reason, of runs_total.",
  "checked": [
   {
    "repo": "tharje/gridfinity-solidcraft",
@@ -75,7 +75,9 @@
    ],
    "notes": [
     "Also checked by hand in the desktop app: the dialogs, Edit bin filling in a picked bin's settings, and a lid sitting in a bin's stacking lip (no overlap, resting on the lip)."
-   ]
+   ],
+   "runs_passed": 30,
+   "runs_total": 30
   },
   {
    "repo": "TomasDJo/solidcraft-woodwork",
@@ -275,7 +277,9 @@
      "ok": true
     }
    ],
-   "fix": "SolidCraft stops an ordinary command after the time limit in its manifest, at most 30 s. Since SolidCraft 0.48 an entry can be a long job (`\"job\": true`): it may run for up to ten minutes, shows progress and can be cancelled. Making Cabinet a job, or a tall cabinet faster, would very likely be enough. The times depend on the computer; on a faster one these may pass."
+   "fix": "SolidCraft stops an ordinary command after the time limit in its manifest, at most 30 s. Since SolidCraft 0.48 an entry can be a long job (`\"job\": true`): it may run for up to ten minutes, shows progress and can be cancelled. Making Cabinet a job, or a tall cabinet faster, would very likely be enough. The times depend on the computer; on a faster one these may pass.",
+   "runs_passed": 25,
+   "runs_total": 32
   },
   {
    "repo": "bherbruck/solidcraft-gears",
@@ -391,7 +395,9 @@
      "ok": null
     }
    ],
-   "fix": "The time grows with the number of teeth, about 0.35 s a tooth here. Making Make gear a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel), or drawing one tooth and patterning it, would fix it. Reporting a pointed tooth as an invalid setting would make that message clearer."
+   "fix": "The time grows with the number of teeth, about 0.35 s a tooth here. Making Make gear a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel), or drawing one tooth and patterning it, would fix it. Reporting a pointed tooth as an invalid setting would make that message clearer.",
+   "runs_passed": 9,
+   "runs_total": 11
   },
   {
    "repo": "Stigern/SolidThreadsPlugin",
@@ -427,7 +433,9 @@
    },
    "notes": [
     "The README describes a WebAssembly plugin (**Plugins › Add thread…**, version 2.0.6 in the repository's `plugin/` folder), but no release holds it yet. When one does, it can be checked."
-   ]
+   ],
+   "runs_passed": 0,
+   "runs_total": 0
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -518,7 +526,9 @@
    "notes": [
     "The time limit stopped the run after the plugin had asked SolidCraft for the threaded body, which is why the runs took longer than 30 s before they ended."
    ],
-   "fix": "The modelled thread is what takes the time. Making Make screw a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish; a simpler thread, or Thread modelled off by default, would make it fast."
+   "fix": "The modelled thread is what takes the time. Making Make screw a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish; a simpler thread, or Thread modelled off by default, would make it fast.",
+   "runs_passed": 2,
+   "runs_total": 23
   },
   {
    "repo": "TechSquidTV/SolidCraft-Plugins",
@@ -608,7 +618,844 @@
    ],
    "notes": [
     "The big nuts are close to the 30 s limit on this computer; a slower one could go over it."
-   ]
+   ],
+   "runs_passed": 11,
+   "runs_total": 11
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "id": "techsquid-inserts",
+   "version": "0.3.0",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "not passed",
+   "summary": "Every insert with a modelled thread, the default, goes over the plugin's 30 s time limit. Holes, and inserts without the modelled thread, work.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": false,
+     "note": "8 of 13 runs stopped at the 30 s limit, the defaults too."
+    },
+    "valid": {
+     "ok": true,
+     "note": "What was made was closed (0 open bodies)."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only modelling commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip for each plugin on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Make insert",
+     "settings": "**Defaults: M3 × 5.7, heat-set, hole and insert, thread modelled**",
+     "time": "38.7 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make insert",
+     "settings": "**Insert only; glue-in (stepped); M1.6, M2, M2.5, M3 × 4 Voron, M4 × 8.1**",
+     "time": "31–39 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make insert",
+     "settings": "M3 × 3 short",
+     "time": "29.2 s",
+     "result": "passed, close to the limit",
+     "ok": true
+    },
+    {
+     "entry": "Make insert",
+     "settings": "Thread not modelled",
+     "time": "9.5 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make insert",
+     "settings": "Hole only",
+     "time": "0.6 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make insert",
+     "settings": "Hole adjust +1 mm; Through with two bodies under the point",
+     "time": "0.2–0.6 s",
+     "result": "refused with a clear message about the setting",
+     "ok": null
+    }
+   ],
+   "fix": "The modelled thread takes the time, as in TechSquid Screws. Making it a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish.",
+   "runs_passed": 5,
+   "runs_total": 13
+  },
+  {
+   "repo": "pro-d-e-v/solidcraft-plugin-gear",
+   "id": "gear-generator",
+   "version": "0.4.0",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "not passed",
+   "summary": "Everything works up to 100 teeth, but 200 teeth, which the dialog allows, goes over the plugin's 30 s time limit.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": false,
+     "note": "14 of 15 runs passed; 200 teeth was stopped at the 30 s limit."
+    },
+    "valid": {
+     "ok": true,
+     "note": "One closed body per gear."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only sketch and solid commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Gear",
+     "settings": "Defaults: 20 teeth, module 2, bore 8",
+     "time": "4.4 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Gear",
+     "settings": "Module 20; pressure angle 30°; thickness 24; bore 24",
+     "time": "3.5–4.4 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Gear",
+     "settings": "Keyway on, its width, depth and angle changed",
+     "time": "3.5–5.3 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Gear",
+     "settings": "60 teeth; 100 teeth",
+     "time": "19.9 s; 24.3 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Gear",
+     "settings": "**200 teeth (the largest allowed)**",
+     "time": "43.4 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Gear",
+     "settings": "6 teeth with the default 8 mm bore",
+     "time": "0.4 s",
+     "result": "refused: the bore leaves no rim, it must stay under 5 mm. Right, and clear",
+     "ok": null
+    }
+   ],
+   "fix": "The time grows with the number of teeth, about 0.25 s a tooth here, so around 120 teeth is the most that fits in 30 s. Making it a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish. Or lower the largest number of teeth the dialog allows.",
+   "runs_passed": 12,
+   "runs_total": 13
+  },
+  {
+   "repo": "WilliamHJKL/solidcraft-wood-joinery",
+   "id": "wood-joinery",
+   "version": "0.15.0",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "passed",
+   "summary": "Every joint ran, in under 3 s each, on boards laid out for it; a joint that doesn't fit the boards is refused with a clear reason.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": true,
+     "note": "About 60 runs: every joint and its options. Edit joint opens the joint's own form, so it was checked to refuse running from a script, as it should."
+    },
+    "valid": {
+     "ok": true,
+     "note": "0 open bodies after every run. Each joint is a folder of ordinary features, kept up to date by Update joints."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Modelling commands, its own storage, a panel and forms. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "Apache-2.0, a long README, a zip (English and French) on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Mortise and tenon",
+     "settings": "Defaults, haunched, through, double",
+     "time": "0.7–1.3 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Mortise and tenon",
+     "settings": "Bridle on a rail away from the stile's end; low and high positions on a thin stile",
+     "time": "0.4–0.5 s",
+     "result": "refused with a clear reason (the bridle needs the rail at the end; no cheek left)",
+     "ok": null
+    },
+    {
+     "entry": "Loose tenon",
+     "settings": "Defaults and every Domino size, 4×20 to 10×50",
+     "time": "0.4–2.4 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Groove",
+     "settings": "On each of the six faces",
+     "time": "0.3–0.4 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Tongue and groove; housing; mitre",
+     "settings": "Defaults, spline, keys, align",
+     "time": "0.4–0.7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Half lap",
+     "settings": "Crossing boards: defaults, flip, align",
+     "time": "0.4–0.7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Scarf",
+     "settings": "Boards end to end: defaults, flip, key, align",
+     "time": "0.4–0.6 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Box joint; dovetail",
+     "settings": "Boards meeting on edge at a corner",
+     "time": "0.9–1.7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Dowels",
+     "settings": "Defaults, without dowel bodies, align",
+     "time": "0.9–1.1 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Biscuits",
+     "settings": "A 150 mm wide board: sizes 0, 10, 20, without biscuit bodies",
+     "time": "0.8–1.8 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Screws",
+     "settings": "One board laid on the other: with and without countersink",
+     "time": "1.2–2.2 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Update joints",
+     "settings": "After a mortise and tenon",
+     "time": "under 1 s",
+     "result": "passed",
+     "ok": true
+    }
+   ],
+   "runs_passed": 83,
+   "runs_total": 83
+  },
+  {
+   "repo": "NoOneExceptEnderk/SolidInserts",
+   "id": "solidinserts",
+   "version": "1.3.1",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "passed",
+   "summary": "Insert seats and captive nut pockets were made in a picked hole in under a second; sizes that don't fit the hole are refused with a clear reason.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": true,
+     "note": "21 runs on an 8 mm hole: every one either made the seat or pocket, or refused a size that can't fit it."
+    },
+    "valid": {
+     "ok": true,
+     "note": "0 open bodies; the seats and pockets are cut into the picked body."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only modelling commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Apply (insert seats)",
+     "settings": "Automatic size on an 8 mm hole; M6; ±1 mm compensation",
+     "time": "0.6 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Apply (insert seats)",
+     "settings": "M2–M5 inserts, and series without M8, on an 8 mm hole",
+     "time": "0.2–0.4 s",
+     "result": "refused: the seat would be narrower than the hole. Right, and clear",
+     "ok": null
+    },
+    {
+     "entry": "Captive nut pockets",
+     "settings": "Automatic, M5, M6; inset, clearances, layer heights changed",
+     "time": "0.6–0.8 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Captive nut pockets",
+     "settings": "M2–M4 nuts on an 8 mm hole",
+     "time": "0.4–0.6 s",
+     "result": "refused: the hole doesn't fit that screw. Right, and clear",
+     "ok": null
+    }
+   ],
+   "runs_passed": 22,
+   "runs_total": 22
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "id": "techsquid-extrusions",
+   "version": "0.3.0",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "not passed",
+   "summary": "Rails and T-nuts are made quickly, but a rail with tapped ends goes over the plugin's 30 s time limit.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": false,
+     "note": "18 of 21 runs passed; the three runs with tapped ends were stopped at the 30 s limit."
+    },
+    "valid": {
+     "ok": true,
+     "note": "0 open bodies."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only modelling commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip for each plugin on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Make extrusion",
+     "settings": "Defaults: 2020 × 500 mm",
+     "time": "2.6 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make extrusion",
+     "settings": "2040, 2060, 2080, 4040; 1500 mm long; holes on each face, from the end",
+     "time": "1.6–5.5 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make extrusion",
+     "settings": "**Tapped ends: start, end, both**",
+     "time": "87–93 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Make extrusion",
+     "settings": "Sketch driven, with only a point picked",
+     "time": "0.3 s",
+     "result": "refused: pick 1 to 16 straight lines. Right, and clear",
+     "ok": null
+    },
+    {
+     "entry": "Make T-nut",
+     "settings": "Defaults (M5); M3, M4; along sketch Y; V-slot; post-assembly",
+     "time": "17–25 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Make T-nut",
+     "settings": "Thread not modelled",
+     "time": "1.2 s",
+     "result": "passed",
+     "ok": true
+    }
+   ],
+   "fix": "The tapped thread in the rail's end takes the time. Making it a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish.",
+   "runs_passed": 18,
+   "runs_total": 21
+  },
+  {
+   "repo": "Xusr404/solidcraft-honeycomb-plugin",
+   "id": "solidcraft-honeycomb",
+   "version": "0.1.0",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "passed",
+   "summary": "Every option filled a picked sketch region with hexagons in under a second.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": true,
+     "note": "14 runs in an open sketch with a rectangle picked. It needs straight lines for the boundary and the sketch open, as its description says; it tells you so if not."
+    },
+    "valid": {
+     "ok": true,
+     "note": "It draws sketch geometry; no bodies are made."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only sketch commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Generate",
+     "settings": "Defaults: 10 mm across flats, 0.5 mm gap, flat top",
+     "time": "0.6 s",
+     "result": "passed (17 hexagons and the clipped edges)",
+     "ok": true
+    },
+    {
+     "entry": "Generate",
+     "settings": "Pointy top; 30 mm; 1.5 mm gap; rotated 3°; not trimmed",
+     "time": "0.3–0.7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Generate",
+     "settings": "Anchor at each corner; offsets in X and Y; 3 mm inset",
+     "time": "0.5–0.7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Generate",
+     "settings": "Anchor at a selected sketch point, without one selected",
+     "time": "0.3 s",
+     "result": "refused: select exactly one sketch point. Right, and clear",
+     "ok": null
+    },
+    {
+     "entry": "Generate",
+     "settings": "A circle as the boundary, or the sketch not open",
+     "time": "0.2–0.5 s",
+     "result": "refused: only straight lines; open the sketch. Clear",
+     "ok": null
+    }
+   ],
+   "runs_passed": 14,
+   "runs_total": 14
+  },
+  {
+   "repo": "TechSquidTV/SolidCraft-Plugins",
+   "id": "techsquid-bearings",
+   "version": "0.3.0",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "not passed",
+   "summary": "Bearings and clutches are made in 2–3 s, but each one's shields or covers are not closed solids.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": true,
+     "note": "Every size, closure and keyway ran; sizes it doesn't have are refused with a clear message."
+    },
+    "valid": {
+     "ok": false,
+     "note": "Every bearing and clutch has 2 open bodies: the front and back Shield (bearings) or Cover (CSK clutches). The rings and balls are closed."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only modelling commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip for each plugin on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Make bearing",
+     "settings": "Defaults (608ZZ); sealed; 105, 625, 626, 6000–6002",
+     "time": "1.2–3.0 s",
+     "result": "made, with 2 open bodies (the shields)",
+     "ok": false
+    },
+    {
+     "entry": "Make bearing",
+     "settings": "Open closure on a size without it",
+     "time": "0.2 s",
+     "result": "refused: only for 626. Clear",
+     "ok": null
+    },
+    {
+     "entry": "Make CSK clutch",
+     "settings": "Defaults (CSK12P); every closure; keyways; CSK8; from scratch 10/30/9; outer keyway 4 mm",
+     "time": "1.6–2.3 s",
+     "result": "made, with 2 open bodies (the covers)",
+     "ok": false
+    },
+    {
+     "entry": "Make bearing by dimensions",
+     "settings": "Bore 8; 8 × 22 × 7",
+     "time": "2.4–2.6 s",
+     "result": "made 608ZZ, with 2 open bodies",
+     "ok": false
+    },
+    {
+     "entry": "Make CSK by dimensions",
+     "settings": "Bore 12",
+     "time": "0.3 s",
+     "result": "refused: lists the three that match. Clear",
+     "ok": null
+    }
+   ],
+   "fix": "Making the shields and covers closed solids (they are probably surfaces or thin open shapes now) would pass it; the rest is fine.",
+   "runs_passed": 17,
+   "runs_total": 39
+  },
+  {
+   "repo": "SB97/solidcraft-3d-printing-holes",
+   "id": "solidcraft-3d-printing-holes",
+   "version": "0.2.2",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "passed",
+   "summary": "Teardrop ran with every option in under half a second, with clear warnings where a setting has no effect.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": true,
+     "note": "7 runs on a picked sketch circle. Apply to all needs the sketch open, and says so."
+    },
+    "valid": {
+     "ok": true,
+     "note": "It changes sketch circles; no bodies are made."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only sketch commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Teardrop",
+     "settings": "Defaults on a horizontal sketch (warns that world +Z gives no direction there)",
+     "time": "0.4 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Teardrop",
+     "settings": "Up: sketch +X, −X, +Y, −Y; horizontal warning off",
+     "time": "0.2–0.3 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Teardrop",
+     "settings": "Apply to all, with the sketch closed",
+     "time": "0.4 s",
+     "result": "refused: open a sketch, or select circles in one. Clear",
+     "ok": null
+    }
+   ],
+   "runs_passed": 7,
+   "runs_total": 7
+  },
+  {
+   "repo": "LudaLunizz/Generative-design-plugin-for-SolidCraft",
+   "id": "gen-design-engine",
+   "version": "0.15.0",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "passed",
+   "summary": "Every command ran: materials, reports, the stress check, the plate optimiser and the bar bracket, most in a second or two.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": true,
+     "note": "About 40 runs. A bracket with too long a reach is refused (\"no stable truss found\") with what to change."
+    },
+    "valid": {
+     "ok": true,
+     "note": "0 open bodies, also for brackets of up to 69 bodies."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Modelling and material commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "Apache-2.0, a long README, a zip on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Apply material",
+     "settings": "Six metals on a body",
+     "time": "0.2–0.5 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Material report; materials",
+     "settings": "Defaults, a body, safety factor 10, metal and polymer families",
+     "time": "0.2–0.5 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Stress check",
+     "settings": "A block fixed at one end, 100 N and 1000 N at the other, aluminium",
+     "time": "1.1–1.3 s",
+     "result": "passed (safety factor reported; verify says when the mesh is too coarse)",
+     "ok": true
+    },
+    {
+     "entry": "Optimise plate",
+     "settings": "Defaults; 600 wide; 300 high; 30 thick; three aluminiums",
+     "time": "1.5–3.7 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Bar bracket",
+     "settings": "Defaults; wider and taller plate; thicker; bigger pad",
+     "time": "9–25 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Bar bracket",
+     "settings": "Reach 450 mm",
+     "time": "1.0 s",
+     "result": "refused: no stable truss found, with what to change. Clear",
+     "ok": null
+    },
+    {
+     "entry": "Solver benchmark",
+     "settings": "Defaults, finer grids, 150 iterations, MBB load, volume share 0.95",
+     "time": "0.8–2.5 s",
+     "result": "passed",
+     "ok": true
+    }
+   ],
+   "notes": [
+    "Its commands have no ribbon slots; they are in the Plugins menu."
+   ],
+   "runs_passed": 39,
+   "runs_total": 39
+  },
+  {
+   "repo": "Sooner4500/solidcraft-custom-threads",
+   "id": "custom-threads",
+   "version": "0.3.0",
+   "date": "2026-11-28",
+   "by": "tharje",
+   "solidcraft": "0.50.0",
+   "machine": "a 4-core Intel i7-4770K with 6 GB, Linux",
+   "result": "not passed",
+   "summary": "A thread on a 10 mm shaft 25 mm long goes over the plugin's 30 s time limit; on a shaft 8 mm long Custom and Advanced thread work.",
+   "criteria": {
+    "installs": {
+     "ok": true,
+     "note": "`plugin check`: no problems."
+    },
+    "runs": {
+     "ok": false,
+     "note": "Every thread on a 10 × 25 mm shaft was stopped at the 30 s limit; on a 10 × 8 mm shaft, Custom and Advanced thread passed in 17–18 s."
+    },
+    "valid": {
+     "ok": true,
+     "note": "What was made was closed (0 open bodies)."
+    },
+    "permissions": {
+     "ok": true,
+     "note": "Only modelling commands. No files, no network."
+    },
+    "release": {
+     "ok": true,
+     "note": "MIT, README, a zip on the release."
+    },
+    "issues": {
+     "ok": true
+    }
+   },
+   "runs": [
+    {
+     "entry": "Custom thread",
+     "settings": "**Defaults on a 10 × 25 mm shaft; fit tight, wide, none; metal; chamfers; left-hand**",
+     "time": "36–49 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Advanced thread",
+     "settings": "**Defaults on a 10 × 25 mm shaft; left-hand; metal; chamfers; external; internal**",
+     "time": "33–43 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Preset thread",
+     "settings": "**Auto ISO, Auto UNC on a 10 × 25 mm shaft**",
+     "time": "43–49 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Custom thread; Advanced thread",
+     "settings": "Defaults on a 10 × 8 mm shaft",
+     "time": "18.1 s; 17.3 s",
+     "result": "passed",
+     "ok": true
+    },
+    {
+     "entry": "Preset thread",
+     "settings": "Auto ISO on a 10 × 8 mm shaft",
+     "time": "31.2 s",
+     "result": "stopped at the 30 s limit",
+     "ok": false
+    },
+    {
+     "entry": "Preset thread",
+     "settings": "Garden hose, soda bottle, Mason jar, broom presets on a 10 mm shaft",
+     "time": "0.2–0.5 s",
+     "result": "refused: the shaft is far from that preset's size. Right, and clear",
+     "ok": null
+    },
+    {
+     "entry": "Edit thread",
+     "settings": "With no thread in the design",
+     "time": "0.3 s",
+     "result": "refused: no threads found yet. Not tested on a thread",
+     "ok": null
+    }
+   ],
+   "fix": "The time grows with the thread's length. Making it a long job (`\"job\": true`, SolidCraft 0.48 and later: up to ten minutes, with progress and Cancel) would let it finish.",
+   "runs_passed": 23,
+   "runs_total": 46
   }
  ]
 }

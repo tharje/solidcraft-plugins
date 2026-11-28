@@ -219,3 +219,4 @@ table.overview tr.no td:nth-child(4) { color: #cf222e; font-weight: 600; }
 table.overview tr.na td:nth-child(4) { color: var(--muted); font-weight: 600; }
 table.overview td:nth-child(3) { white-space: nowrap; }
 @media (prefers-color-scheme: dark) { table.overview tr.yes td:nth-child(4) { color: #4ac26b; } table.overview tr.no td:nth-child(4) { color: #ff7b72; } }
+table.overview td:nth-child(5) { white-space: nowrap; color: var(--muted); }
