@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-28T00:21:17Z",
+ "generated": "2026-11-28T05:21:47Z",
  "plugins": [
   {
    "repo": "TomasDJo/solidcraft-woodwork",
@@ -16,6 +16,7 @@
     "Material",
     "Panel",
     "Mobile base",
+    "Connector bolts",
     "Worktop",
     "Cut list",
     "Drawing",
@@ -38,10 +39,10 @@
     "cad",
     "woodworking"
    ],
-   "stars": 52,
+   "stars": 54,
    "issues": true,
    "license": "MIT",
-   "updated": "2026-11-28T00:17:07Z",
+   "updated": "2026-11-28T01:37:05Z",
    "created": "2026-11-14T13:53:29Z",
    "release": {
     "tag": "v0.5.0",
@@ -50,7 +51,7 @@
     "zip": "https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/woodwork-0.5.0.zip",
     "notes": "Needs SolidCraft 0.49 or later (tested on 0.49.0).\n\n## One Cabinet dialog for new and picked cabinets\n\nCabinet has a Mode: Auto (see below), New cabinet or Edit picked. Edit picked works on one cabinet: the dialog starts at that cabinet's own values (sizes from Parameters) and shows only the fields it takes, and nothing is built when nothing changed. The separate Edit cabinet function is gone. What is design-wide, such as joinery and the finger-joint options, is in Woodwork settings.\n\n## Auto mode: new or edit from what you pick\n\nCabinet's Mode starts on Auto, which picks New or Edit from what is selected. Pick a door, drawer front, shelf, divider or drawer part, and Cabinet edits that cabinet. Pick a side, top, bottom or back and it makes a new cabinet next to that one; pick nothing for a new one on its own. The Mode hint says which it will do.\n\n| Door picked: edits this cabinet | Side picked: a new cabinet next to it |\n|---|---|\n| ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/auto-edit.png) | ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/auto-new.png) |\n\n## A new settings system\n\nWoodwork settings now hold the choices that are the same for the whole design: joinery, hardware, plinth, fronts, the cut list and more. \"Show settings for\" picks one section (General, Doors and fronts, Drawers, Plinth / toe kick and wall mount, Joinery, Cut list and worktop, Display, or All); Units is set in General. The fields start at what is stored, and Settings only stores.\n\n| Show settings for: the sections | The Joinery section |\n|---|---|\n| ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/settings-sections-crop.png) | ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/settings-joinery-crop.png) |\n\nNew cabinets take the settings. The Cabinet dialog, and Edit with it, now has only what belongs to one cabinet: sizes, doors, drawers, shelves, handles and the like.\n\n**Apply settings** is a new function that builds the picked cabinets, or all of them, again with the current settings. It never overwrites what you chose for a single cabinet: sizes, doors and drawers stay. A per-cabinet choice such as handles follows the new setting only if it was left at the default. It runs as a long job, with progress per cabinet and a Cancel button, and has no 30 s run time limit.\n\n| Before: board plinths | After Plinth type Legs in Settings, then Apply settings |\n|---|---|\n| ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/apply-before.png) | ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/apply-after.png) |\n\n![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/kitchen.png)\n\n*Base cabinets on a plinth and wall cabinets without one: Plinth Yes or No is chosen per cabinet, its height and type come from the settings.*\n\n## Finger joints\n\nFinger joints for the cabinet shell (the top and bottom through to the outside), for corner cabinets, and for the drawer boxes (the front and back through), chosen in Woodwork settings with the finger width. Over a plinth the bottom stays a plain butt joint unless you choose otherwise.\n\n| Shell and drawer boxes | A drawer box corner |\n|---|---|\n| ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/finger-joints.png) | ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/finger-drawer.png) |\n\n![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/finger-plinth.png)\n\n*Over a plinth board: the top is finger-jointed, the bottom butted.*\n\n![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/finger-corner.png)\n\n*An L-shaped corner cabinet: the top and bottom finger-jointed to all four uprights.*\n\n## Smaller changes\n\n- Dialogs hide the fields that cannot combine with another choice, and the build ignores them.\n- With Match selected, height, depth, thickness and plinth show greyed with the picked cabinet's values.\n- Dialog hooks stay light with 30 or more cabinets, and placing a cabinet is faster in large designs (only the cabinets a run reads are measured; one pattern for a panel's pin rows).\n- A cabinet sized by its drawers' inside keeps that inside: Edit and Apply settings (for example a new slide type) work its outside size out again, and Edit shows the inside sizes.\n- Apply settings follows a changed default, and keeps what was chosen per cabinet.\n- Clearer labels: \"Plinth / toe kick\", and \"Dado runners\" for the wooden runners.\n- The plugin uses SolidCraft's plugin interface craft:plugin@0.2.0.\n\n## Known issues and workarounds\n\n- **Doors that share a divider** ([#157](https://github.com/TomasDJo/solidcraft-woodwork/issues/157)). With 3 overlay doors and 2 dividers, two doors meet on each divider and each covers only half of it. A door hinged on a divider then needs a half-overlay (cranked) hinge, which the model and the hardware list do not show yet. Workaround: use inset fronts, or buy half-overlay hinges for the doors hinged on a divider.\n\n  ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/known-divider.png)\n\n  *Seen from above: two doors meet on the divider, each covering half of it.*\n\n- **Hardware models show under the first cabinet** (SolidCraft [#22153](https://github.com/tangency-labs/solidcraft/issues/22153), fixed in SolidCraft by [#22274](https://github.com/tangency-labs/solidcraft/pull/22274), in its next release). SolidCraft does not keep a plugin's hidden bodies, so the hinge and slide models the copies are made from show at the origin, under the first cabinet. Workaround: ignore them, they are not in the cut list.\n\n  ![](https://github.com/TomasDJo/solidcraft-woodwork/releases/download/v0.5.0/known-hardware.png)\n\n  *Seen from below. The models are coloured orange here so they stand out; in SolidCraft they are grey.*\n\n- **No message when a preview cannot be built** (Sol"
    },
-   "downloads": 8369,
+   "downloads": 8820,
    "image": "https://raw.githubusercontent.com/TomasDJo/solidcraft-woodwork/develop/docs/banner.png",
    "has_topic": false,
    "category": "Woodworking",
@@ -310,7 +311,7 @@
     "zip": "https://github.com/bherbruck/solidcraft-gears/releases/download/v0.1.1/solidcraft-gears-0.1.1.zip",
     "notes": "Involute spur gear generator plugin for SolidCraft. Unzip into your SolidCraft plugins folder; see the README."
    },
-   "downloads": 4109,
+   "downloads": 4126,
    "image": "https://raw.githubusercontent.com/bherbruck/solidcraft-gears/main/og-image.png",
    "has_topic": false,
    "category": "Gears & motion",
@@ -506,7 +507,7 @@
     "zip": "https://github.com/tharje/gridfinity-solidcraft/releases/download/v1.7.1/gridfinity-1.7.1.zip",
     "notes": "**Needs SolidCraft 0.50.0 or newer.** For SolidCraft 0.49.1, use [1.7.0](https://github.com/tharje/gridfinity-solidcraft/releases/tag/v1.7.0).\n\n## A grid on stackable lids (#13, thanks to sapstar)\n\nA **Stackable** lid now has a baseplate's grid on top: a pocket over each cell, so the bins you put on it stand in place, as on a baseplate. The pockets stop 0.6 mm below a baseplate's top, so the lid's edge keeps a 0.4 mm wall (a lid is 0.5 mm narrower than a baseplate). A 3×2 lid takes 67.9 cm³.\n\n![A stackable lid with a pocket over each cell](https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/lid-stackable-grid.png)\n\n## Fewer buttons in the ribbon (#18, thanks to vilts)\n\nThe panel's ten helper commands (panel-refresh, quick-bin-…, layout-…, settings-change) no longer fill the Plugins group: they sit behind one **Panel helpers** button. They are for the Gridfinity panel; use the panel's buttons instead. SolidCraft can't hide them yet (tangency-labs/solidcraft#22060).\n\n![The Panel helpers button and its menu](https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/ribbon-panel-helpers.png)\n\n## Install\nDownload `gridfinity-1.7.1.zip` below, then in SolidCraft: **Plugins › Install plugin…** and pick the zip. Or use **Open in SolidCraft** on the [Workshop](https://workshop.solidcraft.io/plugin/tharje/gridfinity).\n\nTested with SolidCraft 0.50.0 on Linux, through `solidcraft-cli` (30 of 30 plugin tests) and in the desktop app."
    },
-   "downloads": 1496,
+   "downloads": 1516,
    "image": "https://raw.githubusercontent.com/tharje/gridfinity-solidcraft/main/docs/images/bin-3x2x6.png",
    "has_topic": true,
    "category": "Storage & organizing",
@@ -640,7 +641,7 @@
     "zip": "https://github.com/NoOneExceptEnderk/SolidInserts/releases/download/v1.3.1/solidinserts-1.3.1.zip",
     "notes": "## Captive Nut Pockets\n\nSolidInserts now creates internal pockets for **DIN 934 hex nuts** that you insert during a print pause. **Insert Seats** remains available for heat-set inserts. The same ZIP works without patches on official SolidCraft Desktop **0.46.2** and **0.48.1**. Compatibility with 0.48.1 was verified on Linux.\n\n- Select the hole rims and the face that rests on the print bed. Automatic sizing picks the nearest nominal nut size for each hole within **±0.25 mm**. A Ø3 mm hole selects M3. Use manual sizing for ties or diameters outside that range.\n- **Pause heights (mm)** estimates where to pause with fixed layers, including a different first-layer height. For adaptive layers, set **Layer height** to **0** to see the geometric height at which each pocket closes.\n- **Send to Slicer** reuses the print face saved when you apply the pockets. Add the pauses in the slicer after checking its layer preview.\n\n## Italiano\n\n**Captive Nut Pockets** crea tasche interne per dadi esagonali DIN 934 da inserire durante una pausa di stampa. **Insert Seats** resta disponibile per gli inserti a caldo. Lo stesso ZIP funziona senza patch su SolidCraft Desktop **0.46.2** e **0.48.1** ufficiali. La compatibilità con la 0.48.1 è stata verificata su Linux.\n\n- La misura automatica sceglie per ciascun foro il diametro nominale più vicino entro **±0,25 mm**. Un foro Ø3 mm seleziona M3. Scegli la misura manualmente se due diametri sono equidistanti o se il foro è fuori soglia.\n- **Pause heights (mm)** stima le quote di pausa per layer fissi, anche con un primo layer di altezza diversa. Per i layer adattivi, imposta **Layer height** a **0** per vedere la quota geometrica di chiusura di ogni tasca.\n- **Send to Slicer** riusa la faccia di stampa salvata quando applichi le tasche. Controlla l’anteprima dei layer nello slicer e aggiungi lì le pause.\n\nInstall `solidinserts-1.3.1.zip` from **File → Plugins…**. The `.zip.sha256` file contains the ZIP's SHA-256 checksum.\n\n- [SolidCraft Desktop 0.46.2](https://github.com/tangency-labs/solidcraft/releases/tag/v0.46.2)\n- [SolidCraft Desktop 0.48.1](https://github.com/tangency-labs/solidcraft/releases/tag/v0.48.1)\n- [Changelog / Modifiche dalla v1.2.0](https://github.com/NoOneExceptEnderk/SolidInserts/compare/v1.2.0...v1.3.1)"
    },
-   "downloads": 625,
+   "downloads": 631,
    "image": null,
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -686,7 +687,7 @@
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.3.0/techsquid-bearings-0.3.0.zip",
     "notes": "All six plugins now share internal part definitions and verified component reuse.\nBearings and V-wheels add supplier products with visible exterior detail. The Bearing dialog also offers a supplier-neutral sealed 105.\nCSK clutches add customizable exterior geometry with reference sources recorded\nseparately.\n\n## Bearings and V-wheels\n\n- **Bearings** offers base size and closure or a search by nominal bore, outside diameter and width. Thirteen closed variants use estimated exteriors. Twelve carry catalog-confirmed MISUMI numbers, and the sealed 105 has a supplier-neutral BOM row. Open remains available for 626. The [product table](../plugins/techsquid-bearings/README.md#supported-bearings-and-csk-presets) lists each exterior basis.\n- **V-wheels** offers Solid, Xtreme Solid, grooved Delrin, Delrin Mini and Xtreme Mini products. Choose a bare wheel or a core comprising one wheel, two bearings and one internal shim.\n- Direct bearings and wheel assemblies reuse the same verified bearing definition. The wheel package contains its dependencies; installing Bearings separately is optional.\n- Core assemblies list their separate purchases in the BOM. They are not retail kits and do not include mounting axles, external spacers, washers or nuts.\n- Geometry is built from native features using measured STEP profiles. Source hashes, dimensional discrepancies and the 105ZZ correction from 4.2 to 4 mm are documented. Original STEP files are not distributed.\n\nBearing closures are intentional zero-thickness surface bodies; rings are exterior\nenvelopes. These models support layout and appearance, not physical bearing mass,\ninternal contact or manufacturing sections. Metal wheels and the supplied inch and\n8 × 16 × 5 bearings remain unpublished candidates pending exact product evidence.\n\n## Bearings dialogs\n\nThe Bearings submenu has four commands. **Bearing** inserts a radial preset. **CSK clutch** inserts or edits a preset, or starts from scratch. It shows the inherited closure next to each starting preset. **Bearing by dimensions** and **CSK clutch by dimensions** share the numeric millimetre controls for nominal bore, outside diameter and width. See the [Bearings reference](../plugins/techsquid-bearings/REFERENCE.md).\n\n## Customizable CSK clutches\n\n- Reference publishers such as Formsprag are not assigned manufacturers. CSK specifications have no purchase identity or BOM part number. Purchasing assignment is [future work for a shared component workflow](../docs/parts-library.md#future-component-purchasing-workflow) after creation.\n- Custom and unsourced parts remain countable in the BOM. Repeated identical geometry reuses a definition; different keyway values stay separate.\n- Each component contains two chamfered solid rings and two cover/seal faces, with full-width rectangular keyways. Eight supplied STEP files establish measured exterior sections; other variants use explicitly recorded estimates. PP keyways default to opposing sides. Hidden sprags, raceways, seal cross-sections, rotation simulation and mass predictions remain outside the representation. Torque and load ratings are source-specific selection information, not geometry parameters.\n\nSee the [CSK example](../examples/bearings-and-clutches/#csk-references-and-overrides) and [source ledger](../docs/sources/csk.md).\n\n## Nylon-insert lock nuts\n\nThe Hex nut dialog adds thin DIN 985 nylon-insert lock nuts. Choose the style and size to create a loose nut, a flush captive pocket, or both. The [V-slot gantry](../examples/v-slot-gantry/) uses four M5 lock nuts.\n\nNew custom nut descriptions include thread size, pitch, width across flats and height.\n\n**BOM change for near-diameter inputs.** New insertions of `M5.0000001x0.8` and `M5` now share the nominal M5 part number. Existing saved definitions keep their original part numbers and descriptions. To consolidate a duplicate row in a saved design, replace its occurrences with the nominal size.\n\nIf Hex nuts is already installed, install the updated ZIP through **Preferences → Plugins** and review the replacement. SolidCraft ties plugin approvals to the exact package.\n\n**Breaking change for installed-tool calls.** Scripts calling `techsquid-nuts.make-nut` must pass `style`. Add `\"style\": \"Plain hex\"` to keep creating plain nuts. Existing `plugin.run` recipes default to Plain hex.\n\n## Extrusions and slot nuts\n\n- **Slot nuts come in M3, M4 and M5.** Size picks the thread of the MISUMI pre-assembly (HNTT5) or post-assembly (HNTP5) nut. The outer shape stays the same within each type; the tapped hole and the part number change.\n- **The Extrusion dialog starts with Mode**, then Slot, Size and Length. Holes from is now **Hole face** and Hole distances from is now **Measure holes from**; the keys `hole_face` and `holes_from` are unchanged.\n\n## One parts-library foundation\n\nNut-pocket batches and repeated runs now reserve distinct names for their planes,\nprofiles, cuts and bolt holes. Existing names in other components, case variants\nand numbered suffixes are respected, including after reopening a saved design.\nRenaming a part and all its bodies no longer lets a replacement collide with the\noriginal sketches. Face-attached pocket layouts preserve the selected copied or\nnested assembly through consecutive insertions; hardware seat joints identify\nthat exact placement.\n\nPackages expose insertion tools only. The shared internal descriptors retain\ndimensions, provenance, attachment frames, configuration rules and assembly\nmembers. Catalog discovery is deferred: the host currently displays every entry\nas a command but cannot provide a useful Catalog form. No Catalog buttons or\npublic query handlers are shipped.\n\nProduct identity is separate from CAD detail, placement and display names.\nCosmetic/modeled threads can share a purchasing identity while retaining different\nrepresentations. Reuse verifies native features, sketches, body history, materials,\nappearances, metadata and nested children. Edited definitions remain inta"
    },
-   "downloads": 542,
+   "downloads": 548,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/bearings-and-clutches/bearings-and-clutches.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -731,7 +732,7 @@
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.3.0/techsquid-extrusions-0.3.0.zip",
     "notes": "All six plugins now share internal part definitions and verified component reuse.\nBearings and V-wheels add supplier products with visible exterior detail. The Bearing dialog also offers a supplier-neutral sealed 105.\nCSK clutches add customizable exterior geometry with reference sources recorded\nseparately.\n\n## Bearings and V-wheels\n\n- **Bearings** offers base size and closure or a search by nominal bore, outside diameter and width. Thirteen closed variants use estimated exteriors. Twelve carry catalog-confirmed MISUMI numbers, and the sealed 105 has a supplier-neutral BOM row. Open remains available for 626. The [product table](../plugins/techsquid-bearings/README.md#supported-bearings-and-csk-presets) lists each exterior basis.\n- **V-wheels** offers Solid, Xtreme Solid, grooved Delrin, Delrin Mini and Xtreme Mini products. Choose a bare wheel or a core comprising one wheel, two bearings and one internal shim.\n- Direct bearings and wheel assemblies reuse the same verified bearing definition. The wheel package contains its dependencies; installing Bearings separately is optional.\n- Core assemblies list their separate purchases in the BOM. They are not retail kits and do not include mounting axles, external spacers, washers or nuts.\n- Geometry is built from native features using measured STEP profiles. Source hashes, dimensional discrepancies and the 105ZZ correction from 4.2 to 4 mm are documented. Original STEP files are not distributed.\n\nBearing closures are intentional zero-thickness surface bodies; rings are exterior\nenvelopes. These models support layout and appearance, not physical bearing mass,\ninternal contact or manufacturing sections. Metal wheels and the supplied inch and\n8 × 16 × 5 bearings remain unpublished candidates pending exact product evidence.\n\n## Bearings dialogs\n\nThe Bearings submenu has four commands. **Bearing** inserts a radial preset. **CSK clutch** inserts or edits a preset, or starts from scratch. It shows the inherited closure next to each starting preset. **Bearing by dimensions** and **CSK clutch by dimensions** share the numeric millimetre controls for nominal bore, outside diameter and width. See the [Bearings reference](../plugins/techsquid-bearings/REFERENCE.md).\n\n## Customizable CSK clutches\n\n- Reference publishers such as Formsprag are not assigned manufacturers. CSK specifications have no purchase identity or BOM part number. Purchasing assignment is [future work for a shared component workflow](../docs/parts-library.md#future-component-purchasing-workflow) after creation.\n- Custom and unsourced parts remain countable in the BOM. Repeated identical geometry reuses a definition; different keyway values stay separate.\n- Each component contains two chamfered solid rings and two cover/seal faces, with full-width rectangular keyways. Eight supplied STEP files establish measured exterior sections; other variants use explicitly recorded estimates. PP keyways default to opposing sides. Hidden sprags, raceways, seal cross-sections, rotation simulation and mass predictions remain outside the representation. Torque and load ratings are source-specific selection information, not geometry parameters.\n\nSee the [CSK example](../examples/bearings-and-clutches/#csk-references-and-overrides) and [source ledger](../docs/sources/csk.md).\n\n## Nylon-insert lock nuts\n\nThe Hex nut dialog adds thin DIN 985 nylon-insert lock nuts. Choose the style and size to create a loose nut, a flush captive pocket, or both. The [V-slot gantry](../examples/v-slot-gantry/) uses four M5 lock nuts.\n\nNew custom nut descriptions include thread size, pitch, width across flats and height.\n\n**BOM change for near-diameter inputs.** New insertions of `M5.0000001x0.8` and `M5` now share the nominal M5 part number. Existing saved definitions keep their original part numbers and descriptions. To consolidate a duplicate row in a saved design, replace its occurrences with the nominal size.\n\nIf Hex nuts is already installed, install the updated ZIP through **Preferences → Plugins** and review the replacement. SolidCraft ties plugin approvals to the exact package.\n\n**Breaking change for installed-tool calls.** Scripts calling `techsquid-nuts.make-nut` must pass `style`. Add `\"style\": \"Plain hex\"` to keep creating plain nuts. Existing `plugin.run` recipes default to Plain hex.\n\n## Extrusions and slot nuts\n\n- **Slot nuts come in M3, M4 and M5.** Size picks the thread of the MISUMI pre-assembly (HNTT5) or post-assembly (HNTP5) nut. The outer shape stays the same within each type; the tapped hole and the part number change.\n- **The Extrusion dialog starts with Mode**, then Slot, Size and Length. Holes from is now **Hole face** and Hole distances from is now **Measure holes from**; the keys `hole_face` and `holes_from` are unchanged.\n\n## One parts-library foundation\n\nNut-pocket batches and repeated runs now reserve distinct names for their planes,\nprofiles, cuts and bolt holes. Existing names in other components, case variants\nand numbered suffixes are respected, including after reopening a saved design.\nRenaming a part and all its bodies no longer lets a replacement collide with the\noriginal sketches. Face-attached pocket layouts preserve the selected copied or\nnested assembly through consecutive insertions; hardware seat joints identify\nthat exact placement.\n\nPackages expose insertion tools only. The shared internal descriptors retain\ndimensions, provenance, attachment frames, configuration rules and assembly\nmembers. Catalog discovery is deferred: the host currently displays every entry\nas a command but cannot provide a useful Catalog form. No Catalog buttons or\npublic query handlers are shipped.\n\nProduct identity is separate from CAD detail, placement and display names.\nCosmetic/modeled threads can share a purchasing identity while retaining different\nrepresentations. Reuse verifies native features, sketches, body history, materials,\nappearances, metadata and nested children. Edited definitions remain inta"
    },
-   "downloads": 622,
+   "downloads": 628,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/v-slot-gantry/v-slot-gantry.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -775,7 +776,7 @@
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.3.0/techsquid-inserts-0.3.0.zip",
     "notes": "All six plugins now share internal part definitions and verified component reuse.\nBearings and V-wheels add supplier products with visible exterior detail. The Bearing dialog also offers a supplier-neutral sealed 105.\nCSK clutches add customizable exterior geometry with reference sources recorded\nseparately.\n\n## Bearings and V-wheels\n\n- **Bearings** offers base size and closure or a search by nominal bore, outside diameter and width. Thirteen closed variants use estimated exteriors. Twelve carry catalog-confirmed MISUMI numbers, and the sealed 105 has a supplier-neutral BOM row. Open remains available for 626. The [product table](../plugins/techsquid-bearings/README.md#supported-bearings-and-csk-presets) lists each exterior basis.\n- **V-wheels** offers Solid, Xtreme Solid, grooved Delrin, Delrin Mini and Xtreme Mini products. Choose a bare wheel or a core comprising one wheel, two bearings and one internal shim.\n- Direct bearings and wheel assemblies reuse the same verified bearing definition. The wheel package contains its dependencies; installing Bearings separately is optional.\n- Core assemblies list their separate purchases in the BOM. They are not retail kits and do not include mounting axles, external spacers, washers or nuts.\n- Geometry is built from native features using measured STEP profiles. Source hashes, dimensional discrepancies and the 105ZZ correction from 4.2 to 4 mm are documented. Original STEP files are not distributed.\n\nBearing closures are intentional zero-thickness surface bodies; rings are exterior\nenvelopes. These models support layout and appearance, not physical bearing mass,\ninternal contact or manufacturing sections. Metal wheels and the supplied inch and\n8 × 16 × 5 bearings remain unpublished candidates pending exact product evidence.\n\n## Bearings dialogs\n\nThe Bearings submenu has four commands. **Bearing** inserts a radial preset. **CSK clutch** inserts or edits a preset, or starts from scratch. It shows the inherited closure next to each starting preset. **Bearing by dimensions** and **CSK clutch by dimensions** share the numeric millimetre controls for nominal bore, outside diameter and width. See the [Bearings reference](../plugins/techsquid-bearings/REFERENCE.md).\n\n## Customizable CSK clutches\n\n- Reference publishers such as Formsprag are not assigned manufacturers. CSK specifications have no purchase identity or BOM part number. Purchasing assignment is [future work for a shared component workflow](../docs/parts-library.md#future-component-purchasing-workflow) after creation.\n- Custom and unsourced parts remain countable in the BOM. Repeated identical geometry reuses a definition; different keyway values stay separate.\n- Each component contains two chamfered solid rings and two cover/seal faces, with full-width rectangular keyways. Eight supplied STEP files establish measured exterior sections; other variants use explicitly recorded estimates. PP keyways default to opposing sides. Hidden sprags, raceways, seal cross-sections, rotation simulation and mass predictions remain outside the representation. Torque and load ratings are source-specific selection information, not geometry parameters.\n\nSee the [CSK example](../examples/bearings-and-clutches/#csk-references-and-overrides) and [source ledger](../docs/sources/csk.md).\n\n## Nylon-insert lock nuts\n\nThe Hex nut dialog adds thin DIN 985 nylon-insert lock nuts. Choose the style and size to create a loose nut, a flush captive pocket, or both. The [V-slot gantry](../examples/v-slot-gantry/) uses four M5 lock nuts.\n\nNew custom nut descriptions include thread size, pitch, width across flats and height.\n\n**BOM change for near-diameter inputs.** New insertions of `M5.0000001x0.8` and `M5` now share the nominal M5 part number. Existing saved definitions keep their original part numbers and descriptions. To consolidate a duplicate row in a saved design, replace its occurrences with the nominal size.\n\nIf Hex nuts is already installed, install the updated ZIP through **Preferences → Plugins** and review the replacement. SolidCraft ties plugin approvals to the exact package.\n\n**Breaking change for installed-tool calls.** Scripts calling `techsquid-nuts.make-nut` must pass `style`. Add `\"style\": \"Plain hex\"` to keep creating plain nuts. Existing `plugin.run` recipes default to Plain hex.\n\n## Extrusions and slot nuts\n\n- **Slot nuts come in M3, M4 and M5.** Size picks the thread of the MISUMI pre-assembly (HNTT5) or post-assembly (HNTP5) nut. The outer shape stays the same within each type; the tapped hole and the part number change.\n- **The Extrusion dialog starts with Mode**, then Slot, Size and Length. Holes from is now **Hole face** and Hole distances from is now **Measure holes from**; the keys `hole_face` and `holes_from` are unchanged.\n\n## One parts-library foundation\n\nNut-pocket batches and repeated runs now reserve distinct names for their planes,\nprofiles, cuts and bolt holes. Existing names in other components, case variants\nand numbered suffixes are respected, including after reopening a saved design.\nRenaming a part and all its bodies no longer lets a replacement collide with the\noriginal sketches. Face-attached pocket layouts preserve the selected copied or\nnested assembly through consecutive insertions; hardware seat joints identify\nthat exact placement.\n\nPackages expose insertion tools only. The shared internal descriptors retain\ndimensions, provenance, attachment frames, configuration rules and assembly\nmembers. Catalog discovery is deferred: the host currently displays every entry\nas a command but cannot provide a useful Catalog form. No Catalog buttons or\npublic query handlers are shipped.\n\nProduct identity is separate from CAD detail, placement and display names.\nCosmetic/modeled threads can share a purchasing identity while retaining different\nrepresentations. Reuse verifies native features, sketches, body history, materials,\nappearances, metadata and nested children. Edited definitions remain inta"
    },
-   "downloads": 650,
+   "downloads": 657,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/pcb-enclosure/insert-detail.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -819,7 +820,7 @@
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.3.0/techsquid-nuts-0.3.0.zip",
     "notes": "All six plugins now share internal part definitions and verified component reuse.\nBearings and V-wheels add supplier products with visible exterior detail. The Bearing dialog also offers a supplier-neutral sealed 105.\nCSK clutches add customizable exterior geometry with reference sources recorded\nseparately.\n\n## Bearings and V-wheels\n\n- **Bearings** offers base size and closure or a search by nominal bore, outside diameter and width. Thirteen closed variants use estimated exteriors. Twelve carry catalog-confirmed MISUMI numbers, and the sealed 105 has a supplier-neutral BOM row. Open remains available for 626. The [product table](../plugins/techsquid-bearings/README.md#supported-bearings-and-csk-presets) lists each exterior basis.\n- **V-wheels** offers Solid, Xtreme Solid, grooved Delrin, Delrin Mini and Xtreme Mini products. Choose a bare wheel or a core comprising one wheel, two bearings and one internal shim.\n- Direct bearings and wheel assemblies reuse the same verified bearing definition. The wheel package contains its dependencies; installing Bearings separately is optional.\n- Core assemblies list their separate purchases in the BOM. They are not retail kits and do not include mounting axles, external spacers, washers or nuts.\n- Geometry is built from native features using measured STEP profiles. Source hashes, dimensional discrepancies and the 105ZZ correction from 4.2 to 4 mm are documented. Original STEP files are not distributed.\n\nBearing closures are intentional zero-thickness surface bodies; rings are exterior\nenvelopes. These models support layout and appearance, not physical bearing mass,\ninternal contact or manufacturing sections. Metal wheels and the supplied inch and\n8 × 16 × 5 bearings remain unpublished candidates pending exact product evidence.\n\n## Bearings dialogs\n\nThe Bearings submenu has four commands. **Bearing** inserts a radial preset. **CSK clutch** inserts or edits a preset, or starts from scratch. It shows the inherited closure next to each starting preset. **Bearing by dimensions** and **CSK clutch by dimensions** share the numeric millimetre controls for nominal bore, outside diameter and width. See the [Bearings reference](../plugins/techsquid-bearings/REFERENCE.md).\n\n## Customizable CSK clutches\n\n- Reference publishers such as Formsprag are not assigned manufacturers. CSK specifications have no purchase identity or BOM part number. Purchasing assignment is [future work for a shared component workflow](../docs/parts-library.md#future-component-purchasing-workflow) after creation.\n- Custom and unsourced parts remain countable in the BOM. Repeated identical geometry reuses a definition; different keyway values stay separate.\n- Each component contains two chamfered solid rings and two cover/seal faces, with full-width rectangular keyways. Eight supplied STEP files establish measured exterior sections; other variants use explicitly recorded estimates. PP keyways default to opposing sides. Hidden sprags, raceways, seal cross-sections, rotation simulation and mass predictions remain outside the representation. Torque and load ratings are source-specific selection information, not geometry parameters.\n\nSee the [CSK example](../examples/bearings-and-clutches/#csk-references-and-overrides) and [source ledger](../docs/sources/csk.md).\n\n## Nylon-insert lock nuts\n\nThe Hex nut dialog adds thin DIN 985 nylon-insert lock nuts. Choose the style and size to create a loose nut, a flush captive pocket, or both. The [V-slot gantry](../examples/v-slot-gantry/) uses four M5 lock nuts.\n\nNew custom nut descriptions include thread size, pitch, width across flats and height.\n\n**BOM change for near-diameter inputs.** New insertions of `M5.0000001x0.8` and `M5` now share the nominal M5 part number. Existing saved definitions keep their original part numbers and descriptions. To consolidate a duplicate row in a saved design, replace its occurrences with the nominal size.\n\nIf Hex nuts is already installed, install the updated ZIP through **Preferences → Plugins** and review the replacement. SolidCraft ties plugin approvals to the exact package.\n\n**Breaking change for installed-tool calls.** Scripts calling `techsquid-nuts.make-nut` must pass `style`. Add `\"style\": \"Plain hex\"` to keep creating plain nuts. Existing `plugin.run` recipes default to Plain hex.\n\n## Extrusions and slot nuts\n\n- **Slot nuts come in M3, M4 and M5.** Size picks the thread of the MISUMI pre-assembly (HNTT5) or post-assembly (HNTP5) nut. The outer shape stays the same within each type; the tapped hole and the part number change.\n- **The Extrusion dialog starts with Mode**, then Slot, Size and Length. Holes from is now **Hole face** and Hole distances from is now **Measure holes from**; the keys `hole_face` and `holes_from` are unchanged.\n\n## One parts-library foundation\n\nNut-pocket batches and repeated runs now reserve distinct names for their planes,\nprofiles, cuts and bolt holes. Existing names in other components, case variants\nand numbered suffixes are respected, including after reopening a saved design.\nRenaming a part and all its bodies no longer lets a replacement collide with the\noriginal sketches. Face-attached pocket layouts preserve the selected copied or\nnested assembly through consecutive insertions; hardware seat joints identify\nthat exact placement.\n\nPackages expose insertion tools only. The shared internal descriptors retain\ndimensions, provenance, attachment frames, configuration rules and assembly\nmembers. Catalog discovery is deferred: the host currently displays every entry\nas a command but cannot provide a useful Catalog form. No Catalog buttons or\npublic query handlers are shipped.\n\nProduct identity is separate from CAD detail, placement and display names.\nCosmetic/modeled threads can share a purchasing identity while retaining different\nrepresentations. Reuse verifies native features, sketches, body history, materials,\nappearances, metadata and nested children. Edited definitions remain inta"
    },
-   "downloads": 726,
+   "downloads": 732,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/editable-mounting-plate/pockets-after.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -962,7 +963,7 @@
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.3.0/techsquid-screws-0.3.0.zip",
     "notes": "All six plugins now share internal part definitions and verified component reuse.\nBearings and V-wheels add supplier products with visible exterior detail. The Bearing dialog also offers a supplier-neutral sealed 105.\nCSK clutches add customizable exterior geometry with reference sources recorded\nseparately.\n\n## Bearings and V-wheels\n\n- **Bearings** offers base size and closure or a search by nominal bore, outside diameter and width. Thirteen closed variants use estimated exteriors. Twelve carry catalog-confirmed MISUMI numbers, and the sealed 105 has a supplier-neutral BOM row. Open remains available for 626. The [product table](../plugins/techsquid-bearings/README.md#supported-bearings-and-csk-presets) lists each exterior basis.\n- **V-wheels** offers Solid, Xtreme Solid, grooved Delrin, Delrin Mini and Xtreme Mini products. Choose a bare wheel or a core comprising one wheel, two bearings and one internal shim.\n- Direct bearings and wheel assemblies reuse the same verified bearing definition. The wheel package contains its dependencies; installing Bearings separately is optional.\n- Core assemblies list their separate purchases in the BOM. They are not retail kits and do not include mounting axles, external spacers, washers or nuts.\n- Geometry is built from native features using measured STEP profiles. Source hashes, dimensional discrepancies and the 105ZZ correction from 4.2 to 4 mm are documented. Original STEP files are not distributed.\n\nBearing closures are intentional zero-thickness surface bodies; rings are exterior\nenvelopes. These models support layout and appearance, not physical bearing mass,\ninternal contact or manufacturing sections. Metal wheels and the supplied inch and\n8 × 16 × 5 bearings remain unpublished candidates pending exact product evidence.\n\n## Bearings dialogs\n\nThe Bearings submenu has four commands. **Bearing** inserts a radial preset. **CSK clutch** inserts or edits a preset, or starts from scratch. It shows the inherited closure next to each starting preset. **Bearing by dimensions** and **CSK clutch by dimensions** share the numeric millimetre controls for nominal bore, outside diameter and width. See the [Bearings reference](../plugins/techsquid-bearings/REFERENCE.md).\n\n## Customizable CSK clutches\n\n- Reference publishers such as Formsprag are not assigned manufacturers. CSK specifications have no purchase identity or BOM part number. Purchasing assignment is [future work for a shared component workflow](../docs/parts-library.md#future-component-purchasing-workflow) after creation.\n- Custom and unsourced parts remain countable in the BOM. Repeated identical geometry reuses a definition; different keyway values stay separate.\n- Each component contains two chamfered solid rings and two cover/seal faces, with full-width rectangular keyways. Eight supplied STEP files establish measured exterior sections; other variants use explicitly recorded estimates. PP keyways default to opposing sides. Hidden sprags, raceways, seal cross-sections, rotation simulation and mass predictions remain outside the representation. Torque and load ratings are source-specific selection information, not geometry parameters.\n\nSee the [CSK example](../examples/bearings-and-clutches/#csk-references-and-overrides) and [source ledger](../docs/sources/csk.md).\n\n## Nylon-insert lock nuts\n\nThe Hex nut dialog adds thin DIN 985 nylon-insert lock nuts. Choose the style and size to create a loose nut, a flush captive pocket, or both. The [V-slot gantry](../examples/v-slot-gantry/) uses four M5 lock nuts.\n\nNew custom nut descriptions include thread size, pitch, width across flats and height.\n\n**BOM change for near-diameter inputs.** New insertions of `M5.0000001x0.8` and `M5` now share the nominal M5 part number. Existing saved definitions keep their original part numbers and descriptions. To consolidate a duplicate row in a saved design, replace its occurrences with the nominal size.\n\nIf Hex nuts is already installed, install the updated ZIP through **Preferences → Plugins** and review the replacement. SolidCraft ties plugin approvals to the exact package.\n\n**Breaking change for installed-tool calls.** Scripts calling `techsquid-nuts.make-nut` must pass `style`. Add `\"style\": \"Plain hex\"` to keep creating plain nuts. Existing `plugin.run` recipes default to Plain hex.\n\n## Extrusions and slot nuts\n\n- **Slot nuts come in M3, M4 and M5.** Size picks the thread of the MISUMI pre-assembly (HNTT5) or post-assembly (HNTP5) nut. The outer shape stays the same within each type; the tapped hole and the part number change.\n- **The Extrusion dialog starts with Mode**, then Slot, Size and Length. Holes from is now **Hole face** and Hole distances from is now **Measure holes from**; the keys `hole_face` and `holes_from` are unchanged.\n\n## One parts-library foundation\n\nNut-pocket batches and repeated runs now reserve distinct names for their planes,\nprofiles, cuts and bolt holes. Existing names in other components, case variants\nand numbered suffixes are respected, including after reopening a saved design.\nRenaming a part and all its bodies no longer lets a replacement collide with the\noriginal sketches. Face-attached pocket layouts preserve the selected copied or\nnested assembly through consecutive insertions; hardware seat joints identify\nthat exact placement.\n\nPackages expose insertion tools only. The shared internal descriptors retain\ndimensions, provenance, attachment frames, configuration rules and assembly\nmembers. Catalog discovery is deferred: the host currently displays every entry\nas a command but cannot provide a useful Catalog form. No Catalog buttons or\npublic query handlers are shipped.\n\nProduct identity is separate from CAD detail, placement and display names.\nCosmetic/modeled threads can share a purchasing identity while retaining different\nrepresentations. Reuse verifies native features, sketches, body history, materials,\nappearances, metadata and nested children. Edited definitions remain inta"
    },
-   "downloads": 882,
+   "downloads": 888,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/editable-mounting-plate/editable-mounting-plate.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -1106,7 +1107,7 @@
     "zip": "https://github.com/TechSquidTV/SolidCraft-Plugins/releases/download/v0.3.0/techsquid-v-wheels-0.3.0.zip",
     "notes": "All six plugins now share internal part definitions and verified component reuse.\nBearings and V-wheels add supplier products with visible exterior detail. The Bearing dialog also offers a supplier-neutral sealed 105.\nCSK clutches add customizable exterior geometry with reference sources recorded\nseparately.\n\n## Bearings and V-wheels\n\n- **Bearings** offers base size and closure or a search by nominal bore, outside diameter and width. Thirteen closed variants use estimated exteriors. Twelve carry catalog-confirmed MISUMI numbers, and the sealed 105 has a supplier-neutral BOM row. Open remains available for 626. The [product table](../plugins/techsquid-bearings/README.md#supported-bearings-and-csk-presets) lists each exterior basis.\n- **V-wheels** offers Solid, Xtreme Solid, grooved Delrin, Delrin Mini and Xtreme Mini products. Choose a bare wheel or a core comprising one wheel, two bearings and one internal shim.\n- Direct bearings and wheel assemblies reuse the same verified bearing definition. The wheel package contains its dependencies; installing Bearings separately is optional.\n- Core assemblies list their separate purchases in the BOM. They are not retail kits and do not include mounting axles, external spacers, washers or nuts.\n- Geometry is built from native features using measured STEP profiles. Source hashes, dimensional discrepancies and the 105ZZ correction from 4.2 to 4 mm are documented. Original STEP files are not distributed.\n\nBearing closures are intentional zero-thickness surface bodies; rings are exterior\nenvelopes. These models support layout and appearance, not physical bearing mass,\ninternal contact or manufacturing sections. Metal wheels and the supplied inch and\n8 × 16 × 5 bearings remain unpublished candidates pending exact product evidence.\n\n## Bearings dialogs\n\nThe Bearings submenu has four commands. **Bearing** inserts a radial preset. **CSK clutch** inserts or edits a preset, or starts from scratch. It shows the inherited closure next to each starting preset. **Bearing by dimensions** and **CSK clutch by dimensions** share the numeric millimetre controls for nominal bore, outside diameter and width. See the [Bearings reference](../plugins/techsquid-bearings/REFERENCE.md).\n\n## Customizable CSK clutches\n\n- Reference publishers such as Formsprag are not assigned manufacturers. CSK specifications have no purchase identity or BOM part number. Purchasing assignment is [future work for a shared component workflow](../docs/parts-library.md#future-component-purchasing-workflow) after creation.\n- Custom and unsourced parts remain countable in the BOM. Repeated identical geometry reuses a definition; different keyway values stay separate.\n- Each component contains two chamfered solid rings and two cover/seal faces, with full-width rectangular keyways. Eight supplied STEP files establish measured exterior sections; other variants use explicitly recorded estimates. PP keyways default to opposing sides. Hidden sprags, raceways, seal cross-sections, rotation simulation and mass predictions remain outside the representation. Torque and load ratings are source-specific selection information, not geometry parameters.\n\nSee the [CSK example](../examples/bearings-and-clutches/#csk-references-and-overrides) and [source ledger](../docs/sources/csk.md).\n\n## Nylon-insert lock nuts\n\nThe Hex nut dialog adds thin DIN 985 nylon-insert lock nuts. Choose the style and size to create a loose nut, a flush captive pocket, or both. The [V-slot gantry](../examples/v-slot-gantry/) uses four M5 lock nuts.\n\nNew custom nut descriptions include thread size, pitch, width across flats and height.\n\n**BOM change for near-diameter inputs.** New insertions of `M5.0000001x0.8` and `M5` now share the nominal M5 part number. Existing saved definitions keep their original part numbers and descriptions. To consolidate a duplicate row in a saved design, replace its occurrences with the nominal size.\n\nIf Hex nuts is already installed, install the updated ZIP through **Preferences → Plugins** and review the replacement. SolidCraft ties plugin approvals to the exact package.\n\n**Breaking change for installed-tool calls.** Scripts calling `techsquid-nuts.make-nut` must pass `style`. Add `\"style\": \"Plain hex\"` to keep creating plain nuts. Existing `plugin.run` recipes default to Plain hex.\n\n## Extrusions and slot nuts\n\n- **Slot nuts come in M3, M4 and M5.** Size picks the thread of the MISUMI pre-assembly (HNTT5) or post-assembly (HNTP5) nut. The outer shape stays the same within each type; the tapped hole and the part number change.\n- **The Extrusion dialog starts with Mode**, then Slot, Size and Length. Holes from is now **Hole face** and Hole distances from is now **Measure holes from**; the keys `hole_face` and `holes_from` are unchanged.\n\n## One parts-library foundation\n\nNut-pocket batches and repeated runs now reserve distinct names for their planes,\nprofiles, cuts and bolt holes. Existing names in other components, case variants\nand numbered suffixes are respected, including after reopening a saved design.\nRenaming a part and all its bodies no longer lets a replacement collide with the\noriginal sketches. Face-attached pocket layouts preserve the selected copied or\nnested assembly through consecutive insertions; hardware seat joints identify\nthat exact placement.\n\nPackages expose insertion tools only. The shared internal descriptors retain\ndimensions, provenance, attachment frames, configuration rules and assembly\nmembers. Catalog discovery is deferred: the host currently displays every entry\nas a command but cannot provide a useful Catalog form. No Catalog buttons or\npublic query handlers are shipped.\n\nProduct identity is separate from CAD detail, placement and display names.\nCosmetic/modeled threads can share a purchasing identity while retaining different\nrepresentations. Reuse verifies native features, sketches, body history, materials,\nappearances, metadata and nested children. Edited definitions remain inta"
    },
-   "downloads": 250,
+   "downloads": 255,
    "image": "https://raw.githubusercontent.com/TechSquidTV/SolidCraft-Plugins/main/examples/v-slot-gantry/axle-section.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -1131,7 +1132,7 @@
    "name": "Generative Design Engine",
    "description": "Engineering material library (sourced cards), material report, a 2D stress check of flat parts with safety factor, a plate optimiser and a round-bar bracket designer (truss). Third-party plugin, not affiliated with SolidCraft.",
    "note": null,
-   "version": "0.14.3",
+   "version": "0.15.0",
    "entries": [
     "apply-material",
     "material-report",
@@ -1147,16 +1148,16 @@
    "stars": 5,
    "issues": true,
    "license": "Apache-2.0",
-   "updated": "2026-11-28T00:15:44Z",
+   "updated": "2026-11-28T03:49:56Z",
    "created": "2026-11-17T07:12:52Z",
    "release": {
-    "tag": "v0.14.3",
-    "url": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/releases/tag/v0.14.3",
-    "date": "2026-11-28T00:15:44Z",
-    "zip": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/releases/download/v0.14.3/gen-design-engine-0.14.3.zip",
-    "notes": "Third-party plugin, not affiliated with SolidCraft; it only builds on their software.\n\n**The plugin itself is unchanged from 0.14.2** (same behaviour). This release follows main:\n- The README (new layout with pictures, install steps, results table) now ships in the zip (#162, PR #164). The zip of 0.14.2 still had the old README.\n\nTested on SolidCraft 0.50.0, headless: `tests/run-all.sh`, 8 of 8 stages PASS (tests, clippy, GPU vs CPU, wasm package, plugin check, end to end in SolidCraft). Not tried in a window yet. Unsigned; check the zip against the .sha256."
+    "tag": "v0.15.0",
+    "url": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/releases/tag/v0.15.0",
+    "date": "2026-11-28T02:11:06Z",
+    "zip": "https://github.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/releases/download/v0.15.0/gen-design-engine-0.15.0.zip",
+    "notes": "Third-party plugin, not affiliated with SolidCraft; it only builds on their software.\n\n**New in 0.15.0**\n- **optimise-plate:** the strength estimate still reads its peak away from point loads and point supports, but now also reports the peak right next to them (`near_points`: value, place, safety factor, pass) and the cell size (`cell_mm`). A warning appears when that peak is below the safety factor you need. A force on one point has no finite stress, so this number grows with more cells: spread the load or support and read it with stress-check (#165).\n- **stress-check:** an optional fatigue check, **Fatigue (cycling load)**: `pulsating` (0 to the full force) or `reversed` (the full force both ways). It uses the Goodman line (tensile mean stress only) against the material's endurance limit. Only the 8 wrought steels have one for now: 0.5 x tensile strength at 10^6 cycles, the approximation COMSOL uses for steel without S-N data. Every other material (aluminium, titanium, printed metals, maraging steel, plastics) has no fatigue data, so with cycling on the verdict is \"Not checked\" and there is no pass. Not counted: notches, surface, size, printed-metal roughness (#166).\n\nTested on SolidCraft 0.51.1, headless: `tests/run-all.sh`, 8 of 8 stages PASS (tests, clippy, GPU vs CPU, wasm package, plugin check, end to end in SolidCraft); `plugin test --require-cases`: 14 passed. Not tried in a window yet. Unsigned; check the zip against the .sha256."
    },
-   "downloads": 502,
+   "downloads": 522,
    "image": "https://raw.githubusercontent.com/LudaLunizz/Generative-design-plugin-for-SolidCraft/main/docs/showcase/render-metal.jpg",
    "has_topic": false,
    "category": "Other",
@@ -1210,7 +1211,7 @@
     "zip": "https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/download/v0.15.0/wood-joinery-en.zip",
     "notes": "Woodworking joints for SolidCraft, as a command plugin. In this version you pick the boards with a click, a docked *Joints* panel lists the joints of the design, and the French package speaks French. It is made for SolidCraft 0.51.\n\n## Install\n\nYou need the SolidCraft desktop application, **version 0.51.0 or later**. On 0.50 everything works but opening a joint's form from the Joints panel. On SolidCraft 0.46 to 0.49, install [v0.13.0](https://github.com/WilliamHJKL/solidcraft-wood-joinery/releases/tag/v0.13.0) instead.\n\n1. Download `wood-joinery-en.zip` (English) or `wood-joinery-fr.zip` (French) below. Do not take the \"Source code\" archives, and do not unzip the file.\n2. In SolidCraft, open Preferences › Plugins. If an older version is installed, click Remove on its card first.\n3. Click Install plugin… and pick the file. The plugin asks for the same commands as 0.14.0, and for one more capability, `ui`, for the Joints panel.\n\nInstall one package only. Both have the same plugin id. Your designs keep their joints, and Edit a joint and Update joints read the joints made with older versions.\n\n## New\n\n- **Pick the boards with a click.** The board fields of the thirteen joints work like Extrude's *Profiles*: the first one is active when the form opens, a click on a board in the view or in the browser fills it, and the next field takes the next click. Each field shows the board's name and a cross to empty it. Boards selected before you open the form still fill it.\n- **The Joints panel.** Docked on the right, it lists the joints of the open design with their state, and says whether the boards changed since the last update. *Update joints* and *Refresh* are its buttons; a double click on a row opens that joint's form (SolidCraft 0.51). SolidCraft does not yet tell a panel when a design opens (tangency-labs/solidcraft#21824): press *Refresh* to fill the list.\n- **Messages in French.** The French package gives its warnings and refusals in French, with a decimal comma: \"la mortaise laisse une joue de 6,0 mm dans le montant…\". The names of the joints' folders stay in English, as the designs keep them.\n\n## Fixed\n\n- **Edit a joint applies at the first click.** Apply no longer asks to check the form and to be pressed again: opening the form changes nothing in the design. The form shows, greyed at its foot, the joint it replaces.\n\n## Changed, for scripts\n\nA board is now given as a list of one name, `{\"rail\": [\"Rail\"], \"stile\": [\"Stile\"]}`, or as the reference a click sends, `[{\"type\": \"body\", \"name\": \"Rail\"}]`. SolidCraft refuses a plain name. Leaving the boards out and selecting them first with `select.set` still works.\n\nJoints, sizes and results are the same as in 0.14.0.\n\n## Tested\n\nOn SolidCraft 0.51.1 and 0.50.0: 96 unit tests, 208 end-to-end checks and 13 joints in 12 orientations each, from the command line. In the 0.51.1 app: a mortise and tenon picked with two clicks (one in the browser, one in the view) and made at the first Run, the Joints panel in French with its Refresh button, and a double click on its row opening the joint's form, filled, which replaced the joint at the first click."
    },
-   "downloads": 629,
+   "downloads": 635,
    "image": "https://raw.githubusercontent.com/WilliamHJKL/solidcraft-wood-joinery/main/docs/mortise-tenon.png",
    "has_topic": true,
    "category": "Woodworking",
@@ -1254,7 +1255,7 @@
     "zip": "https://github.com/stritti/revmesh/releases/download/v0.2.0/revmesh-0.2.0-de.zip",
     "notes": "## [0.2.0](https://github.com/stritti/revmesh/compare/v0.1.0...v0.2.0) (2026-11-26)\n\n\n### Features\n\n* **design:** dimension the stack's and combined's sketches ([#84](https://github.com/stritti/revmesh/issues/84)) ([dd18ad9](https://github.com/stritti/revmesh/commit/dd18ad940f437ad87a59cab412b23ac64765d949))\n* **plugin:** check the recognised design in the app's sandbox before writing it ([#90](https://github.com/stritti/revmesh/issues/90)) ([322e7d7](https://github.com/stritti/revmesh/commit/322e7d7d8a92f553e14465eb87416d218cfa43d4))\n* **plugin:** name the GitHub repository in plugin.json for SolidCraft's plugin card ([#87](https://github.com/stritti/revmesh/issues/87)) ([7d87983](https://github.com/stritti/revmesh/commit/7d87983b328df6c9bd563c86e29725a45912f28c))\n* **plugin:** spell out the auto/mesh differences in the import dialog ([#91](https://github.com/stritti/revmesh/issues/91)) ([a8ad87e](https://github.com/stritti/revmesh/commit/a8ad87ebd99fcf81dc1db00b487fd4dbfb58ccf7))\n* **recognize:** arc sides in cut-outs ([#82](https://github.com/stritti/revmesh/issues/82)) ([065147c](https://github.com/stritti/revmesh/commit/065147c8dba08fb9a895ab64e3e82c34064de80f))\n* **recognize:** fit rim and foot rounds as tori in the profile plane ([#89](https://github.com/stritti/revmesh/issues/89)) ([71a13fe](https://github.com/stritti/revmesh/commit/71a13fe3a91b4d343585139b4539d2836c502a9d))\n* **recognize:** headed holes opening on a step's level ([#85](https://github.com/stritti/revmesh/issues/85)) ([246db61](https://github.com/stritti/revmesh/commit/246db61a19d1afe285c80d643168c5947c0de281))\n* **recognize:** robust circle fits for rim loops via fixed-seed RANSAC ([#88](https://github.com/stritti/revmesh/issues/88)) ([a2b4205](https://github.com/stritti/revmesh/commit/a2b42053d43b8aae8fc00ecdb96a1fd6b3f2b689))\n* **report:** deviation report for combined, stacked and all-over-rounded parts ([#86](https://github.com/stritti/revmesh/issues/86)) ([8565616](https://github.com/stritti/revmesh/commit/8565616f9d4a976f1496964cc4846f699fac7713))\n\n\n### Bug Fixes\n\n* [ImgBot] Optimize images ([#93](https://github.com/stritti/revmesh/issues/93)) ([dcac8cd](https://github.com/stritti/revmesh/commit/dcac8cdbb5f6047f0e4e9e92acc3f61599b27c06))\n\n\n### Documentation\n\n* animated STL-to-design SVG as the home page hero ([#92](https://github.com/stritti/revmesh/issues/92)) ([27a0157](https://github.com/stritti/revmesh/commit/27a0157d6703fe7945c70d41e1539b1a45858b2d))\n* make the home page benefit-first, move technical detail behind links ([#94](https://github.com/stritti/revmesh/issues/94)) ([81fab07](https://github.com/stritti/revmesh/commit/81fab072b52e8eb3cc1f0ebcf5e8a0d4ce03616e))\n* **skills:** always check SolidCraft plugin-interface compatibility and full utilization ([#81](https://github.com/stritti/revmesh/issues/81)) ([6b0c962](https://github.com/stritti/revmesh/commit/6b0c9628444977180ee5a32c9389bbefd50e418e))"
    },
-   "downloads": 183,
+   "downloads": 200,
    "image": "https://raw.githubusercontent.com/stritti/revmesh/main/docs/public/examples/nema17-motor-plate.png",
    "has_topic": true,
    "category": "Hardware & fasteners",
@@ -1301,7 +1302,7 @@
     "zip": "https://github.com/Sooner4500/solidcraft-custom-threads/releases/download/v0.3.0/custom-threads.zip",
     "notes": "**Full Changelog**: https://github.com/Sooner4500/solidcraft-custom-threads/compare/v0.2.0...v0.3.0"
    },
-   "downloads": 449,
+   "downloads": 456,
    "image": "https://raw.githubusercontent.com/Sooner4500/solidcraft-custom-threads/main/docs/images/printed-test-parts.jpg",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -1351,7 +1352,7 @@
     "zip": "https://github.com/Mechmoth/solidcraft-mould-maker/releases/download/v0.5.2/mould-maker-0.5.2.zip",
     "notes": ""
    },
-   "downloads": 262,
+   "downloads": 269,
    "image": "https://raw.githubusercontent.com/Mechmoth/solidcraft-mould-maker/main/docs/round-exploded.png",
    "has_topic": true,
    "category": "3D printing",
@@ -1394,7 +1395,7 @@
     "zip": "https://github.com/pro-d-e-v/solidcraft-plugin-gear/releases/download/v0.4.0/gear-generator-0.4.0.zip",
     "notes": ""
    },
-   "downloads": 647,
+   "downloads": 651,
    "image": "https://raw.githubusercontent.com/pro-d-e-v/solidcraft-plugin-gear/main/docs/gear-iso.png",
    "has_topic": false,
    "category": "Gears & motion",
@@ -1437,7 +1438,7 @@
     "zip": "https://github.com/Xusr404/solidcraft-honeycomb-plugin/releases/download/v0.1.0/solidcraft-honeycomb.zip",
     "notes": "**Full Changelog**: https://github.com/Xusr404/solidcraft-honeycomb-plugin/commits/v0.1.0"
    },
-   "downloads": 613,
+   "downloads": 622,
    "image": "https://raw.githubusercontent.com/Xusr404/solidcraft-honeycomb-plugin/main/docs/honeycomb-screenshot.png",
    "has_topic": false,
    "category": "Shapes & patterns",
@@ -1483,7 +1484,7 @@
     "zip": "https://github.com/jcar01/solidcraft-plugin-iso-sheet/releases/download/v1.1.0/iso-sheet.zip",
     "notes": "1.1.0 adds a native scale dropdown and hardens the form values.\n\n- **Scale** is now a real dropdown: `Auto`, `1:1`, `1:2`, `1:5`, `1:10`, `1:20`, `1:50`, `1:100` (default `Auto`).\n- **Date** is validated as `YYYY-MM-DD`; empty uses today (UTC).\n- **Write SVG to** accepts a file name or a folder ending in `/` or `\\`; `.svg` is added when missing.\n- **Bodies** match case-insensitively; an unknown name reports the available bodies.\n- Auto scale considers up to `1:100`; enlargements display as `2:1`; an overflowing drawing returns `scale_note`.\n- The result now includes `date` and `available_bodies`.\n\nStill host-limited in SolidCraft 0.42.0: a dynamic body list, calendar picker and folder Browse need plugin-form support (tangency-labs/solidcraft#16274). The manifest marks `format: date` and `format: path` for forward compatibility.\n\nInstall: Preferences > Plugins > Install plugin... and pick `iso-sheet.zip`. Restart SolidCraft after a manual folder install.\n\nBuilt with cargo-component against `craft:plugin@0.1.0`, target `wasm32-unknown-unknown` (no WASI imports)."
    },
-   "downloads": 424,
+   "downloads": 426,
    "image": "https://raw.githubusercontent.com/jcar01/solidcraft-plugin-iso-sheet/main/docs/sheet-preview.png",
    "has_topic": false,
    "category": "Export & workflow",
@@ -1531,7 +1532,7 @@
     "zip": "https://github.com/bobthecooldad/sw2sc/releases/download/v0.18.0/sw2sc-0.18.0.zip",
     "notes": "This release expands editable feature-tree conversion and fixes a serious rebuild-memory failure.\nRust previously allocated every sketch-plane combination before trying one: 293,932,800,000\ncombinations in one public NIST case, driving a conversion to **43 GB**. The search now iterates\nlazily, and the process watchdog terminates a conversion and its process tree when its memory cap is\nexceeded. The complete 356-part public batch finished with **zero memory-limit terminations**.\n\n### Release verification\n\n- **21 of 22 regression parts rebuild, with zero losses.** PartT8 is restored by using only the\n  file-selected fillet edges; the timeout and 0.1% match threshold are unchanged.\n- Full public structural batch: **29 of 356 exact feature-tree rebuilds (8.1%)**, up from 26.\n  All 12 previous crashes are cleared; no previous match is lost.\n- NIST: **0 of 19 exact matches**, 12 fully decoded rebuild attempts and 7 reader-blocked parts.\n  This is unchanged in success rate; imported-solid fallbacks are not counted.\n- Private release sample: **6 of 40 exact rebuilds**, no losses, crashes or memory-limit events.\n  Only this aggregate is public; names, paths, geometry and per-file results remain local.\n- **120 Python tests pass (5 skipped); all 19 Rust tests pass.** Python/Rust parity is zero\n  differences on 54 public files and 43 designs. Checks used SolidCraft CLI 0.50.0.\n- See `logs/survey-0.18.0.md` for the measured release summary. The remaining long private scan is\n  diagnostic work and is not needed to validate this release.\n\n### Added\n- `tools/process_limit.py` adds a watchdog that checks working-set memory and terminates a\n  conversion and its process tree if `--memory-mb` is exceeded (default 8192 MiB). Timeout and\n  memory-limit results include the reason; large output is drained without deadlocking the watcher.\n- `tools/convert_sample.py` accepts a whole folder as well as a list, skips lock files, and takes\n  `--timeout` for long per-part conversion runs. JSONL results are flushed after every part and\n  aggregate progress prints every ten parts. Files over 250 MB run singly by default to limit\n  memory pressure; ordinary files keep the selected `--jobs` count.\n- The unattended check queue can run a rotating private external sample alongside the existing\n  long sample, with a commit-derived seed, eight jobs and a separate regression baseline. Private\n  filenames and paths stay in the private check directory; only aggregate outcomes go in public logs.\n- `tools/feature_check.py` and `tools/rebuild_triage.py` rebuild parts in parallel with `--jobs`\n  (default 20), preserving report order and per-part errors. Process-based regression tests cover\n  the new runners. Triage's default per-part budget is now 300 seconds (was 90), with a CLI\n  regression test for the default. `tools/feature_blockers.py` reads parts with `--jobs` (default 20), with per-part\n  timeouts, memory caps and optional incremental JSONL output, so one difficult file cannot hold up\n  or erase the rest of a full-folder census.\n- Body and face colours from Parasolid `SDL/TYSA_COLOUR` / `SDL/TYSA_COLOUR_2` attributes are\n  written as AP214 presentation styles in STEP, with identical RGB styles shared. Python and Rust.\n- Body moves (`moMoveCopyBody_c`) convert to SolidCraft's move: translation and rotation are\n  written as a rigid matrix, with the original translation-only form kept for identity rotations.\n  Python and Rust. Independent body copies remain to be done.\n- Ribs (`moRib_c`) convert to SolidCraft's rib: the wall's sides, thickness and free-edge profile\n  are read from the rib's own faces in the part's solid (ported from cadkit-kernel\n  `ck-swedit/src/rib.rs`, MIT; see THIRD_PARTY_NOTICES.md); its side and whether its ends run on\n  to the body are chosen in the rebuild. Python and Rust.\n\n### Fixed\n- Fillets use only the edge set selected in the SolidWorks file (`tangent_chain: false`), rather than\n  adding SolidCraft's tangent-propagated edges. PartT8 matches again through Python and Rust within\n  the normal 300-second budget, restoring the 21-of-22 regression baseline (B-023). The match\n  threshold and search timeout are unchanged.\n- Straight, uniformly spaced `moCurvePattern_c` features now convert as linear patterns when the\n  record uniquely references an unused one-line path sketch. The line and sketch plane supply the\n  direction; count and spacing are required. Two public parts become fully decoded; unspaced and\n  genuinely curved cases remain TBD. Python and Rust.\n- Mid-plane extrudes (`moEndSpec_c` type 6) are read from the file and written as symmetric\n  total-distance extrudes, with only the symmetric direction offered to the rebuild search.\n  Other end conditions keep their previous behavior. Python and Rust; layout checked against\n  public samples with help from cadkit-kernel.\n- Linear patterns whose KeyWords contain one consecutive `FIX_n` spacing/count pair now read those\n  values instead of becoming TBD. Two public parts, with five such patterns each, are now fully\n  decoded. Ordinary `D1`/`D3` dimensions remain unchanged. Python and Rust.\n- Through-all bosses no longer index a nonexistent previous feature when an imported body precedes\n  them; the search checks `i > 0` before using it. All 12 GrabCAD crashes now return normal results,\n  and three are exact rebuilds. The full 356-part result rises from 26 to **29 exact matches (8.1%)**,\n  with no previous match lost.\n- The Rust rebuild search no longer allocates every sketch-plane combination before starting:\n  combinations are iterated lazily, like Python's `itertools.product`. One NIST part had\n  293,932,800,000 combinations and previously exhausted memory in seconds.\n- The main rebuild search budget is now 300 seconds in Python and Rust (was 240), matching the\n  triage default. One previously timed-out regression part matches again.\n- Revolves and revolved cuts are included at their own place in the sequential rebuild, and the\n  material bounds acc"
    },
-   "downloads": 158,
+   "downloads": 161,
    "image": null,
    "has_topic": false,
    "category": "Other",
@@ -1576,7 +1577,7 @@
     "zip": "https://github.com/SB97/solidcraft-3d-printing-holes/releases/download/v0.2.2/solidcraft-3d-printing-holes.zip",
     "notes": "**Full Changelog**: https://github.com/SB97/solidcraft-3d-printing-holes/compare/v0.2.1...v0.2.2"
    },
-   "downloads": 534,
+   "downloads": 542,
    "image": "https://raw.githubusercontent.com/SB97/solidcraft-3d-printing-holes/main/docs/teardrop.png",
    "has_topic": true,
    "category": "Hardware & fasteners",
@@ -1626,7 +1627,7 @@
     "zip": "https://github.com/takuto-NA/solidcraft-aprilcube/releases/download/v0.4.0/solidcraft-aprilcube-0.4.0.zip",
     "notes": "Generate editable two-color AprilTag and ArUco targets in SolidCraft desktop.\n\n- Build cuboids or voxel shapes, with distinct marker IDs across each batch.\n- Preview the marker layout and optionally engrave a label on each target.\n- Export tracking JSON and per-target 3MF files with the included Python companion.\n\nDownload the ZIP and choose **Plugins → Install plugin…** in SolidCraft desktop 0.41.0 or later. Use the accompanying SHA-256 file to verify the download."
    },
-   "downloads": 177,
+   "downloads": 178,
    "image": "https://raw.githubusercontent.com/takuto-NA/solidcraft-aprilcube/main/docs/aprilcube-solidcraft.png",
    "has_topic": true,
    "category": "3D printing",
@@ -1669,7 +1670,7 @@
     "zip": "https://github.com/MMMatth/solidcraft-code-maker/releases/download/v0.7.2/code-maker-0.7.2.zip",
     "notes": "### Changed\n- **An inlay or an engraving is much faster, on a plate or on a face.** The code is now made first, sunk into the part, and\n  one combine cuts the part with it (an inlay keeps the code as its own body, an engraving uses it up). Cutting the\n  outlines out of the part as an extrusion took several times longer, and the time grew so fast that a longer link\n  hit the 30 s the host allows. The time now grows evenly with the length of the text, so an inlay or an engraving\n  takes a link as long as a raised code does (200 outlines, about 150 characters). The plugin now asks the host for\n  `solid.combine`.\n\n  | New plate, a link of | 0.7.1 | 0.7.2 |\n  |---|---|---|\n  | 56 characters (95 outlines), inlay | 16.0 s | 5.5 s |\n  | 77 characters, inlay | 22.4 s | 7.7 s |\n  | 97 characters, inlay | stopped at 30 s | 9.5 s |\n  | 117 characters, inlay | stopped at 30 s | 10.3 s |\n  | 56 characters, engraving | 13.3 s | 5.0 s |\n\n  Measured once each on a laptop, with the same link and the same size (40 mm) for both versions. On a face, a\n  120-outline inlay takes 8 s, where 0.7.1 stopped at 30 s.\n\n### Added\n- Pictures for the workshop: the three styles side by side, an inlay on a part and the types of code. The manifest lists\n  them and takes the README as its description."
    },
-   "downloads": 95,
+   "downloads": 98,
    "image": "https://raw.githubusercontent.com/MMMatth/solidcraft-code-maker/main/docs/demo.webp",
    "has_topic": false,
    "category": "Other",
@@ -1723,7 +1724,7 @@
     "zip": "https://github.com/pawelcel/EasyPDM-SolidCraft-Addon/releases/download/v0.9.1/EasyPDM_SolidCraft_Companion_linux-x64_v0.9.1.zip",
     "notes": "**In short:** Log in, Log out and Download work again in newer SolidCraft versions, which refused them with \"permission denied: read entry may not use the host import write-file\".\r\n\r\nUpdate: unpack the new companion zip over the old one, run `easypdm-companion setup-solidcraft` again and reinstall the plugin it writes (Preferences > Plugins), granting the same `file` command group and `outbox` folder.\r\n\r\n### Fixed\r\n- **\"permission denied: read entry may not use the host import write-file\".** Log in, Log out and Download were declared as read-only entries, yet each leaves its request for the companion in the outbox folder. SolidCraft now refuses file writes to read-only entries, whatever folders the plugin was granted, so they failed before doing anything. They are now declared as edit entries, like Upload; they still change nothing in the design. ([EasyPDM #9](https://github.com/pawelcel/EasyPDM/issues/9))"
    },
-   "downloads": 146,
+   "downloads": 148,
    "image": "https://raw.githubusercontent.com/wiki/pawelcel/EasyPDM-SolidCraft-Addon/images/solidcraft-plugins-ribbon.png",
    "has_topic": true,
    "category": "Export & workflow",
@@ -1775,7 +1776,7 @@
     "zip": "https://github.com/tharje/filament-swatch-solidcraft/releases/download/v0.3.1/filament-swatch-0.3.1.zip",
     "notes": "## New\n\n**Tested with SolidCraft 0.45.** The plugin now comes with its own test cases in `package/filament-swatch/tests/`. `solidcraft-cli plugin test package/filament-swatch` (SolidCraft 0.45 and later) runs them on the real host and checks each result's body count and volume. The tests are not part of the zip.\n\nSwatches come out exactly as before.\n\n## Install\nDownload `filament-swatch-0.3.1.zip` below, then in SolidCraft: **Plugins › Install plugin…** and pick the zip.\n\nTested with SolidCraft 0.43.0, 0.44.1 and 0.45.0 on Linux. On macOS, use SolidCraft 0.43 or newer (0.41 and 0.42 crash there when any plugin runs)."
    },
-   "downloads": 275,
+   "downloads": 278,
    "image": "https://raw.githubusercontent.com/tharje/filament-swatch-solidcraft/main/docs/images/swatch.png",
    "has_topic": true,
    "category": "3D printing",
@@ -1832,7 +1833,7 @@
     "zip": "https://github.com/fpoussin/solidcraft-kicad/releases/download/v0.4.0/solidcraft-kicad-v0.4.0-x86_64-pc-windows-msvc.zip",
     "notes": "- Upgrade SolidCraft crates and kernel patches to `v0.18.3` (native format 29; desktop 0.18.3 or newer).\n- Preserve uncompressed geometry in `--compression fast` across both SolidCraft save paths."
    },
-   "downloads": 100,
+   "downloads": 102,
    "image": "https://raw.githubusercontent.com/fpoussin/solidcraft-kicad/master/docs/images/pcb-assembly.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -1881,7 +1882,7 @@
     "zip": "https://github.com/JakeMathews/mesh-solidify/releases/download/v0.2.0/mesh-solidify-plugin.zip",
     "notes": "Rewritten in Rust, primarily as a **SolidCraft plugin**, with a standalone command line that needs no Python.\n\n## Assets\n\n| file | what it is |\n|---|---|\n| `mesh-solidify-plugin.zip` | SolidCraft plugin (0.41+). Preferences › Plugins › Install plugin…, then Plugins › Mesh Solidify. |\n| `mesh-solidify-v0.2.0-<target>.tar.gz` / `.zip` | Command line for macOS (Apple Silicon, Intel), Linux (x86-64, ARM64) and Windows. |\n| `mesh-solidify-skill.zip` | Claude Code skill. Unzip into `.claude/skills/`. |\n| `solidify.py` | The original Python version (0.1.1), for reference. |\n| `SHA256SUMS.txt` | Checksums. |\n\n## Highlights\n\n- **Plugin:** *Solidify Mesh…* rebuilds the selected mesh body as a new watertight body in one undo step. The dialog defaults to 10% scale. *Inspect Mesh…* reports holes, loose parts and size.\n- **CLI:** same flags, `--json` and exit codes as 0.1; about 2× faster with a quarter of the memory (978k-triangle compressor: 35 s instead of 76 s; 650k-triangle toolbox at 400M voxels: 34 s and 2 GB instead of 123 s and 7.8 GB). New `--voxel auto` and `--threads`; reads PLY.\n- Octree winding-number evaluation, marching tetrahedra, manifold-preserving decimation, void filling.\n\n## SolidCraft 0.41.0 limits\n\nThese are the host's limits, not the plugin's:\n- A plugin can read mesh bodies of at most **2,730 triangles**, and send back about 30,000. For larger scans use the CLI and *Insert Mesh*.\n- **macOS:** the signed 0.41.0 build lacks the JIT entitlement Wasmtime needs, so running *any* plugin kills the process (\"Code Signature Invalid\"). Use a build without the hardened runtime until SolidCraft fixes it.\n\nSee [CHANGELOG.md](https://github.com/JakeMathews/mesh-solidify/blob/main/CHANGELOG.md)."
    },
-   "downloads": 407,
+   "downloads": 412,
    "image": "https://raw.githubusercontent.com/JakeMathews/mesh-solidify/main/docs/images/result-top.png",
    "has_topic": false,
    "category": "3D printing",
@@ -1937,7 +1938,7 @@
     "zip": "https://github.com/tharje/opengrid-solidcraft/releases/download/v0.3.1/opengrid-0.3.1.zip",
     "notes": "## New\n\n**Tested with SolidCraft 0.45.** The plugin now comes with its own test cases in `package/opengrid/tests/`. `solidcraft-cli plugin test package/opengrid` (SolidCraft 0.45 and later) runs them on the real host and checks each result's body count and volume. The tests are not part of the zip.\n\nBoards come out exactly as before.\n\n## Install\nDownload `opengrid-0.3.1.zip` below, then in SolidCraft: **Plugins › Install plugin…** and pick the zip.\n\nTested with SolidCraft 0.43.0, 0.44.1 and 0.45.0 on Linux. On macOS, use SolidCraft 0.43 or newer (0.41 and 0.42 crash there when any plugin runs)."
    },
-   "downloads": 344,
+   "downloads": 349,
    "image": "https://raw.githubusercontent.com/tharje/opengrid-solidcraft/main/docs/images/board-full.png",
    "has_topic": true,
    "category": "Storage & organizing",
@@ -1981,7 +1982,7 @@
     "zip": "https://github.com/Stigern/SolidThreadsPlugin/releases/download/v1.8.0/thread-generator-1.8.0.zip",
     "notes": "Thread Generator for [SolidCraft](https://github.com/tangency-labs/solidcraft): 3D-printable threads with clearance, cut into the face you select in SolidCraft.\n\n## New in 1.8.0\n\n- **One Size field.** The separate Diameter and Pitch fields are gone, so the size you see is the size that's cut. Pick from the list or type your own, like `M9x1.5`.\n- **1 mm pitch on every size** from M4 to M50 (M8x1, M10x1, …), next to 2, 2.5, 3.5 and 5 mm.\n- When you use a new face, the **pitch you picked is kept** and the diameter follows the face.\n- **New defaults:** M8x1, tolerance O.15, height 85%.\n\n## Install\n\n1. Download **thread-generator-1.8.0.zip** below.\n2. In SolidCraft open **Preferences → Plugins → Show in folder** and unzip it there, so you get `plugins\\thread-generator\\plugin.json`. Updating? Close Thread Generator first and replace the old folder.\n3. Start **ThreadGenerator.exe** from that folder. Windows may say \"Windows protected your PC\" because the program isn't code-signed: click *More info → Run anyway*.\n\nNeeds Windows 10/11 and SolidCraft 0.22 or later for threading a face. No Python needed.\n\n## What it does\n\n- **Thread a face in SolidCraft:** select a shaft or the inside of a hole, pick a size, tolerance and height, and SolidCraft cuts a modeled thread into it.\n- **3D-printed metric sizes** after [CustomThreads](https://github.com/BalzGuenat/CustomThreads): 1, 2 (experimental), 2.5, 3.5 and 5 mm pitches, plus ISO metric, fine and UNC.\n- **Tolerance classes** O.0, O.1, O.15, O.2, O.4, O.8 and **height** 70–100%: lower teeth with flat tops that still fit a matching nut.\n- A to-scale **drawing** of bolt and nut that explains each setting.\n- **Export repaired 3MF:** exports the selected body and runs Windows' own model repair on it, then opens it in your slicer.\n- **Make parts (STL):** bolts, nuts, threaded rods and thread cutters as watertight STL.\n- Follows SolidCraft's light or dark theme."
    },
-   "downloads": 765,
+   "downloads": 775,
    "image": "https://raw.githubusercontent.com/Stigern/SolidThreadsPlugin/main/docs/screenshot.png",
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -2067,7 +2068,7 @@
     "zip": "https://github.com/dudedagger42/solidcraft-galaxy/releases/download/v3.0.2/galaxy-3.0.2.zip",
     "notes": "Workshop listing: its description no longer has a picture the Workshop can't load; the listing picture comes from the files list. No plugin changes."
    },
-   "downloads": 8,
+   "downloads": 9,
    "image": "https://raw.githubusercontent.com/dudedagger42/solidcraft-galaxy/v3.0.1/screenshots/effect.png",
    "has_topic": false,
    "looks": true,
@@ -2111,7 +2112,7 @@
     "zip": "https://github.com/oxidized-elias/solidcraft-plugins/releases/download/build-4570d36209bf9872ebbdd34ba9bd2dc635d164ab/aluminum-extrusions.zip",
     "notes": "**Full Changelog**: https://github.com/oxidized-elias/solidcraft-plugins/compare/build-b7197d32899cb3b8dc8fcd26bb636dc449311a92...build-4570d36209bf9872ebbdd34ba9bd2dc635d164ab"
    },
-   "downloads": 67,
+   "downloads": 72,
    "image": null,
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -2159,7 +2160,7 @@
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-cnc-studio-0.2.0.zip",
     "notes": "First public release.\n\n- **makeorbit-cnc-studio-0.2.0.zip** – “An MakeOrbit CNC Studio senden / Send to MakeOrbit CNC Studio”: exports the design as STEP; CNC Studio imports it after asking.\n- **makeorbit-0.2.0.zip** – “An MakeOrbit senden / Send to MakeOrbit”: STEP, STL (binary/ASCII), 3MF and the SolidCraft design; MakeOrbit asks which project to archive it in.\n\nRequires SolidCraft 0.43.0 or newer, and on macOS MakeOrbit CNC Studio 0.5.16+ and/or MakeOrbit 2.9.18+. Install via **Plugins › Install plugin…** and grant the folder **austausch** (see README). Check the files against `SHA256SUMS.txt`.\n\nSource-available, not open source – see LICENSE."
    },
-   "downloads": 139,
+   "downloads": 140,
    "image": null,
    "has_topic": false,
    "category": "Export & workflow",
@@ -2209,7 +2210,7 @@
     "zip": "https://github.com/645DF/MakeOrbit-SolidCraft/releases/download/v0.2.0/makeorbit-0.2.0.zip",
     "notes": "First public release.\n\n- **makeorbit-cnc-studio-0.2.0.zip** – “An MakeOrbit CNC Studio senden / Send to MakeOrbit CNC Studio”: exports the design as STEP; CNC Studio imports it after asking.\n- **makeorbit-0.2.0.zip** – “An MakeOrbit senden / Send to MakeOrbit”: STEP, STL (binary/ASCII), 3MF and the SolidCraft design; MakeOrbit asks which project to archive it in.\n\nRequires SolidCraft 0.43.0 or newer, and on macOS MakeOrbit CNC Studio 0.5.16+ and/or MakeOrbit 2.9.18+. Install via **Plugins › Install plugin…** and grant the folder **austausch** (see README). Check the files against `SHA256SUMS.txt`.\n\nSource-available, not open source – see LICENSE."
    },
-   "downloads": 270,
+   "downloads": 272,
    "image": null,
    "has_topic": false,
    "category": "Export & workflow",
@@ -2255,7 +2256,7 @@
     "zip": "https://github.com/oxidized-elias/solidcraft-plugins/releases/download/build-4570d36209bf9872ebbdd34ba9bd2dc635d164ab/breakaway-supports.zip",
     "notes": "**Full Changelog**: https://github.com/oxidized-elias/solidcraft-plugins/compare/build-b7197d32899cb3b8dc8fcd26bb636dc449311a92...build-4570d36209bf9872ebbdd34ba9bd2dc635d164ab"
    },
-   "downloads": 40,
+   "downloads": 43,
    "image": null,
    "has_topic": false,
    "category": "Other",
@@ -2280,7 +2281,7 @@
    "name": "Cabinet Studio",
    "description": "Cabinets, benchtops and cut lists in SolidCraft, from Cabinet Studio. Early test build.",
    "note": null,
-   "version": "0.9.0",
+   "version": "0.12.0",
    "entries": [
     "Job setup",
     "Cabinets panel",
@@ -2294,7 +2295,7 @@
     "Bench top and panels",
     "Cut list"
    ],
-   "commands": 25,
+   "commands": 36,
    "permissions": [
     "files"
    ],
@@ -2302,16 +2303,16 @@
    "stars": 0,
    "issues": true,
    "license": "Apache-2.0",
-   "updated": "2026-11-28T00:17:35Z",
+   "updated": "2026-11-28T01:33:55Z",
    "created": "2026-11-27T11:40:25Z",
    "release": {
-    "tag": "v0.9.0",
-    "url": "https://github.com/brendan779/CabinetStudioPlugin/releases/tag/v0.9.0",
-    "date": "2026-11-28T00:17:35Z",
-    "zip": "https://github.com/brendan779/CabinetStudioPlugin/releases/download/v0.9.0/cabinet-studio-0.9.0.zip",
-    "notes": "Add and Edit preview in their dialogs again: plain panels follow the fields, and Run builds at the job's detail. Needs Max plugin host calls of at least 5000 in Preferences › Plugins."
+    "tag": "v0.12.0",
+    "url": "https://github.com/brendan779/CabinetStudioPlugin/releases/tag/v0.12.0",
+    "date": "2026-11-28T01:33:55Z",
+    "zip": "https://github.com/brendan779/CabinetStudioPlugin/releases/download/v0.12.0/cabinet-studio-0.12.0.zip",
+    "notes": "Cut List now adds a paginated whole-job cut list grouped by board and thickness. Choose Part drawings for an A3 sheet per part with an isolated model view, cut and finished sizes, quantity and edging. Everything generates both drawings. Cutting layouts in the SolidCraft drawing still use placement tables."
    },
-   "downloads": 66,
+   "downloads": 87,
    "image": null,
    "has_topic": false,
    "category": "Woodworking",
@@ -2358,7 +2359,7 @@
     "zip": "https://github.com/foah/solidcraft-code-mode/releases/download/v0.1.0/codemode.zip",
     "notes": "First release. Requires SolidCraft 0.50.0 or later.\r\n\r\n### Added\r\n\r\n- Three MCP tools: `codemode.run {code}` runs a JavaScript script in the open design as one undo step,\r\n  `codemode.new {name?}` starts a new, empty design, and `codemode.design {}` lists the bodies and parts.\r\n- The scx v15.1 vocabulary ported to JavaScript: `box`, `cylinder`, `cone`, `sphere`, `hole`, `sketch` (with\r\n  `rect`, `circle`, `slot`, `polygon`, `poly`, `extrude`, `revolve`), `loft`, `fillet`, `chamfer`, `hollow`,\r\n  `shell`, `combine`, `move`, `remove`, `rename`, `color`, `part`, `measure`, `bodies`, `edges`, `faces`, and\r\n  `cmd(id, params)` for 128 SolidCraft commands. The reply lists what changed, in scx's format.\r\n- `help(id)` prints a command's parameters; `help()` lists the command ids a script can run.\r\n- The agent sees the vocabulary as TypeScript declarations, with three examples.\r\n- Error messages give the script line, and any error undoes the whole script.\r\n- `codemode.run` is a long job: a big script may run up to 10 minutes. It shows its progress as a row\r\n  \"Code Mode: Run\" in the operations panel, where it can be cancelled.\r\n- A \"Code Mode\" button on the Model tab.\r\n- A benchmark against SolidCraft's classic MCP tools ([bench/](https://github.com/foah/solidcraft-code-mode/blob/main/bench/README.md)): on the 23 tasks of scx, with\r\n  Claude Haiku 5.5, 72 % fewer tool calls and 78 % lower cost, with every run passing in both arms. Building\r\n  a robot chassis from a photo with Claude Sonnet 5.5 (10 runs per arm): 55 % lower cost, 86 % fewer tool\r\n  calls, parts of the same look.\r\n- The README tells how to make an agent use Code Mode (a paragraph for the prompt or `CLAUDE.md`).\r\n\r\n[0.1.0]: https://github.com/foah/solidcraft-code-mode/releases/tag/v0.1.0"
    },
-   "downloads": 10,
+   "downloads": 11,
    "image": null,
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -2386,7 +2387,7 @@
    "name": "First Gear Maker",
    "description": "Generates involute gears: spur, helical, herringbone, internal, rack, bevel, worm and worm wheel, and calculates center distances.",
    "note": null,
-   "version": "0.1.0",
+   "version": "0.1.1",
    "entries": [
     "spur",
     "helical",
@@ -2404,16 +2405,16 @@
    "stars": 0,
    "issues": true,
    "license": "MIT",
-   "updated": "2026-11-27T10:54:21Z",
+   "updated": "2026-11-28T03:22:11Z",
    "created": "2026-11-27T10:49:32Z",
    "release": {
-    "tag": "v0.1.0",
-    "url": "https://github.com/ooISHoo/solidcraft-first-gear-maker/releases/tag/v0.1.0",
-    "date": "2026-11-27T10:50:38Z",
-    "zip": "https://github.com/ooISHoo/solidcraft-first-gear-maker/releases/download/v0.1.0/first-gear-maker-0.1.0.zip",
-    "notes": "Needs SolidCraft 0.50.0 or newer (tested on 0.50.0).\n\n- Eight gear entries, each building ordinary SolidCraft features grouped in the timeline:\n  `spur`, `helical`, `herringbone`, `internal` (straight, helical or herringbone teeth), `rack` (straight or helical),\n  `bevel` (straight), `worm` and `worm-wheel`.\n- Involute tooth profiles with the rack cutter's root trochoid (undercut reproduced and reported), profile shift,\n  pressure angle, backlash, addendum, dedendum and root fillet; bore and JIS B 1301 keyway where it applies.\n- Placement by picking a position and an axis in the viewport (sketch points and lines, circular and straight edges,\n  cylindrical and flat faces), a default axis and a flip; from scripts and agents also references to origin axes, planes,\n  construction points and vertices, a bare world coordinate and a direction vector.\n- \"Recommended values\" for machining and for 3D printing, which set the clearances from the module (starting values).\n- `center-distance`, a calculator for external, internal, rack and worm pairs, with the working centre distance and\n  pressure angle for shifted gears; results shown live in the dialog.\n- Usable from SolidCraft's MCP server and from `solidcraft-cli` scripts (`plugin.run`).\n- No permissions requested: no files, no network, no settings."
+    "tag": "v0.1.1",
+    "url": "https://github.com/ooISHoo/solidcraft-first-gear-maker/releases/tag/v0.1.1",
+    "date": "2026-11-28T03:16:33Z",
+    "zip": "https://github.com/ooISHoo/solidcraft-first-gear-maker/releases/download/v0.1.1/first-gear-maker-0.1.1.zip",
+    "notes": "Needs SolidCraft 0.50.0 or newer (tested on 0.50.0). No change to the plugin's behaviour.\n\n- New screenshots of the spur dialog with its preview and of a gear placed on a boss, for the README and the Workshop\n  listing."
    },
-   "downloads": 15,
+   "downloads": 21,
    "image": "https://raw.githubusercontent.com/ooISHoo/solidcraft-first-gear-maker/main/doc/workshop/card.png",
    "has_topic": false,
    "category": "Gears & motion",
@@ -2421,11 +2422,7 @@
    "slug": "first-gear-maker",
    "icon": "icons/first-gear-maker.svg",
    "checked": null,
-   "tested": {
-    "label": "✓ Runs in SolidCraft 0.50.0",
-    "date": "2026-11-27",
-    "title": "Tested 2026-11-27 on Linux: SolidCraft 0.50.0 loaded this release and ran every command with its default values."
-   },
+   "tested": null,
    "asks": null,
    "report": "https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&title=%5BPlugin+problem%5D+First+Gear+Maker&plugin=First+Gear+Maker+%28https%3A%2F%2Fgithub.com%2FooISHoo%2Fsolidcraft-first-gear-maker%2Ftree%2Fmain%2Ffirst-gear-maker%29",
    "report_author": "https://github.com/ooISHoo/solidcraft-first-gear-maker/issues/new?title=First+Gear+Maker%3A+"
@@ -2467,7 +2464,7 @@
     "zip": "https://github.com/rob089/solidcraft-gear-kit/releases/download/v1.0.0/gear-kit-1.0.0.zip",
     "notes": "First release.\n\n- Spur, helical and herringbone gears with a mating gear, ring gear or rack\n- Straight bevel gears\n- Worm drives\n- Timing pulleys for GT2, HTD, T, MXL and XL belts\n- Edit Gears: change gears and pulleys after they are built, in place\n\nRequires SolidCraft 0.50.0 or later. Install: **Plugins › Install plugin…** in SolidCraft, then pick `gear-kit-1.0.0.zip`."
    },
-   "downloads": 70,
+   "downloads": 81,
    "image": "https://raw.githubusercontent.com/rob089/solidcraft-gear-kit/master/docs/images/gallery.png",
    "has_topic": true,
    "category": "Gears & motion",
@@ -2516,7 +2513,7 @@
     "zip": "https://github.com/haashimrehan/solidcraft-gridfinity/releases/download/v0.1.0/solidcraft-gridfinity-0.1.0.zip",
     "notes": "First release: Gridfinity bins and baseplates for SolidCraft 0.41 or newer.\n\n**Install:** download `solidcraft-gridfinity-0.1.0.zip` below, then in SolidCraft choose **Plugins > Install plugin…** and pick the zip. The entries appear under **Plugins > Gridfinity**.\n\n- **Bin:** 1 to 6 grid units a side (at most 25 cells), 2 to 20 height units, wall thickness, stacking lip, magnet holes, compartments along X and Y, scoop and label tab.\n- **Baseplate:** 1 to 6 grid units a side.\n\nEverything is built from ordinary sketches and extrudes, so it stays editable. The plugin needs no files, no network and no clock.\n\nKnown limits: no screw holes, no weighted or magnet baseplates, no half-pitch grids. The stacking lip is 4.15 mm tall (a 0.25 mm flat replaces the knife edge). Fit against printed Gridfinity parts has not been test-printed yet.\n\nThe `.sha256` file checks the download."
    },
-   "downloads": 251,
+   "downloads": 255,
    "image": null,
    "has_topic": false,
    "category": "Storage & organizing",
@@ -2559,7 +2556,7 @@
     "zip": "https://github.com/oxidized-elias/solidcraft-plugins/releases/download/build-4570d36209bf9872ebbdd34ba9bd2dc635d164ab/heatset-insert.zip",
     "notes": "**Full Changelog**: https://github.com/oxidized-elias/solidcraft-plugins/compare/build-b7197d32899cb3b8dc8fcd26bb636dc449311a92...build-4570d36209bf9872ebbdd34ba9bd2dc635d164ab"
    },
-   "downloads": 40,
+   "downloads": 43,
    "image": null,
    "has_topic": false,
    "category": "Hardware & fasteners",
@@ -2609,7 +2606,7 @@
     "zip": "https://github.com/aoka2/solidcraft-jis-screws/releases/download/v0.3.0/jis-hex-bolt.zip",
     "notes": "JISボルト・小ねじプラグインの最初の公開版です。\n\n- 頭の種類10種類（ナベ・皿・トラス・小形皿・六角・フランジ付き・六角穴付き・ボタン・低頭・極低頭）、M3〜M20\n- 頭の種類のプルダウンに形の絵つき\n- ねじ山は実際に彫った形で、終わりはだんだん浅くなります\n\n**インストール**：`jis-hex-bolt.zip` をダウンロードして、SolidCraft の 環境設定 → プラグイン → プラグインをインストール… で選んでください。\n\n寸法の出どころと簡略化しているところは README を見てください。"
    },
-   "downloads": 184,
+   "downloads": 186,
    "image": "https://raw.githubusercontent.com/aoka2/solidcraft-jis-screws/main/docs/all-heads.png",
    "has_topic": true,
    "category": "Hardware & fasteners",
@@ -2652,7 +2649,7 @@
     "zip": "https://github.com/timobickert/Laser-joints-for-Solidcraft/releases/download/Plugin/solidcraft-laserjoints.zip",
     "notes": "V 0.1.0\r\nTested with SolidCraft v0.44.1\r\n\r\n<img width=\"1624\" height=\"962\" alt=\"image\" src=\"https://github.com/user-attachments/assets/10c999a1-a635-4f38-b3c4-c36dc3330a88\" />"
    },
-   "downloads": 232,
+   "downloads": 234,
    "image": "https://github.com/user-attachments/assets/b86871d0-faf3-410d-b06a-9951d7fefa1e",
    "has_topic": false,
    "category": "Other",
@@ -2695,7 +2692,7 @@
     "zip": "https://github.com/oxidized-elias/solidcraft-plugins/releases/download/build-4570d36209bf9872ebbdd34ba9bd2dc635d164ab/linear-rails.zip",
     "notes": "**Full Changelog**: https://github.com/oxidized-elias/solidcraft-plugins/compare/build-b7197d32899cb3b8dc8fcd26bb636dc449311a92...build-4570d36209bf9872ebbdd34ba9bd2dc635d164ab"
    },
-   "downloads": 54,
+   "downloads": 56,
    "image": null,
    "has_topic": false,
    "category": "Other",
@@ -2737,7 +2734,7 @@
     "zip": "https://github.com/dudedagger42/solidcraft-liquid-craft/releases/download/v3.0.5/liquid-craft-3.0.5.zip",
     "notes": "Workshop listing: its description no longer has a picture the Workshop can't load; the listing picture comes from the files list. No plugin changes."
    },
-   "downloads": 30,
+   "downloads": 33,
    "image": "https://raw.githubusercontent.com/dudedagger42/solidcraft-liquid-craft/v3.0.4/screenshots/showcase-dark.png",
    "has_topic": false,
    "looks": true,
@@ -2794,7 +2791,7 @@
     "zip": "https://github.com/omigamedev/omigears/releases/download/v0.50.2/omigears-0.50.2.zip",
     "notes": "OmiGears 0.50.2 makes gears editable: **Edit gear** reopens a gear's form, filled in with the inputs it was made with, and changes the gear where it is in the timeline. The commands now sit behind one **Gears** button, and each gear gets the number of points per flank it needs.\r\n\r\n## Install\r\n\r\n1. With OmiGears 0.50.1 installed, take the update SolidCraft offers on its card in **Preferences › Plugins**. Otherwise download **omigears-0.50.2.zip** below.\r\n2. In SolidCraft (desktop): **Preferences › Plugins › Install plugin…** and pick the zip. It asks for no permissions.\r\n\r\n**Requires SolidCraft 0.50.0 or later.** SolidCraft 0.49.1 offers this update to OmiGears 0.50.1 too, but refuses the package when it installs: update SolidCraft first, or keep OmiGears 0.50.1.\r\n\r\n## New\r\n\r\n- **Edit gear.** Pick a gear's body or one of its faces, and its form opens filled in with the inputs it was made with. Change them and Run:\r\n  - Most changes are made in place: teeth, module, angles, width, bore, points. Each sketch and feature changes where it is in the timeline, keeping its id. Features you added after the gear (a hole, a fillet, a join) are rebuilt on the changed gear.\r\n  - Changes that make other steps rebuild the gear where it was: crowning turned on or off, a pinion or mate added or left out, another number of worm starts, a bevel's or hypoid's bore. The reply lists any later feature that then fails, so you can pick its references again.\r\n  - A set made by one run (a planetary set, a rack and its pinion, a cycloidal pair, a cycloidal drive) changes together.\r\n  - The edit is one undo step, and names follow the new inputs (\"Spur gear z24 m2\").\r\n\r\n  Gears are recorded in the design from this version on, so gears made before it can't be edited. Scripts and agents edit a gear by running its command with `\"op\"` set to the `record` its reply gave: see the README.\r\n- **One Gears button.** The twelve commands and Edit gear sit behind one **Gears** button in the Model tab's Plugins group, in place of twelve buttons. A command you pin to the ribbon on its own keeps its own button.\r\n- **Automatic points per flank.** Points per flank, and the cycloidal drive's points per lobe, now default to Automatic. That is the fewest points that keep each flank within 1 % of the module of its true curve (a lobe within 1 % of the eccentricity).\r\n  - Large gears get lighter sketches and build faster: 3 points per flank for a 150-tooth spur. A 300-tooth ring no longer has to be given fewer points by hand: Automatic gives it 3000 segments, under the kernel's limit.\r\n  - Small gears keep their detail: 8 points per flank for 6 teeth.\r\n  - A number other than 0 is used as given, as before.\r\n- **New icons.** Every command, the Gears button and Edit gear have icons drawn the way SolidCraft draws its own toolbar's: one part in its isometric view, the gear in blue and a mating part in grey, with thin outlines.\r\n\r\n## Changes to note\r\n\r\n- **SolidCraft 0.50.0 or later**, where 0.50.1 needed 0.49.1: the Gears button needs it.\r\n- **Volumes move a little.** A default spur now has 7 points per flank, not 8, and its volume differs from 0.50.1's by 0.02 %. Set Points per flank to 8 to draw the old outlines.\r\n- **The design keeps each gear's record**: its command, its inputs, and the ids of its sketches and features, in the design's OmiGears data. Nothing else is stored.\r\n- **An edit takes longer than a new gear**, about one and a half times as long (a herringbone gear about twice as long), since SolidCraft builds each changed feature to check it. Later features are rebuilt once, after the last change.\r\n- Edit gear replaces names you gave the gear's sketches, features and bodies with names that follow the new inputs.\r\n- Edit gear needs the app: in a script, through MCP or in `solidcraft-cli plugin test`, SolidCraft answers `interactive_required`.\r\n- The plugin is built against SolidCraft 0.50.0's interface, `craft:plugin@0.2.0`, with `wit-bindgen` 0.63.\r\n- `plugin-tests/` adds cases that edit a recorded spur and herringbone, in place and by a rebuild. `host-check/` adds the largest gears with Automatic points, and edits of them.\r\n\r\nMIT licensed."
    },
-   "downloads": 35,
+   "downloads": 46,
    "image": "https://raw.githubusercontent.com/omigamedev/omigears/main/images/omigears-landscape.png",
    "has_topic": false,
    "category": "Gears & motion",
@@ -2844,7 +2841,7 @@
     "zip": "https://github.com/41Opty41/solidcraft-parasolid/releases/download/v0.3.0/solidcraft-parasolid-export-0.1.0.zip",
     "notes": "**Full Changelog**: https://github.com/41Opty41/solidcraft-parasolid/compare/v0.2.0...v0.3.0"
    },
-   "downloads": 14,
+   "downloads": 15,
    "image": "https://raw.githubusercontent.com/41Opty41/solidcraft-parasolid/main/assets/social-preview.png",
    "has_topic": true,
    "category": "Export & workflow",
@@ -2888,7 +2885,7 @@
     "zip": "https://github.com/41Opty41/solidcraft-parasolid/releases/download/v0.3.0/solidcraft-parasolid-0.3.0.zip",
     "notes": "**Full Changelog**: https://github.com/41Opty41/solidcraft-parasolid/compare/v0.2.0...v0.3.0"
    },
-   "downloads": 41,
+   "downloads": 44,
    "image": "https://raw.githubusercontent.com/41Opty41/solidcraft-parasolid/main/assets/social-preview.png",
    "has_topic": true,
    "category": "Export & workflow",
@@ -2927,7 +2924,7 @@
     "zip": "https://github.com/barry941105-ctrl/Solidcraft-planetary-gear-0.1.2/releases/download/planetary-gear-0.1.2/planetary-gear-0.1.2.zip",
     "notes": "planetary-gear-0.1.2"
    },
-   "downloads": 5,
+   "downloads": 7,
    "image": "https://github.com/user-attachments/assets/7d5b66a8-c684-40c7-bbe7-f70107a44941",
    "has_topic": false,
    "category": "Gears & motion",
@@ -2968,7 +2965,7 @@
     "zip": "https://github.com/dudedagger42/solidcraft-rain/releases/download/v4.0.2/rain-4.0.2.zip",
     "notes": "Workshop listing: its description no longer has a picture the Workshop can't load; the listing picture comes from the files list. No plugin changes."
    },
-   "downloads": 7,
+   "downloads": 8,
    "image": "https://raw.githubusercontent.com/dudedagger42/solidcraft-rain/v4.0.1/screenshots/effect.png",
    "has_topic": false,
    "looks": true,
@@ -3010,7 +3007,7 @@
     "zip": "https://github.com/dudedagger42/solidcraft-rgb-wave/releases/download/v2.0.2/rgb-wave-2.0.2.zip",
     "notes": "Workshop listing: its description no longer has a picture the Workshop can't load; the listing picture comes from the files list. No plugin changes."
    },
-   "downloads": 5,
+   "downloads": 6,
    "image": "https://raw.githubusercontent.com/dudedagger42/solidcraft-rgb-wave/v2.0.1/screenshots/effect.png",
    "has_topic": false,
    "looks": true,
@@ -3059,7 +3056,7 @@
     "zip": "https://github.com/TheCraftyAlien/SolidCraft-Timber-Plugin/releases/download/0.1.1/timber-0.1.1-source.zip",
     "notes": "Timber plugin for SolidCraft 0.43 or later.\r\n\r\n**Install:** download `timber-0.1.1.zip`, then in SolidCraft open **Preferences › Plugins › Install plugin…** and pick it (tick **Replace** if an earlier Timber is installed).\r\n\r\n**In this release**\r\n- Standard timber sections (4x2, 3x2, 2x2, CLS, 6x2/8x2 joists, 3x3/4x4 posts, battens) or a custom size, at any length\r\n- Place at the origin, or parallel or at 90° to a selected timber: beside, on top, underneath, or across an end\r\n- Runs of several pieces at a centre-to-centre spacing\r\n- Inches checkbox; lengths can also be typed with their own unit: 2400 mm, 2.4 m, 8' 6\", 1 1/2\"\r\n- Length and section saved as design parameters\r\n\r\n**Files**\r\n- `timber-0.1.1.zip`: the plugin, ready to install\r\n- `timber-0.1.1-source.zip`: the Rust source"
    },
-   "downloads": 156,
+   "downloads": 158,
    "image": null,
    "has_topic": true,
    "category": "Woodworking",
@@ -3104,7 +3101,7 @@
     "zip": "https://github.com/JPDoesDev/TubeCraft/releases/download/v0.4.0/tubecraft-0.4.0.zip",
     "notes": "First public release.\n\n- Fixed: a perpendicular cope on a tube bent back past its own coped end deleted the tube and\n  kept the off-cut. The larger piece of the split is now kept.\n- Fixed: with the perpendicular cope, a tube that ends on an earlier tube and crosses it again\n  further along was cut back to the far side of the crossing. It is now coped at the end and\n  cut in two at the crossing, with a warning.\n- Fixed: a closed loop with a sharp corner at its seam was accepted.\n- Fixed: a tube named `Cope ...` or `Miter ...` was not found by later runs. Such names are now\n  refused.\n- Fixed: the run could reach SolidCraft's 256-call limit part-way through. It now counts every\n  call and stops with its own message before it changes anything.\n- Fixed: a pipe whose path is not sketch curves stopped the run. It is skipped with a warning.\n- Fixed: the name's 40 limit counted bytes, not characters.\n- Changed: `tube.cut_length_in` is the stock to cut, for flush copes and miters too.\n  `tube.centreline_in` is the centreline as drawn.\n- Added: each `perpendicular_copes` entry says which end it is at (`end_mm`).\n- Changed: the helper sketches are hidden by one call at the end of the run, one host call less\n  per perpendicular cope."
    },
-   "downloads": 50,
+   "downloads": 53,
    "image": "https://raw.githubusercontent.com/JPDoesDev/TubeCraft/main/docs/images/example-node.png",
    "has_topic": true,
    "category": "Other",
@@ -3151,7 +3148,7 @@
     "zip": "https://github.com/Colpa1972/zahnrad-gear-generator/releases/download/v1.4.0/zahnrad-1.4.0.zip",
     "notes": "## Zahnrad-Generator 1.4.0\r\n\r\n**English:** Open-source (MIT) plugin for [SolidCraft](https://github.com/tangency-labs/solidcraft) that generates involute gears and gear sets as ordinary, editable solids. Tested with SolidCraft 0.46.2. The user interface is German.\r\n\r\n### New in 1.4.0\r\n- **Joints and motion simulation built in:** every gear is built as its own component. The plugin adds revolute joints (a slider joint for the rack), the gear coupling with the correct ratio and a drive motion study, so you can simulate the motion right away. Can be switched off with the option \"Drehgelenke + Kopplung einbauen\" (build joints + coupling).\r\n- **Crown gear with exact flank** (envelope of the pinion's involute profile); face width 0 = automatic.\r\n- **Body names include tooth count, module and ratio**, e.g. \"Ritzel Z15 m2\" (pinion), \"Rad Z45 m2 (i=3)\" (wheel).\r\n- **Gearbox:** the ratio i accumulates per stage, i = Z2/Z1 · Z4/Z3 · … (pitch circles, not tip circles).\r\n\r\n### Included\r\nSpur gear, internal gear, rack, worm and worm wheel, bevel gear, crown gear, matching gear pairs and multi-stage gearboxes.\r\n\r\n### Installation\r\nDownload `zahnrad-1.4.0.zip`, unpack it and put the folder into SolidCraft's plugin folder (Preferences → Plugins → *Show in folder*), then install and approve the plugin there. A plugin runs Wasm code, so review the source first.\r\n\r\n### Known limits\r\nFor the internal gear, the worm and the gearbox stage Z10/Z50 the collision check still reports 0.03–0.1 mm of contact that SolidCraft could not measure. The bevel gear is a geometric approximation. At most about 64 host calls per run (gearbox: field \"Ab Stufe\" to continue).\r\n\r\n---\r\n\r\n**Deutsch:** Open-Source-Plugin (MIT) für [SolidCraft](https://github.com/tangency-labs/solidcraft): Evolventen-Zahnräder und Getriebe als normale, editierbare Volumenkörper. Getestet mit SolidCraft 0.46.2.\r\n\r\n### Neu in 1.4.0\r\n- **Drehgelenke und Simulation direkt im Plugin:** Jedes Zahnrad wird als eigene Komponente gebaut. Das Plugin legt Drehgelenke (bei der Zahnstange ein Schiebegelenk), die Getriebekopplung mit dem richtigen Übersetzungsverhältnis und eine Antriebsstudie an. Die Bewegung lässt sich sofort simulieren. Abschaltbar über „Drehgelenke + Kopplung einbauen\".\r\n- **Kronenrad mit exakter Flanke** (Hüllkurve des Ritzel-Evolventenprofils), Zahnbreite 0 = automatisch.\r\n- **Körpernamen mit Zähnezahl, Modul und Übersetzung**, z. B. „Ritzel Z15 m2\", „Rad Z45 m2 (i=3)\".\r\n- **Getriebe:** Übersetzung i läuft pro Stufe auf, i = Z2/Z1 · Z4/Z3 · … (Teilkreise, nicht Kopfkreise).\r\n\r\n### Enthalten\r\nStirnrad, Hohlrad, Zahnstange, Schnecke und Schneckenrad, Kegelrad, Kronenrad, Paarungen mit passendem Gegenstück und mehrstufige Getriebe.\r\n\r\n### Installation\r\n`zahnrad-1.4.0.zip` herunterladen, entpacken und den Ordner in den Plugin-Ordner von SolidCraft legen (Einstellungen → Plugins → *Im Ordner zeigen*), dann dort installieren und freigeben. Ein Plugin führt Wasm-Code aus: vorher den Quelltext prüfen.\r\n\r\n### Bekannte Grenzen\r\nBei Hohlrad, Schnecke und der Getriebestufe Z10/Z50 meldet die Kollisionsprüfung noch 0,03–0,1 mm Berührung, die SolidCraft nicht ausmessen konnte. Das Kegelrad ist eine geometrische Näherung. Pro Lauf höchstens etwa 64 Aufrufe (Getriebe: Feld „Ab Stufe\")."
    },
-   "downloads": 56,
+   "downloads": 59,
    "image": null,
    "has_topic": false,
    "category": "Gears & motion",
@@ -3513,7 +3510,7 @@
    "stars": 1,
    "issues": true,
    "license": "Apache-2.0",
-   "updated": "2026-11-27T23:15:23Z",
+   "updated": "2026-11-28T02:08:57Z",
    "created": "2026-10-27T16:17:40Z",
    "release": {
     "tag": "v0.49.0",
@@ -3621,7 +3618,7 @@
    "stars": 1,
    "issues": true,
    "license": "Apache-2.0",
-   "updated": "2026-11-27T23:15:23Z",
+   "updated": "2026-11-28T02:08:57Z",
    "created": "2026-10-27T16:17:40Z",
    "release": {
     "tag": "v0.49.0",
@@ -3660,7 +3657,7 @@
    "stars": 1,
    "issues": true,
    "license": "Apache-2.0",
-   "updated": "2026-11-27T23:15:23Z",
+   "updated": "2026-11-28T02:08:57Z",
    "created": "2026-10-27T16:17:40Z",
    "release": {
     "tag": "v0.49.0",
@@ -4337,14 +4334,14 @@
    "stars": 0,
    "issues": true,
    "license": "MIT",
-   "updated": "2026-11-27T10:54:21Z",
+   "updated": "2026-11-28T03:22:11Z",
    "created": "2026-11-27T10:49:32Z",
    "release": {
-    "tag": "v0.1.0",
-    "url": "https://github.com/ooISHoo/solidcraft-first-gear-maker/releases/tag/v0.1.0",
-    "date": "2026-11-27T10:50:38Z",
+    "tag": "v0.1.1",
+    "url": "https://github.com/ooISHoo/solidcraft-first-gear-maker/releases/tag/v0.1.1",
+    "date": "2026-11-28T03:16:33Z",
     "zip": null,
-    "notes": "Needs SolidCraft 0.50.0 or newer (tested on 0.50.0).\n\n- Eight gear entries, each building ordinary SolidCraft features grouped in the timeline:\n  `spur`, `helical`, `herringbone`, `internal` (straight, helical or herringbone teeth), `rack` (straight or helical),\n  `bevel` (straight), `worm` and `worm-wheel`.\n- Involute tooth profiles with the rack cutter's root trochoid (undercut reproduced and reported), profile shift,\n  pressure angle, backlash, addendum, dedendum and root fillet; bore and JIS B 1301 keyway where it applies.\n- Placement by picking a position and an axis in the viewport (sketch points and lines, circular and straight edges,\n  cylindrical and flat faces), a default axis and a flip; from scripts and agents also references to origin axes, planes,\n  construction points and vertices, a bare world coordinate and a direction vector.\n- \"Recommended values\" for machining and for 3D printing, which set the clearances from the module (starting values).\n- `center-distance`, a calculator for external, internal, rack and worm pairs, with the working centre distance and\n  pressure angle for shifted gears; results shown live in the dialog.\n- Usable from SolidCraft's MCP server and from `solidcraft-cli` scripts (`plugin.run`).\n- No permissions requested: no files, no network, no settings."
+    "notes": "Needs SolidCraft 0.50.0 or newer (tested on 0.50.0). No change to the plugin's behaviour.\n\n- New screenshots of the spur dialog with its preview and of a gear placed on a boss, for the README and the Workshop\n  listing."
    },
    "downloads": 0,
    "image": "https://raw.githubusercontent.com/ooISHoo/solidcraft-first-gear-maker/main/doc/workshop/card.png",
@@ -4381,14 +4378,14 @@
    "stars": 0,
    "issues": true,
    "license": "MIT",
-   "updated": "2026-11-27T10:54:21Z",
+   "updated": "2026-11-28T03:22:11Z",
    "created": "2026-11-27T10:49:32Z",
    "release": {
-    "tag": "v0.1.0",
-    "url": "https://github.com/ooISHoo/solidcraft-first-gear-maker/releases/tag/v0.1.0",
-    "date": "2026-11-27T10:50:38Z",
+    "tag": "v0.1.1",
+    "url": "https://github.com/ooISHoo/solidcraft-first-gear-maker/releases/tag/v0.1.1",
+    "date": "2026-11-28T03:16:33Z",
     "zip": null,
-    "notes": "Needs SolidCraft 0.50.0 or newer (tested on 0.50.0).\n\n- Eight gear entries, each building ordinary SolidCraft features grouped in the timeline:\n  `spur`, `helical`, `herringbone`, `internal` (straight, helical or herringbone teeth), `rack` (straight or helical),\n  `bevel` (straight), `worm` and `worm-wheel`.\n- Involute tooth profiles with the rack cutter's root trochoid (undercut reproduced and reported), profile shift,\n  pressure angle, backlash, addendum, dedendum and root fillet; bore and JIS B 1301 keyway where it applies.\n- Placement by picking a position and an axis in the viewport (sketch points and lines, circular and straight edges,\n  cylindrical and flat faces), a default axis and a flip; from scripts and agents also references to origin axes, planes,\n  construction points and vertices, a bare world coordinate and a direction vector.\n- \"Recommended values\" for machining and for 3D printing, which set the clearances from the module (starting values).\n- `center-distance`, a calculator for external, internal, rack and worm pairs, with the working centre distance and\n  pressure angle for shifted gears; results shown live in the dialog.\n- Usable from SolidCraft's MCP server and from `solidcraft-cli` scripts (`plugin.run`).\n- No permissions requested: no files, no network, no settings."
+    "notes": "Needs SolidCraft 0.50.0 or newer (tested on 0.50.0). No change to the plugin's behaviour.\n\n- New screenshots of the spur dialog with its preview and of a gear placed on a boss, for the README and the Workshop\n  listing."
    },
    "downloads": 0,
    "image": "https://raw.githubusercontent.com/ooISHoo/solidcraft-first-gear-maker/main/doc/workshop/card.png",
