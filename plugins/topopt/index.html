@@ -12,11 +12,11 @@
 <meta property="og:title" content="TopOpt: SolidCraft plugin by 0ndrec">
 <meta property="og:description" content="Topology optimization: pick a design body, supports and loads; get a lightweight, stiff part as a mesh or solid. A free plugin for SolidCraft CAD:…">
 <meta property="og:url" content="https://tharje.github.io/solidcraft-plugins/plugins/topopt/">
-<meta property="og:image" content="https://raw.githubusercontent.com/0ndrec/solidcraft-topopt/main/docs/images/cantilever.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/0ndrec/solidcraft-topopt/main/docs/images/cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../../style.css">
 <script data-goatcounter="https://tharje.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "TopOpt", "description": "Topology optimization: pick a design body, supports and loads; get a lightweight, stiff part as a mesh or solid.", "url": "https://tharje.github.io/solidcraft-plugins/plugins/topopt/", "applicationCategory": "DesignApplication", "applicationSubCategory": "SolidCraft plugin", "operatingSystem": "Windows, macOS, Linux", "author": {"@type": "Person", "name": "0ndrec", "url": "https://github.com/0ndrec"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "sameAs": "https://github.com/0ndrec/solidcraft-topopt", "softwareVersion": "0.11.0", "image": "https://raw.githubusercontent.com/0ndrec/solidcraft-topopt/main/docs/images/cantilever.png", "license": "https://spdx.org/licenses/Apache-2.0", "dateModified": "2026-11-27T10:33:47Z"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "TopOpt", "description": "Topology optimization: pick a design body, supports and loads; get a lightweight, stiff part as a mesh or solid.", "url": "https://tharje.github.io/solidcraft-plugins/plugins/topopt/", "applicationCategory": "DesignApplication", "applicationSubCategory": "SolidCraft plugin", "operatingSystem": "Windows, macOS, Linux", "author": {"@type": "Person", "name": "0ndrec", "url": "https://github.com/0ndrec"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "sameAs": "https://github.com/0ndrec/solidcraft-topopt", "softwareVersion": "0.12.2", "image": "https://raw.githubusercontent.com/0ndrec/solidcraft-topopt/main/docs/images/cover.png", "downloadUrl": "https://github.com/0ndrec/solidcraft-topopt/releases/download/v0.12.2/topopt-0.12.2.zip", "license": "https://spdx.org/licenses/Apache-2.0", "dateModified": "2026-11-28T12:45:39Z"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SolidCraft Plugins", "item": "https://tharje.github.io/solidcraft-plugins/"}, {"@type": "ListItem", "position": 2, "name": "TopOpt", "item": "https://tharje.github.io/solidcraft-plugins/plugins/topopt/"}]}</script>
 </head>
 <body>
@@ -37,38 +37,50 @@
 
 <main class="wrap page">
   <p class="crumbs"><a href="../../">SolidCraft Plugins</a> › TopOpt</p>
-  <h1><img class="icon" src="../../icons/topopt.svg" alt="">TopOpt <span class="ver">v0.11.0</span></h1>
+  <h1><img class="icon" src="../../icons/topopt.svg" alt="">TopOpt <span class="ver">v0.12.2</span></h1>
   
   <p class="lead">Topology optimization: pick a design body, supports and loads; get a lightweight, stiff part as a mesh or solid.</p>
   <div class="actions">
-    <a class="btn primary disabled">No release yet</a>
+    <a class="btn primary" href="https://github.com/0ndrec/solidcraft-topopt/releases/download/v0.12.2/topopt-0.12.2.zip">Download .zip</a>
     <a class="btn gh" href="https://github.com/0ndrec/solidcraft-topopt">Source on GitHub</a>
+    <a class="btn ws" href="https://workshop.solidcraft.io/plugin/0ndrec/topopt">On the SolidCraft Workshop</a>
   </div>
-  <img class="hero-pic" src="https://raw.githubusercontent.com/0ndrec/solidcraft-topopt/main/docs/images/cantilever.png" alt="TopOpt in SolidCraft">
+  <img class="hero-pic" src="https://raw.githubusercontent.com/0ndrec/solidcraft-topopt/main/docs/images/cover.png" alt="TopOpt in SolidCraft">
   <div class="cols">
     <section>
       <h2>What it adds to SolidCraft</h2>
       <ul><li>Design body</li><li>Add support</li><li>Add load</li><li>Keep surface</li><li>Optimize</li><li>Create body</li><li>Re-mesh</li><li>Delete item</li><li>Clear supports and loads</li><li>Refresh TopOpt panel</li><li>TopOpt panel</li></ul>
       <h2>Install TopOpt</h2>
       <ol>
-        <li>Build or download the plugin as described in its README on GitHub.</li>
+        <li>Download the zip above (from release v0.12.2).</li>
         <li>In SolidCraft: <b>Plugins › Install plugin…</b> and pick the zip.</li>
         <li>Run it from the <b>Plugins</b> menu, or its button in the ribbon (SolidCraft 0.42 and later).</li>
       </ol>
+      <p>It is on the <a href="https://workshop.solidcraft.io/plugin/0ndrec/topopt">SolidCraft Workshop</a> too: its <b>Open in SolidCraft</b> button installs it, after SolidCraft shows what it asks for.</p>
       <p>Questions and bug reports go to the plugin's author, in the
         <a href="https://github.com/0ndrec/solidcraft-topopt/issues">issues on GitHub</a>. If it crashes SolidCraft, harms a design
         or looks unsafe, please also <a href="https://github.com/tharje/solidcraft-plugins/issues/new?template=plugin-problem.yml&amp;title=%5BPlugin+problem%5D+TopOpt&amp;plugin=TopOpt+%28https%3A%2F%2Fgithub.com%2F0ndrec%2Fsolidcraft-topopt%29">report it to this list</a>, so others can be warned.</p>
     </section>
     <aside>
-      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/0ndrec">0ndrec</a></dd><dt>Category</dt><dd><a href="../../?category=3D%20printing">3D printing</a></dd><dt>Version</dt><dd>0.11.0</dd><dt>Licence</dt><dd>Apache-2.0</dd><dt>GitHub</dt><dd>★ 3 stars · ⬇ 0 downloads</dd><dt>Asks for</dt><dd title="SolidCraft asks you to allow this when you install the plugin.">files, extra SolidCraft commands</dd></dl>
+      <dl class="facts"><dt>Author</dt><dd><a href="https://github.com/0ndrec">0ndrec</a></dd><dt>Category</dt><dd><a href="../../?category=3D%20printing">3D printing</a></dd><dt>Version</dt><dd>0.12.2</dd><dt>Latest release</dt><dd><a href="https://github.com/0ndrec/solidcraft-topopt/releases/tag/v0.12.2">v0.12.2</a> (2026-11-28)</dd><dt>Licence</dt><dd>Apache-2.0</dd><dt>GitHub</dt><dd>★ 4 stars · ⬇ 12 downloads</dd><dt>Asks for</dt><dd title="SolidCraft asks you to allow this when you install the plugin.">files, extra SolidCraft commands</dd></dl>
       <div class="chips"><span>cad</span><span>finite-element-method</span><span>topology-optimization</span></div>
     </aside>
   </div>
   
-  
+  <section class="notes">
+    <h2>What's new in v0.12.2 (2026-11-28)</h2>
+    <p>Topology optimization for SolidCraft: pick a body, its supports and loads, and get a light, stiff part as a mesh or a solid.</p>
+<p><b>New in 0.12.2</b></p>
+<ul><li><b>Clearer panel and dialogs.</b> Every tab starts with a short note on what it is for. Each setting says its unit and what more or less does, with the default where it helps: &quot;Keep, % of the body (less = lighter, weaker)&quot;, &quot;Element budget (more = finer, slower)&quot; and so on. The dialogs explain how to choose Keep, the element budget, the thinnest member and load cases. On the Run tab, Compliance says &quot;lower = stiffer&quot;, and the rows read Elements and Through-holes.</li><li><b>One cover image</b> with the FPV frame study&#x27;s numbers. Renders that showed mesh artefacts are gone from the documentation.</li></ul>
+<p><b>Assets</b></p>
+<ul><li><code>topopt-0.12.2.zip</code>: the plugin. Install it from Preferences › Plugins (or from the SolidCraft Workshop), then restart SolidCraft.</li><li><code>topopt-solvers-0.12.2-windows-x64.zip</code>: TopOpt Solver (all CPU cores) and TopOpt CUDA Solver (NVIDIA GPU), optional. Run one on the folder granted to the plugin as <code>results</code>; Optimize then hands the run to it.</li></ul>
+<p><b>Also in 0.12</b></p>
+<ul><li><b>Every support joined to the part.</b> Left to itself, the optimizer leads the load into the nearest supports and may leave a far bolt hole without material. Such a support is now made to hold the load alone in a helper load case and the study runs again, so every mounting point belongs to the part (&quot;Join every support to the part&quot;, Settings, on by default).</li><li><b>Solids more often:</b> triangles turned over inside the mesh surface, which SolidCraft could not sew, are mended.</li><li><b><a href="https://github.com/0ndrec/solidcraft-topopt/blob/main/docs/settings-guide.md" rel="nofollow noopener">Choosing the settings</a>:</b> what each study and mesh setting costs and gives, measured on a bracket with seven bolt holes.</li></ul>
+    <p><a href="https://github.com/0ndrec/solidcraft-topopt/releases/tag/v0.12.2">Read all of it on GitHub ›</a></p>
+  </section>
   <section class="more">
     <h2>Similar SolidCraft plugins</h2>
-    <ul><li><a href="../mould-maker/">Mould Maker</a> <span>Printed moulds sized to your printer. Round: bowls, planters. Box: flat-sided parts.…</span></li><li><a href="../solidcraft-aprilcube/">AprilCube</a> <span>Generate printable cuboids and voxel targets with AprilTag or ArUco markers, edge…</span></li><li><a href="../filament-swatch/">Filament Swatch</a> <span>Filament sample tiles: brand, material, colour and temperatures in text, and thin steps…</span></li><li><a href="../mesh-solidify/">Mesh Solidify</a> <span>Rebuild a broken mesh body (holes, open shells, overlaps) as one watertight, printable…</span></li><li><a href="../edge-path-sweep/">Edge Path &amp; Sweep</a> <span>Create an open or closed 3D sketch path from selected edges and optionally sweep a…</span></li><li><a href="../helical-sketch/">Helical Sketch Generator</a> <span>Generate cylindrical, conical, tapered, and variable-pitch 3D helical sketches with…</span></li></ul>
+    <ul><li><a href="../mould-maker/">Mould Maker</a> <span>Printed moulds sized to your printer. Round: bowls, planters. Box: flat-sided parts.…</span></li><li><a href="../solidcraft-aprilcube/">AprilCube</a> <span>Generate printable cuboids and voxel targets with AprilTag or ArUco markers, edge…</span></li><li><a href="../filament-swatch/">Filament Swatch</a> <span>Filament sample tiles: brand, material, colour and temperatures in text, and thin steps…</span></li><li><a href="../mesh-solidify/">Mesh Solidify</a> <span>Rebuild a broken mesh body (holes, open shells, overlaps) as one watertight, printable…</span></li><li><a href="../custom-threads/">Custom Threads</a> <span>Smooth B-rep custom threads for 3D printing with presets, clearances, multi-start leads…</span></li><li><a href="../gear-generator/">Gear generator</a> <span>A SolidCraft plugin: parametric involute spur gear generator (wasm component per RFC 0002)</span></li></ul>
     <p><a href="../../">All SolidCraft plugins ›</a></p>
   </section>
 </main>
